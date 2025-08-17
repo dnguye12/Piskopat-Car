@@ -102,7 +102,7 @@ const Features = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-5 w-full min-h-[600px] bg-[url('Home/features.jpg')] bg-cover bg-center rounded-lg border shadow-md"></div>
+                <div className="col-span-5 w-full min-h-[600px] bg-[url('https://i.ibb.co/0px8z1BC/features.jpg')] bg-cover bg-center rounded-lg border shadow-md"></div>
             </div>
         </section>
     );
