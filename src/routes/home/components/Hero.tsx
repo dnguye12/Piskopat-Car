@@ -29,7 +29,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900/90 dark:from-background to-neutral-900/75 z-10 bg-no-repeat bg-center"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url(/Home/hero.jpg)] bg-cover z-0 bg-no-repeat bg-center"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/Home/hero.jpg')] bg-cover z-0 bg-no-repeat bg-center"></div>
         </div>
     );
 }

@@ -9,7 +9,7 @@ const Moments = () => {
             <div className="rounded-lg h-72 relative overflow-hidden flex justify-center items-center shadow-md">
                 <h3 className="text-main text-6xl z-20">Wähle deinen Moment.</h3>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900/75 opacity-90 z-10 bg-no-repeat bg-center"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-[url(Home/moments.jpg)] bg-cover bg-center z-0" />
+                <div className="absolute top-0 left-0 w-full h-full bg-[url('Home/moments.jpg')] bg-cover bg-center z-0" />
             </div>
             <div className="mt-20 grid grid-cols-2 gap-6">
                 <div className="flex flex-col justify-center items-center bg-main rounded-lg shadow-md border p-14">
@@ -41,7 +41,7 @@ const Moments = () => {
                         </Button>
                     </div>
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
-                    <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url(/Home/moments1.jpg)] bg-cover bg-center"></div>
+                    <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('/Home/moments1.jpg')] bg-cover bg-center"></div>
                 </div>
 
                 <div className="rounded-lg shadow-md border p-14 relative overflow-hidden">
@@ -59,7 +59,7 @@ const Moments = () => {
                         </Button>
                     </div>
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
-                    <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url(/Home/moments2.jpg)] bg-cover bg-center"></div>
+                    <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('/Home/moments2.jpg')] bg-cover bg-center"></div>
                 </div>
 
                 <div className="flex flex-col justify-center items-center bg-sidebar rounded-lg shadow-md border p-14">
@@ -77,7 +77,7 @@ const Moments = () => {
                 </div>
             </div>
             <div className="mt-44 grid grid-cols-12 gap-x-12">
-                <div className="col-span-5 w-full h-[600px] bg-[url(Home/discount.jpg)] bg-cover bg-center rounded-lg border shadow-md"></div>
+                <div className="col-span-5 w-full h-[600px] bg-[url('Home/discount.jpg')] bg-cover bg-center rounded-lg border shadow-md"></div>
                 <div className=" col-span-7 flex flex-col justify-center items-center h-full gap-10">
                     <div className="flex gap-x-3">
                         <div className=" size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
