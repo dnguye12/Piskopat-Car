@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -39,6 +41,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-main: var(--main);
 }
 
 :root {
@@ -74,6 +77,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --main: #b1e346;
 }
 
 .dark {
@@ -108,13 +112,26 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --main: #d5de21;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
   }
+}
+
+.font-orbi {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.transition-all {
+  @apply duration-300
 }
