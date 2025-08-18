@@ -12,7 +12,7 @@ const Address = () => {
                         <div className="w-10 h-10 inline-flex justify-center items-center bg-neutral-900 rounded-md">
                             <MapPinIcon className="text-main "/>
                         </div>
-                        <span className="text-neutral-900">In Kastellaun, Rhein-Hunsrück-Kreis</span>
+                        <span className="text-neutral-900">Wulfsbergstr 1a, 59320 Ennigerloh</span>
                     </div>
                     <Button asChild size={"lg"} className="bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100">
                         <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Sportwagen mieten</a>

@@ -89,7 +89,7 @@ export function ContactForm() {
                         </FormItem>
                     )}
                 />
-                <Button variant={"main"} size={"lg"} type="submit" className="font-semibold w-full">Senden</Button>
+                <Button variant={"main"} size={"lg"} type="submit" className="font-semibold w-full h-12">Senden</Button>
             </form>
         </Form>
     )

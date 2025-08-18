@@ -34,7 +34,7 @@ const Navbar = () => {
                     <span className="text-xl font-semibold text-neutral-900 dark:text-main">X-Sportwagen</span>
                 </Link>
                 <nav className=" absolute top-1/2 left-1/2 -translate-1/2">
-                    <NavbarItem to="/" text="Home" />
+                    <NavbarItem to="/" text="Startseite" />
                     <NavbarItem to="/vw" text="VW" />
                     <NavbarItem to="/kontakt" text="Kontakt" />
                 </nav>
@@ -77,7 +77,7 @@ const Navbar = () => {
                                     </DrawerClose>
                                 </DrawerHeader>
                                 <nav className="flex flex-col items-start gap-y-2">
-                                    <NavbarItem to="/" text="Home" />
+                                    <NavbarItem to="/" text="Startseite" />
                                     <NavbarItem to="/vw" text="VW" />
                                     <NavbarItem to="/kontakt" text="Kontakt" />
                                 </nav>
