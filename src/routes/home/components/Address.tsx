@@ -4,10 +4,10 @@ import { Link } from "react-router";
 
 const Address = () => {
     return (
-        <section className="container mx-auto mt-44 px-6">
-            <div className="grid grid-cols-2 rounded-lg overflow-hidden shadow-md">
-                <div className="col-span-1 bg-main py-14 ps-14 flex flex-col gap-y-7 justify-start items-start">
-                    <h2 className="text-[44px] text-4xl text-neutral-900 max-w-96">Machen Sie den ersten Schritt zu Ihrem PS-Moment.</h2>
+        <section className="container mx-auto mt-32 lg:mt-44 px-6">
+            <div className="flex flex-col border lg:grid grid-cols-2 rounded-lg overflow-hidden shadow-md">
+                <div className="col-span-1 bg-main p-8 lg:py-14 lg:ps-14  flex flex-col gap-y-7 justify-start items-start">
+                    <h2 className="lg:text-[44px] text-4xl text-neutral-900 max-w-96">Machen Sie den ersten Schritt zu Ihrem PS-Moment.</h2>
                     <p className="text-lg text-neutral-900 max-w-96">Exklusive Sportwagen, erstklassiger Service und pure Emotion – stehen für sie bereit.</p>
                     <div className="flex items-center gap-x-4">
                         <div className="w-10 h-10 inline-flex justify-center items-center bg-neutral-900 rounded-md">
@@ -19,7 +19,7 @@ const Address = () => {
                         <Link to="" className="h-12">Sportwagen mieten</Link>
                     </Button>
                 </div>
-                 <div className=" col-span-1 bg-[url(/sm2x.png)] bg-cover bg-center"></div>
+                 <div className=" col-span-1 bg-[url(/sm2x.png)] bg-cover bg-center w-full aspect-square"></div>
             </div>
            
         </section>
