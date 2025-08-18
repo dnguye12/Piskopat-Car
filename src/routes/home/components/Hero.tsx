@@ -3,7 +3,7 @@ import { BadgePercentIcon, CreditCardIcon, StarIcon, UserRoundCheckIcon } from "
 
 const Hero = () => {
     return (
-        <div className="w-full min-h-screen pt-[88px] relative">
+        <div className="w-full min-h-screen lg:h-screen pt-[88px] relative">
             <div className="container mx-auto px-4 pb-24 h-full relative hidden lg:flex flex-col justify-end z-20">
                 <h5 className="text-6xl text-neutral-100">Reiseziel? Egal.</h5>
                 <h1 className="text-6xl text-main">Hauptsache Sportwagen</h1>
@@ -28,11 +28,11 @@ const Hero = () => {
                     <Button variant={"main-outline"} size="lg" className="font-semibold h-16 px-8 text-lg">Fahrzeuge</Button>
                 </div>
             </div>
-            <div className="hidden lg:absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/0 z-10 bg-no-repeat bg-center"></div>
-            <div className="hidden lg:absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/xSgzRTP3/fb7772b40cf1d5ab756c9cd9b626603b.webp')] bg-cover z-0 bg-no-repeat bg-center"></div>
+            <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/0 z-10 bg-no-repeat bg-center"></div>
+            <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/xSgzRTP3/fb7772b40cf1d5ab756c9cd9b626603b.webp')] bg-cover z-0 bg-no-repeat bg-center"></div>
         
         
-            <div className="container mx-auto px-4 pt-12 pb-24 h-full flex flex-col">
+            <div className="container mx-auto px-4 pt-12 pb-24 h-full flex lg:hidden flex-col">
                 <h5 className="text-3xl">Reiseziel? Egal.</h5>
                 <h1 className="text-3xl text-main">Hauptsache Sportwagen</h1>
                 <img src="https://i.ibb.co/k6wn42TC/hero.jpg" className="w-full h-auto rounded-lg border shadow my-6"/>
