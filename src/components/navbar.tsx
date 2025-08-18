@@ -8,8 +8,28 @@ import {
     DrawerHeader,
     DrawerTrigger,
 } from "@/components/ui/drawer"
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
 import { MenuIcon, XIcon } from "lucide-react";
 import ThemeToggle from "./theme-toggle";
+
+interface NavbarTriggerProps {
+    text: string
+}
+
+const NavbarTrigger = ({ text }: NavbarTriggerProps) => {
+    return (
+        <NavigationMenuTrigger className="!bg-transparent hover:bg-main! dark:hover:bg-transparent! transition-all !text-base hover:font-semibold dark:hover:text-main">
+            {text}
+        </NavigationMenuTrigger>
+    )
+}
 
 interface NavbarItemProps {
     to: string;
@@ -33,7 +53,39 @@ const Navbar = () => {
                     <img src="/logo-dark-no-text.svg" alt="" className="hidden dark:block h-14 w-auto" />
                     <span className="text-xl font-semibold text-neutral-900 dark:text-main">X-Sportwagen</span>
                 </Link>
-                <nav className=" absolute top-1/2 left-1/2 -translate-1/2">
+                <NavigationMenu viewport={false}>
+                    <NavigationMenuList>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild>
+                                <NavbarItem to="/" text="Startseite" />
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavbarTrigger text="Fahrzeuge" />
+                            <NavigationMenuContent>
+                                <ul className="grid w-[200px] gap-4">
+                                    <li>
+                                        <NavigationMenuLink asChild>
+                                            <NavbarItem to="/fahrzeuge" text="Alle Fahrzeuge" />
+                                        </NavigationMenuLink>
+                                    </li>
+                                    <li>
+                                        <NavigationMenuLink asChild>
+                                            <NavbarItem to="/" text="VW Golf 8" />
+                                        </NavigationMenuLink>
+                                    </li>
+                                </ul>
+                            </NavigationMenuContent>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild>
+                                <NavbarItem to="/kontakt" text="Kontakt" />
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                    </NavigationMenuList>
+                </NavigationMenu>
+                <nav className="hidden absolute top-1/2 left-1/2 -translate-1/2">
+
                     <NavbarItem to="/" text="Startseite" />
                     <NavbarItem to="/vw" text="VW" />
                     <NavbarItem to="/kontakt" text="Kontakt" />

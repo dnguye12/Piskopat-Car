@@ -40,7 +40,7 @@ const Footer = () => {
                         <div className="h-fit">
                             <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Links</h4>
                             <ul className="text-muted-foreground space-y-3 text-base font-medium">
-                                <li><Link to="" className="hover:text-main transition-all">Fahrzeuge</Link></li>
+                                <li><Link to="/fahrzeuge" className="hover:text-main transition-all">Fahrzeuge</Link></li>
                                 <li><Link to="/kontakt" className="hover:text-main transition-all">Kontakt</Link></li>
                                 <li><Link to="" className="hover:text-main transition-all">Impressum</Link></li>
                                 <li><Link to="" className="hover:text-main transition-all">Datenschutz</Link></li>

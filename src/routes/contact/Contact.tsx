@@ -8,8 +8,8 @@ const Contact = () => {
         <div className="contact w-full min-h-screen flex flex-col">
             <Navbar />
             <main className="flex flex-col-reverse lg:grid grid-cols-2 lg:min-h-[calc(100vh-88px)] mt-[88px]">
-                <div className="w-full lg:h-full bg-[url('https://i.ibb.co/xSgzRTP3/fb7772b40cf1d5ab756c9cd9b626603b.webp')] bg-cover bg-right aspect-video lg:aspect-auto"></div>
-                <div className="w-full lg:h-full py-14 px-6 max-w-xl mx-auto flex flex-col justify-center mt-0">
+                <div className="w-full lg:h-full bg-[url('https://i.ibb.co/xSgzRTP3/fb7772b40cf1d5ab756c9cd9b626603b.webp')] bg-cover bg-right aspect-video lg:aspect-auto" data-aos="fade-right"></div>
+                <div className="w-full lg:h-full py-14 px-6 max-w-xl mx-auto flex flex-col justify-center mt-0" data-aos="fade-left">
                     <h2 className="text-3xl">RUND UM DIE UHR</h2>
                     <h1 className="text-6xl text-main mt-2 font-semibold">Kontaktiere uns</h1>
                     <p className="text-muted-foreground my-6">Du hast noch offene Fragen? Kein Problem.<br />Unser Service wird dir schnellstmöglich weiterhelfen!</p>
