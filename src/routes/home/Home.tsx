@@ -7,6 +7,7 @@ import Reviews from "./components/Reviews";
 import Address from "./components/Address";
 import Faq from "./components/Faq";
 import Footer from "@/components/footer";
+import Cars from "./components/Cars";
 
 const HomePage = () => {
     return ( 
@@ -17,6 +18,7 @@ const HomePage = () => {
                 <Moments />
                 <Features />
                 <Process />
+                <Cars />
                 <Reviews />
                 <Address />
                 <Faq />

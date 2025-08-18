@@ -5,7 +5,7 @@ const Process = () => {
     return (
         <section className="container mx-auto mt-32 lg:mt-44 px-6">
             <div className="flex flex-col lg:grid grid-cols-3 gap-6">
-                <div className="p-8 rounded-lg border bg-main flex flex-col items-start gap-y-5 shadow-md">
+                <div className="p-8 rounded-lg border bg-main flex flex-col items-start gap-y-5 shadow-md" data-aos="fade-up">
                     <div className=" size-14 rounded-lg border border-neutral-900 bg-neutral-900 inline-flex justify-center items-center">
                         <MessageSquareTextIcon className=" w-auto h-7 text-main" />
                     </div>
@@ -16,7 +16,7 @@ const Process = () => {
                     </Button>
                 </div>
 
-                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md">
+                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up">
                     <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
                         <CalendarCheckIcon className=" w-auto h-7" />
                     </div>
