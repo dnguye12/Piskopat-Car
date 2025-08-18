@@ -5,13 +5,13 @@ import { SiWhatsapp } from '@icons-pack/react-simple-icons';
 const Moments = () => {
     return (
         <section className="container mx-auto mt-12 lg:mt-20 px-6">
-            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md">
+            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md"  data-aos="fade-up">
                 <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center">Wähle deinen Moment.</h3>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat bg-center"></div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/9H0wSD5f/moments.jpg')] bg-cover bg-center z-0" />
             </div>
             <div className="mt-6 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className="flex flex-col justify-center items-center bg-main rounded-lg shadow-md border p-8 lg:p-14">
+                <div className="flex flex-col justify-center items-center bg-main rounded-lg shadow-md border p-8 lg:p-14" data-aos="fade-right">
                     <div className=" w-14 h-14 rounded-md flex justify-center items-center border-2 border-neutral-900">
                         <CalendarCheckIcon className="w-7 h-7 text-neutral-900" />
                     </div>
@@ -25,7 +25,7 @@ const Moments = () => {
                     </Button>
                 </div>
 
-                <div className="rounded-lg shadow-md border p-8 lg:p-14 relative overflow-hidden">
+                <div className="rounded-lg shadow-md border p-8 lg:p-14 relative overflow-hidden" data-aos="fade-left">
                     <div className="flex flex-col justify-center items-center relative z-20">
                         <div className=" w-14 h-14 rounded-md flex justify-center items-center border-2 border-main">
                             <Clock7Icon className="w-7 h-7 text-main" />
@@ -43,7 +43,7 @@ const Moments = () => {
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://i.ibb.co/d42JWdjc/moments1.jpg')] bg-cover bg-center"></div>
                 </div>
 
-                <div className="rounded-lg shadow-md border p-8 lg:p-14 relative overflow-hidden">
+                <div className="rounded-lg shadow-md border p-8 lg:p-14 relative overflow-hidden" data-aos="fade-right">
                     <div className="flex flex-col justify-center items-center relative z-20">
                         <div className=" w-14 h-14 rounded-md flex justify-center items-center border-2 border-main">
                             <HeartIcon className="w-7 h-7 text-main" />
@@ -61,7 +61,7 @@ const Moments = () => {
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://i.ibb.co/MDstTCFs/moments2.jpg')] bg-cover bg-center"></div>
                 </div>
 
-                <div className="flex flex-col justify-center items-center bg-sidebar rounded-lg shadow-md border p-8 lg:p-14">
+                <div className="flex flex-col justify-center items-center bg-sidebar rounded-lg shadow-md border p-8 lg:p-14" data-aos="fade-left">
                     <div className=" w-14 h-14 rounded-md flex justify-center items-center border-2 border-foreground">
                         <FlameIcon className="w-7 h-7 text-foreground" />
                     </div>
@@ -76,8 +76,8 @@ const Moments = () => {
                 </div>
             </div>
             <div className="mt-32 lg:mt-44 flex flex-col lg:grid grid-cols-12 gap-x-12 gap-y-10 lg:gap-y-0">
-                <div className="col-span-12 lg:col-span-5 w-full h-[600px] bg-[url('https://i.ibb.co/j9YF9qCp/discount.jpg')] bg-cover bg-center rounded-lg border shadow-md"></div>
-                <div className="col-span-12 lg:col-span-7 flex flex-col justify-center lg:items-center h-full gap-10">
+                <div className="col-span-12 lg:col-span-5 w-full h-[600px] bg-[url('https://i.ibb.co/j9YF9qCp/discount.jpg')] bg-cover bg-center rounded-lg border shadow-md" data-aos="fade-right"></div>
+                <div className="col-span-12 lg:col-span-7 flex flex-col justify-center lg:items-center h-full gap-10" data-aos="fade-left">
                     <div className="flex gap-x-3">
                         <div className="min-w-14 size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
                             <UserRoundPlusIcon className=" size-7 dark:text-main" />

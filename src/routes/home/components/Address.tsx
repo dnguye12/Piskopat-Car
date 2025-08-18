@@ -3,7 +3,7 @@ import { MapPinIcon } from "lucide-react";
 
 const Address = () => {
     return (
-        <section className="container mx-auto mt-32 lg:mt-44 px-6">
+        <section className="container mx-auto mt-32 lg:mt-44 px-6" data-aos="fade-up">
             <div className="flex flex-col border lg:grid grid-cols-2 rounded-lg overflow-hidden shadow-md">
                 <div className="col-span-1 bg-main p-8 lg:py-14 lg:ps-14  flex flex-col gap-y-7 justify-start items-start">
                     <h2 className="lg:text-[44px] text-4xl text-neutral-900 max-w-96">Machen Sie den ersten Schritt zu Ihrem PS-Moment.</h2>

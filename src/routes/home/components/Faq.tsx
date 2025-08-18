@@ -123,7 +123,7 @@ interface FaqAccordionProps {
 
 const FaqAccordion = ({ index, question, content }: FaqAccordionProps) => {
     return (
-        <AccordionItem value={`item-${index}`} className="border rounded-lg p-4 lg:p-6 mt-4 lg:mt-6 shadow-md">
+        <AccordionItem value={`item-${index}`} className="border rounded-lg p-4 lg:p-6 mt-4 lg:mt-6 shadow-md" data-aos="fade-up">
             <AccordionTrigger className="py-0 items-center">
                 <div className="flex items-center">
                     <div className="min-w-10 h-10 rounded bg-main inline-flex justify-center items-center text-neutral-900 text-lg mr-3">

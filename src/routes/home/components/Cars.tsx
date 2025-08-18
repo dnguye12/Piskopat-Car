@@ -7,13 +7,13 @@ import { Skeleton } from "@/components/ui/skeleton"
 const Cars = () => {
     return (
         <section className="container mx-auto mt-32 lg:mt-44 px-6">
-            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md">
+            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md" data-aos="fade-up">
                 <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center">Unsere Fahrzeuge</h3>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/n8fR3wtj/pexels-danielspase-951318.jpg')] bg-cover bg-center z-0" />
             </div>
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className=" rounded-lg overflow-hidden">
+                <div className=" rounded-lg overflow-hidden" data-aos="fade-up">
                     <div className="w-full aspect-video bg-[url(https://i.ibb.co/tF10tNC/A7402864.jpg)] bg-cover bg-bottom"></div>
                     <div className="p-8 bg-main flex flex-col items-start gap-y-5">
                         <Badge variant={"outline"} className=" border border-neutral-900 text-neutral-900 px-3 py-1 h-8 uppercase">Verfügbar</Badge>
@@ -41,7 +41,7 @@ const Cars = () => {
                         </Button>
                     </div>
                 </div>
-                <div className="hidden lg:block w-full h-full rounded-lg border overflow-hidden relative">
+                <div className="hidden lg:block w-full h-full rounded-lg border overflow-hidden relative" data-aos="fade-up">
                     <p className="absolute top-1/2 left-1/2 -translate-1/2 z-10 text-muted-foreground text-3xl font-semibold">Mehr in Kürze...</p>
                     <Skeleton className="w-full h-full" />
                 </div>

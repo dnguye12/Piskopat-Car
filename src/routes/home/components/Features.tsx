@@ -5,7 +5,7 @@ const Features = () => {
     return (
         <section className="container mx-auto mt-32 lg:mt-44 px-6">
             <div className="flex flex-col lg:grid grid-cols-12 gap-x-12">
-                <div className="col-span-12 lg:col-span-7 ">
+                <div className="col-span-12 lg:col-span-7 " data-aos="fade-right">
                     <h3 className="text-4xl lg:text-5xl max-w-2xl">Für einen Tag voller Adrenalin, ein Wochenende voller Freiheit oder länger – <span className="font-semibold dark:font-normal dark:text-main">du entscheidest, wir liefern</span>.</h3>
                     <p className=" my-8 text-xl break-words">Das erwartet dich, wenn du bei uns einen Sportwagen mietest:</p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -94,7 +94,7 @@ const Features = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-12 lg:col-span-5 mt-12 lg:mt-0 w-full min-h-[600px] bg-[url('https://i.ibb.co/0px8z1BC/features.jpg')] bg-cover bg-center rounded-lg border shadow-md"></div>
+                <div className="col-span-12 lg:col-span-5 mt-12 lg:mt-0 w-full min-h-[600px] bg-[url('https://i.ibb.co/0px8z1BC/features.jpg')] bg-cover bg-center rounded-lg border shadow-md" data-aos="fade-left"></div>
             </div>
         </section>
     );
