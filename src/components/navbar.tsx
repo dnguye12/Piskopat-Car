@@ -23,9 +23,9 @@ const Navbar = () => {
         <header className="w-full py-4 bg-sidebar fixed top-0 left-0 right-0 h-[88px] z-50 border border-b">
             <div className="relative container mx-auto flex justify-between items-center px-4">
                 <Link to="/" className="inline-flex items-center gap-x-2">
-                    <img src="/logo-black.svg" alt="" className="block dark:hidden h-14 w-auto fill-black" />
+                    <img src="/logo-black.svg" alt="" className="block dark:hidden h-14 w-auto fill-neutral-900" />
                     <img src="/logo-dark-no-text.svg" alt="" className="hidden dark:block h-14 w-auto" />
-                    <span className="text-xl font-semibold dark:text-main">Renault</span>
+                    <span className="text-xl font-semibold text-neutral-900 dark:text-main">X-Sportwagen</span>
                 </Link>
                 <nav className=" absolute top-1/2 left-1/2 -translate-1/2">
                     <NavbarItem to="/" text="Home" />

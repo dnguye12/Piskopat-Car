@@ -28,8 +28,8 @@ const Hero = () => {
                     <Button variant={"main-outline"} size="lg" className="font-semibold h-16 px-8 text-lg">Fahrzeuge</Button>
                 </div>
             </div>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900/90 dark:from-background to-neutral-900/75 z-10 bg-no-repeat bg-center"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/k6wn42TC/hero.jpg')] bg-cover z-0 bg-no-repeat bg-center"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/0 z-10 bg-no-repeat bg-center"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/xSgzRTP3/fb7772b40cf1d5ab756c9cd9b626603b.webp')] bg-cover z-0 bg-no-repeat bg-center"></div>
         </div>
     );
 }
