@@ -13,7 +13,7 @@ const Footer = () => {
                         <p className=" text-muted-foreground text-center lg:text-start">Erleben Sie Ihren Traumwagen hautnah! Kontaktieren Sie uns & sichern sich ein unvergessliches Fahrerlebnis. Auf Wunsch begleitet Sie ein erfahrener Instruktor!</p>
                     </div>
                     <div className="flex justify-center lg:justify-end items-center gap-x-2">
-                        <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><Link to={import.meta.env.VITE_WHATSAPP}>Sportwagen mieten</Link></Button>
+                        <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                         <Button size={"lg"} variant={"outline"} className="h-12 cursor-pointer font-semibold shadow" asChild><Link to="">Kontakt</Link></Button>
                     </div>
                 </div>
