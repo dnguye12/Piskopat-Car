@@ -10,9 +10,9 @@ import Footer from "@/components/footer";
 
 const HomePage = () => {
     return ( 
-        <div className="w-full min-h-screen">
+        <div className="w-full min-h-screen flex flex-col">
             <Navbar />
-            <main className="">
+            <main className="flex-1">
                 <Hero/>
                 <Moments />
                 <Features />

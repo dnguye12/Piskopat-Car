@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { MapPinIcon } from "lucide-react";
-import { Link } from "react-router";
 
 const Address = () => {
     return (
@@ -16,7 +15,7 @@ const Address = () => {
                         <span className="text-neutral-900">In Kastellaun, Rhein-Hunsrück-Kreis</span>
                     </div>
                     <Button asChild size={"lg"} className="bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100">
-                        <Link to="" className="h-12">Sportwagen mieten</Link>
+                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Sportwagen mieten</a>
                     </Button>
                 </div>
                  <div className=" col-span-1 bg-[url(/sm2x.png)] bg-cover bg-center w-full aspect-square lg:aspect-auto"></div>

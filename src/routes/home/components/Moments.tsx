@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { CakeIcon, CalendarCheckIcon, Clock7Icon, FlameIcon, HeartIcon, UserRoundPlusIcon } from "lucide-react";
-import { Link } from "react-router";
 import { SiWhatsapp } from '@icons-pack/react-simple-icons';
 
 const Moments = () => {
@@ -19,10 +18,10 @@ const Moments = () => {
                     <h2 className="mt-5 text-neutral-900 text-2xl lg:text-3xl">Langzeitmiete</h2>
                     <p className="mt-5 text-neutral-900 lg:text-lg text-center">Manche Träume dauern länger – genau dafür gibt’s unsere Langzeitmiete. Ob für besondere Projekte, längere Aufenthalte oder einfach, weil du auf Performance nicht verzichten willst: Wir liefern Fahrgefühl auf Zeit.</p>
                     <Button size={"lg"} className="mt-5 py-2 !px-8 h-14 bg-neutral-900 text-neutral-100 hover:bg-neutral-900/80" asChild>
-                        <Link to="" className="gap-x-1">
+                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                             <SiWhatsapp className="!size-5" />
                             <span className=" text-lg font-semibold">Jetzt buchen</span>
-                        </Link>
+                        </a>
                     </Button>
                 </div>
 
@@ -34,10 +33,10 @@ const Moments = () => {
                         <h2 className="mt-5 text-main text-2xl lg:text-3xl">Wochenendmiete</h2>
                         <p className="mt-5 text-neutral-100 lg:text-lg text-center">Zwei Tage, unbegrenzte Emotion: Genieße die volle Ladung Fahrspaß von Freitag bis Sonntag. Ideal für Kurztrips, besondere Dates oder einfach nur, um dem Alltag zu entfliehen – mit Stil und Power.</p>
                         <Button size={"lg"} variant={"main"} className="mt-5 py-2 !px-8 h-14 " asChild>
-                            <Link to="" className="gap-x-1">
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                 <SiWhatsapp className="!size-5" />
                                 <span className=" text-lg font-semibold">Jetzt buchen</span>
-                            </Link>
+                            </a>
                         </Button>
                     </div>
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
@@ -52,10 +51,10 @@ const Moments = () => {
                         <h2 className="mt-5 text-neutral-100 text-2xl lg:text-3xl">Hochzeitsmiete</h2>
                         <p className="mt-5 text-neutral-100 lg:text-lg text-center">Der Moment, in dem sich alles ändert, beginnt mit deinem perfekten Auftritt. Unsere Fahrzeuge machen aus deiner Hochzeit mehr als ein Fest – sie machen sie zu einer unvergesslichen Fahrt ins Glück.</p>
                         <Button size={"lg"} variant={"main"} className="mt-5 py-2 !px-8 h-14 " asChild>
-                            <Link to="" className="gap-x-1">
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                 <SiWhatsapp className="!size-5" />
                                 <span className=" text-lg font-semibold">Jetzt buchen</span>
-                            </Link>
+                            </a>
                         </Button>
                     </div>
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
@@ -69,10 +68,10 @@ const Moments = () => {
                     <h2 className="mt-5 dark:text-main text-2xl lg:text-3xl">Langzeitmiete</h2>
                     <p className="mt-5 text-foreground lg:text-lg text-center">Manche Träume dauern länger – genau dafür gibt’s unsere Langzeitmiete. Ob für besondere Projekte, längere Aufenthalte oder einfach, weil du auf Performance nicht verzichten willst: Wir liefern Fahrgefühl auf Zeit.</p>
                     <Button size={"lg"} variant={"main"} className="mt-5 py-2 !px-8 h-14 " asChild>
-                        <Link to="" className="gap-x-1">
+                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                             <SiWhatsapp className="!size-5" />
                             <span className=" text-lg font-semibold">Jetzt buchen</span>
-                        </Link>
+                        </a>
                     </Button>
                 </div>
             </div>

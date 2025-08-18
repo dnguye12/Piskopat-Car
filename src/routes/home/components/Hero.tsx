@@ -24,7 +24,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="mt-7 flex gap-x-4 items-center">
-                    <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg">Sportwagen mieten</Button>
+                    <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                     <Button variant={"main-outline"} size="lg" className="font-semibold h-16 px-8 text-lg">Fahrzeuge</Button>
                 </div>
             </div>
@@ -53,7 +53,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="mt-6 flex flex-col gap-y-6 items-center">
-                    <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full">Sportwagen mieten</Button>
+                    <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                     <Button variant={"main-outline"} size="lg" className="font-semibold h-16 px-8 text-lg w-full">Fahrzeuge</Button>
                 </div>
             </div>
