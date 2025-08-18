@@ -19,7 +19,7 @@ const Address = () => {
                         <Link to="" className="h-12">Sportwagen mieten</Link>
                     </Button>
                 </div>
-                 <div className=" col-span-1 bg-[url(/sm2x.png)] bg-cover bg-center w-full aspect-square"></div>
+                 <div className=" col-span-1 bg-[url(/sm2x.png)] bg-cover bg-center w-full aspect-square lg:aspect-auto"></div>
             </div>
            
         </section>

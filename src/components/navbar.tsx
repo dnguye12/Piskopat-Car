@@ -8,9 +8,8 @@ import {
     DrawerHeader,
     DrawerTrigger,
 } from "@/components/ui/drawer"
-import { GlobeIcon, MenuIcon, XIcon } from "lucide-react";
+import { MenuIcon, XIcon } from "lucide-react";
 import ThemeToggle from "./theme-toggle";
-import TooltipContainer from "./tooltip-container";
 
 interface NavbarItemProps {
     to: string;
@@ -43,11 +42,12 @@ const Navbar = () => {
                     <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow">Sportwagen mieten</Button>
                     <Separator orientation="vertical" className="!h-12 mx-1" />
                     <ThemeToggle />
+                    {/* 
                     <TooltipContainer trigger={
                         <Button size={"icon"} variant={"outline"} className="size-12">
                             <GlobeIcon className="size-5" />
                         </Button>
-                    } content={"Sprache"} />
+                    } content={"Sprache"} />*/}
 
                 </div>
             </div>
@@ -87,9 +87,10 @@ const Navbar = () => {
                                 <div className="flex items-center px-6 gap-x-3">
                                     <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow">Sportwagen mieten</Button>
                                     <ThemeToggle />
+                                    {/*
                                     <Button size={"icon"} variant={"outline"} className="size-12">
                                         <GlobeIcon className="size-5" />
-                                    </Button>
+                                    </Button>*/}
                                 </div>
                             </div>
                         </DrawerContent>
