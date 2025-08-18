@@ -41,8 +41,10 @@ const Cars = () => {
                         </Button>
                     </div>
                 </div>
-
-                <Skeleton className="hidden lg:block w-full h-full rounded-lg border"/>
+                <div className="hidden lg:block w-full h-full rounded-lg border overflow-hidden relative">
+                    <p className="absolute top-1/2 left-1/2 -translate-1/2 z-10 text-muted-foreground text-3xl font-semibold">Mehr in Kürze...</p>
+                    <Skeleton className="w-full h-full" />
+                </div>
             </div>
         </section>
     );
