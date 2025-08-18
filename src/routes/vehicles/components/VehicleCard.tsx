@@ -11,7 +11,7 @@ interface VehicleCardProps {
 
 const VehicleCard = ({ index, car }: VehicleCardProps) => {
     return (
-        <div className=" rounded-lg overflow-hidden">
+        <div className=" rounded-lg overflow-hidden"  data-aos="fade-up">
             <div className={`w-full aspect-video bg-[url(${car.image})] bg-cover bg-bottom`}></div>
             {index % 2 === 0
                 ?

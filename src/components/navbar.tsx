@@ -16,6 +16,12 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
 import { MenuIcon, XIcon } from "lucide-react";
 import ThemeToggle from "./theme-toggle";
 
@@ -71,7 +77,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <NavigationMenuLink asChild>
-                                            <NavbarItem to="/" text="VW Golf 8" />
+                                            <NavbarItem to="/fahrzeuge/vw_golf_8" text="VW Golf 8" />
                                         </NavigationMenuLink>
                                     </li>
                                 </ul>
@@ -84,12 +90,6 @@ const Navbar = () => {
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
-                <nav className="hidden absolute top-1/2 left-1/2 -translate-1/2">
-
-                    <NavbarItem to="/" text="Startseite" />
-                    <NavbarItem to="/vw" text="VW" />
-                    <NavbarItem to="/kontakt" text="Kontakt" />
-                </nav>
                 <div className="flex items-center gap-x-2">
                     <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                     <Separator orientation="vertical" className="!h-12 mx-1" />
@@ -130,7 +130,19 @@ const Navbar = () => {
                                 </DrawerHeader>
                                 <nav className="flex flex-col items-start gap-y-2">
                                     <NavbarItem to="/" text="Startseite" />
-                                    <NavbarItem to="/vw" text="VW" />
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="mb-nav-Fahrzeuge" className="border-b-0">
+                                            <AccordionTrigger className="px-6 py-0 h-10 items-center hover:bg-main! dark:hover:bg-transparent! !text-base hover:font-semibold dark:hover:text-main transition-all">
+                                                Fahrzeuge
+                                            </AccordionTrigger>
+                                            <AccordionContent className="p-0">
+                                                <div className="flex flex-col items-start">
+                                                    <NavbarItem to="/fahrzeuge" text="Alle Fahrzeuge" />
+                                                    <NavbarItem to="/fahrzeuge/vw_golf_8" text="VW Golf 8" />
+                                                </div>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
                                     <NavbarItem to="/kontakt" text="Kontakt" />
                                 </nav>
                                 <div className="px-6">

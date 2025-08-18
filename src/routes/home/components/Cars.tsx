@@ -37,7 +37,7 @@ const Cars = () => {
                             </div>
                         </div>
                         <Button size={"lg"} className="w-full sm:w-auto bg-neutral-900 hover:!bg-neutral-900/80 text-neutral-100 h-12" asChild>
-                            <Link to="">Zum Fahrzeug</Link>
+                            <Link to="/fahrzeuge/vw_golf_8">Zum Fahrzeug</Link>
                         </Button>
                     </div>
                 </div>

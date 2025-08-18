@@ -31,7 +31,7 @@ const Hero = () => {
                     </Button>
                 </div>
             </div>
-            <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/0 z-10 bg-no-repeat bg-center"></div>
+            <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/0 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="200"></div>
             <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/xSgzRTP3/fb7772b40cf1d5ab756c9cd9b626603b.webp')] bg-cover z-0 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="200"></div>
 
 
