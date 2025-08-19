@@ -8,6 +8,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 import { StarIcon } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay"
+import { useMemo } from "react";
 
 type Review = {
     author: string;
@@ -112,7 +113,19 @@ const reviews: Review[] = [
     },
 ]
 
+function sampleArray<T>(arr: T[], n: number): T[] {
+  const a = arr.slice();
+  const count = Math.min(n, a.length);
+  for (let i = a.length - 1; i > a.length - 1 - count; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a.slice(a.length - count);
+}
+
 const Reviews = () => {
+    const randomReviews = useMemo(() => sampleArray(reviews, 10), [])
+
     return (
         <section className="container mx-auto mt-32 lg:mt-44 px-6">
             <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center mb-20 shadow-md" data-aos="fade-up">
@@ -130,7 +143,7 @@ const Reviews = () => {
                 ]}
             >
                 <CarouselContent className="-ml-1">
-                    {reviews.map((review, index) => (
+                    {randomReviews.map((review, index) => (
                         <CarouselItem key={index} className="pl-4 lg:basis-1/2 xl:basis-1/3">
                             <div className="p-1">
                                 <Card className="py-0 shadow-md">
