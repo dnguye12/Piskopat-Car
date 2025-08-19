@@ -18,34 +18,68 @@ const Footer = () => {
                     </div>
                 </div>
                 <Separator className="my-6 lg:my-12" />
-                <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-y-4 lg:gap-y-0">
-                    <div className=" flex flex-col items-center lg:items-start">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-12">
+                    <div className="flex flex-col md:mx-auto">
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 md:mb-20">
+                            <li className="flex items-center gap-x-1"><MapPinIcon className="dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
+                            <li className="flex items-center gap-x-1"><MailIcon className="dark:text-main" /> info@xsportwagen.de</li>
+                            <li className="flex items-center gap-x-1"><PhoneCallIcon className="dark:text-main" /> +49 176 72223678</li>
+                        </ul>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold hidden lg:block">FahrzeugModelle</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 hidden lg:block">
+                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
+                        </ul>
+
+                        <div className="hidden lg:inline-flex items-center gap-x-2">
+                            <img src="/logo-black.svg" alt="" className="block dark:hidden h-14 w-auto fill-black" />
+                            <img src="/logo-dark-no-text.svg" alt="" className="hidden dark:block h-14 w-auto" />
+                            <span className="text-xl font-semibold dark:text-main">X-Sportwagen</span>
+                        </div>
+                        <div>
+                            <p className="hidden md:block text-muted-foreground">@ X-Sportwagen 2025. Alle Rechte vorbehalten.</p>
+                            
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:mx-auto">
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Sportwagen mieten</h4>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium">
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</a>
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagen mieten NRW</a>
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagenvermietung</a>
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagen mieten</a>
+                        </div>
+                    </div>
+                    <div className="flex flex-col mx-auto">
+                        <div className="h-6 mb-3"></div>
+                        <div className="text-muted-foreground hidden lg:flex flex-col gap-y-3 text-base font-medium">
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Hochzeitsauto mieten</a>
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Luxusauto mieten</a>
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Luxusauto mieten</a>
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">US Cars mieten</a>
+                        </div>
+                    </div>
+                    <div className="hidden lg:flex flex-col mx-auto">
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Rechtliches</h4>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-20">
+                            <Link to="" className="hover:text-foreground transition-all">Impressum</Link>
+                            <Link to="" className="hover:text-foreground transition-all">Datenschutz</Link>
+                            <Link to="" className="hover:text-foreground transition-all">Cookies</Link>
+                        </div>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Fahrzeugmarken</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium">
+                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW mieten</Link>
+                        </ul>
+                    </div>
+                    <div className=" md:col-span-2 flex lg:hidden flex-col md:items-center">
                         <div className="inline-flex items-center gap-x-2">
                             <img src="/logo-black.svg" alt="" className="block dark:hidden h-14 w-auto fill-black" />
                             <img src="/logo-dark-no-text.svg" alt="" className="hidden dark:block h-14 w-auto" />
                             <span className="text-xl font-semibold dark:text-main">X-Sportwagen</span>
                         </div>
-                        <p className="hidden md:block text-muted-foreground">@ X-Sportwagen 2025. Alle Rechte vorbehalten.</p>
-                        <p className="block md:hidden text-muted-foreground">@ X-Sportwagen 2025.<br/>Alle Rechte vorbehalten.</p>
-                    </div>
-                    <div className="flex flex-col md:flex-row justify-evenly w-full gap-y-6 gap-x-20">
-                        <div className="h-fit">
-                            <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
-                            <ul className="text-muted-foreground space-y-3 text-base font-medium">
-                                <li className="flex items-center gap-x-1"><MapPinIcon className="dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
-                                <li className="flex items-center gap-x-1"><MailIcon className="dark:text-main" /> info@xsportwagen.de</li>
-                                <li className="flex items-center gap-x-1"><PhoneCallIcon className="dark:text-main" /> +49 176 72223678</li>
-                            </ul>
-                        </div>
-                        <div className="h-fit">
-                            <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Links</h4>
-                            <ul className="text-muted-foreground space-y-3 text-base font-medium">
-                                <li><Link to="/fahrzeuge" className="hover:text-main transition-all">Fahrzeuge</Link></li>
-                                <li><Link to="/kontakt" className="hover:text-main transition-all">Kontakt</Link></li>
-                                <li><Link to="" className="hover:text-main transition-all">Impressum</Link></li>
-                                <li><Link to="" className="hover:text-main transition-all">Datenschutz</Link></li>
-                            </ul>
-                        </div>
+                        <p className="block md:hidden text-muted-foreground md:text-center">@ X-Sportwagen 2025. Alle Rechte vorbehalten.</p>
                     </div>
                 </div>
             </div>
