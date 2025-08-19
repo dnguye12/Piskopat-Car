@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="container mx-auto px-4 pt-36  h-full relative hidden lg:flex flex-col items-center z-20">
                 <h5 className="text-6xl text-neutral-100" data-aos="fade-right" data-aos-delay="600">Reiseziel? Egal.</h5>
                 <h1 className="text-6xl text-main" data-aos="fade-left" data-aos-delay="600">Hauptsache Sportwagen</h1>
-                <p className="mt-8 text-xl text-neutral-100 max-w-3xl whitespace-pre-wrap break-words text-center" data-aos="zoom-in" data-aos-delay="1000">X-Sportwagen – hier zählt nicht nur die Leistung auf dem Papier, sondern das Gefühl am Steuer. Erlebe pure Faszination in unseren Luxusfahrzeugen – mit Premium-Service, der jeden Moment unvergesslich macht
+                <p className="mt-8 text-xl text-neutral-100 max-w-3xl whitespace-pre-wrap break-words text-center" data-aos="zoom-in" data-aos-delay="1000">X-Sportwagen – hier zählt nicht nur die Leistung auf dem Papier, sondern das Gefühl am Steuer. Erlebe pure Faszination in unseren Luxusfahrzeugen – mit Premium-Service, der jeden Moment unvergesslich macht.
                 </p>
                 <div className="mt-8 grid grid-cols-2 max-w-2xl" >
                     <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-right" data-aos-delay="1400">
@@ -69,7 +69,7 @@ const Hero = () => {
                 <h5 className="text-3xl">Reiseziel? Egal.</h5>
                 <h1 className="text-3xl text-main">Hauptsache Sportwagen</h1>
                 <img src="https://i.ibb.co/k6wn42TC/hero.jpg" className="w-full h-auto rounded-lg border shadow my-6" />
-                <p className="max-w-3xl whitespace-pre-wrap break-words">Leistung erkennst du nicht nur an Zahlen – sondern am Sound, am Puls, und dem Moment, in dem die Welt um dich herum stillsteht. Genau dieses Gefühl kannst du bei Monroe Sportwagenvermietung erleben: Luxusfahrzeuge, die begeistern. Ein Premium‒Service, der jeden Moment unvergesslich macht in Kastellaun – und weit darüber hinaus.
+                <p className="max-w-3xl whitespace-pre-wrap break-words">X-Sportwagen – hier zählt nicht nur die Leistung auf dem Papier, sondern das Gefühl am Steuer. Erlebe pure Faszination in unseren Luxusfahrzeugen – mit Premium-Service, der jeden Moment unvergesslich macht.
                 </p>
                 <div className="mt-3 grid grid-cols-1">
                     <div className="inline-flex gap-x-2 py-3 items-center">
