@@ -18,7 +18,7 @@ const Address = () => {
                         <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Sportwagen mieten</a>
                     </Button>
                 </div>
-                 <div className=" col-span-1 bg-[url(/sm2x.png)] bg-cover bg-center w-full aspect-square lg:aspect-auto"></div>
+                 <div className=" col-span-1 bg-[url(https://i.ibb.co/pjmDSpfX/ennl.png)] bg-cover bg-center w-full aspect-square lg:aspect-auto"></div>
             </div>
            
         </section>

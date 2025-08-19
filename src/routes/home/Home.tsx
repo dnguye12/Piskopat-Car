@@ -4,7 +4,6 @@ import Moments from "./components/Moments";
 import Process from "./components/Process";
 import Features from "./components/Features";
 import Reviews from "./components/Reviews";
-import Address from "./components/Address";
 import Faq from "./components/Faq";
 import Footer from "@/components/footer";
 import Cars from "./components/Cars";
@@ -20,7 +19,6 @@ const HomePage = () => {
                 <Process />
                 <Cars />
                 <Reviews />
-                <Address />
                 <Faq />
             </main>
             <Footer />

@@ -55,11 +55,11 @@ const VM_Golf_8 = () => {
                             align: "start",
                             loop: true
                         }}
-                        className="w-full"
+                        className="w-[calc(100%-80px)] md:w-full mx-auto"
                     >
                         <CarouselContent>
                             {imageLinks.map((item, index) => (
-                                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                                <CarouselItem key={index} className="lg:basis-1/2 xl:basis-1/3">
                                     <div className="p-1">
                                         <Card className="p-0 overflow-hidden border shadow">
                                             <CardContent className="p-0">
