@@ -141,7 +141,7 @@ const FaqAccordion = ({ index, question, content }: FaqAccordionProps) => {
 
 const Faq = () => {
     return (
-        <section className="container mx-auto mt-32 lg:mt-44 px-6 mb-20">
+        <section className="container mx-auto mt-20 lg:mt-44 px-6 mb-20">
             <h2 className="text-center text-5xl text-neutral-900 dark:text-main font-semibold">FAQ</h2>
             <div className="mt-6">
                 <Accordion type="single" collapsible>

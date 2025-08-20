@@ -8,7 +8,7 @@ const Features = () => {
                 <div className="col-span-12 lg:col-span-7 " data-aos="fade-right">
                     <h3 className="text-4xl lg:text-5xl max-w-2xl">Für einen Tag voller Adrenalin, ein Wochenende voller Freiheit oder länger – <span className="font-semibold dark:font-normal dark:text-main">du entscheidest, wir liefern</span>.</h3>
                     <p className=" my-8 text-xl break-words">Das erwartet dich, wenn du bei uns einen Sportwagen mietest:</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-3/5 sm:w-full mx-auto">
                         <div className=" flex items-center gap-x-3">
                             <div className="min-w-10 w-10 h-10 rounded border border-foreground dark:border-main inline-flex items-center justify-center">
                                 <ListTodoIcon className="w-auto h-5 dark:text-main" />

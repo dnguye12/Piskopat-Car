@@ -71,7 +71,7 @@ const Hero = () => {
                 <img src="https://i.ibb.co/k6wn42TC/hero.jpg" className="w-full h-auto rounded-lg border shadow my-6" />
                 <p className="max-w-3xl whitespace-pre-wrap break-words">X-Sportwagen – hier zählt nicht nur die Leistung auf dem Papier, sondern das Gefühl am Steuer. Erlebe pure Faszination in unseren Luxusfahrzeugen – mit Premium-Service, der jeden Moment unvergesslich macht.
                 </p>
-                <div className="mt-3 grid grid-cols-1">
+                <div className="mt-3 grid grid-cols-1 mx-auto">
                     <div className="inline-flex gap-x-2 py-3 items-center">
                         <CreditCardIcon className=" text-main" /><span className=" font-semibold ">Keine Kreditkarte notwendig</span>
                     </div>
