@@ -42,8 +42,8 @@ const Cars = () => {
                     </div>
                 </div>
                 <div className="hidden lg:block w-full h-full rounded-lg border overflow-hidden relative" data-aos="fade-up">
-                    <p className="absolute top-1/2 left-1/2 -translate-1/2 z-10 text-muted-foreground text-3xl font-semibold">Mehr in Kürze...</p>
-                    <Skeleton className="w-full h-full" />
+                    <p className="absolute top-1/2 left-1/2 -translate-1/2 z-10 text-muted-foreground text-3xl font-medium">Mehr in Kürze...</p>
+                    <Skeleton className="w-full h-full shadow" />
                 </div>
             </div>
         </section>

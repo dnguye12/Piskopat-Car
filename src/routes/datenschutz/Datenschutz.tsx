@@ -1,8 +1,12 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
+import { useLayoutEffect } from "react";
 
 const Datenschutz = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    })
     return (
         <div className="dateschutz w-full min-h-screen flex flex-col">
             <Navbar />
@@ -12,7 +16,7 @@ const Datenschutz = () => {
                         <h1 className="text-5xl lg:text-6xl text-main" data-aos="fade-right" data-aos-delay="600">Datenschutz</h1>
                         <h2 className="text-5xl lg:text-6xl text-neutral-100" data-aos="fade-left" data-aos-delay="600">Sicher und transparent</h2>
                         <div className="mt-7 flex gap-x-4 items-center">
-                            <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full lg:w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
+                            <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full sm:w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                         </div>
                     </div>
                     <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="200"></div>

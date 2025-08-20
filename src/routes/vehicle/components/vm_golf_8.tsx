@@ -39,11 +39,11 @@ const VM_Golf_8 = () => {
             <main className="flex-1 mt-[88px]">
                 <div className="relative pt-32 lg:pt-60 pb-12">
                     <div className="container mx-auto px-4 relative z-20">
-                        <h1 className=" text-5xl lg:text-6xl text-main mb-7" data-aos="fade-up" data-aos-delay="600">VW Golf 8 R</h1>
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main mb-7" data-aos="fade-up" data-aos-delay="600">VW Golf 8 R</h1>
                         <p className="text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="600">Du senkst den Fuß ein kurzes Zischen, dann entfesselt der Golf R seine Kraft. Kein Zögern, kein großes Spektakel nur ein kompromissloser Vorstoß nach vorn, direkt, kontrolliert, brutal und präzise auf alle vier Räder verteilt. Dieses Auto braucht keinen Applaus, es kündigt sich an durch die Akrapovic-Auspuffanlage.
                         </p>
                         <div className="mt-7 flex gap-x-4 items-center">
-                            <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full lg:w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
+                            <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full sm:w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                         </div>
                     </div>
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="200"></div>

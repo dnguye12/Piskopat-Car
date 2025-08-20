@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { CakeIcon, CalendarCheckIcon, Clock7Icon, FlameIcon, HeartIcon, UserRoundPlusIcon } from "lucide-react";
 import { SiWhatsapp } from '@icons-pack/react-simple-icons';
+import { Link } from "react-router";
 
 const Moments = () => {
     return (
         <section className="container mx-auto mt-12 lg:mt-20 px-6">
-            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md"  data-aos="fade-up">
+            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md" data-aos="fade-up">
                 <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center">Wähle deinen Moment.</h3>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat bg-center"></div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/9H0wSD5f/moments.jpg')] bg-cover bg-center z-0" />
@@ -51,10 +52,10 @@ const Moments = () => {
                         <h2 className="mt-5 text-neutral-100 text-2xl lg:text-3xl">Hochzeitsmiete</h2>
                         <p className="mt-5 text-neutral-100 lg:text-lg text-center">Der Moment, in dem sich alles ändert, beginnt mit deinem perfekten Auftritt. Unsere Fahrzeuge machen aus deiner Hochzeit mehr als ein Fest – sie machen sie zu einer unvergesslichen Fahrt ins Glück.</p>
                         <Button size={"lg"} variant={"main"} className="mt-5 py-2 !px-8 h-14 " asChild>
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
-                                <SiWhatsapp className="!size-5" />
-                                <span className=" text-lg font-semibold">Jetzt buchen</span>
-                            </a>
+                            <Link to="/hochzeitsmiete" className="gap-x-1">
+                                <HeartIcon className="!size-5" />
+                                <span className=" text-lg font-semibold">Hochzeitsmiete</span>
+                            </Link>
                         </Button>
                     </div>
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>

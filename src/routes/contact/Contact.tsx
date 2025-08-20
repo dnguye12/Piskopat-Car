@@ -2,8 +2,12 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { MailIcon, MapPinIcon, PhoneCallIcon } from "lucide-react";
 import { ContactForm } from "./components/ContactForm";
+import { useLayoutEffect } from "react";
 
 const Contact = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    })
     return (
         <div className="contact w-full min-h-screen flex flex-col">
             <Navbar />

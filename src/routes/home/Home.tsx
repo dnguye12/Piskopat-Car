@@ -7,8 +7,13 @@ import Reviews from "./components/Reviews";
 import Faq from "./components/Faq";
 import Footer from "@/components/footer";
 import Cars from "./components/Cars";
+import { useLayoutEffect } from "react";
 
 const HomePage = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0,0)
+    })
+
     return ( 
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />

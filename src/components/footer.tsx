@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-12">
                     <div className="flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 md:mb-20">
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12">
                             <li className="flex items-center gap-x-1"><MapPinIcon className="dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
                             <li className="flex items-center gap-x-1"><MailIcon className="dark:text-main" /> info@xsportwagen.de</li>
                             <li className="flex items-center gap-x-1"><PhoneCallIcon className="dark:text-main" /> +49 176 72223678</li>
@@ -51,24 +51,20 @@ const Footer = () => {
                     <div className="hidden lg:flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Sportwagen mieten</h4>
                         <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium">
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</a>
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagen mieten NRW</a>
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagenvermietung</a>
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagen mieten</a>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</Link>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagenvermietung</Link>
                         </div>
                     </div>
                     <div className="flex flex-col mx-auto">
                         <div className="h-6 mb-3"></div>
                         <div className="text-muted-foreground hidden lg:flex flex-col gap-y-3 text-base font-medium">
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Hochzeitsauto mieten</a>
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Luxusauto mieten</a>
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Luxusauto mieten</a>
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">US Cars mieten</a>
+                            <Link to="/hochzeitsmiete" className="hover:text-foreground transition-all">Hochzeitsauto mieten</Link>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen miete</Link>
                         </div>
                     </div>
                     <div className="hidden lg:flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Rechtliches</h4>
-                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-[112px]">
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-20">
                             <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
                             <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
                         </div>
