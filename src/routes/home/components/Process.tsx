@@ -16,7 +16,7 @@ const Process = () => {
                     </Button>
                 </div>
 
-                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="200">
+                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="100">
                     <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
                         <CalendarCheckIcon className=" w-auto h-7" />
                     </div>
@@ -25,7 +25,7 @@ const Process = () => {
                     <div className="hidden lg:block h-12"></div>
                 </div>
 
-                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="400">
+                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="200">
                     <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
                         <FileTextIcon className=" w-auto h-7" />
                     </div>
@@ -44,7 +44,7 @@ const Process = () => {
                     <div className="hidden lg:block h-12"></div>
                 </div>
 
-                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="200">
+                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="100">
                     <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
                         <ZapIcon className=" w-auto h-7" />
                     </div>
@@ -54,7 +54,7 @@ const Process = () => {
                     <div className="hidden lg:block h-12"></div>
                 </div>
 
-                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="400">
+                <div className="p-8 rounded-lg border bg-sidebar flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="200">
                     <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
                         <HandshakeIcon className=" w-auto h-7" />
                     </div>

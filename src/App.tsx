@@ -13,9 +13,31 @@ import Useless from "./routes/useless/Useless";
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 600
-    })
+    const mq = window.matchMedia('(max-width: 1279px)')
+
+    const init = () => {
+      AOS.init({
+        disable: () => window.innerWidth < 1280,
+        duration: 600
+      })
+    }
+
+    init()
+
+    const onChange = () => init()
+    if(mq.addEventListener) {
+      mq.addEventListener("change", onChange)
+    }else {
+      mq.addListener(onChange)
+    }
+
+    return ()  => {
+      if(mq.removeEventListener) {
+        mq.removeEventListener("change", onChange)
+      }else {
+        mq.removeListener(onChange)
+      }
+    }
   }, [])
 
   return (

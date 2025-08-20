@@ -39,16 +39,16 @@ const Vehicles = () => {
             <main className="flex-1 mt-[88px]">
                 <div className="relative pt-32 lg:pt-60 pb-12">
                     <div className="container mx-auto px-4 relative z-20">
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main" data-aos="fade-right" data-aos-delay="600">Unsere Fahrzeuge</h1>
-                        <h2 className="text-3xl md:text-5xl lg:text-6xl text-neutral-100" data-aos="fade-left" data-aos-delay="600">Sportwagen aller Art in Ennigerloh mieten</h2>
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main" data-aos="fade-right" data-aos-delay="300">Unsere Fahrzeuge</h1>
+                        <h2 className="text-3xl md:text-5xl lg:text-6xl text-neutral-100" data-aos="fade-left" data-aos-delay="300">Sportwagen aller Art in Ennigerloh mieten</h2>
                         <div className="mt-7 flex gap-x-4 items-center">
                             <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full sm:w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                         </div>
 
 
                     </div>
-                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="200"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/6JmgdFMZ/pexels-wijs-wise-136435282-12356888.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="200"></div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/6JmgdFMZ/pexels-wijs-wise-136435282-12356888.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
                 <div className="container mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {cars.map((car, index) => (
