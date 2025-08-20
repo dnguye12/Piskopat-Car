@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router"
 import HomePage from "./routes/home/Home"
 import Contact from "./routes/contact/Contact"
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+import './aos.css';
 import { useEffect } from "react";
 import Vehicles from "./routes/vehicles/Vehicles";
 import Vehicle from "./routes/vehicle/Vehicle";
