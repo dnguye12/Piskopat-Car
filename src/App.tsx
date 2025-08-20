@@ -14,7 +14,7 @@ import Useless from "./routes/useless/Useless";
 function App() {
   useEffect(() => {
     AOS.init({
-      disable: "mobile",
+      disable: () => window.innerWidth < 1280,
       duration: 600
     })
   }, [])
