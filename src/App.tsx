@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import Vehicles from "./routes/vehicles/Vehicles";
 import Vehicle from "./routes/vehicle/Vehicle";
 import Impressum from "./routes/impressum/Impressum";
-import Datenschutz from "./routes/datenschutz/datenschutz";
+import Datenschutz from "./routes/datenschutz/Datenschutz";
 
 function App() {
   useEffect(() => {
