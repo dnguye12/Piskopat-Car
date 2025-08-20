@@ -117,9 +117,9 @@ const Footer = () => {
                             <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagenvermietung</Link>
                         </div>
 
-                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">FahrzeugModelle</h4>
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Fahrzeugmarken</h4>
                         <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
-                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
+                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW mieten</Link>
                         </ul>
                     </div>
                     <div className=" sm:col-span-2 flex flex-col items-center">
@@ -159,9 +159,9 @@ const Footer = () => {
                             <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
                         </ul>
 
-                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">FahrzeugModelle</h4>
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Fahrzeugmarken</h4>
                         <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
-                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
+                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW mieten</Link>
                         </ul>
                     </div>
                 </div>
