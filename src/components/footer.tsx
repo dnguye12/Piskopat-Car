@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <Separator className="my-6 lg:my-12" />
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:mb-12">
+                <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:mb-12">
                     <div className="flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
                         <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12">
@@ -39,7 +39,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <p className="hidden lg:block text-muted-foreground">@ X-Sportwagen 2025. Alle Rechte vorbehalten.</p>
-                            
+
                         </div>
 
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold block lg:hidden">Rechtliches</h4>
@@ -80,7 +80,89 @@ const Footer = () => {
                             <img src="/logo-dark-no-text.svg" alt="" className="hidden dark:block h-14 w-auto" />
                             <span className="text-xl font-semibold dark:text-main">X-Sportwagen</span>
                         </div>
-                        <p className="block lg:hidden text-muted-foreground md:text-center">@ X-Sportwagen 2025. <br className="block md:hidden"/> Alle Rechte vorbehalten.</p>
+                        <p className="block lg:hidden text-muted-foreground md:text-center">@ X-Sportwagen 2025. <br className="block md:hidden" /> Alle Rechte vorbehalten.</p>
+                    </div>
+                </div>
+                <div className="hidden sm:grid lg:hidden grid-cols-2">
+                    <div className="mx-auto">
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12">
+                            <li className="flex items-center gap-x-1"><MapPinIcon className="dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
+                            <li className="flex items-center gap-x-1"><MailIcon className="dark:text-main" /> info@xsportwagen.de</li>
+                            <li className="flex items-center gap-x-1"><PhoneCallIcon className="dark:text-main" /> +49 176 72223678</li>
+                        </ul>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Sportwagen mieten</h4>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
+                            <Link to="/hochzeitsmiete" className="hover:text-foreground transition-all">Hochzeitsauto mieten</Link>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen miete</Link>
+                        </div>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">FahrzeugModelle</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
+                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
+                        </ul>
+                    </div>
+                    <div className="mx-auto">
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Rechtliches</h4>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
+                            <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
+                            <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
+                            <p className="hover:text-foreground transition-all text-transparent">.</p>
+                        </div>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold text-transparent">Sportwagen mieten</h4>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</Link>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagenvermietung</Link>
+                        </div>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">FahrzeugModelle</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
+                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
+                        </ul>
+                    </div>
+                    <div className=" sm:col-span-2 flex flex-col items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                            <img src="/logo-black.svg" alt="" className="block dark:hidden h-14 w-auto fill-black" />
+                            <img src="/logo-dark-no-text.svg" alt="" className="hidden dark:block h-14 w-auto" />
+                            <span className="text-xl font-semibold dark:text-main">X-Sportwagen</span>
+                        </div>
+                        <p className=" text-muted-foreground text-center">@ X-Sportwagen 2025. <br className="block md:hidden" /> Alle Rechte vorbehalten.</p>
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 sm:hidden">
+                    <div className="mx-auto">
+                        <h4 className="mb-3 text-base font-semibold">Kontakt</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12">
+                            <li className="flex items-center gap-x-1"><MapPinIcon className="dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
+                            <li className="flex items-center gap-x-1"><MailIcon className="dark:text-main" /> info@xsportwagen.de</li>
+                            <li className="flex items-center gap-x-1"><PhoneCallIcon className="dark:text-main" /> +49 176 72223678</li>
+                        </ul>
+
+                        <h4 className="mb-3 text-base font-semibold">Rechtliches</h4>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
+                            <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
+                            <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
+                        </div>
+
+                        <h4 className="mb-3 text-base font-semibold">Sportwagen mieten</h4>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
+                            <Link to="/hochzeitsmiete" className="hover:text-foreground transition-all">Hochzeitsauto mieten</Link>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen miete</Link>
+                            <Link to="/hochzeitsmiete" className="hover:text-foreground transition-all">Hochzeitsauto mieten</Link>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen miete</Link>
+                        </div>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">FahrzeugModelle</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
+                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
+                        </ul>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">FahrzeugModelle</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
+                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
+                        </ul>
                     </div>
                 </div>
             </div>
