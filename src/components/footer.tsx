@@ -38,11 +38,17 @@ const Footer = () => {
                             <span className="text-xl font-semibold dark:text-main">X-Sportwagen</span>
                         </div>
                         <div>
-                            <p className="hidden md:block text-muted-foreground">@ X-Sportwagen 2025. Alle Rechte vorbehalten.</p>
+                            <p className="hidden lg:block text-muted-foreground">@ X-Sportwagen 2025. Alle Rechte vorbehalten.</p>
                             
                         </div>
+
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold block lg:hidden">Rechtliches</h4>
+                        <div className="text-muted-foreground flex lg:hidden flex-col gap-y-3 text-base font-medium mb-0 md:mb-12">
+                            <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
+                            <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
+                        </div>
                     </div>
-                    <div className="flex flex-col md:mx-auto">
+                    <div className="hidden lg:flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Sportwagen mieten</h4>
                         <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium">
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</a>
@@ -60,16 +66,15 @@ const Footer = () => {
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="hover:text-foreground transition-all">US Cars mieten</a>
                         </div>
                     </div>
-                    <div className="hidden lg:flex flex-col mx-auto">
+                    <div className="hidden lg:flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Rechtliches</h4>
-                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-20">
-                            <Link to="" className="hover:text-foreground transition-all">Impressum</Link>
-                            <Link to="" className="hover:text-foreground transition-all">Datenschutz</Link>
-                            <Link to="" className="hover:text-foreground transition-all">Cookies</Link>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-[112px]">
+                            <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
+                            <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
                         </div>
 
-                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Fahrzeugmarken</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium">
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold hidden lg:block">Fahrzeugmarken</h4>
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium hidden lg:block">
                             <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW mieten</Link>
                         </ul>
                     </div>
@@ -79,7 +84,7 @@ const Footer = () => {
                             <img src="/logo-dark-no-text.svg" alt="" className="hidden dark:block h-14 w-auto" />
                             <span className="text-xl font-semibold dark:text-main">X-Sportwagen</span>
                         </div>
-                        <p className="block md:hidden text-muted-foreground md:text-center">@ X-Sportwagen 2025. Alle Rechte vorbehalten.</p>
+                        <p className="block lg:hidden text-muted-foreground md:text-center">@ X-Sportwagen 2025. Alle Rechte vorbehalten.</p>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,8 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Vehicles from "./routes/vehicles/Vehicles";
 import Vehicle from "./routes/vehicle/Vehicle";
+import Impressum from "./routes/impressum/Impressum";
+import Datenschutz from "./routes/datenschutz/datenschutz";
 
 function App() {
   useEffect(() => {
@@ -21,8 +23,10 @@ function App() {
       <Route path="/kontakt" element={<Contact />} />
       <Route path="/fahrzeuge" >
         <Route index element={<Vehicles />} />
-        <Route path=":car" element={<Vehicle />}/>
+        <Route path=":car" element={<Vehicle />} />
       </Route>
+      <Route path="/impressum" element={<Impressum />} />
+      <Route path="/datenschutz" element={<Datenschutz />} />
     </Routes>
   )
 }

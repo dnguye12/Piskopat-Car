@@ -143,3 +143,31 @@
 .contact-textarea {
   @apply border py-2 px-4 w-full rounded-none h-32 bg-muted border-foreground/50 text-base
 }
+
+.dateschutz .content {
+  @apply text-foreground
+}
+
+.dateschutz .content h1 {
+  @apply text-5xl font-semibold mb-5
+}
+
+.dateschutz .content h2 {
+  @apply text-3xl font-semibold my-3
+}
+
+.dateschutz .content h3 {
+  @apply text-2xl font-semibold my-2
+}
+
+.dateschutz .content h4 {
+  @apply text-2xl font-semibold my-2
+}
+
+.dateschutz .content a {
+  @apply font-semibold text-main
+}
+
+.dateschutz .content p {
+  @apply text-muted-foreground
+}
