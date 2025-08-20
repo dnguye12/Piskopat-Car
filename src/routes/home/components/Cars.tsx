@@ -14,7 +14,7 @@ const Cars = () => {
             </div>
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className=" rounded-lg overflow-hidden" data-aos="fade-up">
-                    <div className="w-full aspect-video bg-[url(https://i.ibb.co/tF10tNC/A7402864.jpg)] bg-cover bg-bottom"></div>
+                    <div className="w-full aspect-video bg-[url(https://i.ibb.co/tMzp01TL/A7402864.png)] bg-cover bg-bottom"></div>
                     <div className="p-8 bg-main flex flex-col items-start gap-y-5">
                         <Badge variant={"outline"} className=" border border-neutral-900 text-neutral-900 px-3 py-1 h-8 uppercase">Verfügbar</Badge>
                         <p className=" text-2xl text-neutral-900">VW Golf 8 R Black Edition</p>

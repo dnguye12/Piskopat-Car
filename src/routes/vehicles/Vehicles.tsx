@@ -19,7 +19,7 @@ const cars: Car[] = [
     {
         status: true,
         name: "VW Golf 8 R Black Edition",
-        image: "https://i.ibb.co/tF10tNC/A7402864.jpg",
+        image: "https://i.ibb.co/tMzp01TL/A7402864.png",
         ps: 333,
         auto: "Automatik",
         wheel: "Allradantrieb",

@@ -13,14 +13,17 @@ import Faq from "@/routes/home/components/Faq";
 import { BadgeEuroIcon, BanknoteArrowDownIcon, IdCardIcon, ShieldCheckIcon, UserRoundCheckIcon } from "lucide-react";
 
 const imageLinks = [
-    "https://i.ibb.co/C3BBJk0z/A7402867.jpg",
-    "https://i.ibb.co/fV8ww5Fs/A7402875.jpg",
-    "https://i.ibb.co/WvmPMHQL/A7402886.jpg",
-    "https://i.ibb.co/39yn3qdX/A7402908.jpg",
-    "https://i.ibb.co/xqHfq8nJ/A7402911.jpg",
-    "https://i.ibb.co/M5nPJHq5/A7402939.jpg",
-    "https://i.ibb.co/kgCwxVS8/A7402945.jpg",
-    "https://i.ibb.co/84PX7KGK/A7402949.jpg",
+    "https://i.ibb.co/Z1JXP8dZ/A7402911.png",
+    "https://i.ibb.co/Z6WrX1bq/A7402922.png",
+    "https://i.ibb.co/7dqfXf7b/A7402939.png",
+    "https://i.ibb.co/VpDsZX3X/A7402947.png",
+    "https://i.ibb.co/Nn7cSgJG/A7402950.png",
+    "https://i.ibb.co/HDQ2L3hh/A7402886.png",
+    "https://i.ibb.co/k2MHSX5t/A7402888.png",
+    "https://i.ibb.co/spRsF65j/A7402904.png",
+    "https://i.ibb.co/ZjwY67k/A7402908.png",
+    "https://i.ibb.co/v4svgWz7/A7402867.png",
+    "https://i.ibb.co/fV5h6C2w/A7402875.png",
 ]
 
 /*
@@ -47,7 +50,7 @@ const VM_Golf_8 = () => {
                         </div>
                     </div>
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/tF10tNC/A7402864.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/tMzp01TL/A7402864.png')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
                 <div className="container max-w-7xl mx-auto px-4 py-20 ">
                     <Carousel
