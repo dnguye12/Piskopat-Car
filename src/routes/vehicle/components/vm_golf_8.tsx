@@ -9,8 +9,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import Faq from "@/routes/home/components/Faq";
-import { BadgeEuroIcon, BanknoteArrowDownIcon, IdCardIcon, ShieldCheckIcon, UserRoundCheckIcon } from "lucide-react";
+import { BadgeEuroIcon, BanknoteArrowDownIcon, IdCardIcon, InfoIcon, ShieldCheckIcon, UserRoundCheckIcon } from "lucide-react";
 
 const imageLinks = [
     "https://i.ibb.co/Z1JXP8dZ/A7402911.png",
@@ -52,7 +51,7 @@ const VM_Golf_8 = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                     <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/tMzp01TL/A7402864.png')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
-                <div className="container max-w-7xl mx-auto px-4 py-20 ">
+                <div className="container max-w-7xl mx-auto px-4 py-6 ">
                     <Carousel
                         opts={{
                             align: "start",
@@ -77,27 +76,27 @@ const VM_Golf_8 = () => {
                         <CarouselNext />
                     </Carousel>
                 </div>
-                <div className="container mx-auto px-4 flex flex-col gap-y-20">
+                <div className="container mx-auto px-4 flex flex-col gap-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="flex flex-col items-center p-8 bg-sidebar border shadow gap-y-5 rounded-lg" data-aos="fade-up">
+                        <div className="flex flex-col items-center p-8 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <IdCardIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
                             <p className="text-2xl">Führerschein</p>
                         </div>
-                        <div className="flex flex-col items-center p-8 bg-sidebar border shadow gap-y-5 rounded-lg" data-aos="fade-up">
+                        <div className="flex flex-col items-center p-8 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <UserRoundCheckIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
                             <p className="text-2xl">Ab 18 Jahren</p>
                         </div>
-                        <div className="flex flex-col items-center p-8 bg-sidebar border shadow gap-y-5 rounded-lg" data-aos="fade-up">
+                        <div className="flex flex-col items-center p-8 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <BadgeEuroIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
                             <p className="text-2xl">4000€ SB</p>
                         </div>
-                        <div className="flex flex-col items-center p-8 bg-sidebar border shadow gap-y-5 rounded-lg" data-aos="fade-up">
+                        <div className="flex flex-col items-center p-8 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <BanknoteArrowDownIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
@@ -153,33 +152,41 @@ const VM_Golf_8 = () => {
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-3">
-                        <div className="flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
+                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
                             <p className="text-xl">Mietpreis an Wochentagen (Mo-Do)</p>
                             <p className="text-xl">180,00 € inkl. 200 km</p>
                         </div>
-                        <div className="flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
+                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
                             <p className="text-xl">Mietpreis an Wochenenden (Fr, Sa, So)</p>
                             <p className="text-xl">190,00€ inkl. 200 km</p>
                         </div>
-                        <div className="flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
+                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
                             <p className="text-xl">Wochenendtarif 1 (Fr-So)</p>
                             <p className="text-xl">380,00€ inkl. 400 km</p>
                         </div>
-                        <div className="flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
+                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
                             <p className="text-xl">Wochenendtarif 2 (Fr-Mo)</p>
                             <p className="text-xl">465,00€ inkl. 500 km</p>
                         </div>
-                        <div className="flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
+                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
                             <p className="text-xl">Wochenpaket 5 Tage</p>
                             <p className="text-xl">680,00€ inkl. 800 km</p>
                         </div>
-                        <div className="flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
+                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
                             <p className="text-xl">Wochenpaket 7 Tage</p>
                             <p className="text-xl">850,00€ inkl. 1000 km</p>
                         </div>
                     </div>
+                    <div className="bg-main rounded-lg border mb-20 p-8 flex flex-col text-neutral-900">
+                        <div className="flex gap-x-4 items-center">
+                            <InfoIcon className="w-12 size-12" style={{strokeWidth: 1}} />
+                            <div className="flex flex-col text-lg font-medium">
+                                <p>Nicht gebuchte Kilometer werden mit 2,00€ pro Kilometer berechnet.</p>
+                                <p>Zusätzliche Kilometer können vorab oder während der Miete für 0,85€ pro Kilometer dazugebucht werden.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <Faq />
             </main>
             <Footer />
         </div>

@@ -6,7 +6,6 @@ import TestHero from "./components/TestHero";
 import TestProcess from "./components/TestProcess";
 import TestMoments from "./components/TestMoments";
 import TestFeatures from "./components/TestFeatures";
-import TestFaq from "./components/TestFAQ";
 import TestReviews from "./components/TestReviews";
 
 const Test = () => {
@@ -16,14 +15,13 @@ const Test = () => {
     return (
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />
-            <main className="flex-1">
+            <main className="flex-1 pb-20">
                 <TestHero />
                 <TestCars />
                 <TestProcess />
                 <TestMoments />
                 <TestFeatures />
                 <TestReviews />
-                <TestFaq />
             </main>
             <Footer />
         </div>

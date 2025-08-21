@@ -45,23 +45,6 @@ const TestCars = () => {
                     <Skeleton className="w-full h-full shadow" />
                 </div>
             </div>
-            <div className="mt-6 rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md" data-aos="fade-up">
-                <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center font-medium">Unsere Marken</h3>
-                <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.pexels.com/photos/18622377/pexels-photo-18622377.jpeg')] bg-cover bg-center z-0" />
-            </div>
-            <div className="mt-6 flex justify-center gap-6" data-aos="fade-up">
-                <Skeleton className="hidden xl:block shadow w-full h-48 border rounded-lg" />
-                <Skeleton className="hidden lg:block shadow w-full h-48 border rounded-lg" />
-                <Skeleton className="hidden md:block shadow w-full h-48 border rounded-lg" />
-                <Link to="/fahrzeuge/vw_golf_8" className="inline-flex justify-center items-center shadow w-full h-48 border  py-4 bg-card rounded-lg opacity-75 hover:opacity-100 hover:scale-105 transition-all">
-                    <img src="/brands/vw-light.svg" className=" w-32 hidden dark:block" />
-                    <img src="/brands/vw.svg" className=" w-32 block dark:hidden" />
-                </Link>
-                <Skeleton className="hidden md:block shadow w-full h-48 border rounded-lg" />
-                <Skeleton className="hidden lg:block shadow w-full h-48 border rounded-lg" />
-                <Skeleton className="hidden xl:block shadow w-full h-48 border rounded-lg" />
-            </div>
         </section>
     );
 }

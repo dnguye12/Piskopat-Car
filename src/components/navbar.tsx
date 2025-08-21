@@ -88,6 +88,11 @@ const Navbar = () => {
                                 <NavbarItem to="/kontakt" text="Kontakt" />
                             </NavigationMenuLink>
                         </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild>
+                                <NavbarItem to="/faq" text="FAQ" />
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
                 <div className="flex items-center gap-x-2">
