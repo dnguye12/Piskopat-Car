@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CakeIcon, CalendarCheckIcon, Clock7Icon, HeartIcon, UserRoundPlusIcon } from "lucide-react";
+import { CalendarCheckIcon, Clock7Icon, HeartIcon } from "lucide-react";
 import { Link } from "react-router";
 
 const TestMoments = () => {
@@ -52,42 +52,6 @@ const TestMoments = () => {
                     </div>
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://i.ibb.co/MDstTCFs/moments2.jpg')] bg-cover bg-center"></div>
-                </div>
-            </div>
-            <div className="mt-6 flex flex-col lg:grid grid-cols-12 gap-x-12 gap-y-10 lg:gap-y-0">
-                <div className="col-span-12 lg:col-span-5 w-full h-[600px] bg-[url('https://i.ibb.co/j9YF9qCp/discount.jpg')] bg-cover bg-center rounded-lg border shadow-md" data-aos="fade-right"></div>
-                <div className="col-span-12 lg:col-span-7 flex flex-col justify-center lg:items-center h-full gap-10" data-aos="fade-left">
-                    <div className="flex gap-x-3">
-                        <div className="min-w-14 size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                            <UserRoundPlusIcon className=" size-7 dark:text-main" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h3 className="text-xl lg:text-2xl">10% Neukundenrabatt</h3>
-                            <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Zum ersten Mal bei uns? Dann bekommst du 10% Rabatt auf deine
-                                erste Fahrzeuganmietung als Willkommensgeschenk!</p>
-                        </div>
-                    </div>
-
-                    <div className="flex gap-x-3">
-                        <div className="min-w-14 size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                            <HeartIcon className=" size-7 dark:text-main" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h3 className=" text-xl lg:text-2xl">10% Hochzeitsrabatt</h3>
-                            <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Der große Tag steht an? Wir machen ihn noch schöner: 10% Rabatt auf dein Hochzeitsfahrzeug. Einfach Heiratsnachweis vorlegen und stilvoll durchstarten.</p>
-                        </div>
-                    </div>
-
-                    <div className="flex gap-x-3">
-                        <div className="min-w-14 size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                            <CakeIcon className=" size-7 dark:text-main" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h3 className=" text-xl lg:text-2xl">5% Geburtstagsrabatt</h3>
-                            <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
-                                Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

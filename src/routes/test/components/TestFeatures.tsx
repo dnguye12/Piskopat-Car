@@ -8,7 +8,7 @@ const TestFeatures = () => {
                 <div className="col-span-12 lg:col-span-7 text-neutral-900" data-aos="fade-right">
                     <h3 className="text-3xl lg:text-4xl max-w-2xl">Für einen Tag voller Adrenalin, ein Wochenende voller Freiheit oder länger – <span className="font-medium ">du entscheidest, wir liefern</span>.</h3>
                     <p className=" my-6 text-xl break-words">Das erwartet dich, wenn du bei uns einen Sportwagen mietest:</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-3/5 sm:w-full mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:w-full mx-auto">
                         <div className=" flex items-center gap-x-3">
                             <div className="min-w-10 w-10 h-10 rounded border border-neutral-900 inline-flex items-center justify-center">
                                 <ListTodoIcon className="w-auto h-5 " />
@@ -95,7 +95,7 @@ const TestFeatures = () => {
                     </div>
                 </div>
                 <div className="hidden sm:block col-span-12 lg:col-span-5 mt-12 lg:mt-0 w-full aspect-square lg:aspect-auto lg:min-h-[600px] bg-[url('https://i.ibb.co/0px8z1BC/features.jpg')] bg-cover bg-center rounded-lg border shadow-md" data-aos="fade-left"></div>
-                <img src="/thing.svg" className="hidden lg:absolute bottom-0 left-0 ml-24 opacity-10 z-0" />
+                <img src="/thing.svg" className="hidden lg:block lg:absolute bottom-0 left-0 ml-24 opacity-10 z-0" />
                 <img src="/thing.svg" className="absolute lg:hidden bottom-0 left-1/2 -translate-x-1/2 opacity-10 z-0" />
             </div>
         </section>

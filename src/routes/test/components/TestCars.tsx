@@ -17,7 +17,7 @@ const TestCars = () => {
                     <div className="p-8 bg-main flex flex-col items-start gap-y-5">
                         <Badge variant={"outline"} className=" border border-neutral-900 text-neutral-900 px-3 py-1 h-8 uppercase">Verfügbar</Badge>
                         <p className=" text-2xl text-neutral-900">VW Golf 8 R Black Edition</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between w-full gap-x-4 gap-y-2 md:gap-x-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 xl:flex xl:justify-between w-full gap-x-4 gap-y-2 md:gap-x-8">
                             <div className="inline-flex items-center text-neutral-900 gap-x-1">
                                 <FlameIcon strokeWidth={0} fill="#171717" />
                                 <span className="text-lg font-sans">333 PS</span>
