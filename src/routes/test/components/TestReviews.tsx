@@ -9,7 +9,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { StarIcon } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay"
 import { useMemo } from "react";
-import { SiGoogle } from "@icons-pack/react-simple-icons";
 
 type Review = {
     author: string;
@@ -126,14 +125,16 @@ function sampleArray<T>(arr: T[], n: number): T[] {
 
 const TestReviews = () => {
     const randomReviews = useMemo(() => sampleArray(reviews, 10), [])
+
     return (
-        <section className="container mx-auto mt-6 px-6">
-            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center mb-6 shadow-md" data-aos="fade-up">
-                <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center font-medium">Was unsere Kunden sagen</h3>
+        <section className="container mx-auto mt-32 lg:mt-44 px-6">
+            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center mb-20 shadow-md" data-aos="fade-up">
+                <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center">Was unsere Kunden sagen</h3>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat bg-center"></div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/1ftF9yDq/reviews.jpg')] bg-cover bg-right-top z-0" />
             </div>
-            <Carousel className="w-full mx-auto"
+
+            <Carousel className="w-[calc(100%-80px)] md:w-full mx-auto"
                 opts={{ loop: true }}
                 plugins={[
                     Autoplay({
@@ -143,26 +144,19 @@ const TestReviews = () => {
             >
                 <CarouselContent className="-ml-1">
                     {randomReviews.map((review, index) => (
-                        <CarouselItem key={index} className="pl-4">
+                        <CarouselItem key={index} className="pl-4 lg:basis-1/2 xl:basis-1/3">
                             <div className="p-1">
                                 <Card className="py-0 shadow-md">
-                                    <CardContent className="flex flex-col items-center justify-start p-8 lg:p-14 lg:min-h-[450px] bg-accent border shadow">
-                                        <p className="mb-4 lg:mb-8 text-lg lg:text-3xl text-center">"{review.content}"</p>
-                                        <p className="lg:text-lg font-semibold text-center">{review.author}</p>
-                                        <div className="flex items-center gap-x-4 mt-4 lg:mt-8">
-                                            <SiGoogle />
-                                            <div className="flex flex-col">
-                                                <div className="inline-flex items-center gap-x-1">
-                                                    <StarIcon className="w-4 size-4" fill="#fbbf24" strokeWidth={0} />
-                                                    <StarIcon className="w-4 size-4" fill="#fbbf24" strokeWidth={0} />
-                                                    <StarIcon className="w-4 size-4" fill="#fbbf24" strokeWidth={0} />
-                                                    <StarIcon className="w-4 size-4" fill="#fbbf24" strokeWidth={0} />
-                                                    <StarIcon className="w-4 size-4" fill="#fbbf24" strokeWidth={0} />
-                                                </div>
-                                                <a className="text-sm underline" target="_blank" rel="no" href="https://www.google.com/search?sca_esv=75973f5d98028357&sxsrf=AE3TifPl2uZ0E_og7pSsPPTOpicdCOJYMQ:1755787564111&uds=AOm0WdE2fekQnsyfYEw8JPYozOKzjgBlVdiJ77ShqglA16UBtdCCp4kiCo7a60PW3qZg-XogRIk5mwg3uh86q8Z18Vs01CwIonhmjDCjyWVr2vPXoWvXAXC-3_DmT6E8t4ohLDJuE8kF5jP_KCAQAdyPJsEhs3CEiA&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E8uFDci8cs5e_qqI8f7AU60rsiyANY555fuE3ao6uRw9SBgWyCdMpr_l3fx9d5i0i9AZ7rA%3D&q=X-Sportwagen+Reviews&sa=X&ved=2ahUKEwioj72wkpyPAxWvQaQEHZMuHLgQ3PALegQIQBAF&biw=1912&bih=924&dpr=1" >Google X-Sportwagen</a>
-                                            </div>
+                                    <CardContent className="flex flex-col items-start justify-start p-8 gap-y-5 min-h-80">
+                                        <div className="inline-flex items-center gap-x-1">
+                                            <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                            <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                            <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                            <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                            <StarIcon fill="#fbbf24" strokeWidth={0} />
                                         </div>
-
+                                        <p className=" break-words line-clamp-7">{review.content}</p>
+                                        <p className="font-semibold text-lg">{review.author}</p>
                                     </CardContent>
                                 </Card>
                             </div>
