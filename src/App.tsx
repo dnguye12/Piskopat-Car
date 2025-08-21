@@ -10,6 +10,7 @@ import Impressum from "./routes/impressum/Impressum";
 import Datenschutz from "./routes/datenschutz/Datenschutz";
 import Wedding from "./routes/wedding/Wedding";
 import Useless from "./routes/useless/Useless";
+import Test from "./routes/test/Test";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
       <Route path="/datenschutz" element={<Datenschutz />} />
       <Route path="/hochzeitsmiete" element={<Wedding />} />
       <Route path="/sportwagen-mieten" element={<Useless />}/>
+      <Route path="/test" element={<Test />}/>
     </Routes>
   )
 }

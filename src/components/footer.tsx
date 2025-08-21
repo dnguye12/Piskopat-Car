@@ -5,7 +5,7 @@ import { MailIcon, MapPinIcon, PhoneCallIcon } from "lucide-react";
 
 const Footer = () => {
     return (
-        <footer className="bg-sidebar px-6 py-6 lg:py-12 border border-t">
+        <footer className="bg-accent px-6 py-6 lg:py-12 border border-t">
             <div className="container mx-auto ">
                 <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-5">
                     <div className="flex flex-col gap-y-5">
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <Separator className="my-6 lg:my-12" />
-                <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:mb-12">
+                <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
                         <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12">
