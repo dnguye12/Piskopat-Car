@@ -2,7 +2,6 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { useLayoutEffect } from "react";
-import Faq from "../home/components/Faq";
 import { Link } from "react-router";
 
 const Wedding = () => {
@@ -55,16 +54,15 @@ const Wedding = () => {
                     <h3 className="text-main text-4xl md:text-2xl lg:text-4xl z-20 my-4">Jetzt hochzeitsauto mieten!</h3>
                     <p>Kontaktieren Sie uns ganz einfach per WhatsApp, um aus unserer breiten Auswahl an exklusiven Hochzeitsautos führender Marken Ihr Traumfahrzeug zu wählen. Selbstverständlich können Sie auch unabhängig von Ihrer Hochzeit bei uns luxuriöse Sportlimousinen oder Supersportwagen mieten oder Gutscheine für ein besonderes Fahrerlebnis in unserem Gutscheinshop erwerben.</p>
                     <br />
-                    <p className="mb-20">Wir freuen uns darauf, Ihnen einen unvergesslichen Tag zu ermöglichen!</p>
+                    <p className="mb-12">Wir freuen uns darauf, Ihnen einen unvergesslichen Tag zu ermöglichen!</p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 items-center">
+                    <div className="flex flex-col sm:flex-row gap-4 items-center mb-20">
                         <Button variant={"main"} size="lg" className="w-full sm:w-auto font-semibold h-16 px-8 text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                         <Button variant={"main-outline"} size="lg" className="w-full sm:w-auto font-semibold h-16 px-8 text-lg" asChild>
                             <Link to="/fahrzeuge">Fahrzeuge</Link>
                         </Button>
                     </div>
                 </div>
-                <Faq />
             </main>
             <Footer />
         </div>

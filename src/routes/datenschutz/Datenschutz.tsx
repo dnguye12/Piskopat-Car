@@ -22,7 +22,7 @@ const Datenschutz = () => {
                     <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                     <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/LVHCB9Q/pexels-mikebirdy-1104768.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
-                <div className="content flex flex-col container mx-auto px-4 mt-20 mb-28">
+                <div className="content flex flex-col container mx-auto px-4 mt-6 mb-20">
 
 
                     <h1>Datenschutz­erklärung</h1>

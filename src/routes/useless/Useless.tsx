@@ -1,11 +1,15 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import Faq from "../home/components/Faq";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
+import { useLayoutEffect } from "react";
 
 const Useless = () => {
-    return ( 
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    })
+
+    return (
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-1 mt-[88px]">
@@ -35,23 +39,22 @@ const Useless = () => {
                     <p className="mb-20">Profitieren Sie von fairen Konditionen, wenn Sie bei uns einen Sportwagen mieten. Egal, ob Sie das Fahrzeug für einen Tag, ein Wochenende oder eine ganze Woche benötigen – unsere transparenten Preise und inkludierten Kilometer sorgen dafür, dass Sie das Maximum aus Ihrer Mietzeit herausholen können. Zudem ist jedes Fahrzeug mit einer Vollkaskoversicherung ausgestattet, sodass Sie sich voll und ganz auf den Fahrspaß konzentrieren können.</p>
 
                     <h3 className="text-main text-4xl md:text-2xl lg:text-4xl z-20 my-4">Ihre chance auf ein exklusives sportwagenerlebnis in Ennigerloh</h3>
-                    <p>Lassen Sie sich von der Präzision und der Leistung dieser Luxusautos begeistern und machen Sie Ihre Fahrt zu einem unvergesslichen Erlebnis.</p> <br/>
-                    <p>Durchstöbern Sie jetzt unser Angebot und finden Sie Ihren persönlichen Favoriten. Unser Team bei <span className="text-main font-semibold">X-Sportwagen</span> steht Ihnen jederzeit zur Verfügung, um Ihnen bei der Buchung und allen Fragen rund um unsere Fahrzeuge zu helfen.</p><br/>
-                    <p className="mb-20">Wir freuen uns darauf, Ihnen den Traum vom Sportwagenfahren zu erfüllen!</p>
+                    <p>Lassen Sie sich von der Präzision und der Leistung dieser Luxusautos begeistern und machen Sie Ihre Fahrt zu einem unvergesslichen Erlebnis.</p> <br />
+                    <p>Durchstöbern Sie jetzt unser Angebot und finden Sie Ihren persönlichen Favoriten. Unser Team bei <span className="text-main font-semibold">X-Sportwagen</span> steht Ihnen jederzeit zur Verfügung, um Ihnen bei der Buchung und allen Fragen rund um unsere Fahrzeuge zu helfen.</p><br />
+                    <p className="mb-12">Wir freuen uns darauf, Ihnen den Traum vom Sportwagenfahren zu erfüllen!</p>
 
 
-                    <div className="flex flex-col sm:flex-row gap-4 items-center">
+                    <div className="flex flex-col sm:flex-row gap-4 items-center mb-20">
                         <Button variant={"main"} size="lg" className="w-full sm:w-auto font-semibold h-16 px-8 text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
                         <Button variant={"main-outline"} size="lg" className="w-full sm:w-auto font-semibold h-16 px-8 text-lg" asChild>
                             <Link to="/fahrzeuge">Fahrzeuge</Link>
                         </Button>
                     </div>
                 </div>
-                <Faq />
             </main>
             <Footer />
         </div>
-     );
+    );
 }
- 
+
 export default Useless;

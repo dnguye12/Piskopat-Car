@@ -19,7 +19,7 @@ const VehicleCard = ({ index, car }: VehicleCardProps) => {
                     <div className="p-8 bg-main flex flex-col items-start gap-y-4">
                         <Badge variant={"outline"} className=" border border-neutral-900 text-neutral-900 px-3 py-1 h-8 uppercase">{car.status && "Verfügbar"}</Badge>
                         <p className=" text-2xl text-neutral-900">{car.name}</p>
-                        <div className="grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 2xl:flex 2xl:justify-between w-full gap-4 2xl:gap-0">
+                        <div className="grid grid-cols-1 min-[410px]:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 2xl:flex 2xl:justify-between w-full gap-4 2xl:gap-0">
                             <div className="inline-flex justify-center items-center text-neutral-100 gap-x-1 bg-neutral-900 px-6 h-12 rounded-md">
                                 <FlameIcon strokeWidth={0} fill="#f5f5f5" className="min-w-6" />
                                 <span className="font-sans">333 PS</span>

@@ -64,7 +64,7 @@ const TestProcess = () => {
                     <div className="hidden lg:block h-12"></div>
                 </div>
             </div>
-            <div className="relative mt-6 rounded-lg overflow-hidden shadow" data-aos="fade-up">
+            <div className="relative mt-6 rounded-lg overflow-hidden shadow border" data-aos="fade-up">
                 <div className="flex flex-col justify-center items-center px-8 py-32 text-center z-20 relative">
                     <h3 className="font-medium text-4xl md:text-5xl lg:text-6xl mb-6 text-neutral-100">Sag uns, was du suchst<br /><span className="text-main">wir kümmern uns</span> um den Rest.</h3>
                     <Button asChild size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow">

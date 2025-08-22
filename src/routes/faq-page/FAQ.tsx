@@ -6,6 +6,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import { useLayoutEffect } from "react";
 
 type ListItem = {
     i: number;
@@ -142,6 +143,9 @@ const FaqAccordion = ({ index, question, content }: FaqAccordionProps) => {
 
 
 const FAQ = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    })
     return (
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />
@@ -154,9 +158,9 @@ const FAQ = () => {
                 <section className="container mx-auto px-6 mt-6 mb-12">
                     <Accordion type="single" collapsible>
                         <div className="grid grid-cols-1 gap-6">
-                        {list.map((l) => (
-                            <FaqAccordion index={l.i} question={l.q} content={l.a} />
-                        ))}
+                            {list.map((l) => (
+                                <FaqAccordion index={l.i} question={l.q} content={l.a} />
+                            ))}
                         </div>
                     </Accordion>
                 </section>
