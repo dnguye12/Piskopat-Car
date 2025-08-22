@@ -121,7 +121,7 @@ const Navbar = () => {
                                 <MenuIcon className="size-5" />
                             </Button>
                         </DrawerTrigger>
-                        <DrawerContent className="!w-screen !h-screen !max-w-screen">
+                        <DrawerContent className="!w-screen !h-screen !max-w-screen bg-sidebar">
                             <div className="w-full h-full relative">
                                 <DrawerHeader className="p-6 flex-row items-center justify-between">
                                     <Link to="/" className="inline-flex items-center gap-x-2">
