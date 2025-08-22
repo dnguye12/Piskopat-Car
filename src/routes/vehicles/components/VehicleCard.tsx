@@ -37,7 +37,7 @@ const VehicleCard = ({ index, car }: VehicleCardProps) => {
                                 <span className="font-sans">420 NM</span>
                             </div>
                         </div>
-                        <div className="flex w-full justify-end">
+                        <div className="flex w-full">
                             <Button size={"lg"} className="w-full sm:w-auto border border-neutral-900 text-neutral-900 bg-main hover:bg-neutral-900 hover:text-main h-12 gap-x-1 hover:gap-x-2" asChild>
                                 <Link to="/fahrzeuge/vw_golf_8">Zum Fahrzeug <ChevronRightIcon /></Link>
                             </Button>
