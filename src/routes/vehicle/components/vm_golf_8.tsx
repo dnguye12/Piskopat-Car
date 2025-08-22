@@ -179,7 +179,7 @@ const VM_Golf_8 = () => {
                     </div>
                     <div className="bg-main rounded-lg border mb-6 p-8 flex flex-col text-neutral-900">
                         <div className="flex gap-x-4 items-center">
-                            <InfoIcon className="w-12 size-12" style={{strokeWidth: 1}} />
+                            <InfoIcon className="min-w-12 size-12" style={{strokeWidth: 1}} />
                             <div className="flex flex-col text-lg font-medium">
                                 <p>Nicht gebuchte Kilometer werden mit 2,00€ pro Kilometer berechnet.</p>
                                 <p>Zusätzliche Kilometer können vorab oder während der Miete für 0,85€ pro Kilometer dazugebucht werden.</p>
