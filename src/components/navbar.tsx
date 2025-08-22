@@ -52,7 +52,7 @@ const NavbarItem = ({ to, text }: NavbarItemProps) => {
 
 const Navbar = () => {
     return (
-        <header className="w-full py-4 bg-accent fixed top-0 left-0 right-0 h-[88px] z-50 border border-b">
+        <header className="w-full py-4 bg-accent/66 backdrop-blur-3xl fixed top-0 left-0 right-0 h-[88px] z-50 border border-b">
             <div className="relative container mx-auto hidden lg:flex justify-between items-center px-4">
                 <Link to="/" className="inline-flex items-center gap-x-2">
                     <img src="/logo-black.svg" alt="" className="block dark:hidden h-14 w-auto fill-neutral-900" />

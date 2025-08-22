@@ -50,7 +50,7 @@ const Vehicles = () => {
                     <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                     <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/6JmgdFMZ/pexels-wijs-wise-136435282-12356888.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
-                <div className="container mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="container mx-auto px-4 my-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {cars.map((car, index) => (
                         <VehicleCard index={index} car={car} />
                     ))}

@@ -129,7 +129,7 @@ const TestReviews = () => {
     return (
         <section className="container mx-auto mt-6 px-6">
             <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center mb-6 shadow-md" data-aos="fade-up">
-                <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center">Was unsere Kunden sagen</h3>
+                <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center font-medium">Was unsere Kunden sagen</h3>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat bg-center"></div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/1ftF9yDq/reviews.jpg')] bg-cover bg-right-top z-0" />
             </div>
@@ -146,7 +146,7 @@ const TestReviews = () => {
                     {randomReviews.map((review, index) => (
                         <CarouselItem key={index} className="pl-4 lg:basis-1/2 xl:basis-1/3">
                             <div className="p-1">
-                                <Card className="py-0 shadow-md">
+                                <Card className="py-0 shadow-md bg-accent">
                                     <CardContent className="flex flex-col items-start justify-start p-8 gap-y-5 min-h-80">
                                         <div className="inline-flex items-center gap-x-1">
                                             <StarIcon fill="#fbbf24" strokeWidth={0} />
