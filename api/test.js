@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -26,9 +26,9 @@ export default async function handler(req, res) {
       text: message,
       html: `<p>${message.replace(/</g, "&lt;")}</p>`,
     })
-    res.status(200).json({ ok: true });
+    return res.status(200).json({ ok: true });
   } catch (e) {
     console.error(err);
-    res.status(500).json({ error: "Failed to send" });
+    return res.status(500).json({ error: "Failed to send" });
   }
 }
