@@ -44,7 +44,7 @@ interface NavbarItemProps {
 
 const NavbarItem = ({ to, text }: NavbarItemProps) => {
     return (
-        <Button size={"lg"} variant={"ghost"} className="hover:bg-main! dark:hover:bg-transparent! transition-all" asChild>
+        <Button size={"lg"} variant={"ghost"} className="hover:bg-main! dark:hover:bg-transparent! transition-all ml-4" asChild>
             <Link to={to} className="!text-base hover:font-semibold dark:hover:text-main transition-all">{text}</Link>
         </Button>
     )
@@ -137,10 +137,10 @@ const Navbar = () => {
                                     <NavbarItem to="/" text="Startseite" />
                                     <Accordion type="single" collapsible>
                                         <AccordionItem value="mb-nav-Fahrzeuge" className="border-b-0">
-                                            <AccordionTrigger className="px-6 py-0 h-10 items-center hover:bg-main! dark:hover:bg-transparent! !text-base hover:font-semibold dark:hover:text-main transition-all">
+                                            <AccordionTrigger className="px-6 py-0 h-10 ml-4 items-center hover:bg-main! dark:hover:bg-transparent! !text-base hover:font-semibold dark:hover:text-main transition-all">
                                                 Fahrzeuge
                                             </AccordionTrigger>
-                                            <AccordionContent className="p-0">
+                                            <AccordionContent className="p-0 ml-4">
                                                 <div className="flex flex-col items-start">
                                                     <NavbarItem to="/fahrzeuge" text="Alle Fahrzeuge" />
                                                     <NavbarItem to="/fahrzeuge/vw_golf_8" text="VW Golf 8" />

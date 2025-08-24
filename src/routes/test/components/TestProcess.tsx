@@ -11,10 +11,10 @@ const TestProcess = () => {
                     </div>
                     <h5 className=" text-2xl text-neutral-900">Fahrzeug anfragen</h5>
                     <p className=" text-lg text-neutral-900">Du nimmst ganz einfach Kontakt über WhatsApp auf. Wir beantworten alle Fragen persönlich und beraten dich individuell.</p>
-                    <Button asChild size={"lg"} className="bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100">
+                    <Button asChild size={"lg"} className="bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
                         <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Sportwagen mieten</a>
                     </Button>
-                    <div className="absolute top-0 left-0 bg-[url('https://i.ibb.co/mCs2hQVM/next-img-bg.png')] bg-cover w-full h-full"></div>
+                    <div className="absolute top-0 left-0 bg-[url('https://i.ibb.co/mCs2hQVM/next-img-bg.png')] bg-cover w-full h-full z-0"></div>
                 </div>
 
                 <div className="p-8 rounded-lg border bg-accent flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="100">

@@ -65,10 +65,10 @@ const TestHero = () => {
             <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/JWDkcgjD/pexels-mike-noga-1916934-3541743.jpg')] bg-cover z-0 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
 
 
-            <div className="container mx-auto px-4 pt-12 pb-24 h-full flex lg:hidden flex-col">
+            <div className="container mx-auto px-6 pt-6 pb-0 h-full flex lg:hidden flex-col">
                 <h5 className="text-3xl">Reiseziel? Egal.</h5>
                 <h1 className="text-3xl text-main">Hauptsache Sportwagen</h1>
-                <img src="https://i.ibb.co/k6wn42TC/hero.jpg" className="w-full h-auto rounded-lg border shadow my-6" />
+                <img src="https://i.ibb.co/JWDkcgjD/pexels-mike-noga-1916934-3541743.jpg" className="w-full h-auto rounded-lg border shadow my-6" />
                 <p className="max-w-3xl whitespace-pre-wrap break-words">X-Sportwagen – hier zählt nicht nur die Leistung auf dem Papier, sondern das Gefühl am Steuer. Erlebe pure Faszination in unseren Luxusfahrzeugen – mit Premium-Service, der jeden Moment unvergesslich macht.
                 </p>
                 <div className="mt-3 grid sm:grid-cols-2 gap-x-6 mx-auto sm:mx-0">
