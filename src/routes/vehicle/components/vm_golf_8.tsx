@@ -9,7 +9,11 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import { Label } from "@/components/ui/label"
+import { cn } from "@/lib/utils";
 import { BadgeEuroIcon, BanknoteArrowDownIcon, IdCardIcon, InfoIcon, ShieldCheckIcon, UserRoundCheckIcon } from "lucide-react";
+import { useState } from "react";
+import PricingCard from "./PricingCard";
 
 const imageLinks = [
     "https://i.ibb.co/Z1JXP8dZ/A7402911.png",
@@ -33,6 +37,75 @@ const items = imageLinks.map((src) => (
     <img key={src} src={src} onDragStart={handleDragStart} role="presentation" alt="" />
 ));*/
 
+type Mode = "daily" | "weekly"
+
+const VM_Golf_8_Pricing = () => {
+    const [mode, setMode] = useState<Mode>("daily")
+
+    const handleMode = (input: Mode): void => {
+        if (mode !== input) {
+            setMode(input)
+        }
+    }
+
+    return (
+        <section className="container mx-auto">
+            <div className="mx-auto text-center">
+                <h2 className="mb-4 text-4xl font-medium lg:text-5xl text-main">Preise</h2>
+                <span className="text-muted-foreground">Abrechnungszeitraum</span>
+                <div className="h-12 bg-muted flex items-center rounded-lg p-1 text-lg w-fit mx-auto mt-2">
+                    <div className="grid gap-3 h-full grid-cols-2">
+                        <Button variant={"ghost"} className={cn(
+                            "h-full rounded-md transition-all cursor-pointer px-0",
+                            mode === "daily" && "bg-background hover:!bg-background dark:bg-main dark:hover:!bg-main cursor-default border"
+                        )} onClick={() => handleMode("daily")}>
+                            <Label className={cn(
+                                "leading-none select-none text-muted-foreground flex h-full cursor-pointer items-center justify-center gap-1 px-7 font-semibold",
+                                mode === "daily" && "text-primary dark:text-neutral-900 pointer-events-none",
+                                mode === "weekly" && "pointer-events-none opacity-50 cursor-pointer"
+                            )}>Tagesmiete</Label>
+                        </Button>
+                        <Button variant={"ghost"} className={cn(
+                            "h-full rounded-md transition-all cursor-pointer px-0",
+                            mode === "weekly" && "bg-background hover:!bg-background dark:bg-main dark:hover:!bg-main cursor-default border"
+                        )}
+                            onClick={() => handleMode("weekly")}
+                        >
+                            <Label className={cn(
+                                "leading-none select-none text-muted-foreground flex h-full cursor-pointer items-center justify-center gap-1.5 px-7 font-semibold",
+                                mode === "weekly" && "text-primary dark:text-neutral-900 pointer-events-none",
+                                mode === "daily" && "pointer-events-none opacity-50 cursor-pointer"
+                            )}>Wochenpaket</Label>
+                        </Button>
+                    </div>
+                </div>
+                {
+                    mode === "daily" &&
+                    (
+                        <div className="mt-6 flex flex-col gap-y-6 md:grid rounded-lg md:grid-cols-2 xl:grid-cols-4 md:border overflow-hidden">
+                            <PricingCard title="Wochentagen" date="Montag-Donnerstag" price={180} per="pro Tag" km={200} />
+                            <PricingCard title="Wochenenden" date="Freitag, Samstag, Sonntag" price={190} per="pro Tag" km={200} />
+                            <PricingCard title="Wochenendtarif 1" date="Freitag-Samstag" price={380} per="Austerity package" km={400} />
+                            <PricingCard title="Wochenendtarif 2" date="Freitag-Montag" price={465} per="Austerity package" km={500} highlight={true} />
+                        </div>
+                    )
+                }
+                {
+                    mode === "weekly" &&
+                    (
+                        <div className="mt-6 flex flex-col gap-y-6 md:grid rounded-lg md:grid-cols-2 xl:grid-cols-4 overflow-hidden">
+                            <div className="hidden md:block"></div>
+                            <PricingCard title="Wochenpaket 5 Tage" date="5 Tage" price={680} per="Austerity package" km={800} />
+                            <PricingCard title="Wochenpaket 7 Tage" date="Ganze Woche" price={850} per="Austerity package" km={1000} highlight={true} />
+                            <div className="hidden md:block"></div>
+                        </div>
+                    )
+                }
+            </div>
+        </section>
+    )
+}
+
 const VM_Golf_8 = () => {
 
     return (
@@ -41,7 +114,7 @@ const VM_Golf_8 = () => {
             <main className="flex-1 mt-[88px]">
                 <div className="relative pt-32 lg:pt-60 pb-12">
                     <div className="container mx-auto px-4 relative z-20">
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main mb-7" data-aos="fade-up" data-aos-delay="300">VW Golf 8 R</h1>
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main mb-7 font-medium" data-aos="fade-up" data-aos-delay="300">VW Golf 8 R</h1>
                         <p className="text-lg lg:text-xl text-neutral-100" data-aos="fade-up" data-aos-delay="300">Du senkst den Fuß ein kurzes Zischen, dann entfesselt der Golf R seine Kraft. Kein Zögern, kein großes Spektakel nur ein kompromissloser Vorstoß nach vorn, direkt, kontrolliert, brutal und präzise auf alle vier Räder verteilt. Dieses Auto braucht keinen Applaus, es kündigt sich an durch die Akrapovic-Auspuffanlage.
                         </p>
                         <div className="mt-7 flex gap-x-4 items-center">
@@ -150,36 +223,10 @@ const VM_Golf_8 = () => {
                             </div>
                         </div>
                     </div>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-3">
-                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
-                            <p className="text-xl">Mietpreis an Wochentagen (Mo-Do)</p>
-                            <p className="text-xl">180,00 € inkl. 200 km</p>
-                        </div>
-                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
-                            <p className="text-xl">Mietpreis an Wochenenden (Fr, Sa, So)</p>
-                            <p className="text-xl">190,00€ inkl. 200 km</p>
-                        </div>
-                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
-                            <p className="text-xl">Wochenendtarif 1 (Fr-So)</p>
-                            <p className="text-xl">380,00€ inkl. 400 km</p>
-                        </div>
-                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
-                            <p className="text-xl">Wochenendtarif 2 (Fr-Mo)</p>
-                            <p className="text-xl">465,00€ inkl. 500 km</p>
-                        </div>
-                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
-                            <p className="text-xl">Wochenpaket 5 Tage</p>
-                            <p className="text-xl">680,00€ inkl. 800 km</p>
-                        </div>
-                        <div className="bg-sidebar flex flex-col md:flex-row gap-y-3 p-8 justify-between items-start md:items-center border border-main rounded-lg text-main">
-                            <p className="text-xl">Wochenpaket 7 Tage</p>
-                            <p className="text-xl">850,00€ inkl. 1000 km</p>
-                        </div>
-                    </div>
+                    <VM_Golf_8_Pricing />
                     <div className="bg-main rounded-lg border mb-6 p-8 flex flex-col text-neutral-900">
                         <div className="flex gap-x-4 items-center">
-                            <InfoIcon className="min-w-7 size-7 lg:min-w-12 lg:size-12" style={{strokeWidth: 1}} />
+                            <InfoIcon className="min-w-7 size-7 lg:min-w-12 lg:size-12" style={{ strokeWidth: 1 }} />
                             <div className="flex flex-col text-lg font-medium">
                                 <p>Nicht gebuchte Kilometer werden mit 2,00€ pro Kilometer berechnet.</p>
                                 <p>Zusätzliche Kilometer können vorab oder während der Miete für 0,85€ pro Kilometer dazugebucht werden.</p>
