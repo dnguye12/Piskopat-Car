@@ -49,7 +49,7 @@ const VM_Golf_8_Pricing = () => {
     }
 
     return (
-        <section className="container mx-auto">
+        <section className="container mx-auto" data-aos="fade-up">
             <div className="mx-auto text-center">
                 <h2 className="mb-4 text-4xl font-medium lg:text-5xl text-main">Preise</h2>
                 <span className="text-muted-foreground">Abrechnungszeitraum</span>
@@ -150,30 +150,59 @@ const VM_Golf_8 = () => {
                     </Carousel>
                 </div>
                 <div className="container mx-auto px-4 flex flex-col gap-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="flex flex-col items-center p-8 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
+                    <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="flex flex-col items-center p-6 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <IdCardIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
                             <p className="text-2xl">Führerschein</p>
                         </div>
-                        <div className="flex flex-col items-center p-8 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
+                        <div className="flex flex-col items-center p-6 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <UserRoundCheckIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
                             <p className="text-2xl">Ab 18 Jahren</p>
                         </div>
-                        <div className="flex flex-col items-center p-8 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
+                        <div className="flex flex-col items-center p-6 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <BadgeEuroIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
                             <p className="text-2xl">4000€ SB</p>
                         </div>
-                        <div className="flex flex-col items-center p-8 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
+                        <div className="flex flex-col items-center p-6 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <BanknoteArrowDownIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
                             <p className="text-2xl">Kaution 1000€</p>
+                        </div>
+                    </div>
+
+                    <div className="flex md:hidden bg-accent p-6 rounded-lg border">
+                        <div className="grid md:hidden grid-cols-1 min-[475px]:grid-cols-2  gap-6 max-[475px]:mx-auto min-[475px]:w-full">
+                            <div className="flex items-center gap-y-5 rounded-lg gap-x-3" data-aos="fade-up">
+                                <div className="min-w-10 size-10 inline-flex rounded-md justify-center items-center bg-main">
+                                    <IdCardIcon className=" w-5 h-5 text-neutral-900" />
+                                </div>
+                                <p className="text-lg">Führerschein</p>
+                            </div>
+                            <div className="flex items-center gap-y-5 rounded-lg gap-x-3" data-aos="fade-up">
+                                <div className="min-w-10 size-10 inline-flex rounded-md justify-center items-center bg-main">
+                                    <UserRoundCheckIcon className=" w-5 h-5 text-neutral-900" />
+                                </div>
+                                <p className="text-lg">Ab 18 Jahren</p>
+                            </div>
+                            <div className="flex items-center gap-y-5 rounded-lg gap-x-3" data-aos="fade-up">
+                                <div className="min-w-10 size-10 inline-flex rounded-md justify-center items-center bg-main">
+                                    <BadgeEuroIcon className=" w-5 h-5 text-neutral-900" />
+                                </div>
+                                <p className="text-lg">4000€ SB</p>
+                            </div>
+                            <div className="flex items-center gap-y-5 rounded-lg gap-x-3" data-aos="fade-up">
+                                <div className="min-w-10 size-10 inline-flex rounded-md justify-center items-center bg-main">
+                                    <BanknoteArrowDownIcon className=" w-5 h-5 text-neutral-900" />
+                                </div>
+                                <p className="text-lg">Kaution 1000€</p>
+                            </div>
                         </div>
                     </div>
 
@@ -224,7 +253,7 @@ const VM_Golf_8 = () => {
                         </div>
                     </div>
                     <VM_Golf_8_Pricing />
-                    <div className="bg-main rounded-lg border mb-6 p-8 flex flex-col text-neutral-900">
+                    <div className="bg-main rounded-lg border mb-6 p-8 flex flex-col text-neutral-900" data-aos="fade-up">
                         <div className="flex gap-x-4 items-center">
                             <InfoIcon className="min-w-7 size-7 lg:min-w-12 lg:size-12" style={{ strokeWidth: 1 }} />
                             <div className="flex flex-col text-lg font-medium">
