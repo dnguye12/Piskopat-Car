@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { useState } from "react"
 
 const formSchema = z.object({
     name: z.string().min(1, {
@@ -25,17 +26,40 @@ const formSchema = z.object({
 })
 
 export function ContactForm() {
+    const [sending, setSending] = useState<boolean>(false)
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
+            phone: "",
             email: "",
             content: ""
         }
     })
 
-    const onSubmit = (values: z.infer<typeof formSchema>) => {
-        console.log(values)
+    const onSubmit = async (values: z.infer<typeof formSchema>) => {
+        setSending(true)
+
+        const body = {
+            name: values.name,
+            phone: values.phone,
+            email: values.email,
+            content: values.content
+        }
+
+        try {
+            await fetch("/api/test", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(body),
+            })
+
+            setSending(false)
+        } catch (e) {
+            console.log(e)
+            setSending(false)
+        }
     }
 
     return (
@@ -83,13 +107,13 @@ export function ContactForm() {
                     render={({ field }) => (
                         <FormItem className="mb-5">
                             <FormControl>
-                                <Textarea {...field} placeholder="Nachricht*" className="contact-textarea"/>
+                                <Textarea {...field} placeholder="Nachricht*" className="contact-textarea" />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
                     )}
                 />
-                <Button variant={"main"} size={"lg"} type="submit" className="font-semibold w-full h-12">Senden</Button>
+                <Button disabled={sending} variant={"main"} size={"lg"} type="submit" className="font-semibold w-full h-12">Senden</Button>
             </form>
         </Form>
     )
