@@ -149,6 +149,7 @@ const Navbar = () => {
                                         </AccordionItem>
                                     </Accordion>
                                     <NavbarItem to="/kontakt" text="Kontakt" />
+                                    <NavbarItem to="/faq" text="FAQ" />
                                 </nav>
                                 <div className="px-6">
                                     <Separator className="my-6" />
