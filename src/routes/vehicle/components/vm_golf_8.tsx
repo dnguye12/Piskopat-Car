@@ -177,32 +177,30 @@ const VM_Golf_8 = () => {
                         </div>
                     </div>
 
-                    <div className="flex md:hidden bg-accent p-6 rounded-lg border">
-                        <div className="grid md:hidden grid-cols-1 min-[475px]:grid-cols-2  gap-6 max-[475px]:mx-auto min-[475px]:w-full">
-                            <div className="flex items-center gap-y-5 rounded-lg gap-x-3" data-aos="fade-up">
-                                <div className="min-w-10 size-10 inline-flex rounded-md justify-center items-center bg-main">
-                                    <IdCardIcon className=" w-5 h-5 text-neutral-900" />
-                                </div>
-                                <p className="text-lg">Führerschein</p>
+                    <div className="grid md:hidden grid-cols-2 gap-4 min-[475px]:gap-6 w-full bg-accent p-6 rounded-lg border">
+                        <div className="flex items-center gap-y-5 rounded-lg gap-x-2" data-aos="fade-up">
+                            <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">
+                                <IdCardIcon className="w-4 h-4 min-[475px]:w-5 min-[475px]:h-5 text-neutral-900" />
                             </div>
-                            <div className="flex items-center gap-y-5 rounded-lg gap-x-3" data-aos="fade-up">
-                                <div className="min-w-10 size-10 inline-flex rounded-md justify-center items-center bg-main">
-                                    <UserRoundCheckIcon className=" w-5 h-5 text-neutral-900" />
-                                </div>
-                                <p className="text-lg">Ab 18 Jahren</p>
+                            <p className="min-[475px]:text-lg">Führerschein</p>
+                        </div>
+                        <div className="flex items-center gap-y-5 rounded-lg gap-x-2" data-aos="fade-up">
+                            <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">
+                                <UserRoundCheckIcon className="w-4 h-4 min-[475px]:w-5 min-[475px]:h-5 text-neutral-900" />
                             </div>
-                            <div className="flex items-center gap-y-5 rounded-lg gap-x-3" data-aos="fade-up">
-                                <div className="min-w-10 size-10 inline-flex rounded-md justify-center items-center bg-main">
-                                    <BadgeEuroIcon className=" w-5 h-5 text-neutral-900" />
-                                </div>
-                                <p className="text-lg">4000€ SB</p>
+                            <p className="min-[475px]:text-lg">Ab 18 Jahren</p>
+                        </div>
+                        <div className="flex items-center gap-y-5 rounded-lg gap-x-2" data-aos="fade-up">
+                            <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">
+                                <BadgeEuroIcon className="w-4 h-4 min-[475px]:w-5 min-[475px]:h-5 text-neutral-900" />
                             </div>
-                            <div className="flex items-center gap-y-5 rounded-lg gap-x-3" data-aos="fade-up">
-                                <div className="min-w-10 size-10 inline-flex rounded-md justify-center items-center bg-main">
-                                    <BanknoteArrowDownIcon className=" w-5 h-5 text-neutral-900" />
-                                </div>
-                                <p className="text-lg">Kaution 1000€</p>
+                            <p className="min-[475px]:text-lg">4000€ SB</p>
+                        </div>
+                        <div className="flex items-center gap-y-5 rounded-lg gap-x-2" data-aos="fade-up">
+                            <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">
+                                <BanknoteArrowDownIcon className="w-4 h-4 min-[475px]:w-5 min-[475px]:h-5 text-neutral-900" />
                             </div>
+                            <p className="min-[475px]:text-lg">Kaution 1000€</p>
                         </div>
                     </div>
 

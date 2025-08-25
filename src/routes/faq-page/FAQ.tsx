@@ -6,7 +6,9 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button";
 import { useLayoutEffect } from "react";
+import { Link } from "react-router";
 
 type ListItem = {
     i: number;
@@ -125,16 +127,13 @@ interface FaqAccordionProps {
 
 const FaqAccordion = ({ index, question, content }: FaqAccordionProps) => {
     return (
-        <AccordionItem value={`item-${index}`} className="p-4 lg:p-6 border-b-2">
+        <AccordionItem value={`item-${index}`} className="p-4 cursor-pointer">
             <AccordionTrigger className="py-0 items-center">
                 <div className="flex items-center">
-                    <div className="min-w-10 h-10 rounded bg-main inline-flex justify-center items-center text-neutral-900 text-lg mr-3">
-                        <span>{index < 10 ? "0" + index : index}</span>
-                    </div>
-                    <span className="lg:text-xl">{question}</span>
+                    <span className="lg:text-lg">{question}</span>
                 </div>
             </AccordionTrigger>
-            <AccordionContent className="text-base ps-[52px] pt-2 pb-0">
+            <AccordionContent className="text-base pt-2 pb-0 text-muted-foreground">
                 {content}
             </AccordionContent>
         </AccordionItem>
@@ -150,14 +149,24 @@ const FAQ = () => {
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-1 mt-[88px] bg-sidebar">
-                <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md" data-aos="fade-up">
-                    <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center font-medium">Häufig gestellte Fragen</h3>
-                    <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
-                    <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.pexels.com/photos/756789/pexels-photo-756789.jpeg')] bg-cover bg-center z-0" />
+
+                <div className="relative pt-32 lg:pt-60 pb-12">
+                    <div className="container mx-auto px-4 relative z-20">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main" data-aos="fade-right" data-aos-delay="300">Häufige Fragen</h1>
+                        <h2 className="text-3xl md:text-5xl lg:text-6xl text-neutral-100" data-aos="fade-left" data-aos-delay="300">Wir haben die Antworten!</h2>
+                        <div className="mt-7 flex gap-x-4 items-center">
+                            <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full sm:w-auto" asChild><Link to="/kontakt">Kontakt</Link></Button>
+                        </div>
+
+
+                    </div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/756789/pexels-photo-756789.jpeg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
+
                 <section className="container mx-auto px-6 mt-6 mb-12">
                     <Accordion type="single" collapsible>
-                        <div className="grid grid-cols-1 gap-6">
+                        <div className="flex flex-col gap-6 bg-accent p-6 rounded-md border shadow">
                             {list.map((l) => (
                                 <FaqAccordion index={l.i} question={l.q} content={l.a} />
                             ))}

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
 import { useLayoutEffect } from "react";
 
-const Useless = () => {
+const SportRent = () => {
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     })
@@ -57,4 +57,4 @@ const Useless = () => {
     );
 }
 
-export default Useless;
+export default SportRent;

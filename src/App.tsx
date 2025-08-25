@@ -8,8 +8,8 @@ import Vehicle from "./routes/vehicle/Vehicle";
 import Impressum from "./routes/impressum/Impressum";
 import Datenschutz from "./routes/datenschutz/Datenschutz";
 import Wedding from "./routes/wedding/Wedding";
-import Useless from "./routes/useless/Useless";
-import Test from "./routes/test/Test";
+import SportRent from "./routes/sport-rent/SportRent";
+import Test from "./routes/home/Home";
 import FAQ from "./routes/faq-page/FAQ";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <Route path="/impressum" element={<Impressum />} />
       <Route path="/datenschutz" element={<Datenschutz />} />
       <Route path="/hochzeitsmiete" element={<Wedding />} />
-      <Route path="/sportwagen-mieten" element={<Useless />}/>
+      <Route path="/sportwagen-mieten" element={<SportRent />}/>
       <Route path="/faq" element={<FAQ />}/>
     </Routes>
   )
