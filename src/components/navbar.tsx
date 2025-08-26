@@ -44,7 +44,7 @@ interface NavbarItemProps {
 
 const NavbarItem = ({ to, text }: NavbarItemProps) => {
     return (
-        <Button size={"lg"} variant={"ghost"} className="hover:bg-main! dark:hover:bg-transparent! transition-all ml-4" asChild>
+        <Button size={"lg"} variant={"ghost"} className="hover:bg-main! dark:hover:bg-transparent! transition-all ml-4 lg:ml-0" asChild>
             <Link to={to} className="!text-base hover:font-semibold dark:hover:text-main transition-all">{text}</Link>
         </Button>
     )
