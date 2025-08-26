@@ -51,7 +51,7 @@ const VM_Golf_8_Pricing = () => {
     return (
         <section className="container mx-auto" data-aos="fade-up">
             <div className="mx-auto text-center">
-                <h2 className="mb-4 text-4xl font-medium lg:text-5xl text-main">Preise</h2>
+                <h2 className="mb-4 text-4xl font-orbi lg:text-5xl text-main">Preise</h2>
                 <span className="text-muted-foreground">Abrechnungszeitraum</span>
                 <div className="h-12 bg-muted flex items-center rounded-lg p-1 text-lg w-fit mx-auto mt-2">
                     <div className="grid gap-3 h-full grid-cols-2">
@@ -114,11 +114,11 @@ const VM_Golf_8 = () => {
             <main className="flex-1 mt-[88px]">
                 <div className="relative pt-32 lg:pt-60 pb-12">
                     <div className="container mx-auto px-4 relative z-20">
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main mb-7 font-medium" data-aos="fade-up" data-aos-delay="300">VW Golf 8 R</h1>
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main mb-7 font-orbi" data-aos="fade-up" data-aos-delay="300">VW Golf 8 R</h1>
                         <p className="text-lg lg:text-xl text-neutral-100" data-aos="fade-up" data-aos-delay="300">Du senkst den Fuß ein kurzes Zischen, dann entfesselt der Golf R seine Kraft. Kein Zögern, kein großes Spektakel nur ein kompromissloser Vorstoß nach vorn, direkt, kontrolliert, brutal und präzise auf alle vier Räder verteilt. Dieses Auto braucht keinen Applaus, es kündigt sich an durch die Akrapovic-Auspuffanlage.
                         </p>
                         <div className="mt-7 flex gap-x-4 items-center">
-                            <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full sm:w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
+                            <Button variant={"main"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                         </div>
                     </div>
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
@@ -209,7 +209,7 @@ const VM_Golf_8 = () => {
                             <div className="flex flex-col gap-y-5 items-start relative z-20">
                                 <h3 className="text-main text-3xl">VW Golf 8 R Performance</h3>
                                 <p className="text-neutral-100 lg:text-lg">Der Golf 8 R Performance – gebaut für maximale Performance im Alltag und auf der Rennstrecke. Unter der Motorhaube arbeitet ein kraftvoller 2,0-Liter-TSI-Vierzylinder, der mit 333 PS und 420 Nm Drehmoment beeindruckt. In nur 4,7 Sekunden schießt er auf Tempo 100 und liefert dabei ein Fahrerlebnis, das unter die Haut geht. Besonders markant: die optionale Akrapovic‒Abgasanlage mit Titan-Endrohren – leicht, edel und mit einem Sound, der Emotionen weckt. Das fortschrittliche Allradsystem mit R‒Performance Torque Vectoring sorgt für messerscharfe Kurvenlage und volle Kontrolle in jeder Fahrsituation. Optisch zeigt sich der Golf R von seiner schärfsten Seite mit muskulösem Auftritt, R-spezifischer Front, markantem Diffusor und dezentem Dachkantenspoiler. Im Innenraum trifft Hightech auf Sportlichkeit: digitales Cockpit, R-Sportsitze und eine Verarbeitung, die keine Wünsche offenlässt.</p>
-                                <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full lg:w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
+                                <Button variant={"main"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg w-full lg:w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                             </div>
                             <div className="absolute top-0 left-0 w-full h-full bg-neutral-900/75 z-10 bg-no-repeat bg-center"></div>
                             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/qMvYXMHP/A7402872.jpg')] bg-cover bg-center z-0" />

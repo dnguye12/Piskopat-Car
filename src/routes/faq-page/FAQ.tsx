@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button";
 import { useLayoutEffect } from "react";
-import { Link } from "react-router";
 
 type ListItem = {
     i: number;
@@ -152,10 +151,10 @@ const FAQ = () => {
 
                 <div className="relative pt-32 lg:pt-60 pb-12">
                     <div className="container mx-auto px-4 relative z-20">
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main" data-aos="fade-right" data-aos-delay="300">Häufige Fragen</h1>
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main font-orbi" data-aos="fade-right" data-aos-delay="300">Häufige Fragen</h1>
                         <h2 className="text-3xl md:text-5xl lg:text-6xl text-neutral-100" data-aos="fade-left" data-aos-delay="300">Wir haben die Antworten!</h2>
                         <div className="mt-7 flex gap-x-4 items-center">
-                            <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg w-full sm:w-auto" asChild><Link to="/kontakt">Kontakt</Link></Button>
+                            <Button variant={"main"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                         </div>
 
 

@@ -18,10 +18,10 @@ const Test = () => {
             <Navbar />
             <main className="flex-1 pb-6">
                 <TestHero />
-                <TestCars />
-                <TestProcess />
                 <TestMoments />
                 <TestFeatures />
+                <TestProcess />
+                <TestCars />
                 <TestReviews />
                 <TestMap />
             </main>

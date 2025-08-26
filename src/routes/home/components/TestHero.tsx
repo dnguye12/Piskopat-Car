@@ -22,8 +22,8 @@ import { Link } from "react-router";
                     </div>
                 </div>
                 <div className="mt-7 flex gap-x-4 items-center" data-aos="fade-right" data-aos-delay="400">
-                    <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
-                    <Button variant={"main-outline"} size="lg" className="font-semibold h-16 px-8 text-lg" asChild>
+                    <Button variant={"main"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
+                    <Button variant={"main-outline"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild>
                         <Link to="/fahrzeuge">Fahrzeuge</Link>
                     </Button>
                 </div>
@@ -37,7 +37,7 @@ const TestHero = () => {
         <div className="w-full min-h-screen lg:h-screen pt-[88px] relative">
             <div className="container mx-auto px-4 pt-36  h-full relative hidden lg:flex flex-col items-center z-20">
                 <h5 className="text-6xl text-neutral-100" data-aos="fade-right" data-aos-delay="300">Reiseziel? Egal.</h5>
-                <h1 className="text-6xl text-main font-medium" data-aos="fade-left" data-aos-delay="300">Hauptsache Sportwagen</h1>
+                <h1 className="text-6xl text-main font-orbi" data-aos="fade-left" data-aos-delay="300">Hauptsache Sportwagen</h1>
                 <p className="mt-8 text-xl text-neutral-100 max-w-3xl whitespace-pre-wrap break-words text-center" data-aos="zoom-in" data-aos-delay="500">X-Sportwagen – hier zählt nicht nur die Leistung auf dem Papier, sondern das Gefühl am Steuer. Erlebe pure Faszination in unseren Luxusfahrzeugen – mit Premium-Service, der jeden Moment unvergesslich macht.
                 </p>
                 <div className="mt-8 grid grid-cols-2 max-w-2xl" >
@@ -55,8 +55,8 @@ const TestHero = () => {
                     </div>
                 </div>
                 <div className="mt-8 flex gap-x-4 items-center" data-aos="fade-up" data-aos-delay="1800">
-                    <Button variant={"main"} size="lg" className="font-semibold h-16 px-8 text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
-                    <Button variant={"main-outline"} size="lg" className="font-semibold h-16 px-8 text-lg" asChild>
+                    <Button variant={"main"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
+                    <Button variant={"main-outline"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild>
                         <Link to="/fahrzeuge">Fahrzeuge</Link>
                     </Button>
                 </div>
@@ -85,9 +85,9 @@ const TestHero = () => {
                         <BadgePercentIcon className=" text-main" /><span className=" font-semibold ">10% Neukundenrabatt!</span>
                     </div>
                 </div>
-                <div className="mt-6 flex flex-col sm:flex-row sm:justify-center gap-6 items-center">
-                    <Button variant={"main"} size="lg" className="sm:flex-1 font-semibold h-16 px-8 text-lg w-full" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
-                    <Button variant={"main-outline"} size="lg" className="sm:flex-1 font-semibold h-16 px-8 text-lg w-full">Fahrzeuge</Button>
+                <div className="my-6 flex flex-col sm:flex-row sm:justify-center gap-6 items-center">
+                    <Button variant={"main"} size="lg" className="sm:flex-1 font-semibold h-12 lg:h-16 px-8 lg:text-lg w-full" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
+                    <Button variant={"main-outline"} size="lg" className="sm:flex-1 font-semibold h-12 lg:h-16 px-8 lg:text-lg w-full">Fahrzeuge</Button>
                 </div>
             </div>
         </div>

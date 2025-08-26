@@ -28,7 +28,7 @@ const PricingCard = ({ title, date, price, per, km, highlight = false }: Pricing
                     <span className="text-6xl font-medium font-sans">{price}</span>
                 </h2>
                 <p className="mt-1 text-sm text-muted-foreground mb-6">{per}</p>
-                <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow w-full" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
+                <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow w-full" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
             </div>
             <div className="flex flex-col gap-y-3 p-8">
                 {

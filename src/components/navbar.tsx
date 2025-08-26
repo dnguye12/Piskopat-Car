@@ -96,7 +96,7 @@ const Navbar = () => {
                     </NavigationMenuList>
                 </NavigationMenu>
                 <div className="flex items-center gap-x-2">
-                    <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
+                    <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                     <Separator orientation="vertical" className="!h-12 mx-1" />
                     <ThemeToggle />
                     {/* 
@@ -155,7 +155,7 @@ const Navbar = () => {
                                     <Separator className="my-6" />
                                 </div>
                                 <div className="flex items-center px-6 gap-x-3">
-                                    <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Sportwagen mieten</a></Button>
+                                    <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                                     <ThemeToggle />
                                     {/*
                                     <Button size={"icon"} variant={"outline"} className="size-12">

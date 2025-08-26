@@ -10,16 +10,18 @@ const TestMap = () => {
 
     return (
         <section className="container mx-auto mt-6 px-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="col-span-1 rounded-lg border shadow overflow-hidden grid grid-cols-2 lg:block" data-aos="fade-right">
+            <div className="col-span-1 rounded-lg border shadow overflow-hidden grid grid-cols-2 lg:block">
                 <div className="hidden sm:block aspect-auto lg:aspect-video bg-[url('https://www.muensterland.com/site/assets/files/34133/ennigerloh_muehle_04_seb.jpg')] w-full bg-cover bg-center"></div>
-                <div className="col-span-2 sm:col-span-1 bg-accent p-8 flex flex-col">
-                    <p className="font-medium text-2xl mb-3 text-main">Machen Sie jede Fahrt zu einem besonderen Moment.</p>
-                    <p className="mb-6 text-lg">Dynamik und Luxus verschmelzen zu purem Genuss.</p>
-                    <Button size={"lg"} className="mt-5 py-2 !px-8 h-14 bg-neutral-900 text-neutral-100 hover:bg-neutral-900/80" asChild>
-                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
-                            <span className=" text-lg font-semibold">Sportwagen mieten</span>
-                        </a>
-                    </Button>
+                <div className="col-span-2 sm:col-span-1 bg-main p-8 flex flex-col">
+                    <p className="font-medium text-2xl mb-3 text-neutral-900">Machen Sie jede Fahrt zu einem besonderen Moment.</p>
+                    <p className="mb-6 text-lg text-neutral-900">Dynamik und Luxus verschmelzen zu purem Genuss.</p>
+                    <div className="flex justify-center sm:justify-start">
+                        <Button size={"lg"} className="mt-5 py-2 !px-8 h-14 bg-neutral-900 text-neutral-100 hover:bg-neutral-900/80" asChild>
+                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
+                                <span className=" text-lg font-semibold">Jetzt buchen</span>
+                            </a>
+                        </Button>
+                    </div>
                 </div>
             </div>
             <div className="col-span-1 lg:col-span-2 rounded-lg overflow-hidden shadow border">

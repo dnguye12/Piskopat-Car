@@ -8,6 +8,7 @@ import {
     FormControl,
     FormField,
     FormItem,
+    FormLabel,
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
@@ -64,12 +65,13 @@ export function ContactForm() {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
                     control={form.control}
                     name="name"
                     render={({ field }) => (
-                        <FormItem className="mb-5">
+                        <FormItem className="mb-6">
+                            <FormLabel>Name*</FormLabel>
                             <FormControl>
                                 <Input type="text" placeholder="Name*" {...field} className="contact-input" />
                             </FormControl>
@@ -81,7 +83,8 @@ export function ContactForm() {
                     control={form.control}
                     name="phone"
                     render={({ field }) => (
-                        <FormItem className="mb-5">
+                        <FormItem className="mb-6">
+                            <FormLabel>Telefon*</FormLabel>
                             <FormControl>
                                 <Input type="number" placeholder="Telefon*" {...field} className="contact-input" />
                             </FormControl>
@@ -93,7 +96,8 @@ export function ContactForm() {
                     control={form.control}
                     name="email"
                     render={({ field }) => (
-                        <FormItem className="mb-5">
+                        <FormItem className="mb-6">
+                            <FormLabel>Email*</FormLabel>
                             <FormControl>
                                 <Input type="email" placeholder="E-Mail*" {...field} className="contact-input" />
                             </FormControl>
@@ -105,7 +109,8 @@ export function ContactForm() {
                     control={form.control}
                     name="content"
                     render={({ field }) => (
-                        <FormItem className="mb-5">
+                        <FormItem className="">
+                            <FormLabel>Nachricht*</FormLabel>
                             <FormControl>
                                 <Textarea {...field} placeholder="Nachricht*" className="contact-textarea" />
                             </FormControl>
