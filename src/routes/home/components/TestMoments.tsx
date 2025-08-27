@@ -85,7 +85,7 @@ const TestMoments = () => {
                 </div>
             </div>
 
-
+{/*
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className="flex flex-col justify-center items-center bg-main rounded-lg shadow-md border p-8 xl:p-14" data-aos="fade-up" data-aos-delay="100">
                     <div className=" w-14 h-14 rounded-md flex justify-center items-center border-2 border-neutral-900">
@@ -151,7 +151,7 @@ const TestMoments = () => {
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://images.pexels.com/photos/620335/pexels-photo-620335.jpeg')] bg-cover bg-center"></div>
                 </div>
             </div>
-
+*/}
             <div className="mt-6 flex flex-col lg:grid grid-cols-2 rounded-lg bg-accent shadow border" data-aos="fade-up">
                 <div className="flex flex-col gap-6 lg:gap-10 p-8 lg:p-14">
                     <h2 className="text-3xl lg:text-4xl text-main">Rabattmöglichkeiten</h2>
