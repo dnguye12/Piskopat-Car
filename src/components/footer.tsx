@@ -1,12 +1,15 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { MailIcon, MapPinIcon, PhoneCallIcon } from "lucide-react";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Footer = () => {
+    const { pathname } = useLocation()
+
     return (
-        <footer className="bg-accent px-6 py-6 lg:py-12 border border-t">
-            <div className="container mx-auto ">
+        <footer className="bg-accent py-6 lg:py-12 border border-t">
+            <div className="container mx-auto px-6">
                 <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-5">
                     <div className="flex flex-col gap-y-5">
                         <h5 className="text-2xl lg:text-3xl font-semibold text-center lg:text-start">SIE MÖCHTEN SCHON BALD IHREN TRAUMWAGEN FAHREN?</h5>
@@ -18,10 +21,10 @@ const Footer = () => {
                     </div>
                 </div>
                 <Separator className="my-6 lg:my-12" />
-                <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div className="hidden xl:grid xl:grid-cols-5">
                     <div className="flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12">
+                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-20">
                             <li className="flex items-center gap-x-1"><MapPinIcon className="dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
                             <li className="flex items-center gap-x-1"><MailIcon className="dark:text-main" /> info@xsportwagen.de</li>
                             <li className="flex items-center gap-x-1"><PhoneCallIcon className="dark:text-main" /> +49 176 72223678</li>
@@ -43,7 +46,7 @@ const Footer = () => {
                         </div>
 
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold block lg:hidden">Rechtliches</h4>
-                        <div className="text-muted-foreground flex lg:hidden flex-col gap-y-3 text-base font-medium mb-0 md:mb-12">
+                        <div className="text-muted-foreground flex lg:hidden flex-col gap-y-3 text-base font-medium mb-0 md:mb-16">
                             <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
                             <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
                         </div>
@@ -51,8 +54,10 @@ const Footer = () => {
                     <div className="hidden lg:flex flex-col md:mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Sportwagen mieten</h4>
                         <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium">
-                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</Link>
-                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagenvermietung</Link>
+                            <Link to="/sportwagen-mieten-ennigerloh" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</Link>
+                            <Link to="/sportwagen-mieten-nrw" className="hover:text-foreground transition-all">Sportwagen mieten NRW</Link>
+                            <Link to="/sportwagenvermietung" className="hover:text-foreground transition-all">Sportwagenvermietung</Link>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen mieten</Link>
                         </div>
                     </div>
                     <div className="flex flex-col mx-auto">
@@ -63,8 +68,37 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="hidden lg:flex flex-col md:mx-auto">
-                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Rechtliches</h4>
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Business</h4>
                         <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-20">
+                            {
+                                pathname === "/"
+                                    ?
+                                    (
+                                        <AnchorLink href="#kundenstimmen" offset={120} className="hover:text-foreground transition-all">Kundenstimmen</AnchorLink>
+                                    )
+                                    :
+                                    (
+                                        <Link to="/#kundenstimmen" preventScrollReset className="hover:text-foreground transition-all">Kundenstimmen</Link>
+                                    )
+                            }
+                            <Link to="/fahrzeuge" className="hover:text-foreground transition-all">Fahrzeuge</Link>
+                            {
+                                pathname === "/"
+                                    ?
+                                    (
+                                        <AnchorLink href="#vorteile" offset={120} className="hover:text-foreground transition-all">Vorteile</AnchorLink>
+                                    )
+                                    :
+                                    (
+                                        <Link to="/#vorteile" preventScrollReset className="hover:text-foreground transition-all">Vorteile</Link>
+                                    )
+                            }
+                            <Link to="/faq" className="hover:text-foreground transition-all">FAQ</Link>
+                        </div>
+                    </div>
+                    <div className="hidden lg:flex flex-col md:mx-auto">
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Rechtliches</h4>
+                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-32">
                             <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
                             <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
                         </div>
@@ -83,86 +117,85 @@ const Footer = () => {
                         <p className="block lg:hidden text-muted-foreground md:text-center">@ X-Sportwagen 2025. <br className="block md:hidden" /> Alle Rechte vorbehalten.</p>
                     </div>
                 </div>
-                <div className="hidden sm:grid lg:hidden grid-cols-2">
+                <div className="grid xl:hidden grid-cols-2">
                     <div className="mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12">
-                            <li className="flex items-center gap-x-1"><MapPinIcon className="dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
-                            <li className="flex items-center gap-x-1"><MailIcon className="dark:text-main" /> info@xsportwagen.de</li>
-                            <li className="flex items-center gap-x-1"><PhoneCallIcon className="dark:text-main" /> +49 176 72223678</li>
+                        <ul className="text-muted-foreground space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-8 sm:mb-12">
+                            <li className="flex items-center gap-x-1"><MapPinIcon className="hidden sm:block dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
+                            <li className="flex items-center gap-x-1"><MailIcon className="hidden sm:block dark:text-main" /> info@xsportwagen.de</li>
+                            <li className="flex items-center gap-x-1"><PhoneCallIcon className="hidden sm:block dark:text-main" /> +49 176 72223678</li>
                         </ul>
 
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Business</h4>
+                        <div className="text-muted-foreground flex flex-col space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-8 sm:mb-12">
+                            {
+                                pathname === "/"
+                                    ?
+                                    (
+                                        <AnchorLink href="#kundenstimmen" offset={120} className="hover:text-foreground transition-all">Kundenstimmen</AnchorLink>
+                                    )
+                                    :
+                                    (
+                                        <Link to="/#kundenstimmen" preventScrollReset className="hover:text-foreground transition-all">Kundenstimmen</Link>
+                                    )
+                            }
+                            <Link to="/fahrzeuge" className="hover:text-foreground transition-all">Fahrzeuge</Link>
+                        </div>
+
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Sportwagen mieten</h4>
-                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
+                        <div className="text-muted-foreground flex flex-col space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-[148px] sm:mb-[120px]">
                             <Link to="/hochzeitsmiete" className="hover:text-foreground transition-all">Hochzeitsauto mieten</Link>
                             <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen miete</Link>
                         </div>
 
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">FahrzeugModelle</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
+                        <ul className="text-muted-foreground space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-8 ">
                             <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
                         </ul>
                     </div>
                     <div className="mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Rechtliches</h4>
-                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
+                        <div className="text-muted-foreground flex flex-col space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-[88px]">
                             <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
                             <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
                             <p className="hover:text-foreground transition-all text-transparent">.</p>
                         </div>
 
+                        <div className="text-muted-foreground flex flex-col space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-8 sm:mb-10">
+                            {
+                                pathname === "/"
+                                    ?
+                                    (
+                                        <AnchorLink href="#vorteile" offset={120} className="hover:text-foreground transition-all">Vorteile</AnchorLink>
+                                    )
+                                    :
+                                    (
+                                        <Link to="/#vorteile" preventScrollReset className="hover:text-foreground transition-all">Vorteile</Link>
+                                    )
+                            }
+                            <Link to="/faq" className="hover:text-foreground transition-all">FAQ</Link>
+                        </div>
+
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold text-transparent">Sportwagen mieten</h4>
-                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
-                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</Link>
-                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagenvermietung</Link>
+                        <div className="text-muted-foreground flex flex-col space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-8 sm:mb-12">
+                            <Link to="/sportwagen-mieten-ennigerloh" className="hover:text-foreground transition-all">Sportwagen mieten Ennigerloh</Link>
+                            <Link to="/sportwagen-mieten-nrw" className="hover:text-foreground transition-all">Sportwagen mieten NRW</Link>
+                            <Link to="/sportwagenvermietung" className="hover:text-foreground transition-all">Sportwagenvermietung</Link>
+                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen mieten mieten</Link>
                         </div>
 
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Fahrzeugmarken</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
+                        <ul className="text-muted-foreground space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-8 ">
                             <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW mieten</Link>
                         </ul>
                     </div>
-                    <div className=" sm:col-span-2 flex flex-col items-center">
+                    <div className="col-span-2 flex flex-col items-center">
                         <div className="inline-flex items-center gap-x-2">
                             <img src="/logo-black.svg" alt="" className="block dark:hidden h-14 w-auto fill-black" />
                             <img src="/logo-dark-no-text.svg" alt="" className="hidden dark:block h-14 w-auto" />
                             <span className="text-xl font-semibold dark:text-main">X-Sportwagen</span>
                         </div>
                         <p className=" text-muted-foreground text-center">@ X-Sportwagen 2025. <br className="block md:hidden" /> Alle Rechte vorbehalten.</p>
-                    </div>
-                </div>
-                <div className="grid grid-cols-1 sm:hidden">
-                    <div className="mx-auto">
-                        <h4 className="mb-3 text-base font-semibold">Kontakt</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12">
-                            <li className="flex items-center gap-x-1"><MapPinIcon className="dark:text-main" /> Wulfsbergstr 1a, 59320 Ennigerloh</li>
-                            <li className="flex items-center gap-x-1"><MailIcon className="dark:text-main" /> info@xsportwagen.de</li>
-                            <li className="flex items-center gap-x-1"><PhoneCallIcon className="dark:text-main" /> +49 176 72223678</li>
-                        </ul>
-
-                        <h4 className="mb-3 text-base font-semibold">Rechtliches</h4>
-                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
-                            <Link to="/impressum" className="hover:text-foreground transition-all">Impressum</Link>
-                            <Link to="/datenschutz" className="hover:text-foreground transition-all">Datenschutz</Link>
-                        </div>
-
-                        <h4 className="mb-3 text-base font-semibold">Sportwagen mieten</h4>
-                        <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-12">
-                            <Link to="/hochzeitsmiete" className="hover:text-foreground transition-all">Hochzeitsauto mieten</Link>
-                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen miete</Link>
-                            <Link to="/hochzeitsmiete" className="hover:text-foreground transition-all">Hochzeitsauto mieten</Link>
-                            <Link to="/sportwagen-mieten" className="hover:text-foreground transition-all">Sportwagen miete</Link>
-                        </div>
-
-                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">FahrzeugModelle</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
-                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW Golf 8 R</Link>
-                        </ul>
-
-                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Fahrzeugmarken</h4>
-                        <ul className="text-muted-foreground space-y-3 text-base font-medium mb-12 ">
-                            <Link to="/fahrzeuge/vw_golf_8" className="hover:text-foreground transition-all">VW mieten</Link>
-                        </ul>
                     </div>
                 </div>
             </div>

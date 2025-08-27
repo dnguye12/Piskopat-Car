@@ -3,7 +3,7 @@ import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 
 const TestFeatures = () => {
     return (
-        <section className="container mx-auto mt-6 px-6 overflow-hidden">
+        <section id="vorteile" className="container mx-auto mt-6 px-6 overflow-hidden">
             <div className="bg-main p-8 rounded-lg shadow border relative flex flex-col lg:grid grid-cols-12 gap-x-12" data-aos="fade-up">
                 <div className="col-span-12 lg:col-span-7 text-neutral-900" data-aos="fade-right"  data-aos-delay="400">
                     <h3 className="text-3xl lg:text-4xl max-w-2xl">Für einen Tag voller Adrenalin, ein Wochenende voller Freiheit oder länger – <span className="font-medium ">du entscheidest, wir liefern</span>.</h3>

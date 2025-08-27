@@ -127,7 +127,7 @@ const TestReviews = () => {
     const randomReviews = useMemo(() => sampleArray(reviews, 10), [])
 
     return (
-        <section className="container mx-auto mt-6 px-6">
+        <section id="kundenstimmen" className="container mx-auto mt-6 px-6">
             <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center mb-6 shadow-md border" data-aos="fade-up">
                 <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center font-orbi">Was unsere Kunden sagen</h3>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat bg-center"></div>
@@ -142,12 +142,12 @@ const TestReviews = () => {
                     }),
                 ]}
             >
-                <CarouselContent className="-ml-1">
+                <CarouselContent className="-ml-4 ">
                     {randomReviews.map((review, index) => (
                         <CarouselItem key={index} className="pl-4 lg:basis-1/2 xl:basis-1/3">
-                            <div className="p-1">
+                            <div className="">
                                 <Card className="py-0 shadow-md bg-accent">
-                                    <CardContent className="flex flex-col items-start justify-start p-8 gap-y-5 min-h-80">
+                                    <CardContent className="flex flex-col items-start justify-start p-8 gap-y-5 gap-x-4 min-h-80">
                                         <div className="inline-flex items-center gap-x-1">
                                             <StarIcon fill="#fbbf24" strokeWidth={0} />
                                             <StarIcon fill="#fbbf24" strokeWidth={0} />

@@ -8,10 +8,20 @@ import TestMoments from "./components/TestMoments";
 import TestFeatures from "./components/TestFeatures";
 import TestReviews from "./components/TestReviews";
 import TestMap from "./components/TestMap";
+import { useLocation } from "react-router";
 
 const Test = () => {
+    const location = useLocation()
+
     useLayoutEffect(() => {
-        window.scrollTo(0, 0)
+        if (location.hash) {
+            const element = document.querySelector(location.hash)
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" })
+            }
+        } else {
+            window.scrollTo(0, 0)
+        }
     })
     return (
         <div className="w-full min-h-screen flex flex-col">

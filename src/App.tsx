@@ -8,9 +8,12 @@ import Vehicle from "./routes/vehicle/Vehicle";
 import Impressum from "./routes/impressum/Impressum";
 import Datenschutz from "./routes/datenschutz/Datenschutz";
 import Wedding from "./routes/wedding/Wedding";
-import SportRent from "./routes/sport-rent/SportRent";
 import Test from "./routes/home/Home";
 import FAQ from "./routes/faq-page/FAQ";
+import SportRentNRW from "./routes/sport-rent/SportRentNRW";
+import Sportwagenvermietung from "./routes/sport-rent/Sportwagenvermietung";
+import SportRentEnnigerloh from "./routes/sport-rent/SportRentEnnigerloh";
+import SportRent from "./routes/sport-rent/SportRent";
 
 function App() {
   useEffect(() => {
@@ -29,6 +32,9 @@ function App() {
       <Route path="/datenschutz" element={<Datenschutz />} />
       <Route path="/hochzeitsmiete" element={<Wedding />} />
       <Route path="/sportwagen-mieten" element={<SportRent />}/>
+      <Route path="/sportwagen-mieten-nrw" element={<SportRentNRW />}/>
+      <Route path="/sportwagenvermietung" element={<Sportwagenvermietung />}/>
+      <Route path="/sportwagen-mieten-ennigerloh" element={<SportRentEnnigerloh />}/>
       <Route path="/faq" element={<FAQ />}/>
     </Routes>
   )

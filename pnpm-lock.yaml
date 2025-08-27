@@ -50,6 +50,9 @@ importers:
       '@types/aos':
         specifier: ^3.0.7
         version: 3.0.7
+      '@types/react-anchor-link-smooth-scroll':
+        specifier: ^1.0.5
+        version: 1.0.5
       '@types/react-slick':
         specifier: ^0.23.13
         version: 0.23.13
@@ -95,6 +98,9 @@ importers:
       react-alice-carousel:
         specifier: ^2.9.1
         version: 2.9.1(react@19.0.0-rc.1)
+      react-anchor-link-smooth-scroll:
+        specifier: ^1.0.12
+        version: 1.0.12
       react-dom:
         specifier: 19.0.0-rc.1
         version: 19.0.0-rc.1(react@19.0.0-rc.1)
@@ -1199,6 +1205,9 @@ packages:
   '@types/node@24.3.0':
     resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
 
+  '@types/react-anchor-link-smooth-scroll@1.0.5':
+    resolution: {integrity: sha512-/OYQGmPMQ5IkEhQpiOtaMjOovdG8Vwr4UmCyIN7AiBoTvcAa5drg5Lizy9Bdz/WAnXFWj8xnQPwIxUWsVZUuew==}
+
   '@types/react-dom@19.1.7':
     resolution: {integrity: sha512-i5ZzwYpqjmrKenzkoLM2Ibzt6mAsM7pxB6BCIouEVVmgiqaMj1TjaK7hnA36hbW5aZv20kx7Lw6hWzPWg0Rurw==}
     peerDependencies:
@@ -1988,6 +1997,9 @@ packages:
     resolution: {integrity: sha512-/wQE4cqogKL/db+SoiiRmdj5j6C9I31pfzrmz8nuXmWmSl/UxxJz/O92W/ryxicTw1au+3mUW+drU3ZAhF3JPA==}
     peerDependencies:
       react: '>=15.4'
+
+  react-anchor-link-smooth-scroll@1.0.12:
+    resolution: {integrity: sha512-aaY+9X0yh8YnC0jBfoTKpsiCLdO/Y6pCltww+VB+NnTBPDOvnIdnp1AlazajsDitc1j+cVSQ+yNtaVeTIMQbxw==}
 
   react-dom@19.0.0-rc.1:
     resolution: {integrity: sha512-k8MfDX+4G+eaa1cXXI9QF4d+pQtYol3nx8vauqRWUEOPqC7NQn2qmEqUsLoSd28rrZUL+R3T2VC+kZ2Hyx1geQ==}
@@ -3269,6 +3281,10 @@ snapshots:
     dependencies:
       undici-types: 7.10.0
 
+  '@types/react-anchor-link-smooth-scroll@1.0.5':
+    dependencies:
+      '@types/react': 19.1.10
+
   '@types/react-dom@19.1.7(@types/react@19.1.10)':
     dependencies:
       '@types/react': 19.1.10
@@ -4024,6 +4040,8 @@ snapshots:
     dependencies:
       react: 19.0.0-rc.1
       vanilla-swipe: 2.4.1
+
+  react-anchor-link-smooth-scroll@1.0.12: {}
 
   react-dom@19.0.0-rc.1(react@19.0.0-rc.1):
     dependencies:
