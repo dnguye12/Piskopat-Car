@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
     Carousel,
+    type CarouselApi,
     CarouselContent,
     CarouselItem,
     CarouselNext,
@@ -12,9 +13,10 @@ import {
 import { Label } from "@/components/ui/label"
 import { cn } from "@/lib/utils";
 import { BadgeEuroIcon, BanknoteArrowDownIcon, IdCardIcon, InfoIcon, ShieldCheckIcon, UserRoundCheckIcon } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PricingCard from "./PricingCard";
 import Autoplay from "embla-carousel-autoplay"
+import { Progress } from "@/components/ui/progress";
 
 const imageLinks = [
     "https://i.ibb.co/Z1JXP8dZ/A7402911.png",
@@ -107,6 +109,24 @@ const VM_Golf_8_Pricing = () => {
 }
 
 const VM_Golf_8 = () => {
+    const [api, setApi] = useState<CarouselApi>()
+    const [current, setCurrent] = useState(0)
+    const [count, setCount] = useState(0)
+
+    const progress = (current * 100) / count;
+
+    useEffect(() => {
+        if (!api) {
+            return
+        }
+
+        setCount(api.scrollSnapList().length)
+        setCurrent(api.selectedScrollSnap() + 1)
+
+        api.on("select", () => {
+            setCurrent(api.selectedScrollSnap() + 1)
+        })
+    }, [api])
 
     return (
         <div className="w-full min-h-screen flex flex-col">
@@ -124,7 +144,7 @@ const VM_Golf_8 = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                     <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/tMzp01TL/A7402864.png')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
-                <div className="container mx-auto px-4 pt-6 pb-4">
+                <div className="container mx-auto px-4 pt-6 pb-6 lg:pb-0">
                     <Carousel
                         opts={{
                             align: "start",
@@ -135,7 +155,8 @@ const VM_Golf_8 = () => {
                                 delay: 10000,
                             }),
                         ]}
-                        className="w-[calc(100%-80px)] md:w-full mx-auto"
+                        className="w-full mx-auto"
+                        setApi={setApi}
                     >
                         <CarouselContent className="-ml-4 ">
                             {imageLinks.map((item, index) => (
@@ -150,11 +171,14 @@ const VM_Golf_8 = () => {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
+                        <CarouselPrevious className="hidden lg:inline-flex" />
+                        <CarouselNext className="hidden lg:inline-flex" />
+                        <CarouselPrevious className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-0" />
+                        <CarouselNext className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-2 translate-x-full" />
                     </Carousel>
+                    <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-1" />
                 </div>
-                <div className="container mx-auto px-4 flex flex-col gap-y-6">
+                <div className="container mx-auto px-4 flex flex-col gap-y-6 mt-4">
                     <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="flex flex-col items-center p-6 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
