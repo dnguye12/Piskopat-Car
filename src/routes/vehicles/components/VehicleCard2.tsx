@@ -10,6 +10,7 @@ interface VehicleCardProps {
 }
 
 const VehicleCard2 = ({ index, car }: VehicleCardProps) => {
+    console.log(index)
     return (
         <div className=" rounded-lg overflow-hidden">
             <div className={`w-full aspect-video bg-[url(${car.image})] bg-cover bg-bottom`}></div>

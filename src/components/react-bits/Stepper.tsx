@@ -8,7 +8,6 @@ import React, {
 } from "react";
 import { motion, AnimatePresence, type Variants } from "motion/react";
 import { Button } from "../ui/button";
-import { cn } from "@/lib/utils";
 
 interface StepperProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;

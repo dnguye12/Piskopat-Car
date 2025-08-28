@@ -11,6 +11,7 @@ interface VehicleCardProps {
     car: Car
 }
 const VehicleCard3 = ({ index, car }: VehicleCardProps) => {
+    console.log(index)
     return (
         <Tooltip>
             <TooltipTrigger asChild>
