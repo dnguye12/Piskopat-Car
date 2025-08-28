@@ -279,6 +279,55 @@ const VM_Golf_8 = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="grid grid-cols-6 gap-6">
+                        <div className={`col-span-2 rounded-lg border bg-[url(https://i.ibb.co/tMzp01TL/A7402864.png)] bg-cover bg-center shadow`}></div>
+                        <div className="col-span-4 p-8 rounded-lg border bg-accent shadow">
+                            <p className="text-xl mb-1">Volkswagen</p>
+                            <h3 className="text-3xl mb-4">VW Golf 8 R Performance</h3>
+                            <p className="text-muted-foreground lg:text-lg">Der Golf 8 R Performance – gebaut für maximale Performance im Alltag und auf der Rennstrecke. Unter der Motorhaube arbeitet ein kraftvoller 2,0-Liter-TSI-Vierzylinder, der mit 333 PS und 420 Nm Drehmoment beeindruckt. In nur 4,7 Sekunden schießt er auf Tempo 100 und liefert dabei ein Fahrerlebnis, das unter die Haut geht. Besonders markant: die optionale Akrapovic‒Abgasanlage mit Titan-Endrohren – leicht, edel und mit einem Sound, der Emotionen weckt. Das fortschrittliche Allradsystem mit R‒Performance Torque Vectoring sorgt für messerscharfe Kurvenlage und volle Kontrolle in jeder Fahrsituation. Optisch zeigt sich der Golf R von seiner schärfsten Seite mit muskulösem Auftritt, R-spezifischer Front, markantem Diffusor und dezentem Dachkantenspoiler. Im Innenraum trifft Hightech auf Sportlichkeit: digitales Cockpit, R-Sportsitze und eine Verarbeitung, die keine Wünsche offenlässt.</p>
+                        </div>
+                        <div className="col-span-3 rounded-lg border bg-main p-8 text-neutral-900 shadow">
+                            <h4 className="text-3xl mb-4">Datenblatt</h4>
+                            <div className="grid grid-cols-2 gap-x-6 lg:text-lg">
+                                <div>
+                                    <p><span className="font-semibold">Hersteller:</span> <span>Volkswagen</span></p>
+                                    <p><span className="font-semibold">Modell:</span> <span>Golf 8 R Performance</span></p>
+                                    <p><span className="font-semibold">Typ:</span> <span>Kompaktklasse</span></p>
+                                    <p><span className="font-semibold">Kraftstoffart:</span> <span>Benzin</span></p>
+                                    <p><span className="font-semibold">Getriebe:</span> <span>Automatik</span></p>
+                                    <p><span className="font-semibold">Leistung:</span> <span>333 PS</span></p>
+                                </div>
+                                <div>
+                                    <p><span className="font-semibold">Drehmoment:</span> <span>420 Nm</span></p>
+                                    <p><span className="font-semibold">Höchstgeschwindigkeit:</span> <span>270 km/h</span></p>
+                                    <p><span className="font-semibold">0–100 km/h:</span> <span>4,7 Sekunden</span></p>
+                                    <p><span className="font-semibold">Antrieb:</span> <span>Allradantrieb</span></p>
+                                    <p><span className="font-semibold">Sitze:</span> <span>5</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-span-3 rounded-lg border bg-main p-8 text-neutral-900 shadow">
+                            <h4 className="text-3xl mb-4">Mietbedingungen</h4>
+                            <div className="flex flex-col gap-y-3 text-neutral-900">
+                                <div className="inline-flex gap-x-3 items-center">
+                                    <IdCardIcon className="min-w-7 size-7" />
+                                    <span className=" lg:text-lg">Ab 18 Jahren</span>
+                                </div>
+                                <div className="inline-flex gap-x-3 items-center">
+                                    <ShieldCheckIcon className="min-w-7 size-7" />
+                                    <span className=" lg:text-lg">Vollkaskoschutz ab 4.000€ Selbstbeteiligung
+                                        (Kann auf Wunsch mit einer Zusatzversicherung auf
+                                        2.500€ reduziert werden. Wir kümmern uns um alles!)</span>
+                                </div>
+                                <div className="inline-flex gap-x-3 items-center">
+                                    <BadgeEuroIcon className="min-w-7 size-7" />
+                                    <span className=" lg:text-lg">
+                                        1.000 € Kaution Bar, Überweisung oder per Paypal oder
+                                        Eigenes Fahrzeug im wert von mindestens 1.000€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <VM_Golf_8_Pricing />
                     <div className="bg-main rounded-lg border mb-6 p-8 flex flex-col text-neutral-900" data-aos="fade-up">
                         <div className="flex gap-x-4 items-center">

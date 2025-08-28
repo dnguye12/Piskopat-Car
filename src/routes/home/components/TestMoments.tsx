@@ -15,13 +15,13 @@ const TestMoments = () => {
             </div>
 
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-                <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden" data-aos="fade-right">
+                <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden" data-aos="fade-left">
                     <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
-                        <CalendarCheckIcon className="w-7 h-7 text-main" />
+                        <ZapIcon className="w-7 h-7 text-main" />
                     </div>
                     <div className="relative z-20 flex flex-col items-start gap-y-5">
-                        <h2 className="text-main text-2xl lg:text-3xl">Langzeitmiete</h2>
-                        <p className="text-neutral-100 lg:text-lg">Ob für besondere Projekte oder längere Aufenthalte: Wir liefern Fahrgefühl auf Zeit.</p>
+                        <h2 className="text-main text-2xl lg:text-3xl">Tagesmiete</h2>
+                        <p className="text-neutral-100 lg:text-lg">Ein ganzer Tag voller Performance – perfekt für spontane Auszeiten oder besondere Anlässe.</p>
                         <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                 <span className=" text-lg">Jetzt buchen</span>
@@ -68,13 +68,13 @@ const TestMoments = () => {
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://i.ibb.co/MDstTCFs/moments2.jpg')] bg-cover bg-center"></div>
                 </div>
-                <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden" data-aos="fade-left">
+                <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden" data-aos="fade-right">
                     <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
-                        <ZapIcon className="w-7 h-7 text-main" />
+                        <CalendarCheckIcon className="w-7 h-7 text-main" />
                     </div>
                     <div className="relative z-20 flex flex-col items-start gap-y-5">
-                        <h2 className="text-main text-2xl lg:text-3xl">Tagesmiete</h2>
-                        <p className="text-neutral-100 lg:text-lg">Ein ganzer Tag voller Performance – perfekt für spontane Auszeiten oder besondere Anlässe.</p>
+                        <h2 className="text-main text-2xl lg:text-3xl">Langzeitmiete</h2>
+                        <p className="text-neutral-100 lg:text-lg">Ob für besondere Projekte oder längere Aufenthalte: Wir liefern Fahrgefühl auf Zeit.</p>
                         <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                 <span className=" text-lg">Jetzt buchen</span>
@@ -82,7 +82,7 @@ const TestMoments = () => {
                         </Button>
                     </div>
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
-                    <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://images.pexels.com/photos/13781/pexels-photo-13781.jpeg')] bg-cover bg-center"></div>
+                    <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://images.pexels.com/photos/620335/pexels-photo-620335.jpeg')] bg-cover bg-center"></div>
                 </div>
             </div>
 

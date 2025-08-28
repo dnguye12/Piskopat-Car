@@ -3,10 +3,13 @@ import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import VehicleCard from "./components/VehicleCard";
 import { useLayoutEffect } from "react";
+import VehicleCard2 from "./components/VehicleCard2";
+import VehicleCard3 from "./components/VehicleCard3";
 
 export type Car = {
     status: boolean;
     name: string;
+    brand: string;
     image: string;
     ps: number;
     auto: string;
@@ -18,7 +21,8 @@ export type Car = {
 const cars: Car[] = [
     {
         status: true,
-        name: "VW Golf 8 R Black Edition",
+        name: "Golf 8 R Black Edition",
+        brand: "Volkswagen",
         image: "https://i.ibb.co/tMzp01TL/A7402864.png",
         ps: 333,
         auto: "Automatik",
@@ -53,6 +57,12 @@ const Vehicles = () => {
                 <div className="container mx-auto px-4 my-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {cars.map((car, index) => (
                         <VehicleCard index={index} car={car} />
+                    ))}
+                    {cars.map((car, index) => (
+                        <VehicleCard2 index={index} car={car} />
+                    ))}
+                    {cars.map((car, index) => (
+                        <VehicleCard3 index={index} car={car} />
                     ))}
                 </div>
             </main>
