@@ -6,8 +6,11 @@ import { Badge } from "@/components/ui/badge";
 const TestCars = () => {
     return (
         <section className="container mx-auto px-6 mt-6">
-            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
-                <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center font-orbi">Unsere Fahrzeuge</h3>
+            <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
+                <div className="z-20">
+                    <h5 className="text-3xl sm:text-4xl md:text-5xl text-neutral-100 z-20 mb-2 text-center">Aktuell verfügbar</h5>
+                    <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-orbi text-center">Unsere Fahrzeuge</h3>
+                </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/n8fR3wtj/pexels-danielspase-951318.jpg')] bg-cover bg-center z-0" />
             </div>

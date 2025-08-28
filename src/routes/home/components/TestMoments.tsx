@@ -5,16 +5,17 @@ import { Link } from "react-router";
 const TestMoments = () => {
     return (
         <section className="container mx-auto px-6">
-            <div className="rounded-lg p-6 h-72 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
-                <h3 className="text-main text-4xl md:text-5xl lg:text-6xl z-20 text-center font-orbi">Wähle deinen Moment</h3>
+            <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
+                <div className="z-20">
+                    <h5 className="text-3xl sm:text-4xl md:text-5xl text-neutral-100 z-20 mb-2 text-center">Dein Anlass. Unsere Sportwagen.</h5>
+                    <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-orbi text-center">Wähle deinen Moment</h3>
+                </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/9H0wSD5f/moments.jpg')] bg-cover bg-center z-0" />
             </div>
 
-
-
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-                <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden">
+                <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden" data-aos="fade-right">
                     <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
                         <CalendarCheckIcon className="w-7 h-7 text-main" />
                     </div>
@@ -30,7 +31,7 @@ const TestMoments = () => {
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://images.pexels.com/photos/13781/pexels-photo-13781.jpeg')] bg-cover bg-center"></div>
                 </div>
-                <div className="xl:col-span-2 flex flex-col justify-between rounded-lg border p-8 lg:min-h-[440px] relative overflow-hidden">
+                <div className="xl:col-span-2 flex flex-col justify-between rounded-lg border p-8 lg:min-h-[440px] relative overflow-hidden" data-aos="fade-left">
                     <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
                         <Clock7Icon className="w-7 h-7 text-main" />
                     </div>
@@ -48,7 +49,7 @@ const TestMoments = () => {
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://i.ibb.co/d42JWdjc/moments1.jpg')] bg-cover bg-center"></div>
                 </div>
-                <div className="xl:col-span-2 flex flex-col justify-between rounded-lg border p-8 lg:min-h-[440px] relative overflow-hidden">
+                <div className="xl:col-span-2 flex flex-col justify-between rounded-lg border p-8 lg:min-h-[440px] relative overflow-hidden" data-aos="fade-right">
                     <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
                         <HeartIcon className="w-7 h-7 text-main" />
                     </div>
@@ -67,7 +68,7 @@ const TestMoments = () => {
                     <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://i.ibb.co/MDstTCFs/moments2.jpg')] bg-cover bg-center"></div>
                 </div>
-                <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden">
+                <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden" data-aos="fade-left">
                     <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
                         <ZapIcon className="w-7 h-7 text-main" />
                     </div>
@@ -85,7 +86,7 @@ const TestMoments = () => {
                 </div>
             </div>
 
-{/*
+            {/*
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className="flex flex-col justify-center items-center bg-main rounded-lg shadow-md border p-8 xl:p-14" data-aos="fade-up" data-aos-delay="100">
                     <div className=" w-14 h-14 rounded-md flex justify-center items-center border-2 border-neutral-900">
