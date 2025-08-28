@@ -4,11 +4,13 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
+    type CarouselApi,
 } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
 import { StarIcon } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay"
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { Progress } from "@/components/ui/progress";
 
 type Review = {
     author: string;
@@ -126,6 +128,25 @@ function sampleArray<T>(arr: T[], n: number): T[] {
 const TestReviews = () => {
     const randomReviews = useMemo(() => sampleArray(reviews, 10), [])
 
+    const [api, setApi] = useState<CarouselApi>()
+        const [current, setCurrent] = useState(0)
+        const [count, setCount] = useState(0)
+    
+        const progress = (current * 100) / count;
+    
+        useEffect(() => {
+            if (!api) {
+                return
+            }
+    
+            setCount(api.scrollSnapList().length)
+            setCurrent(api.selectedScrollSnap() + 1)
+    
+            api.on("select", () => {
+                setCurrent(api.selectedScrollSnap() + 1)
+            })
+        }, [api])
+
     return (
         <section id="kundenstimmen" className="container mx-auto mt-6 px-6">
             <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
@@ -137,13 +158,14 @@ const TestReviews = () => {
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/1ftF9yDq/reviews.jpg')] bg-cover bg-center z-0" />
             </div>
 
-            <Carousel className="w-[calc(100%-80px)] md:w-full mx-auto mt-6"
+            <Carousel className="w-full mx-auto mt-6 pb-6 lg:pb-0"
                 opts={{ loop: true }}
                 plugins={[
                     Autoplay({
                         delay: 10000,
                     }),
                 ]}
+                setApi={setApi}
             >
                 <CarouselContent className="-ml-4 ">
                     {randomReviews.map((review, index) => (
@@ -166,9 +188,12 @@ const TestReviews = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="hidden lg:inline-flex" />
+                <CarouselNext className="hidden lg:inline-flex" />
+                <CarouselPrevious className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-0" />
+                        <CarouselNext className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-2 translate-x-full" />
             </Carousel>
+            <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-1" />
         </section>
     );
 }
