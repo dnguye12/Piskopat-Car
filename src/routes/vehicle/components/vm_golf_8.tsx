@@ -14,6 +14,7 @@ import { cn } from "@/lib/utils";
 import { BadgeEuroIcon, BanknoteArrowDownIcon, IdCardIcon, InfoIcon, ShieldCheckIcon, UserRoundCheckIcon } from "lucide-react";
 import { useState } from "react";
 import PricingCard from "./PricingCard";
+import Autoplay from "embla-carousel-autoplay"
 
 const imageLinks = [
     "https://i.ibb.co/Z1JXP8dZ/A7402911.png",
@@ -123,17 +124,22 @@ const VM_Golf_8 = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                     <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/tMzp01TL/A7402864.png')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
-                <div className="container max-w-7xl mx-auto px-4 pt-6 pb-4">
+                <div className="container mx-auto px-4 pt-6 pb-4">
                     <Carousel
                         opts={{
                             align: "start",
                             loop: true
                         }}
+                        plugins={[
+                            Autoplay({
+                                delay: 10000,
+                            }),
+                        ]}
                         className="w-[calc(100%-80px)] md:w-full mx-auto"
                     >
-                        <CarouselContent>
+                        <CarouselContent className="-ml-4 ">
                             {imageLinks.map((item, index) => (
-                                <CarouselItem key={index} className="lg:basis-1/2 xl:basis-1/3">
+                                <CarouselItem key={index} className="pl-4 lg:basis-1/2 xl:basis-1/3">
                                     <div className="p-1">
                                         <Card className="p-0 overflow-hidden border shadow">
                                             <CardContent className="p-0">
