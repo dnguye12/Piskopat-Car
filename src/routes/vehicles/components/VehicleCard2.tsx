@@ -12,11 +12,11 @@ interface VehicleCardProps {
 const VehicleCard2 = ({ index, car }: VehicleCardProps) => {
     console.log(index)
     return (
-        <div className=" rounded-lg overflow-hidden">
+        <div className=" rounded-lg overflow-hidden" data-aos="fade-up">
             <div className={`w-full aspect-video bg-[url(${car.image})] bg-cover bg-bottom`}></div>
 
             <div className="bg-main flex flex-col items-start">
-                <div className="px-8 pt-8 pb-4 w-full flex justify-between items-start">
+                <div className="px-8 pt-8 pb-4 w-full flex justify-between items-start flex-col-reverse sm:flex-row gap-y-3">
                     <div>
                         <p className=" text-2xl text-neutral-900 font-medium">{car.name}</p>
                         <p className="text-xl text-neutral-900">{car.brand}</p>
@@ -25,13 +25,19 @@ const VehicleCard2 = ({ index, car }: VehicleCardProps) => {
                 </div>
                 <Separator className="bg-neutral-900/25 w-[calc(100%-64px)]! mx-auto" />
                 <div className="px-8 py-4 flex justify-between items-center text-neutral-900 w-full">
-                    <div className="flex flex-col">
-                        <p className="font-sans"><span className="font-medium">Leistung:</span> 333 PS</p>
-                        <p className="font-sans"><span className="font-medium">Getriebeart:</span> Automatik</p>
+                    <div className="hidden sm:flex flex-col">
+                        <p className="font-sans"><span className="font-medium">Leistung:</span> {car.ps} PS</p>
+                        <p className="font-sans"><span className="font-medium">Getriebeart:</span> {car.auto}</p>
                     </div>
-                    <div className="flex flex-col">
-                        <p className="font-sans"><span className="font-medium">Antriebsart:</span> Allradantrieb</p>
-                        <p className="font-sans"><span className="font-medium">Drehmoment:</span> 420 NM</p>
+                    <div className="hidden sm:flex flex-col">
+                        <p className="font-sans"><span className="font-medium">Antriebsart:</span> {car.wheel}</p>
+                        <p className="font-sans"><span className="font-medium">Drehmoment:</span> {car.nm} NM</p>
+                    </div>
+                    <div className="flex sm:hidden flex-col">
+                        <p className="font-sans"><span className="font-medium">Leistung:</span> {car.ps} PS</p>
+                        <p className="font-sans"><span className="font-medium">Getriebeart:</span> {car.auto}</p>
+                        <p className="font-sans"><span className="font-medium">Antriebsart:</span> {car.wheel}</p>
+                        <p className="font-sans"><span className="font-medium">Drehmoment:</span> {car.nm} NM</p>
                     </div>
                 </div>
                 <Separator className="bg-neutral-900/25 w-[calc(100%-64px)]! mx-auto" />

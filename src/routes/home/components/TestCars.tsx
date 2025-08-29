@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { CarIcon, ChevronRightIcon, FlameIcon, SettingsIcon, ZapIcon } from "lucide-react";
 import { Link } from "react-router";
 import { Skeleton } from "@/components/ui/skeleton"
 import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 const TestCars = () => {
     return (
         <section className="container mx-auto px-6 mt-6">
@@ -15,36 +15,47 @@ const TestCars = () => {
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/n8fR3wtj/pexels-danielspase-951318.jpg')] bg-cover bg-center z-0" />
             </div>
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className=" rounded-lg overflow-hidden shadow" data-aos="fade-up">
-                    <div className="w-full aspect-video bg-[url(https://i.ibb.co/tMzp01TL/A7402864.png)] bg-cover bg-bottom"></div>
-                    <div className="p-8 bg-main flex flex-col items-start gap-y-4">
-                        <Badge variant={"outline"} className=" border border-neutral-900 text-neutral-900 px-3 py-1 h-8 uppercase">Verfügbar</Badge>
-                        <p className=" text-2xl text-neutral-900">VW Golf 8 R Black Edition</p>
-                        <div className="grid grid-cols-1 min-[410px]:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 2xl:flex 2xl:justify-between w-full gap-4 2xl:gap-0">
-                            <div className="inline-flex justify-center items-center text-neutral-100 gap-x-1 bg-neutral-900 px-6 h-12 rounded-md">
-                                <FlameIcon strokeWidth={0} fill="#f5f5f5" className="min-w-6" />
-                                <span className="font-sans">333 PS</span>
+                <div className=" rounded-lg overflow-hidden" data-aos="fade-up">
+                    <div className={`w-full aspect-video bg-[url('https://i.ibb.co/tMzp01TL/A7402864.png')] bg-cover bg-bottom`}></div>
+
+                    <div className="bg-main flex flex-col items-start">
+                        <div className="px-8 pt-8 pb-4 w-full flex justify-between items-start flex-col-reverse sm:flex-row gap-y-3">
+                            <div>
+                                <p className=" text-2xl text-neutral-900 font-medium">Golf 8 R Black Edition</p>
+                                <p className="text-xl text-neutral-900">Volkswagen</p>
                             </div>
-                            <div className="inline-flex justify-center items-center text-neutral-100 gap-x-1 bg-neutral-900 px-6 h-12 rounded-md">
-                                <CarIcon strokeWidth={0} fill="#f5f5f5" className="min-w-6" />
-                                <span className="font-sans">Automatik</span>
+                            <Badge variant={"outline"} className=" border border-neutral-900 text-neutral-900 px-3 py-1 h-8 uppercase">Verfügbar</Badge>
+                        </div>
+                        <Separator className="bg-neutral-900/25 w-[calc(100%-64px)]! mx-auto" />
+                        <div className="px-8 py-4 flex justify-between items-center text-neutral-900 w-full">
+                            <div className="hidden sm:flex flex-col">
+                                <p className="font-sans"><span className="font-medium">Leistung:</span> 333 PS</p>
+                                <p className="font-sans"><span className="font-medium">Getriebeart:</span> Automatik</p>
                             </div>
-                            <div className="inline-flex justify-center items-center text-neutral-100 gap-x-1 bg-neutral-900 px-6 h-12 rounded-md">
-                                <SettingsIcon strokeWidth={0} fill="#f5f5f5" className="min-w-6" />
-                                <span className="font-sans">Allradantrieb</span>
+                            <div className="hidden sm:flex flex-col">
+                                <p className="font-sans"><span className="font-medium">Antriebsart:</span> Allradantrieb</p>
+                                <p className="font-sans"><span className="font-medium">Drehmoment:</span> 420 NM</p>
                             </div>
-                            <div className="inline-flex justify-center items-center text-neutral-100 gap-x-1 bg-neutral-900 px-6 h-12 rounded-md">
-                                <ZapIcon strokeWidth={0} fill="#f5f5f5" className="min-w-6" />
-                                <span className="font-sans">420 NM</span>
+                            <div className="flex sm:hidden flex-col">
+                                <p className="font-sans"><span className="font-medium">Leistung:</span> 333 PS</p>
+                                <p className="font-sans"><span className="font-medium">Getriebeart:</span> Automatik</p>
+                                <p className="font-sans"><span className="font-medium">Antriebsart:</span> Allradantrieb</p>
+                                <p className="font-sans"><span className="font-medium">Drehmoment:</span> 420 NM</p>
                             </div>
                         </div>
-                        <div className="flex w-full">
-                            <Button size={"lg"} className="w-full sm:w-auto border border-neutral-900 text-neutral-900 bg-main hover:bg-neutral-900 hover:text-main h-12 gap-x-1 hover:gap-x-2" asChild>
-                                <Link to="/fahrzeuge/vw_golf_8">Zum Fahrzeug <ChevronRightIcon /></Link>
+                        <Separator className="bg-neutral-900/25 w-[calc(100%-64px)]! mx-auto" />
+                        <div className="flex gap-x-4 px-8 pb-8 pt-4">
+                            <Button size={"lg"} variant={"main-outline"} className="h-12 border border-neutral-900 text-neutral-100 bg-neutral-900! hover:text-neutral-100 hover:bg-neutral-800!" asChild>
+                                <Link to="/fahrzeuge/vw_golf_8">Zum Fahrzeug</Link>
+                            </Button>
+                            <Button size={"lg"} variant={"outline"} className="h-12 border-none text-neutral-900 shadow-none bg-transparent hover:text-neutral-100 hover:bg-neutral-800! cursor-pointer" asChild>
+                                <Link to="/kontakt">Kontakt</Link>
                             </Button>
                         </div>
                     </div>
                 </div>
+
+
                 <div className="hidden md:block w-full h-full rounded-lg border overflow-hidden relative shadow" data-aos="fade-up">
                     <p className="absolute top-1/2 left-1/2 -translate-1/2 z-10 text-muted-foreground text-3xl font-medium text-center">Mehr in Kürze...</p>
                     <Skeleton className="w-full h-full shadow" />

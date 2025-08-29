@@ -111,7 +111,7 @@ export default function Stepper({
                 onClick={handleBack} 
                 variant={"outline"} 
                 size={"lg"}
-                className="border-none bg-transparent! hover:bg-accent! dark:hover:bg-input/50! cursor-pointer"
+                className="border-none bg-neutral-900! hover:bg-neutral-800! text-neutral-100! cursor-pointer"
                 >Vorherige</Button>
               )}
               <Button
