@@ -107,100 +107,100 @@ const TestFeatures = () => {
                             <p className=" mt-3 text-lg break-words">Das erwartet dich, wenn du bei uns einen Sportwagen mietest:</p>
                         </div>
                         <div className="hidden md:grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4 text-sm" data-aos="fade-up">
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <ListTodoIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Gemeinsame Fahrzeugkontrolle</p>
-                                <p className="text-muted-foreground">Fahrzeug bei Übergabe gemeinsam prüfen.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Fahrzeug bei Übergabe gemeinsam prüfen.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <ZapIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Schnelle Übergabe</p>
-                                <p className="text-muted-foreground">Übergabe in maximal 120 Minuten.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Übergabe in maximal 120 Minuten.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <FileTextIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Übergabe inkl. Übergabeprotokoll</p>
-                                <p className="text-muted-foreground">Dokumentierte Fahrzeugübergabe.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Dokumentierte Fahrzeugübergabe.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <CheckCheckIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Unkomplizierte Abwicklung</p>
-                                <p className="text-muted-foreground">Einfach und schnell mieten.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Einfach und schnell mieten.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <FileIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Mietvertrag inkl. AGB’s</p>
-                                <p className="text-muted-foreground">Transparenter Vertrag mit AGB.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Transparenter Vertrag mit AGB.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <CircleUserRoundIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Persönlicher Service</p>
-                                <p className="text-muted-foreground">Individuelle Betreuung.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Individuelle Betreuung.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <CalendarIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Selbstfahrermietfahrzeug</p>
-                                <p className="text-muted-foreground">Freiheit selbst zu fahren.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Freiheit selbst zu fahren.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <ShieldCheckIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Vollkasko versichert</p>
-                                <p className="text-muted-foreground">Vollkasko für maximale Sicherheit.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Vollkasko für maximale Sicherheit.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <SiWhatsapp className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">WhatsApp Support</p>
-                                <p className="text-muted-foreground">Schnelle Hilfe per WhatsApp.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Schnelle Hilfe per WhatsApp.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <ClockIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">24/7 Support</p>
-                                <p className="text-muted-foreground">Jederzeit erreichbar.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Jederzeit erreichbar.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <CarFrontIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Top Zustand</p>
-                                <p className="text-muted-foreground">Fahrzeuge im Bestzustand.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Fahrzeuge im Bestzustand.</p>
                             </div>
 
-                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border">
-                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center">
+                            <div className="flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
+                                <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <FuelIcon className="min-w-5 size-5" />
                                 </div>
                                 <p className="font-medium">Vollgetankt</p>
-                                <p className="text-muted-foreground">Startklar mit vollem Tank.</p>
+                                <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">Startklar mit vollem Tank.</p>
                             </div>
                         </div>
                         <div className=""></div>

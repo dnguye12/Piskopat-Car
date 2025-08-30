@@ -14,6 +14,37 @@ const TestMoments = () => {
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/9H0wSD5f/moments.jpg')] bg-cover bg-center z-0" />
             </div>
 
+            <div
+                className="mt-6 flex gap-6
+         [&:has(.card:hover)_.card]:w-1/12
+         [&:has(.card:hover)_.card:hover]:w-3/4">
+                <div className="card w-1/4 p-8 flex flex-col items-center justify-center min-h-[440px] bg-accent transition-all border">
+                    <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main">
+                        <ZapIcon className="w-7 h-7 text-main" />
+                    </div>
+                </div>
+
+                <div className="card w-1/4 p-8 flex flex-col items-center justify-center min-h-[440px] bg-accent transition-all border">
+                    <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main">
+                        <Clock7Icon className="w-7 h-7 text-main" />
+                    </div>
+                </div>
+
+                <div className="card w-1/4 p-8 flex flex-col items-center justify-center min-h-[440px] bg-accent transition-all border ">
+                    <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main">
+                        <HeartIcon className="w-7 h-7 text-main" />
+                    </div>
+                </div>
+
+                <div className="card w-1/4 p-8 flex flex-col items-center justify-center min-h-[440px] bg-accent transition-all border ">
+                    <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main">
+                        <CalendarCheckIcon className="w-7 h-7 text-main" />
+                    </div>
+                </div>
+            </div>
+
+
+
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
                 <div className="flex flex-col justify-between rounded-lg border p-8 relative overflow-hidden" data-aos="fade-left">
                     <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
@@ -161,7 +192,7 @@ const TestMoments = () => {
                             <UserRoundPlusIcon className=" size-7 " />
                         </div>
                         <div className="flex flex-col">
-                            <h3 className="text-xl lg:text-2xl mb-2 leading-none text-main">10% Neukundenrabatt</h3>
+                            <h3 className="text-xl lg:text-2xl mb-2 sm:leading-none text-main">10% Neukundenrabatt</h3>
                             <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Zum ersten Mal bei uns? Dann bekommst du 10% Rabatt auf deine
                                 erste Fahrzeuganmietung als Willkommensgeschenk!</p>
                         </div>
@@ -172,7 +203,7 @@ const TestMoments = () => {
                             <HeartIcon className=" size-7" />
                         </div>
                         <div className="flex flex-col">
-                            <h3 className=" text-xl lg:text-2xl mb-2 leading-none text-main">10% Hochzeitsrabatt</h3>
+                            <h3 className=" text-xl lg:text-2xl mb-2 sm:leading-none text-main">10% Hochzeitsrabatt</h3>
                             <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Der große Tag steht an? Wir machen ihn noch schöner: 10% Rabatt auf dein Hochzeitsfahrzeug. Einfach Heiratsnachweis vorlegen und stilvoll durchstarten.</p>
                         </div>
                     </div>
@@ -182,7 +213,7 @@ const TestMoments = () => {
                             <CakeIcon className=" size-7 n" />
                         </div>
                         <div className="flex flex-col">
-                            <h3 className=" text-xl lg:text-2xl mb-2 leading-none text-main">5% Geburtstagsrabatt</h3>
+                            <h3 className=" text-xl lg:text-2xl mb-2 sm:leading-none text-main">5% Geburtstagsrabatt</h3>
                             <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
                                 Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
                         </div>
