@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { CakeIcon, CalendarCheckIcon, Clock7Icon, HeartIcon, UserRoundPlusIcon, ZapIcon } from "lucide-react";
+import { CakeIcon, CalendarCheckIcon, Clock7Icon, GiftIcon, HeartIcon, UserRoundPlusIcon, ZapIcon } from "lucide-react";
 import { Link } from "react-router";
+import DiscountCard from "./DiscountCard";
 
 const TestMoments = () => {
     return (
@@ -266,6 +267,80 @@ const TestMoments = () => {
                         <p className="">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete. Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
                     </div>
                 </div>
+            </div>
+            <div className="grid grid-cols-4 gap-6 mt-6">
+                <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-between items-start">
+                    <div>
+                        <h2 className="text-3xl text-neutral-900 mb-2 z-10">Unsere Rabatte</h2>
+                        <p className="text-lg text-neutral-900">Profitieren Sie von unseren attraktiven Rabatten und sichern Sie sich Ihren Mietwagen zu besonders günstigen Konditionen.</p>
+                    </div>
+                    <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
+                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                    </Button>
+                    <GiftIcon strokeWidth={1} className="absolute top-1/2 left-1/2 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-0 left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-full left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                </div >
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
+                    <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
+                    <div className="p-8 bg-accent flex flex-col gap-4">
+                        <div className="flex gap-x-4 items-center">
+                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                <CakeIcon className=" size-5" />
+                            </div>
+                            <h3 className=" text-lg lg:text-xl mb-2 sm:leading-none text-main">5% Geburtstagsrabatt</h3>
+                        </div>
+                        <p className=" text-muted-foreground">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
+                            Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
+                    </div>
+                </div>
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
+                    <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
+                    <div className="p-8 bg-accent flex flex-col gap-4">
+                        <div className="flex gap-x-4 items-center">
+                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                <CakeIcon className=" size-5" />
+                            </div>
+                            <h3 className=" text-lg lg:text-xl mb-2 sm:leading-none text-main">5% Geburtstagsrabatt</h3>
+                        </div>
+                        <p className=" text-muted-foreground">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
+                            Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
+                    </div>
+                </div>
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
+                    <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
+                    <div className="p-8 bg-accent flex flex-col gap-4">
+                        <div className="flex gap-x-4 items-center">
+                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                <CakeIcon className=" size-5" />
+                            </div>
+                            <h3 className=" text-lg lg:text-xl mb-2 sm:leading-none text-main">5% Geburtstagsrabatt</h3>
+                        </div>
+                        <p className=" text-muted-foreground">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
+                            Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
+                    </div>
+                </div>
+            </div>
+            <div className="grid grid-cols-4 gap-6 mt-6">
+                <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-between items-start">
+                    <div>
+                        <h2 className="text-3xl text-neutral-900 mb-2 z-10">Unsere Rabatte</h2>
+                        <p className="text-lg text-neutral-900">Profitieren Sie von unseren attraktiven Rabatten und sichern Sie sich Ihren Mietwagen zu besonders günstigen Konditionen.</p>
+                    </div>
+                    <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
+                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                    </Button>
+                    <GiftIcon strokeWidth={1} className="absolute top-1/2 left-1/2 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-0 left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-full left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                </div >
+                <DiscountCard />
+                <DiscountCard />
+                <DiscountCard />
             </div>
         </section>
     );
