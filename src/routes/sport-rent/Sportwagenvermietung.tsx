@@ -25,7 +25,7 @@ const Sportwagenvermietung = () => {
                     <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                     <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
-                <div className="container mx-auto px-4 pt-20">
+                <div className="container mx-auto px-4 py-6">
                     <h3 className="text-main text-4xl md:text-2xl lg:text-4xl z-20 my-4">Sportwagen mieten und von einer beeindruckenden auswahl profitieren</h3>
                     <p className="mb-20">Wenn Sie ein unvergessliches Erlebnis beim Sportwagen-Mieten suchen, sollte jedes Detail stimmen – insbesondere die Auswahl des perfekten Fahrzeugs. Bei <span className="text-main font-semibold">X-Sportwagen</span> erwartet Sie eine erstklassige Auswahl handverlesener Modelle. Ob Sie von einem eleganten italienischen Sportwagen träumen oder ein Faible für ikonische JDM-Fahrzeuge haben – bei uns finden Sie genau den Sportwagen, der Ihren Wünschen entspricht.</p>
 
@@ -44,7 +44,7 @@ const Sportwagenvermietung = () => {
                     <p className="mb-12">Wir freuen uns darauf, Ihnen bei <span className="text-main font-semibold">X-Sportwagen</span> ein einzigartiges Fahrerlebnis zu ermöglichen!</p>
 
 
-                    <div className="flex flex-col sm:flex-row gap-4 items-center mb-20">
+                    <div className="flex flex-col sm:flex-row gap-4 items-center">
                         <Button variant={"main"} size="lg" className="w-full sm:w-auto font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                         <Button variant={"main-outline"} size="lg" className="w-full sm:w-auto font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild>
                             <Link to="/fahrzeuge">Fahrzeuge</Link>

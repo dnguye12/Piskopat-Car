@@ -129,23 +129,23 @@ const TestReviews = () => {
     const randomReviews = useMemo(() => sampleArray(reviews, 10), [])
 
     const [api, setApi] = useState<CarouselApi>()
-        const [current, setCurrent] = useState(0)
-        const [count, setCount] = useState(0)
-    
-        const progress = (current * 100) / count;
-    
-        useEffect(() => {
-            if (!api) {
-                return
-            }
-    
-            setCount(api.scrollSnapList().length)
+    const [current, setCurrent] = useState(0)
+    const [count, setCount] = useState(0)
+
+    const progress = (current * 100) / count;
+
+    useEffect(() => {
+        if (!api) {
+            return
+        }
+
+        setCount(api.scrollSnapList().length)
+        setCurrent(api.selectedScrollSnap() + 1)
+
+        api.on("select", () => {
             setCurrent(api.selectedScrollSnap() + 1)
-    
-            api.on("select", () => {
-                setCurrent(api.selectedScrollSnap() + 1)
-            })
-        }, [api])
+        })
+    }, [api])
 
     return (
         <section id="kundenstimmen" className="container mx-auto mt-6 px-6">
@@ -188,12 +188,12 @@ const TestReviews = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="hidden lg:inline-flex" />
-                <CarouselNext className="hidden lg:inline-flex" />
-                <CarouselPrevious className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-0" />
-                        <CarouselNext className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-2 translate-x-full" />
+                <CarouselPrevious className="hidden lg:inline-flex shadow" />
+                <CarouselNext className="hidden lg:inline-flex shadow" />
+                <CarouselPrevious className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-0 shadow" />
+                <CarouselNext className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-2 translate-x-full shadow" />
             </Carousel>
-            <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-1" />
+            <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-1 shadow" />
         </section>
     );
 }

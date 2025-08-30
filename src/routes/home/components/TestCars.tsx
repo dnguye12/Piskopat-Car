@@ -44,12 +44,12 @@ const TestCars = () => {
                             </div>
                         </div>
                         <Separator className="bg-neutral-900/25 w-[calc(100%-64px)]! mx-auto" />
-                        <div className="flex gap-x-4 px-8 pb-8 pt-4">
+                        <div className="flex flex-col sm:flex-row justify-between gap-4 px-8 pb-8 pt-4 w-full">
                             <Button size={"lg"} variant={"main-outline"} className="h-12 border border-neutral-900 text-neutral-100 bg-neutral-900! hover:text-neutral-100 hover:bg-neutral-800!" asChild>
                                 <Link to="/fahrzeuge/vw_golf_8">Zum Fahrzeug</Link>
                             </Button>
-                            <Button size={"lg"} variant={"outline"} className="h-12 border-none text-neutral-900 shadow-none bg-transparent hover:text-neutral-100 hover:bg-neutral-800! cursor-pointer" asChild>
-                                <Link to="/kontakt">Kontakt</Link>
+                            <Button size={"lg"} variant={"main-outline"} className="h-12 border border-neutral-900 text-neutral-100 bg-neutral-900! hover:text-neutral-100 hover:bg-neutral-800!" asChild>
+                                <a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a>
                             </Button>
                         </div>
                     </div>

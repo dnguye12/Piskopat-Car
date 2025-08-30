@@ -117,7 +117,7 @@ const Footer = () => {
                         <p className="block lg:hidden text-muted-foreground md:text-center">@ X-Sportwagen 2025. <br className="block md:hidden" /> Alle Rechte vorbehalten.</p>
                     </div>
                 </div>
-                <div className="grid xl:hidden grid-cols-2">
+                <div className="grid xl:hidden grid-cols-2 gap-x-6">
                     <div className="mx-auto">
                         <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Kontakt</h4>
                         <ul className="text-muted-foreground space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-8 sm:mb-12">

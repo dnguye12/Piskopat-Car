@@ -36,10 +36,10 @@ const TestProcess = () => {
                             <h2 className="text-3xl text-neutral-900 mb-2">Unser Mietprozess</h2>
                             <p className="text-lg text-neutral-900">Unser Mietprozess ist einfach, transparent und schnell abgeschlossen.</p>
                         </div>
-                        <Button asChild size={"lg"} className="mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
+                        <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
                         </Button>
-                        <div className="absolute top-0 left-0 bg-[url('https://i.ibb.co/mCs2hQVM/next-img-bg.png')] bg-cover w-full h-full z-0"></div>
+                        <div className="absolute top-0 left-0 bg-[url('https://i.ibb.co/mCs2hQVM/next-img-bg.png')] bg-cover w-full h-full z-0 pointer-events-none"></div>
                     </div>
                     <div className="hidden sm:block col-span-2 rounded-lg bg-accent border p-8" data-aos="fade-left">
                         <Stepper
@@ -121,69 +121,69 @@ const TestProcess = () => {
                         <Carousel setApi={setApi} className="w-full ">
                             <CarouselContent>
                                 <CarouselItem className="">
-                                    <div className="flex gap-x-4 p-8 ps-12">
-                                        <div className="min-w-14 size-14 rounded-lg border border-main  inline-flex justify-center items-center">
-                                            <MessageSquareTextIcon className=" w-auto h-7 " />
+                                    <div className="flex flex-col gap-4 p-8 ps-12">
+                                        <div className="flex items-center gap-x-2">
+                                            <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 rounded-lg border border-main  inline-flex justify-center items-center">
+                                                <MessageSquareTextIcon className=" w-auto h-5 lg:h-7 " />
+                                            </div>
+                                            <h5 className=" text-2xl text-main">Fahrzeug anfragen</h5>
                                         </div>
-                                        <div>
-                                            <h5 className=" text-2xl text-main mb-2">Fahrzeug anfragen</h5>
-                                            <p className="">Du nimmst ganz einfach Kontakt über WhatsApp auf. Wir beantworten alle Fragen persönlich und beraten dich individuell.</p>
-                                        </div>
+                                        <p className="">Du nimmst ganz einfach Kontakt über WhatsApp auf. Wir beantworten alle Fragen persönlich und beraten dich individuell.</p>
                                     </div>
                                 </CarouselItem>
-                                <CarouselItem>
-                                    <div className="flex gap-x-4 p-8 ps-12">
-                                        <div className="min-w-14 size-14 rounded-lg border border-main  inline-flex justify-center items-center">
-                                            <CalendarCheckIcon className=" w-auto h-7 " />
+                                <CarouselItem className="">
+                                    <div className="flex flex-col gap-4 p-8 ps-12">
+                                        <div className="flex items-center gap-x-2">
+                                            <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 rounded-lg border border-main  inline-flex justify-center items-center">
+                                                <CalendarCheckIcon className=" w-auto h-5 lg:h-7 " />
+                                            </div>
+                                            <h5 className=" text-2xl text-main">Termin & Reservierung</h5>
                                         </div>
-                                        <div>
-                                            <h5 className=" text-2xl text-main mb-2">Termin & Reservierung</h5>
-                                            <p className="">Gemeinsam finden wir den passenden Termin und reservieren dein Fahrzeug. Eine Anzahlung sichert dir die Buchung.</p>
-                                        </div>
+                                        <p className="">Gemeinsam finden wir den passenden Termin und reservieren dein Fahrzeug. Eine Anzahlung sichert dir die Buchung.</p>
                                     </div>
                                 </CarouselItem>
-                                <CarouselItem>
-                                    <div className="flex gap-x-4 p-8 ps-12">
-                                        <div className="min-w-14 size-14 rounded-lg border border-main  inline-flex justify-center items-center">
-                                            <FileTextIcon className=" w-auto h-7 " />
+                                <CarouselItem className="">
+                                    <div className="flex flex-col gap-4 p-8 ps-12">
+                                        <div className="flex items-center gap-x-2">
+                                            <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 rounded-lg border border-main  inline-flex justify-center items-center">
+                                                <FileTextIcon className=" w-auto h-5 lg:h-7 " />
+                                            </div>
+                                            <h5 className=" text-2xl text-main">Vertrag & Bezahlung</h5>
                                         </div>
-                                        <div>
-                                            <h5 className=" text-2xl text-main mb-2">Vertrag & Bezahlung</h5>
-                                            <p className="">Du erhältst den Mietvertrag inklusive AGBs. Danach erfolgt die vollständige Zahlung bequem per Überweisung oder vor Ort.</p>
-                                        </div>
+                                        <p className="">Du erhältst den Mietvertrag inklusive AGBs. Danach erfolgt die vollständige Zahlung bequem per Überweisung oder vor Ort.</p>
                                     </div>
                                 </CarouselItem>
-                                <CarouselItem>
-                                    <div className="flex gap-x-4 p-8 ps-12">
-                                        <div className="min-w-14 size-14 rounded-lg border border-main  inline-flex justify-center items-center">
-                                            <KeyRoundIcon className=" w-auto h-7 " />
+                                <CarouselItem className="">
+                                    <div className="flex flex-col gap-4 p-8 ps-12">
+                                        <div className="flex items-center gap-x-2">
+                                            <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 rounded-lg border border-main  inline-flex justify-center items-center">
+                                                <KeyRoundIcon className=" w-auto h-5 lg:h-7 " />
+                                            </div>
+                                            <h5 className=" text-2xl text-main">Fahrzeugübergabe</h5>
                                         </div>
-                                        <div>
-                                            <h5 className=" text-2xl text-main mb-2">Fahrzeugübergabe</h5>
-                                            <p className="">Am Übergabetag prüfen wir das Fahrzeug gemeinsam und halten alles im Übergabeformular fest für maximale Transparenz.</p>
-                                        </div>
+                                        <p className="">Am Übergabetag prüfen wir das Fahrzeug gemeinsam und halten alles im Übergabeformular fest für maximale Transparenz.</p>
                                     </div>
                                 </CarouselItem>
-                                <CarouselItem>
-                                    <div className="flex gap-x-4 p-8 ps-12">
-                                        <div className="min-w-14 size-14 rounded-lg border border-main  inline-flex justify-center items-center">
-                                            <ZapIcon className=" w-auto h-7 " />
+                                <CarouselItem className="">
+                                    <div className="flex flex-col gap-4 p-8 ps-12">
+                                        <div className="flex items-center gap-x-2">
+                                            <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 rounded-lg border border-main  inline-flex justify-center items-center">
+                                                <ZapIcon className=" w-auto h-5 lg:h-7 " />
+                                            </div>
+                                            <h5 className=" text-2xl text-main">Fahrspaß pur</h5>
                                         </div>
-                                        <div>
-                                            <h5 className=" text-2xl text-main mb-2">Fahrspaß pur</h5>
-                                            <p className="">Jetzt beginnt dein Erlebnis: Du genießt die Fahrt im Luxusfahrzeug – mit Vollkasko-Versicherung und Top-Service im Hintergrund.</p>
-                                        </div>
+                                        <p className="">Jetzt beginnt dein Erlebnis: Du genießt die Fahrt im Luxusfahrzeug – mit Vollkasko-Versicherung und Top-Service im Hintergrund.</p>
                                     </div>
                                 </CarouselItem>
-                                <CarouselItem>
-                                    <div className="flex gap-x-4 p-8 ps-12">
-                                        <div className="min-w-14 size-14 rounded-lg border border-main  inline-flex justify-center items-center">
-                                            <HandshakeIcon className=" w-auto h-7 " />
+                                <CarouselItem className="">
+                                    <div className="flex flex-col gap-4 p-8 ps-12">
+                                        <div className="flex items-center gap-x-2">
+                                            <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 rounded-lg border border-main  inline-flex justify-center items-center">
+                                                <HandshakeIcon className=" w-auto h-5 lg:h-7 " />
+                                            </div>
+                                            <h5 className=" text-2xl text-main">Rückgabe</h5>
                                         </div>
-                                        <div>
-                                            <h5 className=" text-2xl text-main mb-2">Rückgabe</h5>
-                                            <p className="">Nach deinem Erlebnis gibst du das Fahrzeug wie vereinbart zurück – schnell, professionell und mit finalem Protokoll.</p>
-                                        </div>
+                                        <p className="">Nach deinem Erlebnis gibst du das Fahrzeug wie vereinbart zurück – schnell, professionell und mit finalem Protokoll.</p>
                                     </div>
                                 </CarouselItem>
                             </CarouselContent>

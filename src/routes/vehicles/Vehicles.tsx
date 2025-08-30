@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { useLayoutEffect } from "react";
-import VehicleCard2 from "./components/VehicleCard2";
+import VehicleCard from "./components/VehicleCard";
 
 export type Car = {
     status: boolean;
@@ -54,7 +54,7 @@ const Vehicles = () => {
                 </div>
                 <div className="container mx-auto px-4 my-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {cars.map((car, index) => (
-                        <VehicleCard2 index={index} car={car} />
+                        <VehicleCard index={index} car={car} />
                     ))}
                 </div>
             </main>

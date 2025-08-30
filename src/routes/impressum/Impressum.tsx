@@ -18,7 +18,7 @@ const Impressum = () => {
                     <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/S4npDd1k/pexels-asphotograpy-515674.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
 
-                <div className="flex flex-col container mx-auto px-4 mt-6 mb-20">
+                <div className="flex flex-col container mx-auto px-4 my-6">
                     <h2 className=" text-3xl font-semibold">Angaben gemäß § 5 TMG</h2>
                     <p className="text-lg">Hüseyin Cimen</p>
                     <p className="text-lg">X Sportwagen</p>

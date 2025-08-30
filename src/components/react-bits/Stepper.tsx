@@ -301,7 +301,7 @@ function StepIndicator({
           complete: { scale: 1, backgroundColor: "var(--main)", color: "#3b82f6" },
         }}
         transition={{ duration: 0.3 }}
-        className="flex h-8 w-8 items-center justify-center rounded-full font-semibold"
+        className="flex h-8 w-8 items-center justify-center rounded-full font-semibold border shadow"
       >
         {status === "complete" ? (
           <CheckIcon className="h-4 w-4 text-black" />
