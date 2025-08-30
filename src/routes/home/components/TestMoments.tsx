@@ -21,14 +21,14 @@ const TestMoments = () => {
          [&:has(.card:hover)_.card:not(:hover)_h3]:opacity-0
     [&:has(.card:hover)_.card:hover_h3]:opacity-100
          " data-aos="fade-up">
-                <div className="card group w-1/4 p-8 flex flex-col h-96 transition-all border rounded-lg relative overflow-hidden">
-                    <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0">
+                <div className="card group w-1/4 p-8 flex flex-col h-96 transition-all border rounded-lg relative overflow-hidden !duration-500">
+                    <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0 !duration-500">
                         <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
                             <ZapIcon className="w-7 h-7 text-main" />
                         </div>
-                        <h3 className="text-main text-2xl lg:text-3xl">Tagesmiete</h3>
+                        <h3 className="text-main text-2xl lg:text-3xl !duration-500">Tagesmiete</h3>
                     </div>
-                    <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all">
+                    <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all !duration-500">
                         <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
                             <ZapIcon className="w-7 h-7 text-main" />
                         </div>
@@ -46,13 +46,13 @@ const TestMoments = () => {
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://images.pexels.com/photos/13781/pexels-photo-13781.jpeg')] bg-cover bg-center"></div>
                 </div>
                 <div className="card group w-1/4 p-8 flex flex-col h-96 transition-all border rounded-lg relative overflow-hidden">
-                    <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0">
+                    <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0 !duration-500">
                         <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
                             <Clock7Icon className="w-7 h-7 text-main" />
                         </div>
-                        <h3 className="text-main text-2xl lg:text-3xl">Wochenendmiete</h3>
+                        <h3 className="text-main text-2xl lg:text-3xl !duration-500">Wochenendmiete</h3>
                     </div>
-                    <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all">
+                    <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all !duration-500">
                         <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
                             <Clock7Icon className="w-7 h-7 text-main" />
                         </div>
@@ -70,13 +70,13 @@ const TestMoments = () => {
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://i.ibb.co/d42JWdjc/moments1.jpg')] bg-cover bg-center"></div>
                 </div>
                 <div className="card group w-1/4 p-8 flex flex-col h-96 transition-all border rounded-lg relative overflow-hidden">
-                    <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0">
+                    <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0 !duration-500">
                         <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
                             <HeartIcon className="w-7 h-7 text-main" />
                         </div>
-                        <h3 className="text-main text-2xl lg:text-3xl">Hochzeitsmiete</h3>
+                        <h3 className="text-main text-2xl lg:text-3xl !duration-500">Hochzeitsmiete</h3>
                     </div>
-                    <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all">
+                    <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all !duration-500">
                         <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
                             <HeartIcon className="w-7 h-7 text-main" />
                         </div>
@@ -95,13 +95,13 @@ const TestMoments = () => {
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://i.ibb.co/MDstTCFs/moments2.jpg')] bg-cover bg-center"></div>
                 </div>
                 <div className="card group w-1/4 p-8 flex flex-col h-96 transition-all border rounded-lg relative overflow-hidden">
-                    <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0">
+                    <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0 !duration-500">
                         <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
                             <CalendarCheckIcon className="w-7 h-7 text-main" />
                         </div>
-                        <h3 className="text-main text-2xl lg:text-3xl">Langzeitmiete</h3>
+                        <h3 className="text-main text-2xl lg:text-3xl !duration-500">Langzeitmiete</h3>
                     </div>
-                    <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all">
+                    <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all !duration-500">
                         <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
                             <CalendarCheckIcon className="w-7 h-7 text-main" />
                         </div>
