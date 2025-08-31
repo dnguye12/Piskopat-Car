@@ -118,7 +118,7 @@ export function ContactForm() {
                         </FormItem>
                     )}
                 />
-                <Button disabled={sending} variant={"main"} size={"lg"} type="submit" className="font-semibold w-full h-12">Senden</Button>
+                <Button disabled={sending || !form.formState.isValid} variant={"main"} size={"lg"} type="submit" className="font-semibold w-full h-12">Senden</Button>
             </form>
         </Form>
     )

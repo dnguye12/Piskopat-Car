@@ -1,31 +1,31 @@
 import "leaflet/dist/leaflet.css";
-import { Button } from "@/components/ui/button";
-import Map, { Marker, NavigationControl } from 'react-map-gl/maplibre';
+import Map, { Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import { Button } from "@/components/ui/button";
 
 const TestMap = () => {
     const latitude = 51.82809534422243;
     const longitude = 8.023160528835392;
-    const zoom = 17.5
+    const zoom = 13
 
     return (
-        <section className="container mx-auto mt-6 px-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <section className="container mx-auto mt-6 px-6 grid grid-cols-1 lg:grid-cols-3 gap-6" data-aos="fade-up">
             <div className="col-span-1 rounded-lg border shadow overflow-hidden grid grid-cols-2 lg:block">
                 <div className="hidden sm:block aspect-auto lg:aspect-video bg-[url('https://www.muensterland.com/site/assets/files/34133/ennigerloh_muehle_04_seb.jpg')] w-full bg-cover bg-center"></div>
                 <div className="col-span-2 sm:col-span-1 bg-main p-8 flex flex-col">
-                    <p className="font-medium text-2xl mb-3 text-neutral-900">Machen Sie jede Fahrt zu einem besonderen Moment.</p>
-                    <p className="mb-6 text-lg text-neutral-900">Dynamik und Luxus verschmelzen zu purem Genuss.</p>
+                    <p className="font-medium text-2xl mb-2 text-neutral-900">Jede Fahrt wird zum Erlebnis.</p>
+                    <p className="text-lg text-neutral-900">Dynamik trifft auf Luxus.</p>
                     <div className="flex justify-center sm:justify-start">
-                        <Button size={"lg"} className="mt-5 py-2 !px-8 h-14 bg-neutral-900 text-neutral-100 hover:bg-neutral-900/80" asChild>
+                        <Button size={"lg"} className="w-full mt-5 h-12 !px-8 bg-neutral-900 text-neutral-100 hover:bg-neutral-900/80" asChild>
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
-                                <span className=" text-lg font-semibold">Jetzt buchen</span>
+                                <span className=" text-base">Jetzt buchen</span>
                             </a>
                         </Button>
                     </div>
                 </div>
             </div>
-            <div className="col-span-1 lg:col-span-2 rounded-lg overflow-hidden shadow border">
-                <div className="aspect-square lg:aspect-auto w-full h-full">
+            <a href={import.meta.env.VITE_GOOGLE_ADDRESS} target="_blank" className="col-span-1 lg:col-span-2 rounded-lg overflow-hidden shadow border cursor-pointer">
+                <div className="aspect-video lg:aspect-auto w-full h-full">
                     <Map
                         initialViewState={{
                             longitude,
@@ -33,15 +33,20 @@ const TestMap = () => {
                             zoom
                         }}
                         style={{ height: "100%", width: "100%" }}
+                        attributionControl={false}
+                        dragPan={false}
+                        scrollZoom={false}
+                        doubleClickZoom={false}
+                        touchZoomRotate={false}
+                        keyboard={false}
                         mapStyle="https://api.jawg.io/styles/b530999a-0de5-4cca-8a7a-1e09236f1b84.json?access-token=3vQtpm8Wbm4e844grioKklnTiAfRDIpTDKFuzSutfZqk9dTdB0SwEHtf4cPOWGsB"
                     >
                         <Marker latitude={latitude} longitude={longitude} anchor="bottom">
                             <img src="/marker.png" className="w-8" />
                         </Marker>
-                        <NavigationControl />
                     </Map>
                 </div>
-            </div>
+            </a>
 
         </section>
     );

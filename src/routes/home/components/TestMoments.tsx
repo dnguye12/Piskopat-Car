@@ -20,7 +20,7 @@ const TestMoments = () => {
          [&:has(.card:hover)_.card:hover]:w-3/4
          [&:has(.card:hover)_.card:not(:hover)_h3]:opacity-0
     [&:has(.card:hover)_.card:hover_h3]:opacity-100
-         " data-aos="fade-up">
+         ">
                 <div className="card group w-1/4 p-8 flex flex-col h-96 transition-all border rounded-lg relative overflow-hidden !duration-500">
                     <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0 !duration-500">
                         <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
