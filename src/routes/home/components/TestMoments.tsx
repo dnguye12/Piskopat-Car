@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CakeIcon, CalendarCheckIcon, Clock7Icon, GiftIcon, HeartIcon, UserRoundPlusIcon, ZapIcon } from "lucide-react";
 import { Link } from "react-router";
-import DiscountCard from "./DiscountCard";
 
 const TestMoments = () => {
     return (
@@ -199,46 +198,61 @@ const TestMoments = () => {
                     <div className="w-full h-full z-0 absolute top-0 left-0 bg-[url('https://images.pexels.com/photos/620335/pexels-photo-620335.jpeg')] bg-cover bg-center"></div>
                 </div>
             </div>
-            <div className="mt-6 hidden sm:flex flex-col lg:grid grid-cols-2 rounded-lg bg-accent shadow border overflow-hidden" data-aos="fade-up">
-                <div className="flex flex-col gap-6 lg:gap-10 p-8">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl text-main text-center lg:text-start">Rabattmöglichkeiten</h2>
-                    <div className="flex gap-x-6">
-                        <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                            <UserRoundPlusIcon className="size-5 lg:size-7 " />
-                        </div>
-                        <div className="flex flex-col">
-                            <h3 className="text-lg sm:text-xl lg:text-2xl mb-2 sm:leading-none text-main">10% Neukundenrabatt</h3>
-                            <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Zum ersten Mal bei uns? Dann bekommst du 10% Rabatt auf deine
-                                erste Fahrzeuganmietung als Willkommensgeschenk!</p>
-                        </div>
-                    </div>
 
-                    <div className="flex gap-x-6">
-                        <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                            <HeartIcon className=" size-5 lg:size-7" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h3 className=" text-lg sm:text-xl lg:text-2xl mb-2 sm:leading-none text-main">10% Hochzeitsrabatt</h3>
-                            <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Der große Tag steht an? Wir machen ihn noch schöner: 10% Rabatt auf dein Hochzeitsfahrzeug. Einfach Heiratsnachweis vorlegen und stilvoll durchstarten.</p>
-                        </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-6">
+                <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-between items-start" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <h2 className="text-3xl text-neutral-900 mb-2 z-10">Unsere Rabatte</h2>
+                        <p className="text-lg text-neutral-900">Profitieren Sie von unseren attraktiven Rabatten und sichern Sie sich Ihren Mietwagen zu besonders günstigen Konditionen.</p>
                     </div>
-
-                    <div className="flex gap-x-6">
-                        <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                            <CakeIcon className=" size-5 lg:size-7" />
+                    <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
+                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                    </Button>
+                    <GiftIcon strokeWidth={1} className="absolute top-1/2 left-1/2 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-0 left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-full left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                    <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                </div >
+                <div className="hidden sm:flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
+                    <div className="py-4 xl:py-8 p-8 bg-accent flex flex-col gap-4 h-full">
+                        <div className="flex gap-x-4 items-center">
+                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                <UserRoundPlusIcon className=" size-5" />
+                            </div>
+                            <h3 className=" text-lg lg:text-xl text-main">10% Neukundenrabatt</h3>
                         </div>
-                        <div className="flex flex-col">
-                            <h3 className=" text-lg sm:text-xl lg:text-2xl mb-2 sm:leading-none text-main">5% Geburtstagsrabatt</h3>
-                            <p className=" text-muted-foreground lg:text-lg lg:max-w-xl">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
-                                Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
-                        </div>
+                        <p className=" text-muted-foreground">Zum ersten Mal bei uns? Dann bekommst du 10% Rabatt auf deine erste Fahrzeuganmietung als Willkommensgeschenk!</p>
                     </div>
                 </div>
-                <div className="hidden lg:block w-full bg-[url('https://i.ibb.co/j9YF9qCp/discount.jpg')] bg-cover bg-center border"></div>
+                <div className="hidden sm:flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div className="bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg')] bg-cover aspect-video"></div>
+                    <div className="py-4 xl:py-8 p-8 bg-accent flex flex-col gap-4 h-full">
+                        <div className="flex gap-x-4 items-center">
+                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                <HeartIcon className=" size-5" />
+                            </div>
+                            <h3 className=" text-lg lg:text-xl text-main">10% Hochzeitsrabatt</h3>
+                        </div>
+                        <p className=" text-muted-foreground">Der große Tag steht an? Wir machen ihn noch schöner: 10% Rabatt auf dein Hochzeitsfahrzeug. Einfach Heiratsnachweis vorlegen und stilvoll durchstarten.</p>
+                    </div>
+                </div>
+                <div className="hidden sm:flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <div className="bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg')] bg-cover bg-top aspect-video"></div>
+                    <div className="py-4 xl:py-8 p-8 bg-accent flex flex-col gap-4 h-full">
+                        <div className="flex gap-x-4 items-center">
+                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                <CakeIcon className=" size-5" />
+                            </div>
+                            <h3 className=" text-lg lg:text-xl text-main">5% Geburtstagsrabatt</h3>
+                        </div>
+                        <p className=" text-muted-foreground">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete. Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
+                    </div>
+                </div>
             </div>
             <div className="mt-6 flex sm:hidden flex-col rounded-lg bg-accent shadow border overflow-hidden">
                 <div className="flex flex-col gap-6 lg:gap-10 p-8">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl text-main text-center lg:text-start">Rabattmöglichkeiten</h2>
                     <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-x-2">
                             <div className="min-w-10 size-10 lg:min-w-14 lg:size-14 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
@@ -267,80 +281,6 @@ const TestMoments = () => {
                         <p className="">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete. Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
                     </div>
                 </div>
-            </div>
-            <div className="grid grid-cols-4 gap-6 mt-6">
-                <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-between items-start">
-                    <div>
-                        <h2 className="text-3xl text-neutral-900 mb-2 z-10">Unsere Rabatte</h2>
-                        <p className="text-lg text-neutral-900">Profitieren Sie von unseren attraktiven Rabatten und sichern Sie sich Ihren Mietwagen zu besonders günstigen Konditionen.</p>
-                    </div>
-                    <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
-                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
-                    </Button>
-                    <GiftIcon strokeWidth={1} className="absolute top-1/2 left-1/2 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    <GiftIcon strokeWidth={1} className="absolute top-0 left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    <GiftIcon strokeWidth={1} className="absolute top-full left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                </div >
-                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
-                    <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
-                    <div className="p-8 bg-accent flex flex-col gap-4">
-                        <div className="flex gap-x-4 items-center">
-                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                                <CakeIcon className=" size-5" />
-                            </div>
-                            <h3 className=" text-lg lg:text-xl mb-2 sm:leading-none text-main">5% Geburtstagsrabatt</h3>
-                        </div>
-                        <p className=" text-muted-foreground">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
-                            Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
-                    </div>
-                </div>
-                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
-                    <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
-                    <div className="p-8 bg-accent flex flex-col gap-4">
-                        <div className="flex gap-x-4 items-center">
-                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                                <CakeIcon className=" size-5" />
-                            </div>
-                            <h3 className=" text-lg lg:text-xl mb-2 sm:leading-none text-main">5% Geburtstagsrabatt</h3>
-                        </div>
-                        <p className=" text-muted-foreground">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
-                            Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
-                    </div>
-                </div>
-                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
-                    <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
-                    <div className="p-8 bg-accent flex flex-col gap-4">
-                        <div className="flex gap-x-4 items-center">
-                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                                <CakeIcon className=" size-5" />
-                            </div>
-                            <h3 className=" text-lg lg:text-xl mb-2 sm:leading-none text-main">5% Geburtstagsrabatt</h3>
-                        </div>
-                        <p className=" text-muted-foreground">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete.
-                            Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
-                    </div>
-                </div>
-            </div>
-            <div className="grid grid-cols-4 gap-6 mt-6">
-                <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-between items-start">
-                    <div>
-                        <h2 className="text-3xl text-neutral-900 mb-2 z-10">Unsere Rabatte</h2>
-                        <p className="text-lg text-neutral-900">Profitieren Sie von unseren attraktiven Rabatten und sichern Sie sich Ihren Mietwagen zu besonders günstigen Konditionen.</p>
-                    </div>
-                    <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
-                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
-                    </Button>
-                    <GiftIcon strokeWidth={1} className="absolute top-1/2 left-1/2 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    <GiftIcon strokeWidth={1} className="absolute top-0 left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    <GiftIcon strokeWidth={1} className="absolute top-full left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                </div >
-                <DiscountCard />
-                <DiscountCard />
-                <DiscountCard />
             </div>
         </section>
     );
