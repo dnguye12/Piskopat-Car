@@ -58,33 +58,32 @@ export default async function handler(req, res) {
     <style>
       .preheader { display:none !important; visibility:hidden; opacity:0; color:transparent; height:0; width:0; overflow:hidden; mso-hide:all; }
       @media (prefers-color-scheme: dark) {
-        .bg { background-color: #0b0b0b !important; }
-        .card { background-color: #111111 !important; border-color: #222222 !important; }
-        .text { color: #e5e7eb !important; }
-        .muted { color: #9ca3af !important; }
+        .card { background-color: oklch(1 0 0) !important; }
+        .text { color: oklch(0.145 0 0) !important; }
+        .muted { color: oklch(0.556 0 0) !important; }
       }
     </style>
   </head>
-  <body style="margin:0; padding:0; background:#f3f4f6;" class="bg">
+<body style="margin:0; padding:0;">
     <span class="preheader">${escapeHtml(preheader)}</span>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3f4f6; padding:24px 12px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
       <tr>
         <td align="center">
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px; border: 1px solid oklch(0.922 0 0); box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);">
             <!-- Header -->
             <tr>
-              <td style="padding:16px 20px; background:#0ea5e9; color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; border-radius:12px 12px 0 0;">
+              <td style="padding:16px 32px; background:oklch(0.97 0 0); font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold;">
                 Neue Nachricht von ${escapeHtml(safeName)}
               </td>
             </tr>
 
             <!-- Card -->
             <tr>
-              <td class="card" style="background:#ffffff; border:1px solid #e5e7eb; border-top:0; border-radius:0 0 12px 12px; overflow:hidden;">
+              <td class="card" style="border-top:0; border-radius:0 0 8px 8px; overflow:hidden;">
                 <!-- Meta -->
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td style="padding:16px 20px; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#6b7280;" class="muted">
+                    <td style="padding:32px 32px 16px 32px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 24px; color:oklch(0.145 0 0);" class="muted">
                       Eingegangen: ${escapeHtml(receivedAt)}
                     </td>
                   </tr>
@@ -93,26 +92,26 @@ export default async function handler(req, res) {
                 <!-- Details -->
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td style="padding:0 20px 4px; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#374151;" class="text">
+                    <td style="padding: 0px 32px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 24px; " class="text">
                       <strong>Kontaktdaten</strong>
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 20px 12px;">
-                      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#374151;">
+                    <td style="padding: 16px 32px;">
+                      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="font-family:Arial, Helvetica, sans-serif; font-size:16px;">
                         <tr>
                           <td style="padding:6px 0; width:110px; color:#6b7280;" class="muted">Name</td>
-                          <td style="padding:6px 0;">${escapeHtml(safeName)}</td>
+                          <td style="padding:6px 0;" class="text">${escapeHtml(safeName)}</td>
                         </tr>
                         ${safeEmail ? `
                         <tr>
                           <td style="padding:6px 0; color:#6b7280;" class="muted">E-Mail</td>
-                          <td style="padding:6px 0;"><a href="mailto:${escapeHtml(safeEmail)}" style="color:#0ea5e9; text-decoration:none;">${escapeHtml(safeEmail)}</a></td>
+                          <td style="padding:6px 0;" class="text">${escapeHtml(safeEmail)}</td>
                         </tr>` : ``}
                         ${safePhone ? `
                         <tr>
                           <td style="padding:6px 0; color:#6b7280;" class="muted">Telefon</td>
-                          <td style="padding:6px 0;"><a href="tel:${escapeHtml(safePhone)}" style="color:#0ea5e9; text-decoration:none;">${escapeHtml(safePhone)}</a></td>
+                          <td style="padding:6px 0;" class="text">${escapeHtml(safePhone)}</td>
                         </tr>` : ``}
                       </table>
                     </td>
@@ -122,35 +121,16 @@ export default async function handler(req, res) {
                 <!-- Nachricht -->
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td style="padding:0 20px; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#374151;" class="text"><strong>Nachricht</strong></td>
+                    <td style="padding:0px 32px 8px 32px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 24px;" class="text"><strong>Nachricht</strong></td>
                   </tr>
                   <tr>
-                    <td style="padding:10px 20px 16px;">
-                      <div style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.6; color:#111827; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:14px; white-space:pre-wrap;">
+                    <td style="padding:0px 32px 32px 32px;">
+                      <div style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#111827; background:#f9fafb; border:1px solid #e5e7eb; padding:16px;">
                         ${safeContent}
                       </div>
                     </td>
                   </tr>
                 </table>
-
-                <!-- CTA -->
-                ${safeEmail ? `
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                  <tr>
-                    <td style="padding:0 20px 24px;">
-                      <a href="mailto:${escapeHtml(safeEmail)}" style="display:inline-block; background:#0ea5e9; color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px; text-decoration:none; padding:12px 16px; border-radius:8px;">
-                        Antwort an ${escapeHtml(safeName)}
-                      </a>
-                    </td>
-                  </tr>
-                </table>` : ``}
-              </td>
-            </tr>
-
-            <!-- Footer -->
-            <tr>
-              <td style="padding:10px 4px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#9ca3af;">
-                Diese E-Mail wurde über das Kontaktformular Ihrer Website gesendet.
               </td>
             </tr>
           </table>
