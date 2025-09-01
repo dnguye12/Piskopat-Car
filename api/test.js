@@ -8,6 +8,8 @@ export default async function handler(req, res) {
   try {
     const { name, phone, email, content } = req.body || {};
 
+    console.log("SMTP_MAIL set:", Boolean(process.env.SMTP_MAIL), "SMTP_PASS set:", Boolean(process.env.SMTP_PASS));
+
     const transporter = nodemailer.createTransport({
       host: "smtp.strato.de",
       port: 465,
