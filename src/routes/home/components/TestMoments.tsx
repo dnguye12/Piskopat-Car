@@ -7,7 +7,7 @@ const TestMoments = () => {
         <section className="container mx-auto px-6">
             <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border mt-6" data-aos="fade-up">
                 <div className="z-20">
-                    <h5 className="text-3xl sm:text-4xl md:text-5xl text-neutral-100 z-20 mb-2 text-center">Dein Anlass. Unsere Sportwagen.</h5>
+                    <h5 className="text-3xl sm:text-4xl md:text-5xl text-neutral-100 z-20 mb-2 text-center">Dein Moment. Unser Sportwagen.</h5>
                     <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-orbi text-center">Wähle deinen Moment</h3>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
@@ -34,7 +34,7 @@ const TestMoments = () => {
                         </div>
                         <div className="relative z-20 flex flex-col items-start gap-y-5">
                             <h2 className="text-main text-2xl lg:text-3xl">Tagesmiete</h2>
-                            <p className="text-neutral-100 lg:text-lg">Ein ganzer Tag voller Performance – perfekt für spontane Auszeiten oder besondere Anlässe.</p>
+                            <p className="text-neutral-100 lg:text-lg">Erlebe Performance pur – ideal für spontane Auszeiten oder den großen Auftritt.</p>
                             <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
                                 <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                     <span className=" text-lg">Jetzt buchen</span>
@@ -58,7 +58,7 @@ const TestMoments = () => {
                         </div>
                         <div className="relative z-20 flex flex-col items-start gap-y-5">
                             <h2 className="text-main text-2xl lg:text-3xl">Wochenendmiete</h2>
-                            <p className="text-neutral-100 lg:text-lg">Zwei Tage, unbegrenzte Emotion: Genieße die volle Ladung Fahrspaß von Freitag bis Sonntag. Ideal für Kurztrips, besondere Dates oder einfach nur, um dem Alltag zu entfliehen – mit Stil und Power.</p>
+                            <p className="text-neutral-100 lg:text-lg">Ein ganzes Wochenende im Sportwagen: Stil, Power und Leidenschaft. Ob Kurztrip oder ein besonderes Date – hier wird jeder Moment einzigartig.</p>
                             <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
                                 <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                     <span className=" text-lg">Jetzt buchen</span>
@@ -82,7 +82,7 @@ const TestMoments = () => {
                         </div>
                         <div className="relative z-20 flex flex-col items-start gap-y-5">
                             <h2 className="text-main text-2xl lg:text-3xl">Hochzeitsmiete</h2>
-                            <p className="text-neutral-100 lg:text-lg">Der Moment, in dem sich alles ändert, beginnt mit deinem perfekten Auftritt. Unsere Fahrzeuge machen aus deiner Hochzeit mehr als ein Fest – sie machen sie zu einer unvergesslichen Fahrt ins Glück.</p>
+                            <p className="text-neutral-100 lg:text-lg">Mit Stil ankommen, mit Emotion weiterfahren – unsere Fahrzeuge schenken dir den perfekten Auftritt und verwandeln deine Hochzeit in eine unvergessliche Fahrt ins Glück.</p>
                             <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
                                 <Link to="/hochzeitsmiete" className="gap-x-1">
 
@@ -107,7 +107,7 @@ const TestMoments = () => {
                         </div>
                         <div className="relative z-20 flex flex-col items-start gap-y-5">
                             <h2 className="text-main text-2xl lg:text-3xl">Langzeitmiete</h2>
-                            <p className="text-neutral-100 lg:text-lg">Ob für besondere Projekte oder längere Aufenthalte: Wir liefern Fahrgefühl auf Zeit</p>
+                            <p className="text-neutral-100 lg:text-lg">Ob Projekt, Aufenthalt oder einfach Lifestyle: Mit unseren Sportwagen bleibst du flexibel – und fährst immer mit Stil.</p>
                             <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
                                 <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                     <span className=" text-lg">Jetzt buchen</span>
@@ -132,7 +132,7 @@ const TestMoments = () => {
                         <h2 className="text-main text-2xl lg:text-3xl">Tagesmiete</h2>
                     </div>
                     <div className="relative z-20">
-                        <p className="text-neutral-100 lg:text-lg my-6">Ein ganzer Tag voller Performance – perfekt für spontane Auszeiten oder besondere Anlässe.</p>
+                        <p className="text-neutral-100 lg:text-lg my-6">Erlebe Performance pur – ideal für spontane Auszeiten oder den großen Auftritt.</p>
                         <Button size={"lg"} variant={"main"} className="w-full h-12" asChild>
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                 <span className="text-base">Jetzt buchen</span>
@@ -150,7 +150,7 @@ const TestMoments = () => {
                         <h2 className="text-main text-2xl lg:text-3xl">Wochenendmiete</h2>
                     </div>
                     <div className="relative z-20">
-                        <p className="text-neutral-100 lg:text-lg my-6">Zwei Tage, unbegrenzte Emotion: Genieße die volle Ladung Fahrspaß von Freitag bis Sonntag. Ideal für Kurztrips, besondere Dates oder einfach nur, um dem Alltag zu entfliehen – mit Stil und Power.</p>
+                        <p className="text-neutral-100 lg:text-lg my-6">Ein ganzes Wochenende im Sportwagen: Stil, Power und Leidenschaft. Ob Kurztrip oder ein besonderes Date – hier wird jeder Moment einzigartig.</p>
                         <Button size={"lg"} variant={"main"} className="w-full h-12" asChild>
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                 <span className="text-base">Jetzt buchen</span>
@@ -168,7 +168,7 @@ const TestMoments = () => {
                         <h2 className="text-main text-2xl lg:text-3xl">Hochzeitsmiete</h2>
                     </div>
                     <div className="relative z-20">
-                        <p className="text-neutral-100 lg:text-lg my-6">Der Moment, in dem sich alles ändert, beginnt mit deinem perfekten Auftritt. Unsere Fahrzeuge machen aus deiner Hochzeit mehr als ein Fest – sie machen sie zu einer unvergesslichen Fahrt ins Glück.</p>
+                        <p className="text-neutral-100 lg:text-lg my-6">Mit Stil ankommen, mit Emotion weiterfahren – unsere Fahrzeuge schenken dir den perfekten Auftritt und verwandeln deine Hochzeit in eine unvergessliche Fahrt ins Glück.</p>
                         <Button size={"lg"} variant={"main"} className="w-full h-12" asChild>
                             <Link to="/hochzeitsmiete" className="">
 
@@ -187,7 +187,7 @@ const TestMoments = () => {
                         <h2 className="text-main text-2xl lg:text-3xl">Langzeitmiete</h2>
                     </div>
                     <div className="relative z-20">
-                        <p className="text-neutral-100 lg:text-lg my-6">Ob für besondere Projekte oder längere Aufenthalte: Wir liefern Fahrgefühl auf Zeit.</p>
+                        <p className="text-neutral-100 lg:text-lg my-6">Ob Projekt, Aufenthalt oder einfach Lifestyle: Mit unseren Sportwagen bleibst du flexibel – und fährst immer mit Stil..</p>
                         <Button size={"lg"} variant={"main"} className="w-full h-12" asChild>
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
                                 <span className="text-base">Jetzt buchen</span>
@@ -203,7 +203,7 @@ const TestMoments = () => {
                 <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-between items-start" data-aos="fade-up" data-aos-delay="100">
                     <div>
                         <h2 className="text-3xl text-neutral-900 mb-2 z-10">Unsere Rabatte</h2>
-                        <p className="text-lg text-neutral-900">Profitieren Sie von unseren attraktiven Rabatten und sichern Sie sich Ihren Mietwagen zu besonders günstigen Konditionen.</p>
+                        <p className="text-lg text-neutral-900">Sichere dir exklusive Preisvorteile und fahr deinen Traumwagen zu Konditionen, die begeistern.</p>
                     </div>
                     <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
                         <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
@@ -214,44 +214,44 @@ const TestMoments = () => {
                     <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
                     <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
                 </div >
-                <div className="hidden sm:flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                     <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
-                    <div className="py-4 xl:py-8 p-8 bg-accent flex flex-col gap-4 h-full">
+                    <div className="p-8 bg-accent flex flex-col gap-4 h-full">
                         <div className="flex gap-x-4 items-center">
                             <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
                                 <UserRoundPlusIcon className=" size-5" />
                             </div>
                             <h3 className=" text-lg lg:text-xl text-main">10% Neukundenrabatt</h3>
                         </div>
-                        <p className=" text-muted-foreground">Zum ersten Mal bei uns? Dann bekommst du 10% Rabatt auf deine erste Fahrzeuganmietung als Willkommensgeschenk!</p>
+                        <p className=" text-muted-foreground">Neu bei uns? Sichere dir jetzt 10% Rabatt auf deine erste Sportwagen-Miete – unser Geschenk zum Start.</p>
                     </div>
                 </div>
-                <div className="hidden sm:flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                     <div className="bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg')] bg-cover aspect-video"></div>
-                    <div className="py-4 xl:py-8 p-8 bg-accent flex flex-col gap-4 h-full">
+                    <div className="p-8 bg-accent flex flex-col gap-4 h-full">
                         <div className="flex gap-x-4 items-center">
                             <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
                                 <HeartIcon className=" size-5" />
                             </div>
                             <h3 className=" text-lg lg:text-xl text-main">10% Hochzeitsrabatt</h3>
                         </div>
-                        <p className=" text-muted-foreground">Der große Tag steht an? Wir machen ihn noch schöner: 10% Rabatt auf dein Hochzeitsfahrzeug. Einfach Heiratsnachweis vorlegen und stilvoll durchstarten.</p>
+                        <p className=" text-muted-foreground">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
                     </div>
                 </div>
-                <div className="hidden sm:flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="400">
                     <div className="bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg')] bg-cover bg-top aspect-video"></div>
-                    <div className="py-4 xl:py-8 p-8 bg-accent flex flex-col gap-4 h-full">
+                    <div className="p-8 bg-accent flex flex-col gap-4 h-full">
                         <div className="flex gap-x-4 items-center">
                             <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
                                 <CakeIcon className=" size-5" />
                             </div>
                             <h3 className=" text-lg lg:text-xl text-main">5% Geburtstagsrabatt</h3>
                         </div>
-                        <p className=" text-muted-foreground">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete. Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
+                        <p className=" text-muted-foreground">Feier mit uns und sichere dir 5% Rabatt auf deine nächste Miete. Zum ersten Mal dabei? Dann gibt’s sogar ganze 15%!</p>
                     </div>
                 </div>
             </div>
-            <div className="mt-6 flex sm:hidden flex-col rounded-lg bg-accent shadow border overflow-hidden">
+            <div className="mt-6 hidden flex-col rounded-lg bg-accent shadow border overflow-hidden">
                 <div className="flex flex-col gap-6 lg:gap-10 p-8">
                     <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-x-2">
@@ -260,7 +260,7 @@ const TestMoments = () => {
                             </div>
                             <h3 className="text-lg text-main">10% Neukundenrabatt</h3>
                         </div>
-                        <p className="">Zum ersten Mal bei uns? Dann bekommst du 10% Rabatt auf deine erste Fahrzeuganmietung als Willkommensgeschenk!</p>
+                        <p className="">Neu bei uns? Sichere dir jetzt 10% Rabatt auf deine erste Sportwagen-Miete – unser Geschenk zum Start.</p>
                     </div>
                     <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-x-2">
@@ -269,7 +269,7 @@ const TestMoments = () => {
                             </div>
                             <h3 className="text-lg text-main">10% Hochzeitsrabatt</h3>
                         </div>
-                        <p className="">Der große Tag steht an? Wir machen ihn noch schöner: 10% Rabatt auf dein Hochzeitsfahrzeug. Einfach Heiratsnachweis vorlegen und stilvoll durchstarten.</p>
+                        <p className="">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
                     </div>
                     <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-x-2">
@@ -278,7 +278,7 @@ const TestMoments = () => {
                             </div>
                             <h3 className="text-lg text-main">5% Geburtstagsrabatt</h3>
                         </div>
-                        <p className="">Feier mit uns und erhalte 5% Rabatt auf deine nächste Miete. Wenn du zusätzlich zum ersten Mal bei uns buchst, gibt’s sogar satte 15%!</p>
+                        <p className="">Feier mit uns und sichere dir 5% Rabatt auf deine nächste Miete. Zum ersten Mal dabei? Dann gibt’s sogar ganze 15%!</p>
                     </div>
                 </div>
             </div>

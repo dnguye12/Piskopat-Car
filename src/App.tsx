@@ -20,11 +20,11 @@ import {
 } from "@/components/ui/dialog"
 import { Button } from "./components/ui/button";
 import { cn } from "./lib/utils";
+import Coupon from "./routes/coupon/Coupon";
 
 function App() {
   const location = useLocation()
   const [open, setOpen] = useState<boolean>(() => {
-    return true
     if (typeof window === "undefined") {
       return false
     }
@@ -86,6 +86,7 @@ function App() {
       </Dialog>
       <Routes>
         <Route index element={<Test />} />
+        <Route path="/gutschein" element={<Coupon />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/fahrzeuge" >
           <Route index element={<Vehicles />} />

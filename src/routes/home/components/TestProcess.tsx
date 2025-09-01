@@ -33,8 +33,8 @@ const TestProcess = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-6">
                     <div className="relative bg-main rounded-lg p-8 flex flex-col justify-between items-start border" data-aos="fade-right">
                         <div>
-                            <h2 className="text-3xl text-neutral-900 mb-2">Unser Mietprozess</h2>
-                            <p className="text-lg text-neutral-900">Unser Mietprozess ist einfach, transparent und schnell abgeschlossen.</p>
+                            <h2 className="text-3xl text-neutral-900 mb-2">Unser Mietablauf</h2>
+                            <p className="text-lg text-neutral-900">Wir machen’s leicht – klar, fair und in wenigen Schritten.</p>
                         </div>
                         <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
@@ -56,7 +56,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Fahrzeug anfragen</h5>
-                                        <p className="">Du nimmst ganz einfach Kontakt über WhatsApp auf. Wir beantworten alle Fragen persönlich und beraten dich individuell.</p>
+                                        <p className="">Schreib uns einfach per WhatsApp – wir beantworten deine Fragen persönlich und beraten dich individuell.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -67,7 +67,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Termin & Reservierung</h5>
-                                        <p className="">Gemeinsam finden wir den passenden Termin und reservieren dein Fahrzeug. Eine Anzahlung sichert dir die Buchung.</p>
+                                        <p className="">Zusammen wählen wir deinen Termin, reservieren dein Fahrzeug – und mit einer Anzahlung ist alles fix.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -89,7 +89,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Fahrzeugübergabe</h5>
-                                        <p className="">Am Übergabetag prüfen wir das Fahrzeug gemeinsam und halten alles im Übergabeformular fest für maximale Transparenz.</p>
+                                        <p className="">Am Übergabetag kontrollieren wir das Fahrzeug zusammen und halten jeden Punkt im Formular fest, damit alles nachvollziehbar bleibt.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -100,7 +100,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Fahrspaß pur</h5>
-                                        <p className="">Jetzt beginnt dein Erlebnis: Du genießt die Fahrt im Luxusfahrzeug – mit Vollkasko-Versicherung und Top-Service im Hintergrund.</p>
+                                        <p className="">Jetzt startet dein Erlebnis: Genieße die Fahrt im Luxusfahrzeug – abgesichert mit Vollkasko und begleitet von unserem Premium-Service.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -111,7 +111,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Rückgabe</h5>
-                                        <p className="">Nach deinem Erlebnis gibst du das Fahrzeug wie vereinbart zurück – schnell, professionell und mit finalem Protokoll.</p>
+                                        <p className="">Am Ende deines Erlebnisses gibst du das Fahrzeug unkompliziert zurück – transparent dokumentiert und professionell abgewickelt.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -128,7 +128,7 @@ const TestProcess = () => {
                                             </div>
                                             <h5 className=" text-2xl text-main">Fahrzeug anfragen</h5>
                                         </div>
-                                        <p className="">Du nimmst ganz einfach Kontakt über WhatsApp auf. Wir beantworten alle Fragen persönlich und beraten dich individuell.</p>
+                                        <p className="">Schreib uns einfach per WhatsApp – wir beantworten deine Fragen persönlich und beraten dich individuell.</p>
                                     </div>
                                 </CarouselItem>
                                 <CarouselItem className="">
@@ -139,7 +139,7 @@ const TestProcess = () => {
                                             </div>
                                             <h5 className=" text-2xl text-main">Termin & Reservierung</h5>
                                         </div>
-                                        <p className="">Gemeinsam finden wir den passenden Termin und reservieren dein Fahrzeug. Eine Anzahlung sichert dir die Buchung.</p>
+                                        <p className="">Zusammen wählen wir deinen Termin, reservieren dein Fahrzeug – und mit einer Anzahlung ist alles fix.</p>
                                     </div>
                                 </CarouselItem>
                                 <CarouselItem className="">
@@ -161,7 +161,7 @@ const TestProcess = () => {
                                             </div>
                                             <h5 className=" text-2xl text-main">Fahrzeugübergabe</h5>
                                         </div>
-                                        <p className="">Am Übergabetag prüfen wir das Fahrzeug gemeinsam und halten alles im Übergabeformular fest für maximale Transparenz.</p>
+                                        <p className="">Am Übergabetag kontrollieren wir das Fahrzeug zusammen und halten jeden Punkt im Formular fest, damit alles nachvollziehbar bleibt.</p>
                                     </div>
                                 </CarouselItem>
                                 <CarouselItem className="">
@@ -172,7 +172,7 @@ const TestProcess = () => {
                                             </div>
                                             <h5 className=" text-2xl text-main">Fahrspaß pur</h5>
                                         </div>
-                                        <p className="">Jetzt beginnt dein Erlebnis: Du genießt die Fahrt im Luxusfahrzeug – mit Vollkasko-Versicherung und Top-Service im Hintergrund.</p>
+                                        <p className="">Jetzt startet dein Erlebnis: Genieße die Fahrt im Luxusfahrzeug – abgesichert mit Vollkasko und begleitet von unserem Premium-Service.</p>
                                     </div>
                                 </CarouselItem>
                                 <CarouselItem className="">
@@ -183,7 +183,7 @@ const TestProcess = () => {
                                             </div>
                                             <h5 className=" text-2xl text-main">Rückgabe</h5>
                                         </div>
-                                        <p className="">Nach deinem Erlebnis gibst du das Fahrzeug wie vereinbart zurück – schnell, professionell und mit finalem Protokoll.</p>
+                                        <p className="">Am Ende deines Erlebnisses gibst du das Fahrzeug unkompliziert zurück – transparent dokumentiert und professionell abgewickelt.</p>
                                     </div>
                                 </CarouselItem>
                             </CarouselContent>
@@ -204,70 +204,6 @@ const TestProcess = () => {
                     </div>
                 </div>
             </section>
-            {/*
-            <section className="container mx-auto mt-6 px-6">
-                <div className="flex flex-col lg:grid grid-cols-3 gap-6 mt-6">
-                    <div className="p-8 rounded-lg border bg-main flex flex-col items-start gap-y-5 shadow-md relative" data-aos="fade-up">
-                        <div className=" size-14 rounded-lg border border-neutral-900 bg-neutral-900 inline-flex justify-center items-center">
-                            <MessageSquareTextIcon className=" w-auto h-7 text-main" />
-                        </div>
-                        <h5 className=" text-2xl text-neutral-900">Fahrzeug anfragen</h5>
-                        <p className=" text-lg text-neutral-900">Du nimmst ganz einfach Kontakt über WhatsApp auf. Wir beantworten alle Fragen persönlich und beraten dich individuell.</p>
-                        <Button asChild size={"lg"} className="bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
-                        </Button>
-                        <div className="absolute top-0 left-0 bg-[url('https://i.ibb.co/mCs2hQVM/next-img-bg.png')] bg-cover w-full h-full z-0"></div>
-                    </div>
-
-                    <div className="p-8 rounded-lg border bg-accent flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="100">
-                        <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
-                            <CalendarCheckIcon className=" w-auto h-7" />
-                        </div>
-                        <h5 className=" text-2xl text-foreground dark:text-main">Termin & Reservierung</h5>
-                        <p className=" text-lg text-muted-foreground">Gemeinsam finden wir den passenden Termin und reservieren dein Fahrzeug. Eine Anzahlung sichert dir die Buchung.</p>
-                        <div className="hidden lg:block h-12"></div>
-                    </div>
-
-                    <div className="p-8 rounded-lg border bg-accent flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="200">
-                        <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
-                            <FileTextIcon className=" w-auto h-7" />
-                        </div>
-                        <h5 className=" text-2xl text-foreground dark:text-main">Vertrag & Bezahlung</h5>
-                        <p className=" text-lg text-muted-foreground">Du erhältst den Mietvertrag inklusive AGBs. Danach erfolgt die vollständige Zahlung bequem per Überweisung oder vor Ort.
-                        </p>
-                        <div className="hidden lg:block h-12"></div>
-                    </div>
-
-                    <div className="p-8 rounded-lg border bg-accent flex flex-col gap-y-5 shadow-md" data-aos="fade-up">
-                        <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
-                            <KeyRoundIcon className=" w-auto h-7" />
-                        </div>
-                        <h5 className=" text-2xl text-foreground dark:text-main">Fahrzeugübergabe</h5>
-                        <p className=" text-lg text-muted-foreground">Am Übergabetag prüfen wir das Fahrzeug gemeinsam und halten alles im Übergabeformular fest für maximale Transparenz.</p>
-                        <div className="hidden lg:block h-12"></div>
-                    </div>
-
-                    <div className="p-8 rounded-lg border bg-accent flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="100">
-                        <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
-                            <ZapIcon className=" w-auto h-7" />
-                        </div>
-                        <h5 className=" text-2xl text-foreground dark:text-main">Fahrspaß pur</h5>
-                        <p className=" text-lg text-muted-foreground">
-                            Jetzt beginnt dein Erlebnis: Du genießt die Fahrt im Luxusfahrzeug – mit Vollkasko-Versicherung und Top-Service im Hintergrund.</p>
-                        <div className="hidden lg:block h-12"></div>
-                    </div>
-
-                    <div className="p-8 rounded-lg border bg-accent flex flex-col gap-y-5 shadow-md" data-aos="fade-up" data-aos-delay="200">
-                        <div className=" size-14 rounded-lg border border-neutral-900 dark:border-main inline-flex justify-center items-center">
-                            <HandshakeIcon className=" w-auto h-7" />
-                        </div>
-                        <h5 className=" text-2xl text-foreground dark:text-main">Rückgabe</h5>
-                        <p className=" text-lg text-muted-foreground">Nach deinem Erlebnis gibst du das Fahrzeug wie vereinbart zurück – schnell, professionell und mit finalem Protokoll.</p>
-                        <div className="hidden lg:block h-12"></div>
-                    </div>
-                </div>
-            </section>
-            */}
         </>
     );
 }

@@ -1,7 +1,8 @@
 import "leaflet/dist/leaflet.css";
-import Map, { Marker } from 'react-map-gl/maplibre';
+import Map, { FullscreenControl, Marker, NavigationControl } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Button } from "@/components/ui/button";
+import { ArrowUpRightIcon } from "lucide-react";
 
 const TestMap = () => {
     const latitude = 51.82809534422243;
@@ -24,7 +25,7 @@ const TestMap = () => {
                     </div>
                 </div>
             </div>
-            <a href={import.meta.env.VITE_GOOGLE_ADDRESS} target="_blank" className="col-span-1 lg:col-span-2 rounded-lg overflow-hidden shadow border cursor-pointer">
+            <div className="relative col-span-1 lg:col-span-2 rounded-lg overflow-hidden shadow border">
                 <div className="aspect-video lg:aspect-auto w-full h-full">
                     <Map
                         initialViewState={{
@@ -33,20 +34,20 @@ const TestMap = () => {
                             zoom
                         }}
                         style={{ height: "100%", width: "100%" }}
-                        attributionControl={false}
-                        dragPan={false}
-                        scrollZoom={false}
-                        doubleClickZoom={false}
-                        touchZoomRotate={false}
-                        keyboard={false}
                         mapStyle="https://api.jawg.io/styles/b530999a-0de5-4cca-8a7a-1e09236f1b84.json?access-token=3vQtpm8Wbm4e844grioKklnTiAfRDIpTDKFuzSutfZqk9dTdB0SwEHtf4cPOWGsB"
+                        attributionControl={false}
                     >
                         <Marker latitude={latitude} longitude={longitude} anchor="bottom">
                             <img src="/marker.png" className="w-8" />
                         </Marker>
+                        <NavigationControl />
+                        <FullscreenControl />
                     </Map>
                 </div>
-            </a>
+                <Button asChild className="absolute bottom-2 right-2 bg-neutral-100 text-neutral-900 hover:bg-neutral-400">
+                    <a href={import.meta.env.VITE_GOOGLE_ADDRESS} target="_blank" className="inline-flex items-center">Auf Google Maps<ArrowUpRightIcon /></a>
+                </Button>
+            </div>
 
         </section>
     );

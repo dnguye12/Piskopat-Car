@@ -68,17 +68,17 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="hidden lg:flex flex-col md:mx-auto">
-                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Business</h4>
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Mehr erfahren</h4>
                         <div className="text-muted-foreground flex flex-col gap-y-3 text-base font-medium mb-20">
                             {
                                 pathname === "/"
                                     ?
                                     (
-                                        <AnchorLink href="#kundenstimmen" offset={120} className="hover:text-foreground transition-all">Kundenstimmen</AnchorLink>
+                                        <AnchorLink href="#kundenstimmen" offset={120} className="hover:text-foreground transition-all">Kundenbewertung</AnchorLink>
                                     )
                                     :
                                     (
-                                        <Link to="/#kundenstimmen" preventScrollReset className="hover:text-foreground transition-all">Kundenstimmen</Link>
+                                        <Link to="/#kundenstimmen" preventScrollReset className="hover:text-foreground transition-all">Kundenbewertung</Link>
                                     )
                             }
                             <Link to="/fahrzeuge" className="hover:text-foreground transition-all">Fahrzeuge</Link>
@@ -126,17 +126,17 @@ const Footer = () => {
                             <li className="flex items-center gap-x-1"><PhoneCallIcon className="hidden sm:block dark:text-main" /> +49 176 72223678</li>
                         </ul>
 
-                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Business</h4>
+                        <h4 className="mb-3 whitespace-nowrap text-base font-semibold">Mehr erfahren</h4>
                         <div className="text-muted-foreground flex flex-col space-y-2 sm:space-y-3 text-sm sm:text-base font-medium mb-8 sm:mb-12">
                             {
                                 pathname === "/"
                                     ?
                                     (
-                                        <AnchorLink href="#kundenstimmen" offset={120} className="hover:text-foreground transition-all">Kundenstimmen</AnchorLink>
+                                        <AnchorLink href="#kundenstimmen" offset={120} className="hover:text-foreground transition-all">Kundenbewertung</AnchorLink>
                                     )
                                     :
                                     (
-                                        <Link to="/#kundenstimmen" preventScrollReset className="hover:text-foreground transition-all">Kundenstimmen</Link>
+                                        <Link to="/#kundenstimmen" preventScrollReset className="hover:text-foreground transition-all">Kundenbewertung</Link>
                                     )
                             }
                             <Link to="/fahrzeuge" className="hover:text-foreground transition-all">Fahrzeuge</Link>

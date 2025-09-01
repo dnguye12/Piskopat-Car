@@ -67,6 +67,11 @@ const Navbar = () => {
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
+                            <NavigationMenuLink asChild>
+                                <NavbarItem to="/gutschein" text="Gutscheine" />
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
                             <NavbarTrigger text="Fahrzeuge" />
                             <NavigationMenuContent>
                                 <ul className="grid gap-4">
@@ -99,12 +104,6 @@ const Navbar = () => {
                     <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                     <Separator orientation="vertical" className="!h-12 mx-1" />
                     <ThemeToggle />
-                    {/* 
-                    <TooltipContainer trigger={
-                        <Button size={"icon"} variant={"outline"} className="size-12">
-                            <GlobeIcon className="size-5" />
-                        </Button>
-                    } content={"Sprache"} />*/}
 
                 </div>
             </div>
@@ -135,6 +134,7 @@ const Navbar = () => {
                                 </DrawerHeader>
                                 <nav className="flex flex-col items-start gap-y-2">
                                     <NavbarItem to="/" text="Startseite" />
+                                    <NavbarItem to="/gutschein" text="Gutscheine"/>
                                     <Accordion type="single" collapsible>
                                         <AccordionItem value="mb-nav-Fahrzeuge" className="border-b-0">
                                             <AccordionTrigger className="px-6 py-0 h-10 ml-4 items-center hover:bg-main! dark:hover:bg-transparent! !text-base hover:font-semibold dark:hover:text-main transition-all">
@@ -157,10 +157,6 @@ const Navbar = () => {
                                 <div className="flex items-center px-6 gap-x-3">
                                     <Button size={"lg"} variant={"main"} className="h-12 cursor-pointer font-semibold shadow" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                                     <ThemeToggle />
-                                    {/*
-                                    <Button size={"icon"} variant={"outline"} className="size-12">
-                                        <GlobeIcon className="size-5" />
-                                    </Button>*/}
                                 </div>
                             </div>
                         </DrawerContent>
