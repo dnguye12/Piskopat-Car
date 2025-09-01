@@ -56,6 +56,7 @@ export function ContactForm() {
                 body: JSON.stringify(body),
             })
 
+            form.reset()
             setSending(false)
         } catch (e) {
             console.log(e)
