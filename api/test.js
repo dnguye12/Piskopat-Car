@@ -13,7 +13,7 @@ export default async function handler(req, res) {
       port: 465,
       secure: true,
       auth: {
-        user: "77863404",
+        user: "info@xsportwagen.de",
         pass: "Discord-Homepage*2026"
       }
     })
