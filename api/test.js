@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-const escapeEmail = (str = "") => {
+const escapeHtml = (str = "") => {
   return String(str)
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
