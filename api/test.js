@@ -56,15 +56,26 @@ export default async function handler(req, res) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${escapeHtml(subject)}</title>
     <style>
-      .preheader { display:none !important; visibility:hidden; opacity:0; color:transparent; height:0; width:0; overflow:hidden; mso-hide:all; }
-      @media (prefers-color-scheme: dark) {
+      .preheader { display:none !important; visibility:hidden; opacity:0; color:transparent; height:0; width:0; overflow:hidden; }
         .card { background-color: oklch(1 0 0) !important; }
         .text { color: oklch(0.145 0 0) !important; }
         .muted { color: oklch(0.556 0 0) !important; }
+        .hidden {
+      display: none
+    }
+
+    @media only screen and (min-width: 640px) {
+      .sm-table-row {
+        display: table-row !important;
       }
+
+      .sm-hidden {
+        display: none !important;
+      }
+    }
     </style>
   </head>
-<body style="margin:0; padding:0;">
+<body style="margin:0; padding: 0px 8px;">
     <span class="preheader">${escapeHtml(preheader)}</span>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
       <tr>
@@ -96,7 +107,7 @@ export default async function handler(req, res) {
                       <strong>Kontaktdaten</strong>
                     </td>
                   </tr>
-                  <tr>
+                  <tr class="hidden sm-table-row">
                     <td style="padding: 16px 32px;">
                       <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="font-family:Arial, Helvetica, sans-serif; font-size:16px;">
                         <tr>
@@ -115,6 +126,18 @@ export default async function handler(req, res) {
                         </tr>` : ``}
                       </table>
                     </td>
+                  </tr>
+                  <tr class="sm-hidden"
+                  style="display: flex; flex-direction: column; padding: 16px 32px; font-family:Arial, Helvetica, sans-serif; font-size:16px;">
+                  <td style="padding:6px 0; color:#6b7280;" class="muted">Name</td>
+                  <td style="padding:6px 0;" class="text">${escapeHtml(safeName)}</td>
+                  ${safeEmail ? `
+                  <td style="padding:6px 0; color:#6b7280;" class="muted">E-Mail</td>
+                  <td style="padding:6px 0;" class="text">${escapeHtml(safeEmail)}</td>` : ``}
+                  ${safePhone ? `
+                  <td style="padding:6px 0; color:#6b7280;" class="muted">Telefon</td>
+                  <td style="padding:6px 0;" class="text">${escapeHtml(safePhone)}</td>`
+                  : ``}
                   </tr>
                 </table>
 
