@@ -13,16 +13,16 @@ export default async function handler(req, res) {
       port: 465,
       secure: true,
       auth: {
-        user: "info@xsportwagen.de",
-        pass: "Discord-Homepage*2026"
+        user: process.env.SMTP_MAIL,
+        pass: process.env.SMTP_USER
       }
     })
 
     await transporter.sendMail({
-      from: `"${name}" <${process.env.SMTP_USER}>`,
-      to: "info@xsportwagen.de",
+      from: `${email}`,
+      to: process.env.SMTP_MAIL,
       replyTo: email,
-      subject: `New website message from ${name}`,
+      subject: `Neue Nachricht von ${name} - ${phone}`,
       text: content,
       html: `<p>${content.replace(/</g, "&lt;")}</p>`,
     })
