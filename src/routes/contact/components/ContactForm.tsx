@@ -14,6 +14,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
+import { toast } from "sonner"
 
 const formSchema = z.object({
     name: z.string().min(1, {
@@ -58,9 +59,11 @@ export function ContactForm() {
 
             form.reset()
             setSending(false)
+            toast.success("Nachricht erfolgreich gesendet")
         } catch (e) {
             console.log(e)
             setSending(false)
+            toast.error("Fehler beim Senden der Nachricht")
         }
     }
 
