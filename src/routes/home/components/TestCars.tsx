@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 const TestCars = () => {
     return (
-        <section className="container mx-auto px-6 mt-6">
+        <section className="container mx-auto px-6 mt-6" data-aos="fade-up">
             <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border">
                 <div className="z-20">
                     <h5 className="text-3xl sm:text-4xl md:text-5xl text-neutral-100 z-20 mb-2 text-center">Unsere Fahrzeuge</h5>

@@ -11,7 +11,7 @@ const TestMap = () => {
 
     return (
         <section className="container mx-auto mt-6 px-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="col-span-1 rounded-lg border shadow overflow-hidden grid grid-cols-2 lg:block">
+            <div className="col-span-1 rounded-lg border shadow overflow-hidden grid grid-cols-2 lg:block" data-aos="fade-right">
                 <div className="hidden sm:block aspect-auto lg:aspect-video bg-[url('https://www.muensterland.com/site/assets/files/34133/ennigerloh_muehle_04_seb.jpg')] w-full bg-cover bg-center"></div>
                 <div className="col-span-2 sm:col-span-1 bg-main p-8 flex flex-col">
                     <p className="font-medium text-2xl mb-2 text-neutral-900">Jede Fahrt wird zum Erlebnis.</p>
@@ -25,7 +25,7 @@ const TestMap = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative col-span-1 lg:col-span-2 rounded-lg overflow-hidden shadow border">
+            <div className="relative col-span-1 lg:col-span-2 rounded-lg overflow-hidden shadow border" data-aos="fade-left">
                 <div className="aspect-video lg:aspect-auto w-full h-full">
                     <Map
                         initialViewState={{

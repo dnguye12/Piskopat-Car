@@ -11,20 +11,20 @@ const TestHero = () => {
                 <p className="mt-8 text-xl text-neutral-100 max-w-4xl whitespace-pre-wrap break-words text-center" data-aos="zoom-in" data-aos-delay="500">X-Sportwagen – Luxus, Leistung, Leidenschaft. Hier zählt nicht das Papier, sondern das Erlebnis. Deine Zeit im Sportwagen – einzigartig gemacht durch unseren Premium-Service.
                 </p>
                 <div className="mt-8 grid grid-cols-2 max-w-2xl" >
-                    <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-right" data-aos-delay="1400">
+                    <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-right" data-aos-delay="700">
                         <CreditCardIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Keine Kreditkarte notwendig</span>
                     </div>
-                    <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-left" data-aos-delay="1400">
+                    <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-left" data-aos-delay="700">
                         <UserRoundCheckIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Vermietung ab 18 Jahren</span>
                     </div>
-                    <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-right" data-aos-delay="1400">
+                    <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-right" data-aos-delay="700">
                         <StarIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Lieferung & Abholung</span>
                     </div>
-                    <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-left" data-aos-delay="1400">
+                    <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-left" data-aos-delay="700">
                         <BadgePercentIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">10% Neukundenrabatt!</span>
                     </div>
                 </div>
-                <div className="mt-8 flex gap-x-4 items-center" data-aos="fade-up" data-aos-delay="1800">
+                <div className="mt-8 flex gap-x-4 items-center" data-aos="fade-up" data-aos-delay="900">
                     <Button variant={"main"} size="lg" className="h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                     <Button variant={"main-outline"} size="lg" className="h-12 lg:h-16 px-8 lg:text-lg" asChild>
                         <Link to="/fahrzeuge">Fahrzeuge</Link>
