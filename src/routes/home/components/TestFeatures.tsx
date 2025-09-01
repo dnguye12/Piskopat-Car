@@ -102,13 +102,13 @@ const TestFeatures = () => {
             <section className="block container mx-auto mt-6 px-6 overflow-hidden">
                 <div className="grid grid-cols-12 gap-6">
                     <div className="col-span-12 xl:col-span-8 flex flex-col">
-                        <div className="relative bg-main rounded-lg px-8 py-8 border text-neutral-900" data-aos="fade-up">
+                        <div className="relative bg-main rounded-lg px-8 py-8 border text-neutral-900">
                             <h3 className="hidden sm:block text-2xl lg:text-3xl">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
                             <p className="hidden sm:block mt-3 lg:text-lg break-words">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
                             <h3 className="block sm:hidden text-3xl">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</h3>
                             <img src="/thing.svg" className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-10 z-0 w-full" />
                         </div>
-                        <div className="hidden min-[500px]:grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-sm" data-aos="fade-up">
+                        <div className="hidden min-[500px]:grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-sm">
                             <div className=" flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
                                 <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                     <ListTodoIcon className="min-w-5 size-5" />
@@ -327,7 +327,7 @@ const TestFeatures = () => {
 
                         </div>
                     </div>
-                    <div className="hidden xl:block col-span-4 bg-[url('https://i.ibb.co/0px8z1BC/features.jpg')] bg-cover bg-center rounded-lg border" data-aos="fade-left"></div>
+                    <div className="hidden xl:block col-span-4 bg-[url('https://i.ibb.co/0px8z1BC/features.jpg')] bg-cover bg-center rounded-lg border"></div>
                 </div>
             </section>
         </>

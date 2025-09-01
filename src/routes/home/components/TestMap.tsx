@@ -10,7 +10,7 @@ const TestMap = () => {
     const zoom = 13
 
     return (
-        <section className="container mx-auto mt-6 px-6 grid grid-cols-1 lg:grid-cols-3 gap-6" data-aos="fade-up">
+        <section className="container mx-auto mt-6 px-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="col-span-1 rounded-lg border shadow overflow-hidden grid grid-cols-2 lg:block">
                 <div className="hidden sm:block aspect-auto lg:aspect-video bg-[url('https://www.muensterland.com/site/assets/files/34133/ennigerloh_muehle_04_seb.jpg')] w-full bg-cover bg-center"></div>
                 <div className="col-span-2 sm:col-span-1 bg-main p-8 flex flex-col">

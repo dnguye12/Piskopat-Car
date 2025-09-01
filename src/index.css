@@ -124,7 +124,6 @@
     @apply bg-background text-foreground;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    scroll-behavior:smooth;
   }
 }
 

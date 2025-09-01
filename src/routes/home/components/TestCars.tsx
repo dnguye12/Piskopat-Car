@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 const TestCars = () => {
     return (
         <section className="container mx-auto px-6 mt-6">
-            <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
+            <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border">
                 <div className="z-20">
                     <h5 className="text-3xl sm:text-4xl md:text-5xl text-neutral-100 z-20 mb-2 text-center">Unsere Fahrzeuge</h5>
                     <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-orbi text-center">Bereit für dich</h3>
@@ -15,7 +15,7 @@ const TestCars = () => {
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/n8fR3wtj/pexels-danielspase-951318.jpg')] bg-cover bg-center z-0" />
             </div>
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className=" rounded-lg overflow-hidden" data-aos="fade-up">
+                <div className=" rounded-lg overflow-hidden">
                     <div className={`w-full aspect-video bg-[url('https://i.ibb.co/tMzp01TL/A7402864.png')] bg-cover bg-bottom`}></div>
 
                     <div className="bg-main flex flex-col items-start">
@@ -56,7 +56,7 @@ const TestCars = () => {
                 </div>
 
 
-                <div className="hidden md:block w-full h-full rounded-lg border overflow-hidden relative shadow" data-aos="fade-up">
+                <div className="hidden md:block w-full h-full rounded-lg border overflow-hidden relative shadow">
                     <p className="absolute top-1/2 left-1/2 -translate-1/2 z-10 text-muted-foreground text-3xl font-medium text-center">Mehr in Kürze...</p>
                     <Skeleton className="w-full h-full shadow" />
                 </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const TestMoments = () => {
     return (
         <section className="container mx-auto px-6">
-            <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border mt-6" data-aos="fade-up">
+            <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border mt-6">
                 <div className="z-20">
                     <h5 className="text-3xl sm:text-4xl md:text-5xl text-neutral-100 z-20 mb-2 text-center">Dein Moment. Unser Sportwagen.</h5>
                     <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-orbi text-center">Wähle deinen Moment</h3>
@@ -200,7 +200,7 @@ const TestMoments = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-6">
-                <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-between items-start" data-aos="fade-up" data-aos-delay="100">
+                <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-between items-start">
                     <div>
                         <h2 className="text-3xl text-neutral-900 mb-2 z-10">Unsere Rabatte</h2>
                         <p className="text-lg text-neutral-900">Sichere dir exklusive Preisvorteile und fahr deinen Traumwagen zu Konditionen, die begeistern.</p>
@@ -214,7 +214,7 @@ const TestMoments = () => {
                     <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
                     <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
                 </div >
-                <div className="flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
                     <div className="bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg')] bg-cover aspect-video"></div>
                     <div className="p-8 bg-accent flex flex-col gap-4 h-full">
                         <div className="flex gap-x-4 items-center">
@@ -226,7 +226,7 @@ const TestMoments = () => {
                         <p className=" text-muted-foreground">Neu bei uns? Sichere dir jetzt 10% Rabatt auf deine erste Sportwagen-Miete – unser Geschenk zum Start.</p>
                     </div>
                 </div>
-                <div className="flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
                     <div className="bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg')] bg-cover aspect-video"></div>
                     <div className="p-8 bg-accent flex flex-col gap-4 h-full">
                         <div className="flex gap-x-4 items-center">
@@ -238,7 +238,7 @@ const TestMoments = () => {
                         <p className=" text-muted-foreground">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
                     </div>
                 </div>
-                <div className="flex flex-col rounded-lg border shadow overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                <div className="flex flex-col rounded-lg border shadow overflow-hidden">
                     <div className="bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg')] bg-cover bg-top aspect-video"></div>
                     <div className="p-8 bg-accent flex flex-col gap-4 h-full">
                         <div className="flex gap-x-4 items-center">
