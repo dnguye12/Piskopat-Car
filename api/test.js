@@ -14,7 +14,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: process.env.SMTP_MAIL,
-        pass: process.env.SMTP_USER
+        pass: process.env.SMTP_PASS
       }
     })
 
