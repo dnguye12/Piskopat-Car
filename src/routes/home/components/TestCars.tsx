@@ -12,11 +12,11 @@ const TestCars = () => {
                     <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-orbi text-center">Bereit für dich</h3>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/n8fR3wtj/pexels-danielspase-951318.jpg')] bg-cover bg-center z-0" />
+                <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/gFvGMG4y/pexels-danielspase-951318000000.jpg')] bg-cover bg-center z-0" />
             </div>
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className=" rounded-lg overflow-hidden">
-                    <div className={`w-full aspect-video bg-[url('https://i.ibb.co/tMzp01TL/A7402864.png')] bg-cover bg-bottom`}></div>
+                <div className=" rounded-lg overflow-hidden" data-aos="fade-up">
+                    <div className={`w-full aspect-video bg-[url('https://i.ibb.co/LhpZ7HhB/A7402864.png')] bg-cover bg-bottom`}></div>
 
                     <div className="bg-main flex flex-col items-start">
                         <div className="px-8 pt-8 pb-4 w-full flex justify-between items-start flex-col-reverse sm:flex-row gap-y-3">
@@ -56,7 +56,7 @@ const TestCars = () => {
                 </div>
 
 
-                <div className="hidden md:block w-full h-full rounded-lg border overflow-hidden relative shadow">
+                <div className="hidden md:block w-full h-full rounded-lg border overflow-hidden relative shadow" data-aos="fade-up" data-aos-delay="100">
                     <p className="absolute top-1/2 left-1/2 -translate-1/2 z-10 text-muted-foreground text-3xl font-medium text-center">Mehr in Kürze...</p>
                     <Skeleton className="w-full h-full shadow" />
                 </div>

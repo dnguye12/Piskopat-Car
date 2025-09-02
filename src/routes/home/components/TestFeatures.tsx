@@ -102,7 +102,7 @@ const TestFeatures = () => {
             </section>
             <section className="block container mx-auto mt-6 px-6 overflow-hidden">
                 <div className="grid grid-cols-12 gap-6">
-                    <div className="col-span-12 xl:col-span-8 flex flex-col">
+                    <div className="col-span-12 xl:col-span-8 flex flex-col" data-aos="fade-right">
                         <div className="relative bg-main rounded-lg px-8 py-8 border text-neutral-900">
                             <h3 className="hidden sm:block text-2xl lg:text-3xl">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
                             <p className="hidden sm:block mt-3 lg:text-lg break-words">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
@@ -328,7 +328,7 @@ const TestFeatures = () => {
 
                         </div>
                     </div>
-                    <div className="hidden xl:block col-span-4 bg-[url('https://i.ibb.co/0px8z1BC/features.jpg')] bg-cover bg-center rounded-lg border"></div>
+                    <div className="hidden xl:block col-span-4 bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg border" data-aos="fade-left"></div>
                 </div>
             </section>
             </div>

@@ -14,11 +14,11 @@ const Impressum = () => {
                     <div className="container mx-auto px-4 relative z-20">
                         <h1 className="text-5xl lg:text-6xl text-main font-orbi" data-aos="fade-right" data-aos-delay="300">Impressum</h1>
                     </div>
-                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/S4npDd1k/pexels-asphotograpy-515674.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/sd6NBw9s/pexels-asphotograpy-515674.jpg')] bg-cover bg-center" data-aos="fade-up"></div>
                 </div>
 
-                <div className="flex flex-col container mx-auto px-4 my-6">
+                <div className="flex flex-col container mx-auto px-4 my-6" data-aos="fade-up">
                     <h2 className=" text-3xl font-semibold">Angaben gemäß § 5 TMG</h2>
                     <p className="text-lg">Hüseyin Cimen</p>
                     <p className="text-lg">X Sportwagen</p>

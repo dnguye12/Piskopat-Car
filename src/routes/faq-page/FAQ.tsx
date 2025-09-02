@@ -159,11 +159,11 @@ const FAQ = () => {
 
 
                     </div>
-                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/756789/pexels-photo-756789.jpeg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/756789/pexels-photo-756789.jpeg?w=1920')] bg-cover bg-center" data-aos="fade-up"></div>
                 </div>
 
-                <section className="container mx-auto px-6 mt-6 mb-12">
+                <section className="container mx-auto px-6 mt-6 mb-12" data-aos="fade-up">
                     <Accordion type="single" collapsible>
                         <div className="flex flex-col gap-6 bg-accent p-6 rounded-md border shadow">
                             {list.map((l) => (

@@ -13,7 +13,7 @@ import {
 import { Label } from "@/components/ui/label"
 import { cn } from "@/lib/utils";
 import { BadgeEuroIcon, BanknoteArrowDownIcon, IdCardIcon, InfoIcon, ShieldCheckIcon, UserRoundCheckIcon } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import PricingCard from "./PricingCard";
 import Autoplay from "embla-carousel-autoplay"
 import { Progress } from "@/components/ui/progress";
@@ -31,14 +31,6 @@ const imageLinks = [
     "https://i.ibb.co/v4svgWz7/A7402867.png",
     "https://i.ibb.co/fV5h6C2w/A7402875.png",
 ]
-
-/*
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const handleDragStart = (e: any) => e.preventDefault();
-
-const items = imageLinks.map((src) => (
-    <img key={src} src={src} onDragStart={handleDragStart} role="presentation" alt="" />
-));*/
 
 type Mode = "daily" | "weekly"
 
@@ -115,6 +107,10 @@ const VM_Golf_8 = () => {
 
     const progress = (current * 100) / count;
 
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     useEffect(() => {
         if (!api) {
             return
@@ -142,7 +138,7 @@ const VM_Golf_8 = () => {
                         </div>
                     </div>
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/tMzp01TL/A7402864.png')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/LhpZ7HhB/A7402864.png')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
                 </div>
                 <div className="container mx-auto px-4 pt-6 pb-6 lg:pb-0">
                     <Carousel
@@ -164,7 +160,7 @@ const VM_Golf_8 = () => {
                                     <div className="p-1">
                                         <Card className="p-0 overflow-hidden border shadow">
                                             <CardContent className="p-0">
-                                                <img src={item} />
+                                                <img src={item} className="object-cover object-center aspect-square"/>
                                             </CardContent>
                                         </Card>
                                     </div>
@@ -173,10 +169,10 @@ const VM_Golf_8 = () => {
                         </CarouselContent>
                         <CarouselPrevious className="hidden lg:inline-flex" />
                         <CarouselNext className="hidden lg:inline-flex" />
-                        <CarouselPrevious className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-0" />
-                        <CarouselNext className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-2 translate-x-full" />
+                        <CarouselPrevious className="inline-flex lg:hidden top-[calc(100%+0.5rem)] translate-y-0 left-0" />
+                        <CarouselNext className="inline-flex lg:hidden top-[calc(100%+0.5rem)] translate-y-0 left-2 translate-x-full" />
                     </Carousel>
-                    <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-1" />
+                    <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-5" />
                 </div>
                 <div className="container mx-auto px-4 flex flex-col gap-y-6 mt-4">
                     <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -234,7 +230,7 @@ const VM_Golf_8 = () => {
                     </div>
 
                     <div className="grid grid-cols-6 gap-6">
-                        <div className={`col-span-6 lg:col-span-2 aspect-video lg:aspect-auto rounded-lg border bg-[url(https://i.ibb.co/tMzp01TL/A7402864.png)] bg-cover bg-center shadow`} data-aos="fade-right"></div>
+                        <div className={`col-span-6 lg:col-span-2 aspect-video lg:aspect-auto rounded-lg border bg-[url(https://i.ibb.co/LhpZ7HhB/A7402864.png)] bg-cover bg-center shadow`} data-aos="fade-right"></div>
                         <div className="col-span-6 lg:col-span-4 p-8 rounded-lg border bg-accent shadow" data-aos="fade-left">
                             <p className="text-xl mb-1">Volkswagen</p>
                             <h3 className="text-3xl mb-4">VW Golf 8 R Performance</h3>

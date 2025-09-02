@@ -23,10 +23,10 @@ const Contact = () => {
                             <Button variant={"main"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                         </div>
                     </div>
-                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/xSgzRTP3/fb7772b40cf1d5ab756c9cd9b626603b.webp')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/xSgzRTP3/fb7772b40cf1d5ab756c9cd9b626603b.webp')] bg-cover bg-center" data-aos="fade-up"></div>
                 </div>
-                <div className="container mx-auto grid lg:grid-cols-3 gap-6 mt-6 px-4">
+                <div className="container mx-auto grid lg:grid-cols-3 gap-6 mt-6 px-4" data-aos="fade-up">
                     <div className="flex sm:grid sm:grid-cols-2 lg:flex flex-col justify-between gap-6 w-full">
                         <div className="p-8 rounded-lg border bg-main flex items-start gap-x-2 shadow">
                             <MessageCircleQuestionIcon className="min-w-6 size-6 text-neutral-900" />

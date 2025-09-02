@@ -14,12 +14,10 @@ const Datenschutz = () => {
                     <div className="container mx-auto px-4 relative z-20">
                         <h1 className="text-5xl lg:text-6xl text-main font-orbi" data-aos="fade-right" data-aos-delay="300">Datenschutz</h1>
                     </div>
-                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/LVHCB9Q/pexels-mikebirdy-1104768.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/WvhrBtVn/pexels-mikebirdy-1104768.jpg')] bg-cover bg-center" data-aos="fade-up"></div>
                 </div>
-                <div className="content flex flex-col container mx-auto px-4 my-6">
-
-
+                <div className="content flex flex-col container mx-auto px-4 my-6" data-aos="fade-up">
                     <h1>Datenschutz­erklärung</h1>
                     <h2>1. Datenschutz auf einen Blick</h2>
                     <h3>Allgemeine Hinweise</h3> <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>

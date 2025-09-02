@@ -22,10 +22,10 @@ const Wedding = () => {
 
 
                     </div>
-                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/Vct8JJbn/pexels-mario-mb-photo-graphie-1105633-2318049.jpg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://i.ibb.co/xqhTZ54y/pexels-mario-mb-photo-graphie-1105633-2318049.jpg')] bg-cover bg-center" data-aos="fade-up"></div>
                 </div>
-                <div className="container mx-auto px-4 py-6">
+                <div className="container mx-auto px-4 py-6" data-aos="fade-up">
                     <h3 className="text-main text-4xl md:text-2xl lg:text-4xl z-20 mb-4">Hochzeitsauto mieten für ihren besonderen tag bei X-Sportwagen</h3>
                     <p className="mb-20">Die eigene Hochzeit ist für viele der schönste Tag im Leben. Verständlich, dass an diesem besonderen Tag alles perfekt sein soll –
                         auch das Fahrzeug. Wenn Sie und Ihr Partner Ihre Hochzeit planen, denken Sie frühzeitig daran, Ihr Hochzeitsauto zu mieten, damit

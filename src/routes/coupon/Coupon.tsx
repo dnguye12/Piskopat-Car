@@ -51,10 +51,10 @@ const Coupon = () => {
                             <Button variant={"main"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                         </div>
                     </div>
-                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/26691199/pexels-photo-26691199.jpeg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/26691199/pexels-photo-26691199.jpeg?w=1920')] bg-cover bg-center" data-aos="fade-up"></div>
                 </div>
-                <div className="container mx-auto mt-6 px-4">
+                <div className="container mx-auto mt-6 px-4" data-aos="fade-up">
                     <div className="grid grid-cols-3 gap-6">
                         <div className="col-span-3 lg:col-span-2 bg-main rounded-lg border p-8 relative shadow">
                             <div className="relative flex flex-col items-start z-10 text-neutral-900 gap-y-4">
@@ -71,7 +71,7 @@ const Coupon = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden lg:block col-span-1 rounded-lg border overflow-hidden shadow bg-[url('https://images.pexels.com/photos/29873585/pexels-photo-29873585.jpeg')] bg-cover bg-center">
+                        <div className="hidden lg:block col-span-1 rounded-lg border overflow-hidden shadow bg-[url('https://images.pexels.com/photos/29873585/pexels-photo-29873585.jpeg?w=960')] bg-cover bg-center">
                         </div>
                     </div>
                     <div className="hidden md:grid grid-cols-3 gap-6 mt-6">
@@ -147,7 +147,7 @@ const Coupon = () => {
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
                                     </div>
-                                    <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg')] bg-center bg-cover w-full h-full"></div>
+                                    <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg?w=960')] bg-center bg-cover w-full h-full"></div>
                                 </div>
                             )}
                         {
@@ -160,7 +160,7 @@ const Coupon = () => {
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
                                     </div>
-                                    <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg')] bg-center bg-cover w-full h-full"></div>
+                                    <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?w=960')] bg-center bg-cover w-full h-full"></div>
                                 </div>
                             )}
                         {
@@ -173,7 +173,7 @@ const Coupon = () => {
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
                                     </div>
-                                    <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/19130897/pexels-photo-19130897.jpeg')] bg-center bg-cover w-full h-full"></div>
+                                    <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/19130897/pexels-photo-19130897.jpeg?w=960')] bg-center bg-cover w-full h-full"></div>
                                 </div>
                             )}
                         {
@@ -186,7 +186,7 @@ const Coupon = () => {
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
                                     </div>
-                                    <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg')] bg-center bg-cover w-full h-full"></div>
+                                    <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg?w=960')] bg-center bg-cover w-full h-full"></div>
                                 </div>
                             )}
                     </div>
@@ -199,7 +199,7 @@ const Coupon = () => {
                                             index === 0 &&
                                             (
                                                 <div className="rounded-lg bg-accent border p-0 overflow-hidden">
-                                                    <div className="bg-[url('https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg')] bg-cover bg-center aspect-video"></div>
+                                                    <div className="bg-[url('https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
                                                         <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Gutschein anfragen</h4>
                                                         <p className="lg:text-lg my-6">Du möchtest Fahrfreude verschenken? Sende uns einfach eine WhatsApp‒Nachricht und teile uns mit, welches Fahrzeug und welche Erlebnisdauer du verschenken möchtest oder frage nach einem flexiblen Wertgutschein.</p>
@@ -214,7 +214,7 @@ const Coupon = () => {
                                             index === 1 &&
                                             (
                                                 <div className="rounded-lg bg-accent border p-0 overflow-hidden">
-                                                    <div className="bg-[url('https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg')] bg-cover bg-center aspect-video"></div>
+                                                    <div className="bg-[url('https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
                                                         <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Bestellung abschließen</h4>
                                                         <p className="lg:text-lg my-6">Sobald wir Deine Anfrage erhalten haben, schicken wir Dir alle Infos zur Bestellung und Bezahlung direkt per WhatsApp zu. Du wählst deine gewünschte Zahlungsmethode (z.B. PayPal, Überweisung) und gibst deine Versandadresse an.</p>
@@ -229,7 +229,7 @@ const Coupon = () => {
                                             index === 2 &&
                                             (
                                                 <div className="rounded-lg bg-accent border p-0 overflow-hidden">
-                                                    <div className="bg-[url('https://images.pexels.com/photos/19130897/pexels-photo-19130897.jpeg')] bg-cover bg-center aspect-video"></div>
+                                                    <div className="bg-[url('https://images.pexels.com/photos/19130897/pexels-photo-19130897.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
                                                         <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Gutschein erhalten</h4>
                                                         <p className="lg:text-lg my-6">Nach Zahlungseingang senden wir Dir den Gutschein ganz bequem per Post zu auf Wunsch auch direkt an die beschenkte Person.</p>
@@ -244,7 +244,7 @@ const Coupon = () => {
                                             index === 3 &&
                                             (
                                                 <div className="rounded-lg bg-accent border p-0 overflow-hidden">
-                                                    <div className="bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg')] bg-cover bg-center aspect-video"></div>
+                                                    <div className="bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
                                                         <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Fahrfreude verschenken</h4>
                                                         <p className="lg:text-lg my-6">Fertig! So einfach verschenkst Du ein exklusives Sportwagenerlebnis mit Monroe Sportwagenvermietung. Der Gutschein kann jederzeit unkompliziert eingelöst werden.</p>

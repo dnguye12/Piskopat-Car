@@ -29,9 +29,9 @@ const TestProcess = () => {
 
     return (
         <>
-            <section className="container mx-auto mt-6 px-6" data-aos="fade-up">
+            <section className="container mx-auto mt-6 px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-6">
-                    <div className="relative bg-main rounded-lg p-8 flex flex-col justify-between items-start border">
+                    <div className="relative bg-main rounded-lg p-8 flex flex-col justify-between items-start border" data-aos="fade-right">
                         <div>
                             <h2 className="text-3xl text-neutral-900 mb-2">Unser Mietablauf</h2>
                             <p className="text-lg text-neutral-900">Wir machen’s leicht – klar, fair und in wenigen Schritten.</p>
@@ -41,7 +41,7 @@ const TestProcess = () => {
                         </Button>
                         <div className="absolute top-0 left-0 bg-[url('https://i.ibb.co/mCs2hQVM/next-img-bg.png')] bg-cover w-full h-full z-0 pointer-events-none"></div>
                     </div>
-                    <div className="hidden sm:block col-span-2 rounded-lg bg-accent border p-8">
+                    <div className="hidden sm:block col-span-2 rounded-lg bg-accent border p-8" data-aos="fade-left">
                         <Stepper
                             initialStep={1}
                             onFinalStepCompleted={() => console.log("All steps completed!")}

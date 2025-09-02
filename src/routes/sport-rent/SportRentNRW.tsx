@@ -23,10 +23,10 @@ const SportRentNRW = () => {
 
 
                     </div>
-                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/2127024/pexels-photo-2127024.jpeg')] bg-cover bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+                    <div className="block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up"></div>
+                    <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/2127024/pexels-photo-2127024.jpeg?w=1920')] bg-cover bg-center" data-aos="fade-up"></div>
                 </div>
-                <div className="container mx-auto px-4 py-6">
+                <div className="container mx-auto px-4 py-6" data-aos="fade-up">
                     <h3 className="text-main text-4xl md:text-2xl lg:text-4xl z-20 my-4">Sportwagen mieten und von einer beeindruckenden auswahl profitieren</h3>
                     <p className="mb-20">Wenn Sie ein unvergessliches Erlebnis beim Sportwagen-Mieten suchen, sollte jedes Detail stimmen – insbesondere die Auswahl des perfekten Fahrzeugs. Bei <span className="text-main font-semibold">X-Sportwagen</span> erwartet Sie eine erstklassige Auswahl handverlesener Modelle. Ob Sie von einem eleganten italienischen Sportwagen träumen oder ein Faible für ikonische JDM-Fahrzeuge haben – bei uns finden Sie genau den Sportwagen, der Ihren Wünschen entspricht.</p>
 
