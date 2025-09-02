@@ -80,7 +80,7 @@ const VM_Golf_8_Pricing = () => {
                             <PricingCard title="Tagesmiete" date="Montag-Donnerstag" price={99} per="8 Stunden" km={70} />
                             <PricingCard title="Tagesmiete" date="Montag-Donnerstag" price={149} per="pro Tag" km={200} />
                             <PricingCard title="Tagesmiete" date="Freitag-Sonntag" price={175} per="pro Tag" km={200} />
-                            <PricingCard title="Wochenendtarif" date="Sparpaket" price={475} per="Austerity package" km={600} highlight={true} />
+                            <PricingCard title="Wochenendtarif" date="Sparpaket" price={475} per="Sparpaket" km={600} highlight={true} />
                         </div>
                     )
                 }
