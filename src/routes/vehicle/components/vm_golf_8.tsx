@@ -78,7 +78,7 @@ const VM_Golf_8_Pricing = () => {
                     (
                         <div className="mt-6 flex flex-col gap-y-6 md:grid rounded-lg md:grid-cols-2 xl:grid-cols-4 md:border overflow-hidden">
                             <PricingCard title="Tagesmiete" date="Montag-Donnerstag" price={99} per="8 Stunden" km={70} />
-                            <PricingCard title="Tagesmiete" date="Montag-Donnerstagg" price={149} per="pro Tag" km={200} />
+                            <PricingCard title="Tagesmiete" date="Montag-Donnerstag" price={149} per="pro Tag" km={200} />
                             <PricingCard title="Tagesmiete" date="Freitag-Sonntag" price={175} per="pro Tag" km={200} />
                             <PricingCard title="Wochenendtarif" date="Sparpaket" price={475} per="Austerity package" km={600} highlight={true} />
                         </div>
