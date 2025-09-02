@@ -192,7 +192,7 @@ const VM_Golf_8 = () => {
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <BadgeEuroIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
-                            <p className="text-2xl">3000€ SB</p>
+                            <p className="text-2xl">5000€ SB</p>
                         </div>
                         <div className="flex flex-col items-center p-6 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
@@ -219,7 +219,7 @@ const VM_Golf_8 = () => {
                             <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">
                                 <BadgeEuroIcon className="w-4 h-4 min-[475px]:w-5 min-[475px]:h-5 text-neutral-900" />
                             </div>
-                            <p className="min-[475px]:text-lg">3000€ SB</p>
+                            <p className="min-[475px]:text-lg">5000€ SB</p>
                         </div>
                         <div className="flex items-center gap-y-5 rounded-lg gap-x-2" data-aos="fade-up">
                             <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">
