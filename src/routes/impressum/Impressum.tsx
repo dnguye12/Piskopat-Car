@@ -5,7 +5,7 @@ import { useLayoutEffect } from "react";
 const Impressum = () => {
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
-    })
+    }, [])
     return (
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />

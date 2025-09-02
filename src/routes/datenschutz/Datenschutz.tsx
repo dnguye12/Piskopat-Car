@@ -5,7 +5,7 @@ import { useLayoutEffect } from "react";
 const Datenschutz = () => {
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
-    })
+    }, [])
     return (
         <div className="dateschutz w-full min-h-screen flex flex-col">
             <Navbar />

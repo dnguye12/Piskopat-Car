@@ -6,7 +6,7 @@ const Vehicle = () => {
     const { car } = useParams()
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
-    })
+    }, [])
 
     if (car === "vw_golf_8") {
         return (
