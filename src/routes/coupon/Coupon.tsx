@@ -71,7 +71,7 @@ const Coupon = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden lg:block col-span-1 rounded-lg border overflow-hidden shadow bg-[url('https://images.pexels.com/photos/549364/pexels-photo-549364.jpeg')] bg-cover bg-center">
+                        <div className="hidden lg:block col-span-1 rounded-lg border overflow-hidden shadow bg-[url('https://images.pexels.com/photos/29873585/pexels-photo-29873585.jpeg')] bg-cover bg-center">
                         </div>
                     </div>
                     <div className="hidden md:grid grid-cols-3 gap-6 mt-6">
@@ -193,7 +193,7 @@ const Coupon = () => {
                     <div className="block md:hidden mt-6">
                         <Carousel setApi={setApi} className="w-full mx-auto">
                             <CarouselContent className="-ml-4 ">
-                                {Array.from({ length: 5 }).map((_, index) => (
+                                {Array.from({ length: 4 }).map((_, index) => (
                                     <CarouselItem key={index} className="pl-4">
                                         {
                                             index === 0 &&
