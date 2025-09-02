@@ -77,10 +77,10 @@ const VM_Golf_8_Pricing = () => {
                     mode === "daily" &&
                     (
                         <div className="mt-6 flex flex-col gap-y-6 md:grid rounded-lg md:grid-cols-2 xl:grid-cols-4 md:border overflow-hidden">
-                            <PricingCard title="Wochentagen" date="Montag-Donnerstag" price={180} per="pro Tag" km={200} />
-                            <PricingCard title="Wochenenden" date="Freitag, Samstag, Sonntag" price={190} per="pro Tag" km={200} />
-                            <PricingCard title="Wochenendtarif 1" date="Freitag-Samstag" price={380} per="Austerity package" km={400} />
-                            <PricingCard title="Wochenendtarif 2" date="Freitag-Montag" price={465} per="Austerity package" km={500} highlight={true} />
+                            <PricingCard title="Tagesmiete" date="Montag-Donnerstag" price={99} per="8 Stunden" km={70} />
+                            <PricingCard title="Tagesmiete" date="Montag-Donnerstagg" price={149} per="pro Tag" km={200} />
+                            <PricingCard title="Tagesmiete" date="Freitag-Sonntag" price={175} per="pro Tag" km={200} />
+                            <PricingCard title="Wochenendtarif" date="Sparpaket" price={475} per="Austerity package" km={600} highlight={true} />
                         </div>
                     )
                 }
@@ -89,8 +89,8 @@ const VM_Golf_8_Pricing = () => {
                     (
                         <div className="mt-6 flex flex-col gap-y-6 md:grid rounded-lg md:grid-cols-2 xl:grid-cols-4 overflow-hidden">
                             <div className="hidden md:block"></div>
-                            <PricingCard title="Wochenpaket 5 Tage" date="5 Tage" price={680} per="Austerity package" km={800} />
-                            <PricingCard title="Wochenpaket 7 Tage" date="Ganze Woche" price={850} per="Austerity package" km={1000} highlight={true} />
+                            <PricingCard title="Wochenpaket 4 Tage" date="Montag - Donnerstag" price={550} per="Sparpaket" km={800} />
+                            <PricingCard title="Wochenpaket 7 Tage" date="1 Woche: (Mo-So)" price={799} per="Sparpaket" km={1000} highlight={true} />
                             <div className="hidden md:block"></div>
                         </div>
                     )
@@ -192,7 +192,7 @@ const VM_Golf_8 = () => {
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <BadgeEuroIcon className=" w-6 h-6 text-neutral-900" />
                             </div>
-                            <p className="text-2xl">4000€ SB</p>
+                            <p className="text-2xl">3000€ SB</p>
                         </div>
                         <div className="flex flex-col items-center p-6 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
@@ -219,7 +219,7 @@ const VM_Golf_8 = () => {
                             <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">
                                 <BadgeEuroIcon className="w-4 h-4 min-[475px]:w-5 min-[475px]:h-5 text-neutral-900" />
                             </div>
-                            <p className="min-[475px]:text-lg">4000€ SB</p>
+                            <p className="min-[475px]:text-lg">3000€ SB</p>
                         </div>
                         <div className="flex items-center gap-y-5 rounded-lg gap-x-2" data-aos="fade-up">
                             <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">

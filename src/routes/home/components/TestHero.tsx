@@ -32,13 +32,13 @@ const TestHero = () => {
                 </div>
             </div>
             <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-gradient-to-t from-neutral-900 dark:from-background to-neutral-900/50 z-10 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
-            <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/7JRby7vJ/pexels-mike-noga-1916934-3541743.jpg')] bg-cover z-0 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
+            <div className="hidden lg:block absolute top-0 left-0 w-full h-full bg-[url('https://images.pexels.com/photos/3541743/pexels-photo-3541743.jpeg?w=960')] bg-cover z-0 bg-no-repeat bg-center" data-aos="fade-up" data-aos-delay="100"></div>
 
 
             <div className="container mx-auto px-6 pt-6 pb-0 h-full flex lg:hidden flex-col">
                 <h5 className="text-2xl sm:text-3xl">Wo Freiheit beginnt</h5>
                 <h1 className="text-2xl sm:text-3xl text-main">Fährt Ein Sportwagen</h1>
-                <img src="https://i.ibb.co/7JRby7vJ/pexels-mike-noga-1916934-3541743.jpg" className="w-full h-auto rounded-lg border shadow my-6" />
+                <img src="https://images.pexels.com/photos/3541743/pexels-photo-3541743.jpeg?w=960" className="w-full h-auto rounded-lg border shadow my-6" />
                 <p className="max-w-3xl whitespace-pre-wrap break-words">X-Sportwagen – Luxus, Leistung, Leidenschaft. Hier zählt nicht das Papier, sondern das Erlebnis. Deine Zeit im Sportwagen – einzigartig gemacht durch unseren Premium-Service.
                 </p>
                 <div className="mt-3 grid sm:grid-cols-2 gap-x-6 mx-auto sm:mx-0">

@@ -67,11 +67,6 @@ const Navbar = () => {
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <NavigationMenuLink asChild>
-                                <NavbarItem to="/gutschein" text="Gutscheine" />
-                            </NavigationMenuLink>
-                        </NavigationMenuItem>
-                        <NavigationMenuItem>
                             <NavbarTrigger text="Fahrzeuge" />
                             <NavigationMenuContent>
                                 <ul className="grid gap-4">
@@ -91,6 +86,11 @@ const Navbar = () => {
                         <NavigationMenuItem>
                             <NavigationMenuLink asChild>
                                 <NavbarItem to="/kontakt" text="Kontakt" />
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild>
+                                <NavbarItem to="/gutschein" text="Gutscheine" />
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
@@ -134,7 +134,6 @@ const Navbar = () => {
                                 </DrawerHeader>
                                 <nav className="flex flex-col items-start gap-y-2">
                                     <NavbarItem to="/" text="Startseite" />
-                                    <NavbarItem to="/gutschein" text="Gutscheine"/>
                                     <Accordion type="single" collapsible>
                                         <AccordionItem value="mb-nav-Fahrzeuge" className="border-b-0">
                                             <AccordionTrigger className="px-6 py-0 h-10 ml-4 items-center hover:bg-main! dark:hover:bg-transparent! !text-base hover:font-semibold dark:hover:text-main transition-all">
@@ -149,6 +148,7 @@ const Navbar = () => {
                                         </AccordionItem>
                                     </Accordion>
                                     <NavbarItem to="/kontakt" text="Kontakt" />
+                                    <NavbarItem to="/gutschein" text="Gutscheine"/>
                                     <NavbarItem to="/faq" text="FAQ" />
                                 </nav>
                                 <div className="px-6">
