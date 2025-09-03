@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { BanknoteArrowDownIcon, GiftIcon, MailIcon, MessagesSquareIcon } from "lucide-react";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import {
     Carousel,
@@ -24,9 +24,11 @@ const Coupon = () => {
 
     const progress = (current * 100) / count;
 
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    useEffect(() => {
+        requestAnimationFrame(() =>
+            requestAnimationFrame(() => window.scrollTo(0, 0))
+        );
+    }, []);
 
     useEffect(() => {
         if (!api) {

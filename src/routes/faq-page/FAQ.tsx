@@ -7,7 +7,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 
 type ListItem = {
     i: number;
@@ -141,9 +141,11 @@ const FaqAccordion = ({ index, question, content }: FaqAccordionProps) => {
 
 
 const FAQ = () => {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    useEffect(() => {
+  requestAnimationFrame(() =>
+    requestAnimationFrame(() => window.scrollTo(0, 0))
+  );
+}, []);
     return (
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />

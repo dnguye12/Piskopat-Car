@@ -1,13 +1,15 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router";
 
 const Wedding = () => {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    useEffect(() => {
+  requestAnimationFrame(() =>
+    requestAnimationFrame(() => window.scrollTo(0, 0))
+  );
+}, []);
     return (
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />

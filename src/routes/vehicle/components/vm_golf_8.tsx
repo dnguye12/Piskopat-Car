@@ -13,7 +13,7 @@ import {
 import { Label } from "@/components/ui/label"
 import { cn } from "@/lib/utils";
 import { BadgeEuroIcon, BanknoteArrowDownIcon, IdCardIcon, InfoIcon, ShieldCheckIcon, UserRoundCheckIcon } from "lucide-react";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PricingCard from "./PricingCard";
 import Autoplay from "embla-carousel-autoplay"
 import { Progress } from "@/components/ui/progress";
@@ -107,9 +107,11 @@ const VM_Golf_8 = () => {
 
     const progress = (current * 100) / count;
 
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    useEffect(() => {
+        requestAnimationFrame(() =>
+            requestAnimationFrame(() => window.scrollTo(0, 0))
+        );
+    }, []);
 
     useEffect(() => {
         if (!api) {
@@ -160,7 +162,7 @@ const VM_Golf_8 = () => {
                                     <div className="p-1">
                                         <Card className="p-0 overflow-hidden border shadow">
                                             <CardContent className="p-0">
-                                                <img src={item} className="object-cover object-center aspect-square"/>
+                                                <img src={item} className="object-cover object-center aspect-square" />
                                             </CardContent>
                                         </Card>
                                     </div>
