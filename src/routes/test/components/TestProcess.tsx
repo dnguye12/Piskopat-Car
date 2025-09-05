@@ -29,7 +29,7 @@ const TestProcess = () => {
 
     return (
         <>
-            <section className="container mx-auto mt-6 px-6">
+            <section className="container mx-auto pb-6 px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-6">
                     <div className="relative bg-main rounded-lg p-8 flex flex-col justify-between items-start border" data-aos="fade-right">
                         <div>

@@ -4,7 +4,7 @@ import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 const TestFeatures = () => {
     return (
         <>
-        <div id="vorteile">
+        <div id="vorteile" className="bg-background py-6">
             <section  className="hidden container mx-auto mt-6 px-6 overflow-hidden">
                 <div className="bg-main p-8 rounded-lg shadow border relative flex flex-col lg:grid grid-cols-12 gap-x-12" data-aos="fade-up">
                     <div className="col-span-12 lg:col-span-7 text-neutral-900" data-aos="fade-right" data-aos-delay="400">
@@ -100,7 +100,7 @@ const TestFeatures = () => {
                     <img src="/thing.svg" className="absolute lg:hidden bottom-0 left-1/2 -translate-x-1/2 opacity-10 z-0" />
                 </div>
             </section>
-            <section className="block container mx-auto mt-6 px-6 overflow-hidden">
+            <section className="block container mx-auto px-6 overflow-hidden">
                 <div className="grid grid-cols-12 gap-6">
                     <div className="col-span-12 xl:col-span-8 flex flex-col" data-aos="fade-right">
                         <div className="relative bg-main rounded-lg px-8 py-8 border text-neutral-900">

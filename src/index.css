@@ -171,3 +171,11 @@
 .dateschutz .content p {
   @apply text-muted-foreground
 }
+
+.moment-helper {
+  clip-path: polygon(100% 0px, 0.125rem calc(100% - 0.125rem), 100% calc(100% - 0.125rem), 100% 100%, 0px 100%, 0px calc(100% - 0.125rem), calc(100% - 0.125rem) 0px);
+}
+
+.moment-helper2 {
+  clip-path: polygon(0px 0px, 100% 0px, 100% 0.125rem, 0.125rem 100%, 0px 100%, calc(100% - 0.125rem) 0.125rem, 0px 0.125rem);
+}
