@@ -149,57 +149,55 @@ const TestReviews = () => {
     }, [api])
 
     return (
-        <section id="kundenstimmen" className="relative w-full h-[calc(100vh-88px)]">
-            <div className="absolute bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg?w=1920')] bg-cover bg-center w-full h-full z-0"></div>
+        <section id="kundenstimmen" className="bg-sidebar relative w-full py-6">
+            <div className="grid grid-cols-2 container mx-auto h-full gap-6 relative z-10 px-6">
+                <div className="z-0 absolute top-0 left-6 bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg?w=960')] bg-cover bg-center w-[calc(50%-32px)] h-full rounded-lg border shadow"></div>
 
-
-            <div className="container mx-auto relative z-10 flex flex-col items-center justify-center h-full px-6">
-                <div className="grid grid-cols-2 gap-6 w-full">
-                    <div></div>
-                    <div className="flex flex-col p-8 justify-center items-start shadow-lg bg-accent/66 backdrop-blur-sm border rounded-lg">
+                <div className="col-span-2 relative z-10 flex flex-col gap-6 items-end justify-start h-full mb-6">
+                    <div className="w-[calc(50%-24px)] flex flex-col p-8 justify-center items-start shadow-lg bg-accent border rounded-lg">
                         <h5 className="text-main text-4xl md:text-5xl z-20 font-medium">Erfahrungen unserer Kunden</h5>
                         <h3 className="text-3xl md:text-4xl z-20 font-medium">Echte Stimmen, echte Erlebnisse</h3>
-                        <p className="text-lg my-6 pr-8">Erfahrungen unserer Kunden – authentische Stimmen und echte Erlebnisse, die zeigen, wie unvergesslich eine Fahrt mit unseren Sportwagen sein kann.</p>
+                        <p className="text-lg text-muted-foreground my-6">Erfahrungen unserer Kunden – authentische Stimmen und echte Erlebnisse, die zeigen, wie unvergesslich eine Fahrt mit unseren Sportwagen sein kann.</p>
                         <Button variant={"main"} size="lg" className="font-semibold h-12 border w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                     </div>
-                </div>
 
-                <Carousel className="w-full mx-auto mt-6 pb-6 lg:pb-0"
-                    opts={{ loop: true }}
-                    plugins={[
-                        Autoplay({
-                            delay: 10000,
-                        }),
-                    ]}
-                    setApi={setApi}
-                >
-                    <CarouselContent className="-ml-4 ">
-                        {randomReviews.map((review, index) => (
-                            <CarouselItem key={index} className="pl-4 lg:basis-1/2 xl:basis-1/3">
-                                <div className="">
-                                    <Card className="py-0 shadow-lg bg-accent/66 backdrop-blur-sm border">
-                                        <CardContent className="flex flex-col items-start justify-start p-8 gap-y-5 gap-x-4 min-h-80">
-                                            <div className="inline-flex items-center gap-x-1">
-                                                <StarIcon fill="#fbbf24" strokeWidth={0} />
-                                                <StarIcon fill="#fbbf24" strokeWidth={0} />
-                                                <StarIcon fill="#fbbf24" strokeWidth={0} />
-                                                <StarIcon fill="#fbbf24" strokeWidth={0} />
-                                                <StarIcon fill="#fbbf24" strokeWidth={0} />
-                                            </div>
-                                            <p className=" break-words line-clamp-7">{review.content}</p>
-                                            <p className="font-semibold text-lg">{review.author}</p>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <CarouselPrevious className="hidden lg:inline-flex shadow" />
-                    <CarouselNext className="hidden lg:inline-flex shadow" />
-                    <CarouselPrevious className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-0 shadow" />
-                    <CarouselNext className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-2 translate-x-full shadow" />
-                </Carousel>
-                <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-1 shadow" />
+                    <Carousel className="w-full mx-auto pb-6 lg:pb-0"
+                        opts={{ loop: true }}
+                        plugins={[
+                            Autoplay({
+                                delay: 10000,
+                            }),
+                        ]}
+                        setApi={setApi}
+                    >
+                        <CarouselContent className="-ml-4 ">
+                            {randomReviews.map((review, index) => (
+                                <CarouselItem key={index} className="pl-4 lg:basis-1/2 xl:basis-1/3">
+                                    <div className="">
+                                        <Card className="py-0 shadow-lg bg-accent/66 backdrop-blur-sm border">
+                                            <CardContent className="flex flex-col items-start justify-start p-8 gap-y-5 gap-x-4 min-h-80">
+                                                <div className="inline-flex items-center gap-x-1">
+                                                    <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                                    <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                                    <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                                    <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                                    <StarIcon fill="#fbbf24" strokeWidth={0} />
+                                                </div>
+                                                <p className=" break-words line-clamp-7">{review.content}</p>
+                                                <p className="font-semibold text-lg">{review.author}</p>
+                                            </CardContent>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious className="hidden lg:inline-flex shadow" />
+                        <CarouselNext className="hidden lg:inline-flex shadow" />
+                        <CarouselPrevious className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-0 shadow" />
+                        <CarouselNext className="inline-flex lg:hidden top-[calc(100%-0.5rem)] translate-y-0 left-2 translate-x-full shadow" />
+                    </Carousel>
+                    <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-1 shadow" />
+                </div>
             </div>
         </section>
     );

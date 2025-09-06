@@ -80,12 +80,10 @@ const Test2 = () => {
                         <div className="absolute right-6 bg-[url('https://i.ibb.co/9k1q39fx/pexels-julian-227887677-12055345.jpg')] bg-cover bg-center w-[calc(50%-32px)] h-full rounded-lg border shadow"></div>
                     </div>
                 </section>
-                <TestCars />
-                <TestProcess />
                 <TestMoments />
                 <TestFeatures />
-                
-
+                <TestProcess />
+                <TestCars />
                 <TestReviews />
                 <TestMap />
             </main>

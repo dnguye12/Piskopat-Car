@@ -23,8 +23,8 @@ const TestMoments = () => {
 
     return (
         <>
-            
-            <section className="bg-sidebar pt-6">
+
+            <section className="py-6">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-2 gap-6">
                         <div className="aspect-[2/1] bg-[url('https://i.ibb.co/qYNX66sQ/moments.jpg')] bg-cover bg-center border shadow rounded-lg"></div>
@@ -34,7 +34,7 @@ const TestMoments = () => {
                             <p className="text-lg text-muted-foreground max-w-xl my-6">Dein besonderer Anlass, unser Sportwagen – miete ihn für Hochzeit, Wochenende oder Events.</p>
                             <Button variant={"main"} size="lg" className="font-semibold h-12 border w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                         </div>
-                        
+
                     </div>
 
                     <div className="mt-6 hidden lg:flex gap-6" onMouseLeave={() => setActive(null)} data-aos="fade-up">
@@ -52,14 +52,14 @@ const TestMoments = () => {
                                 <div className="relative z-20 flex flex-col items-start gap-y-5">
                                     <h2 className="text-main text-2xl lg:text-3xl">Tagesmiete</h2>
                                     <p className="text-neutral-100 lg:text-lg">Erlebe Performance pur – ideal für spontane Auszeiten oder den großen Auftritt.</p>
-                                    <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
+                                    <Button size={"lg"} variant={"main"} className="!px-8 h-12 " asChild>
                                         <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
-                                            <span className=" text-lg">Jetzt buchen</span>
+                                            <span className=" text-base">Jetzt buchen</span>
                                         </a>
                                     </Button>
                                 </div>
                             </div>
-                            <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
+                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-accent/66 ${active !== null && active === 0 && "backdrop-blur-sm"}`}></div>
                             <img
                                 src="https://i.ibb.co/4nBKjNNt/pexels-photo-13781.jpg"
                                 fetchPriority="high"
@@ -87,7 +87,7 @@ const TestMoments = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
+                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-accent/66 ${active !== null && active === 1 && "backdrop-blur-sm"}`}></div>
                             <img
                                 src="https://i.ibb.co/BVxh3r38/moments1.jpg"
                                 fetchPriority="high"
@@ -116,7 +116,7 @@ const TestMoments = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
+                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-accent/66 ${active !== null && active === 2 && "backdrop-blur-sm"}`}></div>
                             <img
                                 src="https://i.ibb.co/5XcysVT8/moments2.jpg"
                                 fetchPriority="high"
@@ -144,7 +144,7 @@ const TestMoments = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className="w-full h-full z-10 absolute top-0 left-0 bg-neutral-900/75"></div>
+                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-accent/66 ${active !== null && active === 3 && "backdrop-blur-sm"}`}></div>
                             <img
                                 src="https://i.ibb.co/Z6QsYt3x/pexels-photo-620335.jpg"
                                 fetchPriority="high"
@@ -233,7 +233,7 @@ const TestMoments = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-sidebar">
+            <section className="bg-accent">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto px-6 py-6">
                     <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-end items-start" data-aos="fade-up">
                         <div className="flex gap-x-4 items-center mb-4">
