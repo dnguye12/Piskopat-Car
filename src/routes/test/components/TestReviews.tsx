@@ -150,7 +150,7 @@ const TestReviews = () => {
 
     return (
         <section id="kundenstimmen" className="relative w-full h-[calc(100vh-88px)]">
-            <div className="absolute bg-[url('https://images.pexels.com/photos/3785441/pexels-photo-3785441.jpeg?w=1920')] bg-cover bg-center w-full h-full z-0"></div>
+            <div className="absolute bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg?w=1920')] bg-cover bg-center w-full h-full z-0"></div>
 
 
             <div className="container mx-auto relative z-10 flex flex-col items-center justify-center h-full px-6">
