@@ -154,7 +154,7 @@ const TestReviews = () => {
                 <div className="z-0 absolute top-0 left-6 bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg?w=960')] bg-cover bg-center w-[calc(50%-32px)] h-full rounded-lg border shadow"></div>
 
                 <div className="col-span-2 relative z-10 flex flex-col gap-6 items-end justify-start h-full mb-6">
-                    <div className="w-[calc(50%-24px)] flex flex-col p-8 justify-center items-start shadow-lg bg-accent border rounded-lg">
+                    <div className="w-[calc(50%-12px)] flex flex-col p-8 justify-center items-start shadow-lg bg-accent border rounded-lg">
                         <h5 className="text-main text-4xl md:text-5xl z-20 font-medium">Erfahrungen unserer Kunden</h5>
                         <h3 className="text-3xl md:text-4xl z-20 font-medium">Echte Stimmen, echte Erlebnisse</h3>
                         <p className="text-lg text-muted-foreground my-6">Erfahrungen unserer Kunden – authentische Stimmen und echte Erlebnisse, die zeigen, wie unvergesslich eine Fahrt mit unseren Sportwagen sein kann.</p>

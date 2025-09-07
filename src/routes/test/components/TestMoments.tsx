@@ -233,7 +233,7 @@ const TestMoments = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-accent">
+            <section className="bg-sidebar">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto px-6 py-6">
                     <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-end items-start" data-aos="fade-up">
                         <div className="flex gap-x-4 items-center mb-4">
