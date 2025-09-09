@@ -26,12 +26,12 @@ const TestMoments = () => {
 
             <section className="py-6">
                 <div className="container mx-auto px-6">
-                    <div className="grid grid-cols-2 gap-6">
-                        <div className="aspect-[2/1] bg-[url('https://i.ibb.co/qYNX66sQ/moments.jpg')] bg-cover bg-center border shadow rounded-lg"></div>
-                        <div className="flex flex-col pr-8 justify-center items-start ">
-                            <h3 className="text-main text-4xl md:text-5xl z-20 font-medium">Wähle deinen Moment</h3>
-                            <h5 className="text-3xl md:text-4xl z-20">Dein Moment. Unser Sportwagen.</h5>
-                            <p className="text-lg text-muted-foreground max-w-xl my-6">Dein besonderer Anlass, unser Sportwagen – miete ihn für Hochzeit, Wochenende oder Events.</p>
+                    <div className="grid lg:grid-cols-2 gap-6"data-aos="fade-up">
+                        <div className="aspect-video lg:aspect-auto bg-[url('https://i.ibb.co/qYNX66sQ/moments.jpg')] bg-cover bg-center border shadow rounded-lg"></div>
+                        <div className="flex flex-col p-8 justify-start items-start bg-accent rounded-lg border">
+                            <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-medium">Wähle deinen Moment</h3>
+                            <h5 className="text-3xl sm:text-4xl z-20">Dein Moment. Unser Sportwagen.</h5>
+                            <p className="sm:text-lg text-muted-foreground lg:max-w-xl my-6">Dein besonderer Anlass, unser Sportwagen – miete ihn für Hochzeit, Wochenende oder Events.</p>
                             <Button variant={"main"} size="lg" className="font-semibold h-12 border w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
                         </div>
 
@@ -234,7 +234,7 @@ const TestMoments = () => {
                 </div>
             </section>
             <section className="">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto px-6 py-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 container mx-auto px-6 pb-6">
                     <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-end items-start" data-aos="fade-up">
                         <div className="flex gap-x-4 items-center mb-4">
                             <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
@@ -252,7 +252,7 @@ const TestMoments = () => {
                         <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
                         <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
                     </div >
-                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative">
+                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up" data-aos-delay="200">
                         <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg?w=960')] bg-cover z-0"></div>
                         <div className="pt-64 h-full relative z-20">
                             <div className="mb-16 hidden items-stretch">
@@ -264,49 +264,49 @@ const TestMoments = () => {
                                 </div>
                                 <div className="bg-neutral-100 uppercase text-center text-neutral-100 w-5 moment-helper2"></div>
                             </div>
-                            <div className="flex flex-col items-start gap-4 p-8 bg-accent/66 backdrop-blur-xs z-10 relative">
+                            <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
                                 <div className="flex gap-x-4 items-center">
                                     <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
                                         <UserRoundPlusIcon className=" size-5" />
                                     </div>
-                                    <h3 className=" text-3xl font-medium text-main">10% Neukundenrabatt</h3>
+                                    <h3 className="text-xl sm:text-3xl font-medium text-main">10% Neukundenrabatt</h3>
                                 </div>
-                                <p className="text-lg">Neu bei uns? Sichere dir jetzt 10% Rabatt auf deine erste Sportwagen-Miete – unser Geschenk zum Start.</p>
-                                <Button asChild size={"lg"} variant={"main"}>
+                                <p className="sm:text-lg">Neu bei uns? Sichere dir jetzt 10% Rabatt auf deine erste Sportwagen-Miete – unser Geschenk zum Start.</p>
+                                <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
                                     <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
                                 </Button>
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative">
+                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up">
                         <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg?w=960')] bg-cover z-0"></div>
                         <div className="pt-64 h-full relative z-20">
-                            <div className="flex flex-col items-start gap-4 p-8 bg-accent/66 backdrop-blur-xs z-10 relative">
+                            <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
                                 <div className="flex gap-x-4 items-center">
                                     <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
                                         <HeartIcon className=" size-5" />
                                     </div>
-                                    <h3 className=" text-3xl font-medium text-main">10% Hochzeitsrabatt</h3>
+                                    <h3 className="text-xl sm:text-3xl font-medium text-main">10% Hochzeitsrabatt</h3>
                                 </div>
-                                <p className="text-lg">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
-                                <Button asChild size={"lg"} variant={"main"}>
+                                <p className="sm:text-lg">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
+                                <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
                                     <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
                                 </Button>
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative">
+                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up" data-aos-delay="200">
                         <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?w=960')] bg-cover z-0"></div>
                         <div className="pt-64 h-full relative z-20">
-                            <div className="flex flex-col items-start gap-4 p-8 bg-accent/66 backdrop-blur-xs z-10 relative">
+                            <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
                                 <div className="flex gap-x-4 items-center">
                                     <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
                                         <CakeIcon className=" size-5" />
                                     </div>
-                                    <h3 className=" text-3xl font-medium text-main">5% Geburtstagsrabatt</h3>
+                                    <h3 className="text-xl sm:text-3xl font-medium text-main">5% Geburtstagsrabatt</h3>
                                 </div>
-                                <p className="text-lg">Feier mit uns und sichere dir 5% Rabatt auf deine nächste Miete. Zum ersten Mal dabei? Dann gibt’s sogar ganze 15%!</p>
-                                <Button asChild size={"lg"} variant={"main"}>
+                                <p className="sm:text-lg">Feier mit uns und sichere dir 5% Rabatt auf deine nächste Miete. Zum ersten Mal dabei? Dann gibt’s sogar ganze 15%!</p>
+                                <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
                                     <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
                                 </Button>
                             </div>
