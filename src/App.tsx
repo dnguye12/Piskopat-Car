@@ -8,7 +8,6 @@ import Vehicle from "./routes/vehicle/Vehicle";
 import Impressum from "./routes/impressum/Impressum";
 import Datenschutz from "./routes/datenschutz/Datenschutz";
 import Wedding from "./routes/wedding/Wedding";
-import Test from "./routes/home/Home";
 import FAQ from "./routes/faq-page/FAQ";
 import SportRentNRW from "./routes/sport-rent/SportRentNRW";
 import Sportwagenvermietung from "./routes/sport-rent/Sportwagenvermietung";
@@ -86,7 +85,7 @@ function App() {
         </DialogContent>
       </Dialog>
       <Routes>
-        <Route index element={<Test />} />
+        <Route index element={<Test2 />} />
         <Route path="/gutschein" element={<Coupon />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/fahrzeuge" >
