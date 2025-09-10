@@ -19,58 +19,54 @@ const Test2 = () => {
             <main className="flex-1">
                 <section className="hidden lg:block w-full h-[calc(100vh-88px)] relative mt-[88px]">
                     <div className="container mx-auto w-full h-full relative">
-                        <div className="hidden absolute top-20 left-6 right-6 flex flex-col z-10">
+                        <div className="absolute top-20 left-12 right-6 flex flex-col z-10"  data-aos="fade-up" data-aos-delay="200">
                             <h1 className="sr-only">X-Sportwagen</h1>
                             <p className="text-lg sm:text-xl text-neutral-100 max-w-2xl whitespace-pre-wrap break-words text-start" data-aos="fade-up" data-aos-delay="200">X-Sportwagen – Luxus, Leistung, Leidenschaft. Hier zählt nicht das Papier, sondern das Erlebnis. Deine Zeit im Sportwagen – einzigartig gemacht durch unseren Premium-Service.</p>
                         </div>
                         <div className="absolute bottom-16 left-0 flex flex-col z-10 w-full">
-                            <h1 className="text-2xl lg:text-5xl text-neutral-100 px-6 font-medium" data-aos="fade-up" data-aos-delay="200">Wo Freiheit beginnt <span className="block sm:inline text-main">Fährt Ein Sportwagen</span></h1>
-                            <p className="px-6 my-4 text-lg sm:text-xl text-neutral-100 max-w-4xl whitespace-pre-wrap break-words text-start" data-aos="fade-up" data-aos-delay="200">X-Sportwagen – Luxus, Leistung, Leidenschaft. Hier zählt nicht das Papier, sondern das Erlebnis. Deine Zeit im Sportwagen – einzigartig gemacht durch unseren Premium-Service.</p>
+                            <h1 className="text-2xl lg:text-5xl text-neutral-100 px-6 font-medium my-4" data-aos="fade-up" data-aos-delay="200">Wo Freiheit beginnt <span className="block sm:inline text-main">Fährt Ein Sportwagen</span></h1>
+                            <p className="hidden px-6 my-4 text-lg sm:text-xl text-neutral-100 max-w-4xl whitespace-pre-wrap break-words text-start" data-aos="fade-up" data-aos-delay="200">X-Sportwagen – Luxus, Leistung, Leidenschaft. Hier zählt nicht das Papier, sondern das Erlebnis. Deine Zeit im Sportwagen – einzigartig gemacht durch unseren Premium-Service.</p>
                             <div className="flex justify-center xl:justify-between bg-accent/33 backdrop-blur-sm px-6 py-4 rounded-lg border" data-aos="fade-up" data-aos-delay="200">
                                 <div className="flex items-center gap-6" data-aos="fade-up" data-aos-delay="400">
                                     <div className="flex items-center gap-x-3">
-                                        <div className="w-12 h-12 rounded-md flex justify-center items-center border border-main">
-                                            <CreditCardIcon className="w-6 h-6 text-main" />
+                                        <div className="min-w-10 h-10 rounded-md flex justify-center items-center border border-main">
+                                            <CreditCardIcon className="w-5 h-5 text-main" />
                                         </div>
                                         <div className="flex flex-col text-neutral-100">
-                                            <span>Keine Kreditkarte</span>
-                                            <span>notwendig</span>
+                                            <span className="text-sm">Keine Kreditkarte notwendig</span>
                                         </div>
                                     </div>
                                     <Separator orientation="vertical" />
                                     <div className="flex items-center gap-x-3">
-                                        <div className="w-12 h-12 rounded-md flex justify-center items-center border border-main">
-                                            <UserRoundCheckIcon className="w-6 h-6 text-main" />
+                                        <div className="min-w-10 h-10 rounded-md flex justify-center items-center border border-main">
+                                            <UserRoundCheckIcon className="w-5 h-5 text-main" />
                                         </div>
                                         <div className="flex flex-col text-neutral-100">
-                                            <span>Vermietung ab</span>
-                                            <span>18 Jahren</span>
+                                            <span className="text-sm">Vermietung ab 18 Jahren</span>
                                         </div>
                                     </div>
                                     <Separator orientation="vertical" />
                                     <div className="flex items-center gap-x-3">
-                                        <div className="w-12 h-12 rounded-md flex justify-center items-center border border-main">
-                                            <StarIcon className="w-6 h-6 text-main" />
+                                        <div className="min-w-10 h-10 rounded-md flex justify-center items-center border border-main">
+                                            <StarIcon className="w-5 h-5 text-main" />
                                         </div>
                                         <div className="flex flex-col text-neutral-100">
-                                            <span>Lieferung &</span>
-                                            <span>Abholung</span>
+                                            <span className="text-sm">Lieferung & Abholung</span>
                                         </div>
                                     </div>
                                     <Separator orientation="vertical" />
                                     <div className="flex items-center gap-x-3">
-                                        <div className="w-12 h-12 rounded-md flex justify-center items-center border border-main">
-                                            <BadgePercentIcon className="w-6 h-6 text-main" />
+                                        <div className="min-w-10 h-10 rounded-md flex justify-center items-center border border-main">
+                                            <BadgePercentIcon className="w-5 h-5 text-main" />
                                         </div>
                                         <div className="flex flex-col text-neutral-100">
-                                            <span>10%</span>
-                                            <span>Neukundenrabatt</span>
+                                            <span className="text-sm">10% Neukundenrabatt</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="hidden xl:flex gap-x-4 items-center" data-aos="fade-up" data-aos-delay="600">
-                                    <Button variant={"main"} size="lg" className="font-semibold h-12" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
-                                    <Button variant={"secondary"} size="lg" className="h-12 dark:border" asChild>
+                                    <Button variant={"main"} size="lg" className="font-semibold" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
+                                    <Button variant={"secondary"} size="lg" className=" dark:border" asChild>
                                         <Link to="/fahrzeuge">Fahrzeuge</Link>
                                     </Button>
                                 </div>
@@ -78,7 +74,7 @@ const Test2 = () => {
 
                         </div>
                     </div>
-                    <div className="top-0 left-0 absolute w-full h-full bg-cover bg-[url('https://raw.githubusercontent.com/dnguye12/Piskopat-Car/16de44a739305f81a208e5a44bb711ed056de8d6/public/car3.png')] bg-bottom z-0" data-aos="fade-up"></div>
+                    <div className="top-0 left-0 absolute w-full h-full bg-cover bg-[url('https://raw.githubusercontent.com/dnguye12/Piskopat-Car/16de44a739305f81a208e5a44bb711ed056de8d6/public/car3.png')] bg-center z-0" data-aos="fade-up"></div>
                 </section>
 
                 <div className="block lg:hidden relative pt-32 pb-12 mt-[88px]">
@@ -131,7 +127,7 @@ const Test2 = () => {
                     <div className="absolute w-full h-full top-0 left-0 z-0 bg-[url('https://images.pexels.com/photos/19597723/pexels-photo-19597723.jpeg?w=960')] bg-cover bg-center" data-aos="fade-up"></div>
                 </div>
 
-                <section className="w-full lg:h-[calc(100vh-88px)] relative bg-sidebar py-6">
+                <section className="w-full lg:h-[calc(100vh-88px)] relative py-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 container mx-auto h-full lg:gap-6 relative px-6">
                         <div className="w-full aspect-video mb-6 lg:mb-0 lg:aspect-auto lg:absolute lg:right-6 lg:w-[calc(50%-32px)] lg:h-full bg-[url('https://i.ibb.co/9k1q39fx/pexels-julian-227887677-12055345.jpg')] bg-cover bg-center rounded-lg border shadow" data-aos="fade-left"></div>
                         <div className="col-span-2 flex flex-col items-start justify-center" data-aos="fade-right">

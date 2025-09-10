@@ -1,76 +1,106 @@
-import { CalendarIcon, CarFrontIcon, CheckCheckIcon, CircleUserRoundIcon, ClockIcon, FileIcon, FileTextIcon, FuelIcon, ListTodoIcon, ShieldCheckIcon, ZapIcon } from "lucide-react";
+import { CalendarIcon, CarFrontIcon, CheckCheckIcon, CircleUserRoundIcon, ClockIcon, FileIcon, FileTextIcon, FuelIcon, ListTodoIcon, ShieldCheckIcon, ZapIcon, type LucideProps } from "lucide-react";
 import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
-import { useState, type JSX } from "react";
+import { useState } from "react";
+import { Marquee } from "@/components/magicui/marquee";
+import { cn } from "@/lib/utils";
 
 const features = [
     {
-        icon: <ListTodoIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: ListTodoIcon,
         title: "Gemeinsame Fahrzeugkontrolle",
         desc: "Übergabe mit gemeinsamer Prüfung",
     },
     {
-        icon: <ZapIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: ZapIcon,
         title: "Schnelle Übergabe",
         desc: "Max. 120 Minuten bis zur Übergabe.",
     },
     {
-        icon: <FileTextIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: FileTextIcon,
         title: "Übergabe inkl. Übergabeprotokoll",
         desc: "Protokollierte Fahrzeugübergabe",
     },
     {
-        icon: <CheckCheckIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: CheckCheckIcon,
         title: "Unkomplizierte Abwicklung",
         desc: "Schnell & unkompliziert mieten",
     },
     {
-        icon: <FileIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: FileIcon,
         title: "Mietvertrag inkl. AGB’s",
         desc: "Transparenter Vertrag mit AGB.",
     },
     {
-        icon: <CircleUserRoundIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: CircleUserRoundIcon,
         title: "Persönlicher Service",
         desc: "Persönliche Betreuung",
     },
     {
-        icon: <CalendarIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: CalendarIcon,
         title: "Selbstfahrermietfahrzeug",
         desc: "Fahr selbst. Fühl dich frei.",
     },
     {
-        icon: <ShieldCheckIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: ShieldCheckIcon,
         title: "Vollkasko versichert",
         desc: "Vollkaskoschutz für sorgenfreie Fahrten",
     },
     {
-        icon: <SiWhatsapp className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: SiWhatsapp,
         title: "WhatsApp Support",
         desc: "Schnelle Hilfe per WhatsApp.",
     },
     {
-        icon: <ClockIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: ClockIcon,
         title: "24/7 Support",
         desc: "Jederzeit erreichbar.",
     },
     {
-        icon: <CarFrontIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: CarFrontIcon,
         title: "Top Zustand",
         desc: "Fahrzeuge im Bestzustand.",
     },
     {
-        icon: <FuelIcon className="min-w-5 size-5 group-hover:text-neutral-900" />,
+        Icon: FuelIcon,
         title: "Vollgetankt",
         desc: "Vollgetankt ins Abenteuer",
     },
 ];
 
+const firstRow = features.slice(0, 4);
+const secondRow = features.slice(4, 8);
+const thirdRow = features.slice(8, 12);
+
 type Active = {
-    icon: JSX.Element;
+    Icon: React.ForwardRefExoticComponent<Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>>;
     title: string;
     desc: string
 }
+
+const ReviewCard = ({
+    Icon,
+    title,
+    desc
+}: {
+    Icon: React.ForwardRefExoticComponent<Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>>;
+    title: string;
+    desc: string;
+}) => {
+    return (
+        <div
+            className={cn(
+                "relative h-full w-72 cursor-pointer overflow-hidden rounded-lg border p-4 bg-accent hover:bg-main transition-all hover:text-neutral-900 shadow",
+            )}
+        >
+            <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all ">
+                <Icon className="min-w-5 size-5" />
+            </div>
+            <p className="font-medium my-3">{title}</p>
+            <p className="text-muted-foreground  transition-all">{desc}</p>
+        </div>
+    );
+};
 
 const TestFeatures = () => {
     const [active, setActive] = useState<Active | null>(null)
@@ -78,8 +108,8 @@ const TestFeatures = () => {
     return (
         <>
             <div id="vorteile" className="relative">
-                <div className="grid xl:grid-cols-3 gap-6 container mx-auto px-6">
-                    <div className="flex flex-col xl:col-span-2" data-aos="fade-right">
+                <div className="grid lg:grid-cols-3 gap-6 container mx-auto px-6">
+                    <div className="flex flex-col lg:col-span-2" data-aos="fade-right">
                         <div className="rounded-lg p-8 relative bg-main border text-neutral-900 overflow-hidden">
                             <h3 className="hidden sm:block text-2xl lg:text-3xl">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
                             <p className="hidden sm:block mt-3 lg:text-lg break-words">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
@@ -87,7 +117,7 @@ const TestFeatures = () => {
                             <img src="/thing.svg" className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-10 z-0 w-full pointer-events-none" />
                         </div>
 
-                        <div className="hidden xl:block xl:col-span-3 2xl:col-span-2 relative border rounded-lg p-8 pt-0 mt-6 bg-[#050809]">
+                        <div className="hidden block xl:col-span-3 2xl:col-span-2 relative border rounded-lg p-8 pt-0 mt-6 bg-[#050809]">
                             <div className="w-full h-[840px]">
                                 <div className="relative z-10 w-full h-full flex justify-center items-center overflow-hidden">
                                     <OrbitingCircles radius={360} speed={0}>
@@ -252,7 +282,7 @@ const TestFeatures = () => {
                                 <div className={`${active ? "opacity-100" : "opacity-0"} absolute top-1/2 left-1/2 -translate-1/2 z-10 flex flex-col p-6 gap-3 rounded-lg shadow-lg dark:border bg-main text-neutral-900 group`}>
                                     <div className="flex items-center justify-start gap-3">
                                         <div className="border rounded-md size-10 inline-flex justify-center items-center border-neutral-900">
-                                            {active?.icon}
+                                            
                                         </div>
                                         <p className="font-medium text-xl">{active?.title}</p>
                                     </div>
@@ -263,10 +293,28 @@ const TestFeatures = () => {
                                 <div className="absolute top-1/2 left-1/2 -translate-1/2 bg-[url('https://i.ibb.co/TxBzrKq9/dqdqzdqdqd.jpg')] bg-cover bg-center w-3/4 h-3/4"></div>
                             </div>
                         </div>
+
+                        <div className="relative hidden lg:flex w-full flex-col items-center justify-center overflow-hidden mt-6">
+                            <Marquee pauseOnHover className="[--duration:45s]">
+                                {firstRow.map((review) => (
+                                    <ReviewCard key={review.title} {...review} />
+                                ))}
+                            </Marquee>
+                            <Marquee reverse pauseOnHover className="[--duration:45s] my-6">
+                                {secondRow.map((review) => (
+                                    <ReviewCard key={review.title} {...review} />
+                                ))}
+                            </Marquee>
+                            <Marquee pauseOnHover className="[--duration:45s]">
+                                {thirdRow.map((review) => (
+                                    <ReviewCard key={review.title} {...review} />
+                                ))}
+                            </Marquee>
+                        </div>
                     </div>
-                    <div className="hidden xl:block bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center w-full h-full rounded-lg border" data-aos="fade-left"></div>
-                    
-                    <div className="hidden xl:hidden min-[500px]:grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+                    <div className="hidden lg:block bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center w-full h-full rounded-lg border" data-aos="fade-left"></div>
+
+                    <div className="hidden lg:hidden min-[500px]:grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
                         <div className=" flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
                             <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                                 <ListTodoIcon className="min-w-5 size-5" />
