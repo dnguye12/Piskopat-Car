@@ -26,15 +26,13 @@ const TestMoments = () => {
 
             <section className="py-6">
                 <div className="container mx-auto px-6">
-                    <div className="grid lg:grid-cols-2 gap-6"data-aos="fade-up">
-                        <div className="aspect-video lg:aspect-auto bg-[url('https://i.ibb.co/qYNX66sQ/moments.jpg')] bg-cover bg-center border shadow rounded-lg"></div>
-                        <div className="flex flex-col p-8 justify-start items-start bg-accent rounded-lg border">
-                            <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-medium">Wähle deinen Moment</h3>
-                            <h5 className="text-3xl sm:text-4xl z-20">Dein Moment. Unser Sportwagen.</h5>
-                            <p className="sm:text-lg text-muted-foreground lg:max-w-xl my-6">Dein besonderer Anlass, unser Sportwagen – miete ihn für Hochzeit, Wochenende oder Events.</p>
-                            <Button variant={"main"} size="lg" className="font-semibold h-12 border w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
+                    <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
+                        <div className="z-20">
+                            <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-medium text-center mb-2">Wähle deinen Moment</h3>
+                            <h5 className="text-3xl sm:text-4xl md:text-5xl z-20 text-center">Dein Moment. Unser Sportwagen.</h5>
                         </div>
-
+                        <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
+                        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/qYNX66sQ/moments.jpg')] bg-cover bg-center z-0" />
                     </div>
 
                     <div className="mt-6 hidden lg:flex gap-6" onMouseLeave={() => setActive(null)} data-aos="fade-up">

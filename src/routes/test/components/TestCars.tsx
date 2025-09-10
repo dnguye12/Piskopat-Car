@@ -6,19 +6,17 @@ const TestCars = () => {
     return (
         <section className="py-6">
             <div className="container mx-auto px-6">
-                <div className="grid lg:grid-cols-2 gap-6" data-aos="fade-up">
-                    <div className="block lg:hidden aspect-video lg:aspect-auto bg-[url('https://images.pexels.com/photos/3541743/pexels-photo-3541743.jpeg?w=960')] bg-cover bg-center w-full border shadow rounded-lg"></div>
-                    <div className="flex flex-col justify-center items-start bg-accent rounded-lg border p-8">
-                        <h5 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-medium">Unsere Fahrzeuge</h5>
-                        <h3 className="text-3xl sm:text-4xl z-20 font-medium">Bereit für dich</h3>
-                        <p className="sm:text-lg text-muted-foreground lg:max-w-xl my-6 lg:pr-8">Unsere Fahrzeuge – perfekt gepflegt, modern ausgestattet und jederzeit bereit, dich bei deinem besonderen Anlass, deinem Wochenendtrip oder deinem Event zu begleiten.</p>
-                        <Button variant={"main"} size="lg" className="font-semibold h-12 border w-auto" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
+                <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
+                    <div className="z-20">
+                        <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-medium text-center mb-2">Unsere Fahrzeuge</h3>
+                        <h5 className="text-3xl sm:text-4xl md:text-5xl z-20 text-center">Bereit für dich</h5>
                     </div>
-                    <div className="hidden lg:block bg-[url('https://images.pexels.com/photos/3541743/pexels-photo-3541743.jpeg?w=960')] bg-cover bg-center border shadow rounded-lg"></div>
+                    <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
+                    <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.pexels.com/photos/3541743/pexels-photo-3541743.jpeg?w=960')] bg-cover bg-center z-0" />
                 </div>
 
                 <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div className="p-8 relative rounded-lg border overflow-hidden transition-all cursor-pointer group hover:-translate-y-2 hover:scale-[1.01]" data-aos="fade-up">
+                    <div className="p-8 relative rounded-lg border overflow-hidden transition-all cursor-pointer group hover:-translate-y-2 hover:scale-[1.01]">
                         <div className="relative flex flex-col z-20">
                             <div className="mb-4">
                                 <p className=" text-2xl text-neutral-100 font-medium">Golf 8 R Black Edition</p>
@@ -47,7 +45,7 @@ const TestCars = () => {
                                 </Button>
                             </div>
                         </div>
-                        <div className="absolute bg-neutral-900 bg-cover bg-center top-0 left-0 w-full h-full z-10 opacity-50 group-hover:opacity-25 transition-all"></div>
+                        <div className="absolute bg-neutral-900 bg-cover bg-center top-0 left-0 w-full h-full z-10 opacity-25 group-hover:opacity-0 transition-all"></div>
                         <div className="absolute bg-[url('https://i.ibb.co/LhpZ7HhB/A7402864.png')] bg-cover bg-center top-0 left-0 w-full h-full z-0"></div>
                     </div>
                     <div className="hidden lg:block w-full h-full rounded-lg border overflow-hidden relative shadow" data-aos="fade-up" data-aos-delay="100">
