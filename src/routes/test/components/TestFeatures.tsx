@@ -90,14 +90,14 @@ const ReviewCard = ({
     return (
         <div
             className={cn(
-                "relative h-full w-72 cursor-pointer overflow-hidden rounded-lg border p-4 bg-accent hover:bg-main transition-all hover:text-neutral-900 shadow",
+                "relative h-full cursor-pointer overflow-hidden rounded-lg border p-4 bg-accent/66 backdrop-blur-sm hover:bg-main transition-all group hover:text-neutral-900 shadow-lg",
             )}
         >
-            <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all ">
+            <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                 <Icon className="min-w-5 size-5" />
             </div>
             <p className="font-medium my-3">{title}</p>
-            <p className="text-muted-foreground  transition-all">{desc}</p>
+            <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">{desc}</p>
         </div>
     );
 };
@@ -109,7 +109,37 @@ const TestFeatures = () => {
         <>
             <div id="vorteile" className="relative">
                 <div className="grid lg:grid-cols-3 gap-6 container mx-auto px-6">
-                    <div className="flex flex-col lg:col-span-2" data-aos="fade-right">
+                    <div className="col-span-3 grid grid-cols-1 lg:grid-cols-2 container mx-auto h-full lg:gap-6 relative py-12">
+                        <div className="w-full aspect-video mb-6 lg:mb-0 lg:aspect-auto lg:absolute lg:right-0 lg:w-[calc(50%-16px)] lg:h-full bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg border shadow"></div>
+                        <div className="flex flex-col items-start justify-center">
+                            <div className="rounded-lg relative  overflow-hidden">
+                                <h3 className="hidden sm:block text-2xl lg:text-3xl text-main font-medium">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
+                                <p className="hidden sm:block sm:text-lg text-muted-foreground mt-4">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
+                                <h3 className="block sm:hidden text-2xl sm:text-3xl">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</h3>
+
+                            </div>
+                        </div>
+                        <div className="col-span-2 grid grid-cols-10 gap-6 pr-6">
+                            <div className="col-span-8 grid grid-cols-4 gap-6">
+                                {firstRow.map((review) => (
+                                    <ReviewCard key={review.title} {...review} />
+                                ))}
+                            </div>
+                            <div className="col-span-8 col-start-2 grid grid-cols-4 gap-6">
+                                {secondRow.map((review) => (
+                                    <ReviewCard key={review.title} {...review} />
+                                ))}
+                            </div>
+                            <div className="col-span-8 col-start-3 grid grid-cols-4 gap-6">
+                                {thirdRow.map((review) => (
+                                    <ReviewCard key={review.title} {...review} />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="hidden flex flex-col lg:col-span-2" data-aos="fade-right">
                         <div className="rounded-lg p-8 relative bg-main border text-neutral-900 overflow-hidden">
                             <h3 className="hidden sm:block text-2xl lg:text-3xl">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
                             <p className="hidden sm:block mt-3 lg:text-lg break-words">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
@@ -282,7 +312,7 @@ const TestFeatures = () => {
                                 <div className={`${active ? "opacity-100" : "opacity-0"} absolute top-1/2 left-1/2 -translate-1/2 z-10 flex flex-col p-6 gap-3 rounded-lg shadow-lg dark:border bg-main text-neutral-900 group`}>
                                     <div className="flex items-center justify-start gap-3">
                                         <div className="border rounded-md size-10 inline-flex justify-center items-center border-neutral-900">
-                                            
+
                                         </div>
                                         <p className="font-medium text-xl">{active?.title}</p>
                                     </div>
@@ -312,7 +342,7 @@ const TestFeatures = () => {
                             </Marquee>
                         </div>
                     </div>
-                    <div className="hidden lg:block bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center w-full h-full rounded-lg border" data-aos="fade-left"></div>
+                    <div className="hidden block bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center w-full h-full rounded-lg border" data-aos="fade-left"></div>
 
                     <div className="hidden lg:hidden min-[500px]:grid min-[500px]:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
                         <div className=" flex flex-col p-4 gap-y-3 rounded-lg bg-accent border transition-all hover:bg-main hover:text-neutral-900 group">
