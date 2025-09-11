@@ -56,7 +56,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Fahrzeug anfragen</h5>
-                                        <p className="">Schreib uns einfach per WhatsApp – wir beantworten deine Fragen persönlich und beraten dich individuell.</p>
+                                        <p className="min-h-12">Schreib uns einfach per WhatsApp – wir beantworten deine Fragen persönlich und beraten dich individuell.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -67,7 +67,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Termin & Reservierung</h5>
-                                        <p className="">Zusammen wählen wir deinen Termin, reservieren dein Fahrzeug – und mit einer Anzahlung ist alles fix.</p>
+                                        <p className="min-h-12">Zusammen wählen wir deinen Termin, reservieren dein Fahrzeug – und mit einer Anzahlung ist alles fix.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -78,7 +78,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Vertrag & Bezahlung</h5>
-                                        <p className="">Du erhältst den Mietvertrag inklusive AGBs. Danach erfolgt die vollständige Zahlung bequem per Überweisung oder vor Ort.</p>
+                                        <p className="min-h-12">Du erhältst den Mietvertrag inklusive AGBs. Danach erfolgt die vollständige Zahlung bequem per Überweisung oder vor Ort.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -89,7 +89,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Fahrzeugübergabe</h5>
-                                        <p className="">Am Übergabetag kontrollieren wir das Fahrzeug zusammen und halten jeden Punkt im Formular fest, damit alles nachvollziehbar bleibt.</p>
+                                        <p className="min-h-12">Am Übergabetag kontrollieren wir das Fahrzeug zusammen und halten jeden Punkt im Formular fest, damit alles nachvollziehbar bleibt.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -100,7 +100,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Fahrspaß pur</h5>
-                                        <p className="">Jetzt startet dein Erlebnis: Genieße die Fahrt im Luxusfahrzeug – abgesichert mit Vollkasko und begleitet von unserem Premium-Service.</p>
+                                        <p className="min-h-12">Jetzt startet dein Erlebnis: Genieße die Fahrt im Luxusfahrzeug – abgesichert mit Vollkasko und begleitet von unserem Premium-Service.</p>
                                     </div>
                                 </div>
                             </Step>
@@ -111,7 +111,7 @@ const TestProcess = () => {
                                     </div>
                                     <div>
                                         <h5 className=" text-2xl text-main mb-2">Rückgabe</h5>
-                                        <p className="">Am Ende deines Erlebnisses gibst du das Fahrzeug unkompliziert zurück – transparent dokumentiert und professionell abgewickelt.</p>
+                                        <p className="min-h-12">Am Ende deines Erlebnisses gibst du das Fahrzeug unkompliziert zurück – transparent dokumentiert und professionell abgewickelt.</p>
                                     </div>
                                 </div>
                             </Step>
