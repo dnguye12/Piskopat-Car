@@ -21,6 +21,7 @@ import { Button } from "./components/ui/button";
 import { cn } from "./lib/utils";
 import Coupon from "./routes/coupon/Coupon";
 import Test2 from "./routes/test/Test2";
+import ErrorPage from "./routes/404/404";
 
 function App() {
   const location = useLocation()
@@ -99,8 +100,8 @@ function App() {
         <Route path="/sportwagen-mieten-nrw" element={<SportRentNRW />} />
         <Route path="/sportwagenvermietung" element={<Sportwagenvermietung />} />
         <Route path="/sportwagen-mieten-ennigerloh" element={<SportRentEnnigerloh />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/test2" element={<Test2 />} />
+        <Route path="/faq" element={<ErrorPage />} />
+        <Route path="/test2" element={<FAQ />} />
       </Routes>
     </div>
   )

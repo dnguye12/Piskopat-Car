@@ -132,7 +132,7 @@ const VM_Golf_8 = () => {
             <main className="flex-1 mt-[88px]">
                 <div className="relative pt-32 lg:pt-60 pb-12">
                     <div className="container mx-auto px-4 relative z-20">
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main mb-7 font-orbi" data-aos="fade-up" data-aos-delay="300">VW Golf 8 R</h1>
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main mb-7" data-aos="fade-up" data-aos-delay="300">VW Golf 8 R</h1>
                         <p className="text-lg lg:text-xl text-neutral-100" data-aos="fade-up" data-aos-delay="300">Du senkst den Fuß ein kurzes Zischen, dann entfesselt der Golf R seine Kraft. Kein Zögern, kein großes Spektakel nur ein kompromissloser Vorstoß nach vorn, direkt, kontrolliert, brutal und präzise auf alle vier Räder verteilt. Dieses Auto braucht keinen Applaus, es kündigt sich an durch die Akrapovic-Auspuffanlage.
                         </p>
                         <div className="mt-7 flex gap-x-4 items-center">
@@ -177,7 +177,7 @@ const VM_Golf_8 = () => {
                     <Progress value={progress} className="block lg:hidden w-48 h-3 ml-auto mt-5" />
                 </div>
                 <div className="container mx-auto px-4 flex flex-col gap-y-6 mt-4">
-                    <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="hidden md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="flex flex-col items-center p-6 bg-accent border shadow gap-y-5 rounded-lg" data-aos="fade-up">
                             <div className="min-w-14 size-14 inline-flex rounded-md justify-center items-center bg-main">
                                 <IdCardIcon className=" w-6 h-6 text-neutral-900" />
@@ -204,7 +204,7 @@ const VM_Golf_8 = () => {
                         </div>
                     </div>
 
-                    <div className="grid md:hidden grid-cols-2 gap-4 min-[475px]:gap-6 w-full bg-accent p-6 rounded-lg border">
+                    <div className="hidden grid-cols-2 gap-4 min-[475px]:gap-6 w-full bg-accent p-6 rounded-lg border">
                         <div className="flex items-center gap-y-5 rounded-lg gap-x-2" data-aos="fade-up">
                             <div className="min-w-8 size-8 min-[475px]:min-w-10 min-[475px]:size-10 inline-flex rounded-md justify-center items-center bg-main">
                                 <IdCardIcon className="w-4 h-4 min-[475px]:w-5 min-[475px]:h-5 text-neutral-900" />
@@ -236,7 +236,11 @@ const VM_Golf_8 = () => {
                         <div className="col-span-6 lg:col-span-4 p-8 rounded-lg border bg-accent shadow" data-aos="fade-left">
                             <p className="text-xl mb-1">Volkswagen</p>
                             <h3 className="text-3xl mb-4">VW Golf 8 R Performance</h3>
-                            <p className="text-muted-foreground lg:text-lg mb-4">Der Golf 8 R Performance – gebaut für maximale Performance im Alltag und auf der Rennstrecke. Unter der Motorhaube arbeitet ein kraftvoller 2,0-Liter-TSI-Vierzylinder, der mit 333 PS und 420 Nm Drehmoment beeindruckt. In nur 4,7 Sekunden schießt er auf Tempo 100 und liefert dabei ein Fahrerlebnis, das unter die Haut geht. Besonders markant: die optionale Akrapovic‒Abgasanlage mit Titan-Endrohren – leicht, edel und mit einem Sound, der Emotionen weckt. Das fortschrittliche Allradsystem mit R‒Performance Torque Vectoring sorgt für messerscharfe Kurvenlage und volle Kontrolle in jeder Fahrsituation. Optisch zeigt sich der Golf R von seiner schärfsten Seite mit muskulösem Auftritt, R-spezifischer Front, markantem Diffusor und dezentem Dachkantenspoiler. Im Innenraum trifft Hightech auf Sportlichkeit: digitales Cockpit, R-Sportsitze und eine Verarbeitung, die keine Wünsche offenlässt.</p>
+                            <p className="text-muted-foreground lg:text-lg mb-4">Der Golf 8 R Performance verbindet Alltagstauglichkeit mit echter Motorsport-DNA. Angetrieben von einem 2,0-Liter-TSI-Vierzylindermotor liefert er beeindruckende 333 PS und 420 Nm Drehmoment. Den Sprint von 0 auf 100 km/h meistert er in nur 4,7 Sekunden – für ein Fahrerlebnis, das Dynamik und Präzision spürbar macht.
+
+                                Optional sorgt die Akrapovic-Abgasanlage mit Titan-Endrohren nicht nur für Gewichtsersparnis, sondern auch für einen markanten, emotionalen Sound. Das innovative Allradsystem mit R Performance Torque Vectoring verteilt die Kraft intelligent auf die Räder – für optimale Traktion und maximale Kontrolle, selbst in schnellen Kurven.
+
+                                Auch optisch setzt der Golf R Performance Akzente: mit sportlicher Front, markantem Diffusor, Dachkantenspoiler und typischen R-Details. Innen überzeugt er mit digitalem Cockpit, R-Sportsitzen und hochwertiger Verarbeitung – alles auf maximale Fahrfreude ausgerichtet.</p>
                             <Button variant={"main"} size={"lg"} className="h-12 font-semibold" asChild>
                                 <a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a>
                             </Button>
@@ -245,8 +249,6 @@ const VM_Golf_8 = () => {
                             <h4 className="text-3xl mb-4">Datenblatt</h4>
                             <div className="grid lg:grid-cols-2 gap-x-6 lg:text-lg">
                                 <div>
-                                    <p><span className="font-semibold">Hersteller:</span> <span>Volkswagen</span></p>
-                                    <p><span className="font-semibold">Modell:</span> <span>Golf 8 R Performance</span></p>
                                     <p><span className="font-semibold">Typ:</span> <span>Kompaktklasse</span></p>
                                     <p><span className="font-semibold">Kraftstoffart:</span> <span>Benzin</span></p>
                                     <p><span className="font-semibold">Getriebe:</span> <span>Automatik</span></p>
@@ -256,7 +258,6 @@ const VM_Golf_8 = () => {
                                     <p><span className="font-semibold">Drehmoment:</span> <span>420 Nm</span></p>
                                     <p><span className="font-semibold">Höchstgeschwindigkeit:</span> <span>270 km/h</span></p>
                                     <p><span className="font-semibold">0–100 km/h:</span> <span>4,7 Sekunden</span></p>
-                                    <p><span className="font-semibold">Antrieb:</span> <span>Allradantrieb</span></p>
                                     <p><span className="font-semibold">Sitze:</span> <span>5</span></p>
                                 </div>
                             </div>
@@ -266,25 +267,22 @@ const VM_Golf_8 = () => {
                             <div className="flex flex-col gap-y-3 text-neutral-900">
                                 <div className="inline-flex gap-x-3 items-center">
                                     <IdCardIcon className="min-w-7 size-7" />
-                                    <span className=" lg:text-lg">Ab 18 Jahren</span>
+                                    <span className=" lg:text-lg">Mindestalter: 18 Jahre</span>
                                 </div>
                                 <div className="inline-flex gap-x-3 items-center">
                                     <ShieldCheckIcon className="min-w-7 size-7" />
-                                    <span className=" lg:text-lg">Vollkaskoschutz ab 4.000€ Selbstbeteiligung
-                                        (Kann auf Wunsch mit einer Zusatzversicherung auf
-                                        2.500€ reduziert werden. Wir kümmern uns um alles!)</span>
+                                    <span className=" lg:text-lg">Vollkaskoversicherung mit 4.000€ Selbstbeteiligung (Optional durch Zusatzversicherung auf 2.500€ reduzierbar – wir übernehmen die Abwicklung!)</span>
                                 </div>
                                 <div className="inline-flex gap-x-3 items-center">
                                     <BadgeEuroIcon className="min-w-7 size-7" />
                                     <span className=" lg:text-lg">
-                                        1.000 € Kaution Bar, Überweisung oder per Paypal oder
-                                        Eigenes Fahrzeug im wert von mindestens 1.000€</span>
+                                        Kaution: 1.000€ – zahlbar in bar, per Überweisung, via PayPal oder durch Hinterlegung eines eigenen Fahrzeugs mit einem Mindestwert von 1.000€</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <VM_Golf_8_Pricing />
-                    <div className="bg-main rounded-lg border mb-6 p-8 flex flex-col text-neutral-900" data-aos="fade-up">
+                    <div className="hidden bg-main rounded-lg border mb-6 p-8 flex flex-col text-neutral-900" data-aos="fade-up">
                         <div className="flex gap-x-4 items-center">
                             <InfoIcon className="min-w-7 size-7 lg:min-w-12 lg:size-12" style={{ strokeWidth: 1 }} />
                             <div className="flex flex-col text-lg font-medium">
@@ -293,6 +291,7 @@ const VM_Golf_8 = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="pt-6"></div>
                 </div>
             </main>
             <Footer />

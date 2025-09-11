@@ -16,7 +16,7 @@ const TestCars = () => {
                 </div>
 
                 <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div className="p-8 relative rounded-lg border overflow-hidden transition-all cursor-pointer group hover:-translate-y-2 hover:scale-[1.01]">
+                    <div className="p-8 relative rounded-lg border overflow-hidden transition-all cursor-pointer group hover:-translate-y-2 hover:scale-[1.01]"  data-aos="fade-up">
                         <div className="relative flex flex-col z-20">
                             <div className="mb-4">
                                 <p className=" text-2xl text-neutral-100 font-medium">Golf 8 R Black Edition</p>

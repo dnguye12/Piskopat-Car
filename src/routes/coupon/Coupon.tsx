@@ -47,7 +47,7 @@ const Coupon = () => {
             <main className="flex-1 mt-[88px] mb-6">
                 <div className="relative pt-32 lg:pt-60 pb-12">
                     <div className="container mx-auto px-4 relative z-20">
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main font-orbi" data-aos="fade-right" data-aos-delay="300">Gutschein</h1>
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl text-main" data-aos="fade-right" data-aos-delay="300">Gutschein</h1>
                         <h2 className="text-3xl md:text-5xl lg:text-6xl text-neutral-100" data-aos="fade-left" data-aos-delay="300">Schenken Sie die Freude eines Sportwagens</h2>
                         <div className="mt-7 flex gap-x-4 items-center">
                             <Button variant={"main"} size="lg" className="font-semibold h-12 lg:h-16 px-8 lg:text-lg" asChild><a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a></Button>
@@ -60,8 +60,8 @@ const Coupon = () => {
                     <div className="grid grid-cols-3 gap-6">
                         <div className="col-span-3 lg:col-span-2 bg-main rounded-lg border p-8 relative shadow">
                             <div className="relative flex flex-col items-start z-10 text-neutral-900 gap-y-4">
-                                <h3 className="text-2xl lg:text-3xl">Gutschein sportwagen selber fahren!</h3>
-                                <p className="lg:text-lg">Verschenken Sie einzigartige Freude und ein besonderes Erlebnis mit unserem Gutschein zum selber fahren. Wählen Sie aus einem allgemeinen Wertgutschein oder einer Fahrt in einem spezifischen Sportwagen. Gerne helfen wir Ihnen auch bei der Auswahl des passenden Geschenks.</p>
+                                <h3 className="text-2xl lg:text-3xl">Ein Sportwagenerlebnis verschenken</h3>
+                                <p className="lg:text-lg">Machen Sie jemandem eine ganz besondere Freude mit einem Gutschein zum selbst Fahren. Wählen Sie zwischen einem flexiblen Wertgutschein oder einer Fahrt in einem bestimmten Sportwagen. Gerne unterstützen wir Sie bei der Entscheidung für das passende Geschenk.</p>
                                 <Separator className="bg-accent" />
                                 <div className="flex items-center gap-4 w-full">
                                     <Button size="lg" className="h-12 px-8 bg-neutral-900 text-neutral-100 hover:bg-neutral-800 group w-full sm:w-auto" asChild>
@@ -89,7 +89,7 @@ const Coupon = () => {
                                     )}>
                                         <MessagesSquareIcon className="min-w-4 size-4" />
                                     </div>
-                                    <p className="text-lg lg:text-xl">Gutschein anfragen</p>
+                                    <p className="text-lg lg:text-xl">Anfrage starten</p>
                                 </div>
                                 <p className="text-sm lg:text-base transition-all text-start">Jetzt einfach Ihren Gutschein anfordern</p>
                             </div>
@@ -104,7 +104,7 @@ const Coupon = () => {
                                     )}>
                                         <BanknoteArrowDownIcon className="min-w-4 size-4" />
                                     </div>
-                                    <p className="text-lg lg:text-xl">Bestellung abschließen</p>
+                                    <p className="text-lg lg:text-xl">Bestellung & Bezahlung</p>
                                 </div>
                                 <p className="text-sm lg:text-base transition-all text-start">Bequem und sicher Ihre Bestellung finalisieren</p>
                             </div>
@@ -119,7 +119,7 @@ const Coupon = () => {
                                     )}>
                                         <MailIcon className="min-w-4 size-4" />
                                     </div>
-                                    <p className="text-lg lg:text-xl">Gutschein erhalten</p>
+                                    <p className="text-lg lg:text-xl">Gutscheinversand</p>
                                 </div>
                                 <p className="text-sm lg:text-base transition-all text-start">Ihren Gutschein direkt per Mail bekommen</p>
                             </div>
@@ -134,7 +134,7 @@ const Coupon = () => {
                                     )}>
                                         <GiftIcon className="min-w-4 size-4" />
                                     </div>
-                                    <p className="text-lg lg:text-xl">Fahrfreude verschenken</p>
+                                    <p className="text-lg lg:text-xl">Erlebnis genießen</p>
                                 </div>
                                 <p className="text-sm lg:text-base transition-all text-start">Ein besonderes Erlebnis als Geschenk überreichen</p>
                             </div>
@@ -143,8 +143,8 @@ const Coupon = () => {
                             selected === 1 && (
                                 <div className="col-span-2 flex flex-col gap-6">
                                     <div className="p-8 bg-accent rounded-lg border flex flex-col items-start">
-                                        <h4 className="text-3xl lg:text-4xl text-main font-medium">Gutschein anfragen</h4>
-                                        <p className="lg:text-lg my-6">Du möchtest Fahrfreude verschenken? Sende uns einfach eine WhatsApp‒Nachricht und teile uns mit, welches Fahrzeug und welche Erlebnisdauer du verschenken möchtest oder frage nach einem flexiblen Wertgutschein.</p>
+                                        <h4 className="text-3xl lg:text-4xl text-main font-medium">Anfrage starten</h4>
+                                        <p className="lg:text-lg my-6">Schicken Sie uns eine kurze WhatsApp-Nachricht und teilen Sie uns Ihr Wunschfahrzeug sowie die gewünschte Fahrzeit mit.</p>
                                         <Button variant="main" size="lg" className="h-12 px-8 w-auto group" asChild>
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
@@ -156,8 +156,8 @@ const Coupon = () => {
                             selected === 2 && (
                                 <div className="col-span-2 flex flex-col gap-6">
                                     <div className="p-8 bg-accent rounded-lg border flex flex-col items-start">
-                                        <h4 className="text-3xl lg:text-4xl text-main font-medium">Bestellung abschließen</h4>
-                                        <p className="lg:text-lg my-6">Sobald wir Deine Anfrage erhalten haben, schicken wir Dir alle Infos zur Bestellung und Bezahlung direkt per WhatsApp zu. Du wählst deine gewünschte Zahlungsmethode (z.B. PayPal, Überweisung) und gibst deine Versandadresse an.</p>
+                                        <h4 className="text-3xl lg:text-4xl text-main font-medium">Bestellung & Bezahlung</h4>
+                                        <p className="lg:text-lg my-6">Nach Ihrer Anfrage erhalten Sie von uns alle nötigen Informationen rund um Bestellung und Zahlungsarten (z. B. PayPal oder Überweisung). Anschließend geben Sie einfach Ihre Versandadresse an.</p>
                                         <Button variant="main" size="lg" className="h-12 px-8 w-auto group" asChild>
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
@@ -169,8 +169,8 @@ const Coupon = () => {
                             selected === 3 && (
                                 <div className="col-span-2 flex flex-col gap-6">
                                     <div className="p-8 bg-accent rounded-lg border flex flex-col items-start">
-                                        <h4 className="text-3xl lg:text-4xl text-main font-medium">Gutschein erhalten</h4>
-                                        <p className="lg:text-lg my-6">Nach Zahlungseingang senden wir Dir den Gutschein ganz bequem per Post zu auf Wunsch auch direkt an die beschenkte Person.</p>
+                                        <h4 className="text-3xl lg:text-4xl text-main font-medium">Gutscheinversand</h4>
+                                        <p className="lg:text-lg my-6">Sobald die Zahlung eingegangen ist, versenden wir Ihren Gutschein per Post – auf Wunsch auch direkt an die Person, die Sie überraschen möchten.</p>
                                         <Button variant="main" size="lg" className="h-12 px-8 w-auto group" asChild>
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
@@ -182,8 +182,8 @@ const Coupon = () => {
                             selected === 4 && (
                                 <div className="col-span-2 flex flex-col gap-6">
                                     <div className="p-8 bg-accent rounded-lg border flex flex-col items-start">
-                                        <h4 className="text-3xl lg:text-4xl text-main font-medium">Fahrfreude verschenken</h4>
-                                        <p className="lg:text-lg my-6">Fertig! So einfach verschenkst Du ein exklusives Sportwagenerlebnis mit Monroe Sportwagenvermietung. Der Gutschein kann jederzeit unkompliziert eingelöst werden.</p>
+                                        <h4 className="text-3xl lg:text-4xl text-main font-medium">Erlebnis genießen</h4>
+                                        <p className="lg:text-lg my-6">Der oder die Beschenkte kann den Gutschein jederzeit ganz unkompliziert einlösen und sich auf ein exklusives Sportwagen-Abenteuer mit Monroe Sportwagenvermietung freuen.</p>
                                         <Button variant="main" size="lg" className="h-12 px-8 w-auto group" asChild>
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
@@ -203,8 +203,8 @@ const Coupon = () => {
                                                 <div className="rounded-lg bg-accent border p-0 overflow-hidden">
                                                     <div className="bg-[url('https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
-                                                        <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Gutschein anfragen</h4>
-                                                        <p className="lg:text-lg my-6">Du möchtest Fahrfreude verschenken? Sende uns einfach eine WhatsApp‒Nachricht und teile uns mit, welches Fahrzeug und welche Erlebnisdauer du verschenken möchtest oder frage nach einem flexiblen Wertgutschein.</p>
+                                                        <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Anfrage starten</h4>
+                                                        <p className="lg:text-lg my-6">Schicken Sie uns eine kurze WhatsApp-Nachricht und teilen Sie uns Ihr Wunschfahrzeug sowie die gewünschte Fahrzeit mit. Alternativ können Sie auch einen Wertgutschein wählen.</p>
                                                         <Button variant="main" size="lg" className="h-12 px-8 w-full sm:w-auto group" asChild>
                                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                                         </Button>
@@ -218,8 +218,8 @@ const Coupon = () => {
                                                 <div className="rounded-lg bg-accent border p-0 overflow-hidden">
                                                     <div className="bg-[url('https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
-                                                        <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Bestellung abschließen</h4>
-                                                        <p className="lg:text-lg my-6">Sobald wir Deine Anfrage erhalten haben, schicken wir Dir alle Infos zur Bestellung und Bezahlung direkt per WhatsApp zu. Du wählst deine gewünschte Zahlungsmethode (z.B. PayPal, Überweisung) und gibst deine Versandadresse an.</p>
+                                                        <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Bestellung & Bezahlung</h4>
+                                                        <p className="lg:text-lg my-6">Nach Ihrer Anfrage erhalten Sie von uns alle nötigen Informationen rund um Bestellung und Zahlungsarten (z. B. PayPal oder Überweisung). Anschließend geben Sie einfach Ihre Versandadresse an.</p>
                                                         <Button variant="main" size="lg" className="h-12 px-8 w-full sm:w-auto group" asChild>
                                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                                         </Button>
@@ -233,8 +233,8 @@ const Coupon = () => {
                                                 <div className="rounded-lg bg-accent border p-0 overflow-hidden">
                                                     <div className="bg-[url('https://images.pexels.com/photos/19130897/pexels-photo-19130897.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
-                                                        <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Gutschein erhalten</h4>
-                                                        <p className="lg:text-lg my-6">Nach Zahlungseingang senden wir Dir den Gutschein ganz bequem per Post zu auf Wunsch auch direkt an die beschenkte Person.</p>
+                                                        <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Gutscheinversand</h4>
+                                                        <p className="lg:text-lg my-6">Sobald die Zahlung eingegangen ist, versenden wir Ihren Gutschein per Post – auf Wunsch auch direkt an die Person, die Sie überraschen möchten.</p>
                                                         <Button variant="main" size="lg" className="h-12 px-8 w-full sm:w-auto group" asChild>
                                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                                         </Button>
@@ -248,8 +248,8 @@ const Coupon = () => {
                                                 <div className="rounded-lg bg-accent border p-0 overflow-hidden">
                                                     <div className="bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
-                                                        <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Fahrfreude verschenken</h4>
-                                                        <p className="lg:text-lg my-6">Fertig! So einfach verschenkst Du ein exklusives Sportwagenerlebnis mit Monroe Sportwagenvermietung. Der Gutschein kann jederzeit unkompliziert eingelöst werden.</p>
+                                                        <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Erlebnis genießen</h4>
+                                                        <p className="lg:text-lg my-6">Der oder die Beschenkte kann den Gutschein jederzeit ganz unkompliziert einlösen und sich auf ein exklusives Sportwagen-Abenteuer mit Monroe Sportwagenvermietung freuen.</p>
                                                         <Button variant="main" size="lg" className="h-12 px-8 w-full sm:w-auto group" asChild>
                                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                                         </Button>

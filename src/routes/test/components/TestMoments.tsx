@@ -24,7 +24,7 @@ const TestMoments = () => {
     return (
         <>
 
-            <section className="py-6">
+            <section className="py-6 hidden">
                 <div className="container mx-auto px-6">
                     <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
                         <div className="z-20">
@@ -231,7 +231,7 @@ const TestMoments = () => {
                     </div>
                 </div>
             </section>
-            <section className="">
+            <section className="hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 container mx-auto px-6 pb-6">
                     <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-end items-start" data-aos="fade-up">
                         <div className="flex gap-x-4 items-center mb-4">

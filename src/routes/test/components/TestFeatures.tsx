@@ -107,7 +107,7 @@ const TestFeatures = () => {
 
     return (
         <>
-            <div id="vorteile" className="relative">
+            <div id="vorteile" className="relative hidden">
                 <div className="grid lg:grid-cols-3 gap-6 container mx-auto px-6">
                     <div className="col-span-3 grid grid-cols-1 lg:grid-cols-2 container mx-auto h-full lg:gap-6 relative py-12">
                         <div className="w-full aspect-video mb-6 lg:mb-0 lg:aspect-auto lg:absolute lg:right-0 lg:w-[calc(50%-16px)] lg:h-full bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg border shadow"></div>
