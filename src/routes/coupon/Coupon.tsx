@@ -183,7 +183,7 @@ const Coupon = () => {
                                 <div className="col-span-2 flex flex-col gap-6">
                                     <div className="p-8 bg-accent rounded-lg border flex flex-col items-start">
                                         <h4 className="text-3xl lg:text-4xl text-main font-medium">Erlebnis genießen</h4>
-                                        <p className="lg:text-lg my-6">Der oder die Beschenkte kann den Gutschein jederzeit ganz unkompliziert einlösen und sich auf ein exklusives Sportwagen-Abenteuer mit Monroe Sportwagenvermietung freuen.</p>
+                                        <p className="lg:text-lg my-6">Der oder die Beschenkte kann den Gutschein jederzeit ganz unkompliziert einlösen und sich auf ein exklusives Sportwagen-Abenteuer mit X-Sportwagen freuen.</p>
                                         <Button variant="main" size="lg" className="h-12 px-8 w-auto group" asChild>
                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                         </Button>
@@ -249,7 +249,7 @@ const Coupon = () => {
                                                     <div className="bg-[url('https://images.pexels.com/photos/1588073/pexels-photo-1588073.jpeg?w=960')] bg-cover bg-center aspect-video"></div>
                                                     <div className=" p-8">
                                                         <h4 className="text-2xl sm:text-3xl lg:text-4xl text-main font-medium">Erlebnis genießen</h4>
-                                                        <p className="lg:text-lg my-6">Der oder die Beschenkte kann den Gutschein jederzeit ganz unkompliziert einlösen und sich auf ein exklusives Sportwagen-Abenteuer mit Monroe Sportwagenvermietung freuen.</p>
+                                                        <p className="lg:text-lg my-6">Der oder die Beschenkte kann den Gutschein jederzeit ganz unkompliziert einlösen und sich auf ein exklusives Sportwagen-Abenteuer mit X-Sportwagen freuen.</p>
                                                         <Button variant="main" size="lg" className="h-12 px-8 w-full sm:w-auto group" asChild>
                                                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank"><GiftIcon className="min-w-5 size-5 group-hover:mr-1 transition-all" /> Gutschein anfragen</a>
                                                         </Button>
