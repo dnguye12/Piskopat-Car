@@ -250,7 +250,7 @@ const TestMoments = () => {
                                         <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
                                     </Button>
                                     <Button size="lg" className="hidden sm:flex h-12 px-8 bg-neutral-900 text-neutral-100 hover:bg-neutral-800 w-auto group" asChild>
-                                        <Link to="/kontakt" target="_blank">Kontakt</Link>
+                                        <Link to="/kontakt">Kontakt</Link>
                                     </Button>
                                 </div>
                             </div>
