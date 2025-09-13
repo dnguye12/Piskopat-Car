@@ -1,8 +1,7 @@
-import { Separator } from "@/components/ui/separator";
 import type { Car } from "../Vehicles";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router";
+import { ActivityIcon, SettingsIcon, UsersRoundIcon, ZapIcon } from "lucide-react";
 
 interface VehicleCardProps {
     index: number;
@@ -12,45 +11,39 @@ interface VehicleCardProps {
 const VehicleCard = ({ index, car }: VehicleCardProps) => {
     console.log(index)
     return (
-        <div className=" rounded-lg overflow-hidden" data-aos="fade-up">
-            <div className={`w-full aspect-video bg-[url(${car.image})] bg-cover bg-bottom`}></div>
-
-            <div className="bg-main flex flex-col items-start">
-                <div className="px-8 pt-8 pb-4 w-full flex justify-between items-start flex-col-reverse sm:flex-row gap-y-3">
-                    <div>
-                        <p className=" text-2xl text-neutral-900 font-medium">{car.name}</p>
-                        <p className="text-xl text-neutral-900">{car.brand}</p>
-                    </div>
-                    <Badge variant={"outline"} className=" border border-neutral-900 text-neutral-900 px-3 py-1 h-8 uppercase">{car.status && "Verfügbar"}</Badge>
+        <div className="p-8 relative rounded-lg border overflow-hidden transition-all cursor-pointer group hover:-translate-y-2 hover:scale-[1.01]" >
+            <div className="relative flex flex-col z-20">
+                <div className="mb-4">
+                    <p className=" text-2xl text-neutral-100 font-medium">{car.name}</p>
+                    <p className="text-xl text-neutral-100">{car.brand}</p>
                 </div>
-                <Separator className="bg-neutral-900/25 w-[calc(100%-64px)]! mx-auto" />
-                <div className="px-8 py-4 flex justify-between items-center text-neutral-900 w-full">
-                    <div className="hidden sm:flex flex-col">
-                        <p className="font-sans"><span className="font-medium">Leistung:</span> {car.ps} PS</p>
-                        <p className="font-sans"><span className="font-medium">Getriebeart:</span> {car.auto}</p>
+                <div className="grid grid-cols-2 justify-items-start min-[500px]:flex items-center gap-2 mb-32">
+                    <div className="flex items-center px-3 py-1 bg-accent/66 backdrop-blur-sm rounded-full gap-x-1 text-base font-sans border shadow">
+                        <ActivityIcon className="min-w-4 size-4" /> {car.ps} PS
                     </div>
-                    <div className="hidden sm:flex flex-col">
-                        <p className="font-sans"><span className="font-medium">Antriebsart:</span> {car.wheel}</p>
-                        <p className="font-sans"><span className="font-medium">Drehmoment:</span> {car.nm} NM</p>
+                    <div className="flex items-center px-3 py-1 bg-accent/66 backdrop-blur-sm rounded-full gap-x-1 text-base font-sans border shadow">
+                        <SettingsIcon className="min-w-4 size-4" /> {car.auto}
                     </div>
-                    <div className="flex sm:hidden flex-col">
-                        <p className="font-sans"><span className="font-medium">Leistung:</span> {car.ps} PS</p>
-                        <p className="font-sans"><span className="font-medium">Getriebeart:</span> {car.auto}</p>
-                        <p className="font-sans"><span className="font-medium">Antriebsart:</span> {car.wheel}</p>
-                        <p className="font-sans"><span className="font-medium">Drehmoment:</span> {car.nm} NM</p>
+                    <div className="flex items-center px-3 py-1 bg-accent/66 backdrop-blur-sm rounded-full gap-x-1 text-base font-sans border shadow">
+                        <UsersRoundIcon className="min-w-4 size-4" /> {car.seats}
+                    </div>
+                    <div className="flex items-center px-3 py-1 bg-accent/66 backdrop-blur-sm rounded-full gap-x-1 text-base font-sans border shadow">
+                        <ZapIcon className="min-w-4 size-4" /> {car.nm} NM
                     </div>
                 </div>
-                <Separator className="bg-neutral-900/25 w-[calc(100%-64px)]! mx-auto" />
-                <div className="flex flex-col sm:flex-row justify-between gap-4 px-8 pb-8 pt-4 w-full">
-                    <Button size={"lg"} variant={"main-outline"} className="h-12 border border-neutral-900 text-neutral-100 bg-neutral-900! hover:text-neutral-100 hover:bg-neutral-800!" asChild>
-                        <Link to="/fahrzeuge/vw_golf_8">Zum Fahrzeug</Link>
+                <div className="flex items-center justify-between gap-4">
+                    <Button size={"lg"} variant={"main"} className="h-12 font-semibold flex-1 sm:flex-none" asChild>
+                        <Link to={car.link}>Zum Fahrzeug</Link>
                     </Button>
-                    <Button size={"lg"} variant={"main-outline"} className="h-12 border border-neutral-900 text-neutral-100 bg-neutral-900! hover:text-neutral-100 hover:bg-neutral-800!" asChild>
+                    <Button size={"lg"} variant={"main"} className="h-12 font-semibold flex-1 sm:flex-none" asChild>
                         <a href={import.meta.env.VITE_WHATSAPP} target="_blank">Jetzt buchen</a>
                     </Button>
                 </div>
             </div>
+            <div className="absolute bg-neutral-900 bg-cover bg-center top-0 left-0 w-full h-full z-10 opacity-25 group-hover:opacity-0 transition-all"></div>
+            <div className="absolute bg-[url('https://i.ibb.co/LhpZ7HhB/A7402864.png')] bg-cover bg-center top-0 left-0 w-full h-full z-0"></div>
         </div>
+
     );
 }
 

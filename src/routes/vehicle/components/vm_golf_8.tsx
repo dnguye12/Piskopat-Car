@@ -46,7 +46,7 @@ const VM_Golf_8_Pricing = () => {
     return (
         <section className="container mx-auto" data-aos="fade-up">
             <div className="mx-auto text-center">
-                <h2 className="mb-4 text-4xl font-orbi lg:text-5xl text-main">Preise</h2>
+                <h2 className="mb-4 text-4xl lg:text-5xl text-main font-medium">Preise</h2>
                 <div className="h-12 bg-muted flex items-center rounded-lg p-1 text-lg w-fit mx-auto mt-2">
                     <div className="grid gap-3 h-full grid-cols-2">
                         <Button variant={"ghost"} className={cn(

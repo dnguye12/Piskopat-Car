@@ -15,8 +15,8 @@ const TestCars = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.pexels.com/photos/3541743/pexels-photo-3541743.jpeg?w=960')] bg-cover bg-center z-0" />
                 </div>
 
-                <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div className="p-8 relative rounded-lg border overflow-hidden transition-all cursor-pointer group hover:-translate-y-2 hover:scale-[1.01]"  data-aos="fade-up">
+                <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6" data-aos="fade-up">
+                    <div className="p-8 relative rounded-lg border overflow-hidden transition-all cursor-pointer group hover:-translate-y-2 hover:scale-[1.01]" >
                         <div className="relative flex flex-col z-20">
                             <div className="mb-4">
                                 <p className=" text-2xl text-neutral-100 font-medium">Golf 8 R Black Edition</p>
@@ -48,7 +48,7 @@ const TestCars = () => {
                         <div className="absolute bg-neutral-900 bg-cover bg-center top-0 left-0 w-full h-full z-10 opacity-25 group-hover:opacity-0 transition-all"></div>
                         <div className="absolute bg-[url('https://i.ibb.co/LhpZ7HhB/A7402864.png')] bg-cover bg-center top-0 left-0 w-full h-full z-0"></div>
                     </div>
-                    <div className="hidden lg:block w-full h-full rounded-lg border overflow-hidden relative shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div className="hidden lg:block w-full h-full rounded-lg border overflow-hidden relative shadow">
                         <p className="absolute top-1/2 left-1/2 -translate-1/2 z-10 text-muted-foreground text-2xl font-medium text-center w-full">Mehr in Kürze...</p>
                         <Skeleton className="w-full h-full shadow" />
                     </div>

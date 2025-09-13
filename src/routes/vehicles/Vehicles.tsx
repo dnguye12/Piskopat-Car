@@ -11,7 +11,7 @@ export type Car = {
     image: string;
     ps: number;
     auto: string;
-    wheel: string;
+    seats: number;
     nm: number;
     link: string;
 }
@@ -23,8 +23,8 @@ const cars: Car[] = [
         brand: "Volkswagen",
         image: "https://i.ibb.co/LhpZ7HhB/A7402864.png",
         ps: 333,
-        auto: "Automatik",
-        wheel: "Allradantrieb",
+        auto: "Auto",
+        seats: 5,
         nm: 420,
         link: "/fahrzeuge/vw_golf_8"
     }

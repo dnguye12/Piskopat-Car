@@ -12,13 +12,13 @@ const TestHero = () => {
                 </p>
                 <div className="mt-8 grid grid-cols-2 max-w-2xl" >
                     <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-right" data-aos-delay="700">
-                        <CreditCardIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Keine Kreditkarte notwendig</span>
+                        <CreditCardIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Ohne Kreditkarte buchbar</span>
                     </div>
                     <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-left" data-aos-delay="700">
-                        <UserRoundCheckIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Vermietung ab 18 Jahren</span>
+                        <UserRoundCheckIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Mieten ab 18 Jahren möglich</span>
                     </div>
                     <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-right" data-aos-delay="700">
-                        <StarIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Lieferung & Abholung</span>
+                        <StarIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">Zustellung & Abholung inklusive</span>
                     </div>
                     <div className="inline-flex gap-x-2 p-3 items-center" data-aos="fade-left" data-aos-delay="700">
                         <BadgePercentIcon className=" text-main" /><span className=" text-lg font-semibold text-neutral-100">10% Neukundenrabatt!</span>
@@ -43,13 +43,13 @@ const TestHero = () => {
                 </p>
                 <div className="mt-3 grid sm:grid-cols-2 gap-x-6 mx-auto sm:mx-0">
                     <div className="inline-flex gap-x-2 py-3 items-center">
-                        <CreditCardIcon className=" text-main" /><span className=" font-semibold ">Keine Kreditkarte notwendig</span>
+                        <CreditCardIcon className=" text-main" /><span className=" font-semibold ">Ohne Kreditkarte buchbar</span>
                     </div>
                     <div className="inline-flex gap-x-2 py-3 items-center">
-                        <UserRoundCheckIcon className=" text-main" /><span className=" font-semibold ">Vermietung ab 18 Jahren</span>
+                        <UserRoundCheckIcon className=" text-main" /><span className=" font-semibold ">Mieten ab 18 Jahren möglich</span>
                     </div>
                     <div className="inline-flex gap-x-2 py-3 items-center">
-                        <StarIcon className=" text-main" /><span className=" font-semibold ">Lieferung & Abholung</span>
+                        <StarIcon className=" text-main" /><span className=" font-semibold ">Zustellung & Abholung inklusive</span>
                     </div>
                     <div className="inline-flex gap-x-2 py-3 items-center">
                         <BadgePercentIcon className=" text-main" /><span className=" font-semibold ">10% Neukundenrabatt!</span>

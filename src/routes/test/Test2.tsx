@@ -33,7 +33,7 @@ const Test2 = () => {
                                             <CreditCardIcon className="w-5 h-5 text-main" />
                                         </div>
                                         <div className="flex flex-col text-neutral-100">
-                                            <span className="text-sm">Keine Kreditkarte notwendig</span>
+                                            <span className="text-sm">Ohne Kreditkarte buchbar</span>
                                         </div>
                                     </div>
                                     <Separator orientation="vertical" />
@@ -42,7 +42,7 @@ const Test2 = () => {
                                             <UserRoundCheckIcon className="w-5 h-5 text-main" />
                                         </div>
                                         <div className="flex flex-col text-neutral-100">
-                                            <span className="text-sm">Vermietung ab 18 Jahren</span>
+                                            <span className="text-sm">Mieten ab 18 Jahren möglich</span>
                                         </div>
                                     </div>
                                     <Separator orientation="vertical" />
@@ -51,7 +51,7 @@ const Test2 = () => {
                                             <StarIcon className="w-5 h-5 text-main" />
                                         </div>
                                         <div className="flex flex-col text-neutral-100">
-                                            <span className="text-sm">Lieferung & Abholung</span>
+                                            <span className="text-sm">Zustellung & Abholung inklusive</span>
                                         </div>
                                     </div>
                                     <Separator orientation="vertical" />
@@ -88,7 +88,7 @@ const Test2 = () => {
                                     <CreditCardIcon className="w-5 h-5 text-main" />
                                 </div>
                                 <div className="flex flex-col text-neutral-100">
-                                    <span>Keine Kreditkarte notwendig</span>
+                                    <span>Ohne Kreditkarte buchbar</span>
                                 </div>
                             </div>
                             <div className="flex items-center gap-x-3">
@@ -96,7 +96,7 @@ const Test2 = () => {
                                     <UserRoundCheckIcon className="w-5 h-5 text-main" />
                                 </div>
                                 <div className="flex flex-col text-neutral-100">
-                                    <span>Vermietung ab 18 Jahren</span>
+                                    <span>Mieten ab 18 Jahren möglich</span>
                                 </div>
                             </div>
                             <div className="flex items-center gap-x-3">
@@ -104,7 +104,7 @@ const Test2 = () => {
                                     <StarIcon className="w-5 h-5 text-main" />
                                 </div>
                                 <div className="flex flex-col text-neutral-100">
-                                    <span>Lieferung & Abholung</span>
+                                    <span>Zustellung & Abholung inklusive</span>
                                 </div>
                             </div>
                             <div className="flex items-center gap-x-3">
