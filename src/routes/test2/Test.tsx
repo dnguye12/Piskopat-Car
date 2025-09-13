@@ -2,19 +2,19 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
-import TestMoments from "./components/TestMoments";
-import TestFeatures from "./components/TestFeatures";
-import TestCars from "./components/TestCars";
-import TestProcess from "./components/TestProcess";
-import TestReviews from "./components/TestReviews";
-import TestMap from "./components/TestMap";
 import { BadgePercentIcon, BanknoteArrowDownIcon, CarFrontIcon, CreditCardIcon, StarIcon, UserRoundCheckIcon } from "lucide-react";
 import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 import { Separator } from "@/components/ui/separator";
+import TestProcess from "../home/components/TestProcess";
+import TestCars from "../home/components/TestCars";
+import TestReviews from "../home/components/TestReviews";
+import TestMap from "../home/components/TestMap";
+import TestFeatures from "./components/TestFeatures";
+import TestMoments from "./components/TestMoments";
 
-const Test2 = () => {
-    return (
-        <div className="w-full min-h-screen flex flex-col">
+const Test = () => {
+    return ( 
+        <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
             <Navbar />
             <main className="flex-1">
                 <section className="hidden lg:block w-full h-[calc(100vh-88px)] relative mt-[88px]">
@@ -199,16 +199,16 @@ const Test2 = () => {
                         </div>
                     </div>
                 </section>
-                <TestMoments />
-                <TestFeatures />
                 <TestProcess />
                 <TestCars />
+                <TestFeatures />
+                <TestMoments />
                 <TestReviews />
                 <TestMap />
             </main>
             <Footer />
         </div>
-    );
+     );
 }
-
-export default Test2;
+ 
+export default Test;

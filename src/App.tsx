@@ -8,7 +8,6 @@ import Vehicle from "./routes/vehicle/Vehicle";
 import Impressum from "./routes/impressum/Impressum";
 import Datenschutz from "./routes/datenschutz/Datenschutz";
 import Wedding from "./routes/wedding/Wedding";
-import FAQ from "./routes/faq-page/FAQ";
 import SportRentNRW from "./routes/sport-rent/SportRentNRW";
 import Sportwagenvermietung from "./routes/sport-rent/Sportwagenvermietung";
 import SportRentEnnigerloh from "./routes/sport-rent/SportRentEnnigerloh";
@@ -20,8 +19,9 @@ import {
 import { Button } from "./components/ui/button";
 import { cn } from "./lib/utils";
 import Coupon from "./routes/coupon/Coupon";
-import Test2 from "./routes/test/Test2";
 import ErrorPage from "./routes/404/404";
+import Home from "./routes/home/Home";
+import Test from "./routes/test2/Test";
 
 function App() {
   const location = useLocation()
@@ -86,7 +86,7 @@ function App() {
         </DialogContent>
       </Dialog>
       <Routes>
-        <Route index element={<Test2 />} />
+        <Route index element={<Home />} />
         <Route path="/gutschein" element={<Coupon />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/fahrzeuge" >
@@ -101,7 +101,7 @@ function App() {
         <Route path="/sportwagenvermietung" element={<Sportwagenvermietung />} />
         <Route path="/sportwagen-mieten-ennigerloh" element={<SportRentEnnigerloh />} />
         <Route path="/faq" element={<ErrorPage />} />
-        <Route path="/test2" element={<FAQ />} />
+        <Route path="/test2" element={<Test />} />
       </Routes>
     </div>
   )

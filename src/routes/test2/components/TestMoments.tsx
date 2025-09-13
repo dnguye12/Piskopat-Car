@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { CakeIcon, CalendarCheckIcon, Clock7Icon, GiftIcon, HeartIcon, UserRoundPlusIcon, ZapIcon } from "lucide-react";
 import { useState } from "react";
@@ -24,7 +25,7 @@ const TestMoments = () => {
     return (
         <>
 
-            <section className="py-6 hidden">
+            <section className="py-6">
                 <div className="container mx-auto px-6">
                     <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
                         <div className="z-20">
@@ -32,7 +33,7 @@ const TestMoments = () => {
                             <h5 className="text-3xl sm:text-4xl md:text-5xl z-20 text-center text-neutral-100">Dein Moment. Unser Sportwagen.</h5>
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full bg-neutral-900 opacity-75 dark:opacity-50 z-10 bg-no-repeat"></div>
-                        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/qYNX66sQ/moments.jpg')] bg-cover bg-center z-0" />
+                        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.pexels.com/photos/33880892/pexels-photo-33880892.jpeg?w=960')] bg-cover bg-center z-0" />
                     </div>
 
                     <div className="mt-6 hidden lg:flex gap-6" onMouseLeave={() => setActive(null)} data-aos="fade-up">
@@ -57,7 +58,7 @@ const TestMoments = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-accent/66 ${active !== null && active === 0 && "backdrop-blur-sm"}`}></div>
+                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-neutral-900/66 ${active !== null && active === 0 && "backdrop-blur-sm"}`}></div>
                             <img
                                 src="https://i.ibb.co/4nBKjNNt/pexels-photo-13781.jpg"
                                 fetchPriority="high"
@@ -85,7 +86,7 @@ const TestMoments = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-accent/66 ${active !== null && active === 1 && "backdrop-blur-sm"}`}></div>
+                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-neutral-900/66 ${active !== null && active === 1 && "backdrop-blur-sm"}`}></div>
                             <img
                                 src="https://i.ibb.co/BVxh3r38/moments1.jpg"
                                 fetchPriority="high"
@@ -114,7 +115,7 @@ const TestMoments = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-accent/66 ${active !== null && active === 2 && "backdrop-blur-sm"}`}></div>
+                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-neutral-900/66 ${active !== null && active === 2 && "backdrop-blur-sm"}`}></div>
                             <img
                                 src="https://i.ibb.co/5XcysVT8/moments2.jpg"
                                 fetchPriority="high"
@@ -142,7 +143,7 @@ const TestMoments = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-accent/66 ${active !== null && active === 3 && "backdrop-blur-sm"}`}></div>
+                            <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 bg-neutral-900/66 ${active !== null && active === 3 && "backdrop-blur-sm"}`}></div>
                             <img
                                 src="https://i.ibb.co/Z6QsYt3x/pexels-photo-620335.jpg"
                                 fetchPriority="high"
@@ -231,82 +232,156 @@ const TestMoments = () => {
                     </div>
                 </div>
             </section>
-            <section className="hidden">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 container mx-auto px-6 pb-6">
-                    <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-end items-start" data-aos="fade-up">
-                        <div className="flex gap-x-4 items-center mb-4">
-                            <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
-                                <GiftIcon className="text-neutral-900 size-5" />
+            <section className="pb-6">
+                <div className="container mx-auto px-6">
+                    <div className="grid grid-cols-3 gap-6">
+                        <div className="col-span-2 bg-main rounded-lg border p-6 shadow-md relative">
+                            <div className="z-20 col-span-2">
+                                <div className="flex gap-x-4 items-center mb-4">
+                                    <div className="min-w-14 size-14 border border-neutral-900 rounded inline-flex justify-center items-center">
+                                        <GiftIcon className="text-neutral-900 size-7" />
+                                    </div>
+                                    <h3 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium mb-2 text-neutral-900">Unsere Rabatte</h3>
+                                </div>
+                                <p className="lg:text-lg z-20 text-neutral-900">Sichere dir exklusive Preisvorteile und fahr deinen Traumwagen zu Konditionen, die begeistern.</p>
+                                <Separator className="bg-neutral-900 my-4" />
+                                <div className="flex items-center gap-4 w-full">
+                                    <Button asChild size={"lg"} className="w-full lg:w-auto bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
+                                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                    </Button>
+                                    <Button size="lg" className="hidden sm:flex h-12 px-8 bg-neutral-900 text-neutral-100 hover:bg-neutral-800 w-auto group" asChild>
+                                        <Link to="/kontakt" target="_blank">Kontakt</Link>
+                                    </Button>
+                                </div>
                             </div>
-                            <h2 className="text-3xl text-neutral-900 font-medium z-10">Unsere Rabatte</h2>
                         </div>
-                        <p className="text-neutral-900 text-lg">Sichere dir exklusive Preisvorteile und fahr deinen Traumwagen zu Konditionen, die begeistern.</p>
-                        <Button asChild size={"lg"} className="w-full lg:w-auto mt-4 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
-                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
-                        </Button>
-                        <GiftIcon strokeWidth={1} className="absolute top-1/2 left-1/2 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                        <GiftIcon strokeWidth={1} className="absolute top-0 left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                        <GiftIcon strokeWidth={1} className="absolute top-full left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                        <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                        <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
-                    </div >
-                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up" data-aos-delay="200">
-                        <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg?w=960')] bg-cover z-0"></div>
-                        <div className="pt-64 h-full relative z-20">
-                            <div className="mb-16 hidden items-stretch">
-                                <div className="bg-neutral-100 uppercase text-center text-neutral-100 w-5 moment-helper"></div>
-                                <div className="border-y-2 border-y-neutral-100 uppercase text-neutral-100 text-center ">
+                        <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/29873585/pexels-photo-29873585.jpeg?w=960')] bg-center bg-cover w-full h-full"></div>
+                    </div>
 
-                                    <div className="mt-4 px-5 font-black text-5xl font-sans">10%</div>
-                                    <div className="mb-4 font-black text-3xl">Rabatt</div>
-                                </div>
-                                <div className="bg-neutral-100 uppercase text-center text-neutral-100 w-5 moment-helper2"></div>
-                            </div>
-                            <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
+                    <div className="grid grid-cols-3 gap-6 mt-6">
+                        <div className="rounded-lg border overflow-hidden group shadow">
+                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg?w=960')] bg-cover blur-sm transition-all group-hover:blur-none"></div>
+                            <div className="p-8 bg-accent transition-all group-hover:bg-main flex flex-col items-start gap-4">
                                 <div className="flex gap-x-4 items-center">
-                                    <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                                        <UserRoundPlusIcon className=" size-5" />
+                                    <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
+                                        <UserRoundPlusIcon className=" size-5 transition-all group-hover:text-neutral-900" />
                                     </div>
-                                    <h3 className="text-xl sm:text-3xl font-medium text-main">10% Neukundenrabatt</h3>
+                                    <h3 className="text-xl sm:text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">10% Neukundenrabatt</h3>
                                 </div>
-                                <p className="sm:text-lg">Neu bei uns? Sichere dir jetzt 10% Rabatt auf deine erste Sportwagen-Miete – unser Geschenk zum Start.</p>
-                                <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
+                                <p className="group-hover:text-neutral-900 transition-all">Neu bei uns? Sichere dir 10% Rabatt auf deine erste Sportwagen-Miete – unser Willkommensgeschenk für dich.</p>
+                                <Button asChild size={"lg"} variant={"main"} className="w-full group-hover:bg-neutral-900 group-hover:text-neutral-100">
+                                    <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                </Button>
+                            </div>
+                        </div>
+                        <div className="rounded-lg border overflow-hidden group shadow">
+                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg?w=960')] bg-cover blur-sm transition-all group-hover:blur-none"></div>
+                            <div className="p-8 bg-accent transition-all group-hover:bg-main flex flex-col items-start gap-4">
+                                <div className="flex gap-x-4 items-center">
+                                    <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
+                                        <HeartIcon className=" size-5 transition-all group-hover:text-neutral-900" />
+                                    </div>
+                                    <h3 className="text-xl sm:text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">10% Hochzeitsrabatt</h3>
+                                </div>
+                                <p className="group-hover:text-neutral-900 transition-all">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
+                                <Button asChild size={"lg"} variant={"main"} className="w-full group-hover:bg-neutral-900 group-hover:text-neutral-100">
+                                    <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                </Button>
+                            </div>
+                        </div>
+                        <div className="rounded-lg border overflow-hidden group shadow">
+                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?w=960')] bg-cover blur-sm transition-all group-hover:blur-none"></div>
+                            <div className="p-8 bg-accent transition-all group-hover:bg-main flex flex-col items-start gap-4">
+                                <div className="flex gap-x-4 items-center">
+                                    <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
+                                        <UserRoundPlusIcon className=" size-5 transition-all group-hover:text-neutral-900" />
+                                    </div>
+                                    <h3 className="text-xl sm:text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">5% Geburtstagsrabatt</h3>
+                                </div>
+                                <p className="group-hover:text-neutral-900 transition-all">Feier mit uns und sichere dir 5% Rabatt auf deine nächste Miete. Zum ersten Mal dabei? Dann gibt’s sogar ganze 15%!</p>
+                                <Button asChild size={"lg"} variant={"main"} className="w-full group-hover:bg-neutral-900 group-hover:text-neutral-100">
                                     <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
                                 </Button>
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up">
-                        <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg?w=960')] bg-cover z-0"></div>
-                        <div className="pt-64 h-full relative z-20">
-                            <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
-                                <div className="flex gap-x-4 items-center">
-                                    <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                                        <HeartIcon className=" size-5" />
-                                    </div>
-                                    <h3 className="text-xl sm:text-3xl font-medium text-main">10% Hochzeitsrabatt</h3>
+
+                    <div className="hidden  grid-cols-1 lg:grid-cols-2 gap-6 container mx-auto px-6 pb-6">
+                        <div className="p-8 bg-main rounded-lg border shadow relative overflow-hidden flex flex-col justify-end items-start" data-aos="fade-up">
+                            <div className="flex gap-x-4 items-center mb-4">
+                                <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
+                                    <GiftIcon className="text-neutral-900 size-5" />
                                 </div>
-                                <p className="sm:text-lg">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
-                                <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
-                                    <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
-                                </Button>
+                                <h2 className="text-3xl text-neutral-900 font-medium z-10">Unsere Rabatte</h2>
+                            </div>
+                            <p className="text-neutral-900 text-lg">Sichere dir exklusive Preisvorteile und fahr deinen Traumwagen zu Konditionen, die begeistern.</p>
+                            <Button asChild size={"lg"} className="w-full lg:w-auto mt-4 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
+                                <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                            </Button>
+                            <GiftIcon strokeWidth={1} className="absolute top-1/2 left-1/2 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                            <GiftIcon strokeWidth={1} className="absolute top-0 left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                            <GiftIcon strokeWidth={1} className="absolute top-full left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                            <GiftIcon strokeWidth={1} className="absolute top-full left-0 -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                            <GiftIcon strokeWidth={1} className="absolute top-0 left-full -translate-1/2 opacity-10 w-3/5 h-auto text-neutral-900 -rotate-12 z-10" />
+                        </div >
+                        <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up" data-aos-delay="200">
+                            <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg?w=960')] bg-cover z-0"></div>
+                            <div className="pt-64 h-full relative z-20">
+                                <div className="mb-16 hidden items-stretch">
+                                    <div className="bg-neutral-100 uppercase text-center text-neutral-100 w-5 moment-helper"></div>
+                                    <div className="border-y-2 border-y-neutral-100 uppercase text-neutral-100 text-center ">
+
+                                        <div className="mt-4 px-5 font-black text-5xl font-sans">10%</div>
+                                        <div className="mb-4 font-black text-3xl">Rabatt</div>
+                                    </div>
+                                    <div className="bg-neutral-100 uppercase text-center text-neutral-100 w-5 moment-helper2"></div>
+                                </div>
+                                <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
+                                    <div className="flex gap-x-4 items-center">
+                                        <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                            <UserRoundPlusIcon className=" size-5" />
+                                        </div>
+                                        <h3 className="text-xl sm:text-3xl font-medium text-main">10% Neukundenrabatt</h3>
+                                    </div>
+                                    <p className="sm:text-lg">Neu bei uns? Sichere dir jetzt 10% Rabatt auf deine erste Sportwagen-Miete – unser Geschenk zum Start.</p>
+                                    <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
+                                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                    </Button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up" data-aos-delay="200">
-                        <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?w=960')] bg-cover z-0"></div>
-                        <div className="pt-64 h-full relative z-20">
-                            <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
-                                <div className="flex gap-x-4 items-center">
-                                    <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
-                                        <CakeIcon className=" size-5" />
+                        <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up">
+                            <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg?w=960')] bg-cover z-0"></div>
+                            <div className="pt-64 h-full relative z-20">
+                                <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
+                                    <div className="flex gap-x-4 items-center">
+                                        <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                            <HeartIcon className=" size-5" />
+                                        </div>
+                                        <h3 className="text-xl sm:text-3xl font-medium text-main">10% Hochzeitsrabatt</h3>
                                     </div>
-                                    <h3 className="text-xl sm:text-3xl font-medium text-main">5% Geburtstagsrabatt</h3>
+                                    <p className="sm:text-lg">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
+                                    <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
+                                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                    </Button>
                                 </div>
-                                <p className="sm:text-lg">Feier mit uns und sichere dir 5% Rabatt auf deine nächste Miete. Zum ersten Mal dabei? Dann gibt’s sogar ganze 15%!</p>
-                                <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
-                                    <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
-                                </Button>
+                            </div>
+                        </div>
+                        <div className="flex flex-col rounded-lg border shadow overflow-hidden relative" data-aos="fade-up" data-aos-delay="200">
+                            <div className="absolute w-full h-full bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?w=960')] bg-cover z-0"></div>
+                            <div className="pt-64 h-full relative z-20">
+                                <div className="flex flex-col items-start gap-4 p-8 py-4 lg:py-8 bg-accent/66 backdrop-blur-xs z-10 relative">
+                                    <div className="flex gap-x-4 items-center">
+                                        <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center">
+                                            <CakeIcon className=" size-5" />
+                                        </div>
+                                        <h3 className="text-xl sm:text-3xl font-medium text-main">5% Geburtstagsrabatt</h3>
+                                    </div>
+                                    <p className="sm:text-lg">Feier mit uns und sichere dir 5% Rabatt auf deine nächste Miete. Zum ersten Mal dabei? Dann gibt’s sogar ganze 15%!</p>
+                                    <Button asChild size={"lg"} variant={"main"} className="w-full sm:w-auto">
+                                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                    </Button>
+                                </div>
                             </div>
                         </div>
                     </div>

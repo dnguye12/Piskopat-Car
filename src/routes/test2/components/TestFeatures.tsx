@@ -4,6 +4,11 @@ import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { useState } from "react";
 import { Marquee } from "@/components/magicui/marquee";
 import { cn } from "@/lib/utils";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+} from "@/components/ui/carousel";
 
 const features = [
     {
@@ -96,7 +101,7 @@ const ReviewCard = ({
             <div className="border border-foreground/50 rounded-md size-10 inline-flex justify-center items-center transition-all group-hover:border-neutral-900">
                 <Icon className="min-w-5 size-5" />
             </div>
-            <p className="font-medium my-3">{title}</p>
+            <p className="font-medium mb-3 mt-12">{title}</p>
             <p className="text-muted-foreground group-hover:text-neutral-900 transition-all">{desc}</p>
         </div>
     );
@@ -107,19 +112,20 @@ const TestFeatures = () => {
 
     return (
         <>
-            <div id="vorteile" className="relative hidden">
+            <div id="vorteile" className="relative">
                 <div className="grid lg:grid-cols-3 gap-6 container mx-auto px-6">
-                    <div className="col-span-3 grid grid-cols-1 lg:grid-cols-2 container mx-auto h-full lg:gap-6 relative py-12">
-                        <div className="w-full aspect-video mb-6 lg:mb-0 lg:aspect-auto lg:absolute lg:right-0 lg:w-[calc(50%-16px)] lg:h-full bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg border shadow"></div>
+                    <div className="lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 container mx-auto h-full lg:gap-6 relative lg:pb-64 lg:pt-24">
+                        <div className="hidden lg:block w-full aspect-video mb-6 lg:mb-0 lg:aspect-auto lg:absolute lg:right-0 lg:w-[calc(50%-16px)] lg:h-full bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg border shadow"></div>
                         <div className="flex flex-col items-start justify-center">
                             <div className="rounded-lg relative  overflow-hidden">
-                                <h3 className="hidden sm:block text-2xl lg:text-3xl text-main font-medium">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
-                                <p className="hidden sm:block sm:text-lg text-muted-foreground mt-4">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
+                                <h2 className="text-3xl sm:text-4xl md:text-5xl text-main font-medium">Unsere Vorteile</h2>
+                                <h3 className="hidden sm:block text-2xl lg:text-3xl my-4">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
+                                <p className="hidden sm:block sm:text-lg text-muted-foreground">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
                                 <h3 className="block sm:hidden text-2xl sm:text-3xl">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</h3>
 
                             </div>
                         </div>
-                        <div className="col-span-2 grid grid-cols-10 gap-6 pr-6">
+                        <div className="hidden col-span-2 grid grid-cols-10 gap-6 pr-6">
                             <div className="col-span-8 grid grid-cols-4 gap-6">
                                 {firstRow.map((review) => (
                                     <ReviewCard key={review.title} {...review} />
@@ -135,6 +141,25 @@ const TestFeatures = () => {
                                     <ReviewCard key={review.title} {...review} />
                                 ))}
                             </div>
+                        </div>
+
+                        <div className="hidden lg:block col-span-3">
+                            <Carousel className=" absolute bottom-14" opts={{
+                                align: "end",
+                                dragFree: true
+                            }}>
+                                <CarouselContent className="-ml-4">
+                                    {
+                                        features.map((f) => (
+                                            <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/6">
+                                                <ReviewCard key={f.title} {...f} />
+                                            </CarouselItem>
+                                        ))
+                                    }
+                                    <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/6"></CarouselItem>
+                                    <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/6"></CarouselItem>
+                                </CarouselContent>
+                            </Carousel>
                         </div>
                     </div>
 
@@ -563,7 +588,9 @@ const TestFeatures = () => {
 
                     </div>
                 </div>
+
             </div>
+
         </>
     );
 }
