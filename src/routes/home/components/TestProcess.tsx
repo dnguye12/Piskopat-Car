@@ -1,6 +1,6 @@
 import Stepper, { Step } from "@/components/react-bits/Stepper";
 import { Button } from "@/components/ui/button";
-import { CalendarCheckIcon, FileTextIcon, HandshakeIcon, KeyRoundIcon, MessageSquareTextIcon, ZapIcon } from "lucide-react";
+import { CalendarCheckIcon, ClockIcon, FileTextIcon, HandshakeIcon, KeyRoundIcon, MessageSquareTextIcon, ZapIcon } from "lucide-react";
 import {
     Carousel,
     CarouselContent,
@@ -33,8 +33,13 @@ const TestProcess = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-6">
                     <div className="relative bg-main rounded-lg p-8 flex flex-col justify-between items-start border" data-aos="fade-right">
                         <div>
-                            <h2 className="text-3xl text-neutral-900 mb-2">Unser Mietablauf</h2>
-                            <p className="text-lg text-neutral-900">Wir machen’s leicht – klar, fair und in wenigen Schritten.</p>
+                            <div className="flex gap-x-4 items-center mb-4">
+                                <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
+                                    <ClockIcon className="text-neutral-900 size-5" />
+                                </div>
+                                <h3 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium text-neutral-900">Unser Mietablauf</h3>
+                            </div>
+                            <p className="lg:text-lg text-neutral-900">Wir machen’s leicht – klar, fair und in wenigen Schritten.</p>
                         </div>
                         <Button asChild size={"lg"} className="w-full lg:w-auto mt-6 lg:mt-0 bg-neutral-900 hover:bg-neutral-900/80 text-neutral-100 relative z-10">
                             <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>

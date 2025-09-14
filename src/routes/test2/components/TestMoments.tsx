@@ -235,13 +235,13 @@ const TestMoments = () => {
             <section className="pb-6">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-3 gap-6">
-                        <div className="col-span-2 bg-main rounded-lg border p-6 shadow-md relative">
+                        <div className="col-span-3 lg:col-span-2 bg-main rounded-lg border p-6 shadow-md relative">
                             <div className="z-20 col-span-2">
                                 <div className="flex gap-x-4 items-center mb-4">
-                                    <div className="min-w-14 size-14 border border-neutral-900 rounded inline-flex justify-center items-center">
-                                        <GiftIcon className="text-neutral-900 size-7" />
+                                    <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
+                                        <GiftIcon className="text-neutral-900 size-5" />
                                     </div>
-                                    <h3 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium mb-2 text-neutral-900">Unsere Rabatte</h3>
+                                    <h3 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium text-neutral-900">Unsere Rabatte</h3>
                                 </div>
                                 <p className="lg:text-lg z-20 text-neutral-900">Sichere dir exklusive Preisvorteile und fahr deinen Traumwagen zu Konditionen, die begeistern.</p>
                                 <Separator className="bg-neutral-900 my-4" />
@@ -255,13 +255,13 @@ const TestMoments = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/29873585/pexels-photo-29873585.jpeg?w=960')] bg-center bg-cover w-full h-full"></div>
+                        <div className="hidden lg:block rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/29873585/pexels-photo-29873585.jpeg?w=960')] bg-center bg-cover w-full h-full"></div>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6 mt-6">
-                        <div className="rounded-lg border overflow-hidden group shadow">
-                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg?w=960')] bg-cover blur-sm transition-all group-hover:blur-none"></div>
-                            <div className="p-8 bg-accent transition-all group-hover:bg-main flex flex-col items-start gap-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+                        <div className="rounded-lg border overflow-hidden group shadow bg-accent">
+                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg?w=960')] bg-cover lg:blur-sm transition-all group-hover:blur-none"></div>
+                            <div className="p-8 transition-all group-hover:bg-main flex flex-col items-start gap-4">
                                 <div className="flex gap-x-4 items-center">
                                     <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
                                         <UserRoundPlusIcon className=" size-5 transition-all group-hover:text-neutral-900" />
@@ -274,8 +274,8 @@ const TestMoments = () => {
                                 </Button>
                             </div>
                         </div>
-                        <div className="rounded-lg border overflow-hidden group shadow">
-                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg?w=960')] bg-cover blur-sm transition-all group-hover:blur-none"></div>
+                        <div className="rounded-lg border overflow-hidden group shadow bg-accent">
+                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg?w=960')] bg-cover lg:blur-sm transition-all group-hover:blur-none"></div>
                             <div className="p-8 bg-accent transition-all group-hover:bg-main flex flex-col items-start gap-4">
                                 <div className="flex gap-x-4 items-center">
                                     <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
@@ -289,12 +289,12 @@ const TestMoments = () => {
                                 </Button>
                             </div>
                         </div>
-                        <div className="rounded-lg border overflow-hidden group shadow">
-                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?w=960')] bg-cover blur-sm transition-all group-hover:blur-none"></div>
+                        <div className="rounded-lg border overflow-hidden group shadow bg-accent">
+                            <div className="aspect-video bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?w=960')] bg-cover lg:blur-sm transition-all group-hover:blur-none"></div>
                             <div className="p-8 bg-accent transition-all group-hover:bg-main flex flex-col items-start gap-4">
                                 <div className="flex gap-x-4 items-center">
                                     <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
-                                        <UserRoundPlusIcon className=" size-5 transition-all group-hover:text-neutral-900" />
+                                        <CakeIcon className=" size-5 transition-all group-hover:text-neutral-900" />
                                     </div>
                                     <h3 className="text-xl sm:text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">5% Geburtstagsrabatt</h3>
                                 </div>

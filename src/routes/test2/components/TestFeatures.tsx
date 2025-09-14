@@ -114,9 +114,9 @@ const TestFeatures = () => {
         <>
             <div id="vorteile" className="relative">
                 <div className="grid lg:grid-cols-3 gap-6 container mx-auto px-6">
-                    <div className="lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 container mx-auto h-full lg:gap-6 relative lg:pb-64 lg:pt-24">
+                    <div className="lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 container mx-auto h-full lg:gap-3 relative lg:pb-[264px]">
                         <div className="hidden lg:block w-full aspect-video mb-6 lg:mb-0 lg:aspect-auto lg:absolute lg:right-0 lg:w-[calc(50%-16px)] lg:h-full bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg border shadow"></div>
-                        <div className="flex flex-col items-start justify-center">
+                        <div className="hidden flex-col items-start justify-center">
                             <div className="rounded-lg relative  overflow-hidden">
                                 <h2 className="text-3xl sm:text-4xl md:text-5xl text-main font-medium">Unsere Vorteile</h2>
                                 <h3 className="hidden sm:block text-2xl lg:text-3xl my-4">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
@@ -125,26 +125,22 @@ const TestFeatures = () => {
 
                             </div>
                         </div>
-                        <div className="hidden col-span-2 grid grid-cols-10 gap-6 pr-6">
-                            <div className="col-span-8 grid grid-cols-4 gap-6">
-                                {firstRow.map((review) => (
-                                    <ReviewCard key={review.title} {...review} />
-                                ))}
-                            </div>
-                            <div className="col-span-8 col-start-2 grid grid-cols-4 gap-6">
-                                {secondRow.map((review) => (
-                                    <ReviewCard key={review.title} {...review} />
-                                ))}
-                            </div>
-                            <div className="col-span-8 col-start-3 grid grid-cols-4 gap-6">
-                                {thirdRow.map((review) => (
-                                    <ReviewCard key={review.title} {...review} />
-                                ))}
-                            </div>
+                        <div className="rounded-lg p-8 relative bg-main border text-neutral-900 overflow-hidden">
+                            <div className="flex gap-x-4 items-center mb-4">
+                                    <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
+                                        <CheckCheckIcon className="text-neutral-900 size-5" />
+                                    </div>
+                                    <h2 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium">Unsere Vorteile</h2>
+                                </div>
+                            
+                            <h3 className="hidden sm:block text-lg my-4">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
+                            <p className="hidden sm:block text-lg break-words">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
+                            <h3 className="block sm:hidden text-2xl sm:text-3xl">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</h3>
+                            <img src="/thing.svg" className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-10 z-0 w-full pointer-events-none" />
                         </div>
 
                         <div className="hidden lg:block col-span-3">
-                            <Carousel className=" absolute bottom-14" opts={{
+                            <Carousel className=" absolute bottom-12" opts={{
                                 align: "end",
                                 dragFree: true
                             }}>
