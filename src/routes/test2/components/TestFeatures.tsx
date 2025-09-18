@@ -127,12 +127,12 @@ const TestFeatures = () => {
                         </div>
                         <div className="rounded-lg p-8 relative bg-main border text-neutral-900 overflow-hidden">
                             <div className="flex gap-x-4 items-center mb-4">
-                                    <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
-                                        <CheckCheckIcon className="text-neutral-900 size-5" />
-                                    </div>
-                                    <h2 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium">Unsere Vorteile</h2>
+                                <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
+                                    <CheckCheckIcon className="text-neutral-900 size-5" />
                                 </div>
-                            
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium">Unsere Vorteile</h2>
+                            </div>
+
                             <h3 className="hidden sm:block text-lg my-4">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
                             <p className="hidden sm:block text-lg break-words">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
                             <h3 className="block sm:hidden text-2xl sm:text-3xl">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</h3>
@@ -586,7 +586,87 @@ const TestFeatures = () => {
                 </div>
 
             </div>
+            <div className="relative mt-6">
+                <div className="grid lg:grid-cols-2 gap-6 container mx-auto px-6">
+                    <div className="col-span-1 flex flex-col gap-6">
+                        <div className="rounded-lg p-8 relative bg-main border text-neutral-900 overflow-hidden">
+                            <div className="flex gap-x-4 items-center mb-4">
+                                <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
+                                    <CheckCheckIcon className="text-neutral-900 size-5" />
+                                </div>
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium">Unsere Vorteile</h2>
+                            </div>
 
+                            <h3 className="hidden sm:block text-lg my-4">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
+                            <p className="hidden sm:block text-lg break-words">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
+                            <h3 className="block sm:hidden text-2xl sm:text-3xl">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</h3>
+                            <img src="/thing.svg" className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-10 z-0 w-full pointer-events-none" />
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-6">
+                            <div className="flex flex-col gap-6">
+                                <div className="bg-accent rounded-lg border shadow p-8">
+                                    <div className="flex gap-x-4 items-center mb-4">
+                                        <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
+                                            <ZapIcon className="size-5" />
+                                        </div>
+                                        <h2 className="text-xl z-20 font-medium">Schnelle Abwicklung</h2>
+                                    </div>
+                                    <div className="text-muted-foreground space-y-3">
+                                        <p>Schnelle Übergabe (max. 120 Minuten)</p>
+                                        <p>Unkomplizierte Abwicklung</p>
+                                        <p>WhatsApp & 24/7 Support</p>
+                                    </div>
+                                </div>
+                                <div className="bg-accent rounded-lg border shadow p-8">
+                                    <div className="flex gap-x-4 items-center mb-4">
+                                        <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
+                                            <CarFrontIcon className="size-5" />
+                                        </div>
+                                        <h2 className="text-xl z-20 font-medium">Top Fahrzeuge</h2>
+                                    </div>
+                                    <div className="text-muted-foreground space-y-3">
+                                        <p>Selbstfahrermietfahrzeug</p>
+                                        <p>Fahrzeuge im Bestzustand</p>
+                                        <p>Vollgetankt ins Abenteuer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-6 mt-6">
+                                <div className="bg-accent rounded-lg border shadow p-8">
+                                    <div className="flex gap-x-4 items-center mb-4">
+                                        <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
+                                            <FileTextIcon className="size-5" />
+                                        </div>
+                                        <h2 className="text-xl z-20 font-medium">Sichere Fahrzeugübergabe</h2>
+                                    </div>
+                                    <div className="text-muted-foreground space-y-3">
+                                        <p>Gemeinsame Fahrzeugkontrolle</p>
+                                        <p>Übergabe inkl. Protokoll</p>
+                                        <p>Mietvertrag inkl. AGB’s</p>
+                                    </div>
+                                </div>
+                                <div className="bg-accent rounded-lg border shadow p-8">
+                                    <div className="flex gap-x-4 items-center mb-4">
+                                        <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
+                                            <ShieldCheckIcon className="size-5" />
+                                        </div>
+                                        <h2 className="text-xl z-20 font-medium">Rundum geschützt & persönlich betreut</h2>
+                                    </div>
+                                    <div className="text-muted-foreground space-y-3">
+                                        <p>Vollkasko versichert</p>
+                                        <p>Persönlicher Service</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-1 w-full h-full relative">
+                        <div className="absolute top-0 right-0 w-3/4 aspect-square bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg shadow border"></div>
+                        <div className="absolute bottom-0 left-0 w-1/2 aspect-square bg-cover bg-center rounded-lg shadow z-10 bg-[url('https://images.pexels.com/photos/19597726/pexels-photo-19597726.jpeg?w=960')]"></div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
