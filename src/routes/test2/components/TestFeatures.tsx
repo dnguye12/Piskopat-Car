@@ -1,4 +1,4 @@
-import { CalendarIcon, CarFrontIcon, CheckCheckIcon, CircleUserRoundIcon, ClockIcon, FileIcon, FileTextIcon, FuelIcon, ListTodoIcon, ShieldCheckIcon, ZapIcon, type LucideProps } from "lucide-react";
+import { CalendarClockIcon, CalendarIcon, CarFrontIcon, CarIcon, CheckCheckIcon, CircleUserRoundIcon, ClockIcon, FileIcon, FileTextIcon, FuelIcon, ListTodoIcon, PhoneCallIcon, ShieldCheckIcon, ThumbsUpIcon, ZapIcon, type LucideProps } from "lucide-react";
 import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { useState } from "react";
@@ -112,7 +112,61 @@ const TestFeatures = () => {
 
     return (
         <>
-            <div id="vorteile" className="relative">
+        <div className="relative">
+                <div className="flex flex-col gap-6 container mx-auto px-6">
+                    <div className="flex flex-col gap-6">
+                        <div className="rounded-lg p-8 relative bg-main border text-neutral-900 overflow-hidden">
+                            <div className="flex gap-x-4 items-center mb-4">
+                                <div className="min-w-10 size-10 border border-neutral-900 rounded inline-flex justify-center items-center">
+                                    <CheckCheckIcon className="text-neutral-900 size-5" />
+                                </div>
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl z-20 font-medium">Unsere Vorteile</h2>
+                            </div>
+
+                            <h3 className="hidden sm:block text-lg my-4">Ob ein Tag voller Adrenalin, ein Wochenende im Zeichen der Freiheit oder gleich für länger – du wählst, wir machen es möglich.</h3>
+                            <p className="hidden sm:block text-lg break-words">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</p>
+                            <h3 className="block sm:hidden text-2xl sm:text-3xl">Das bekommst du, wenn du bei uns einen Sportwagen mietest:</h3>
+                            <img src="/thing.svg" className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-10 z-0 w-full pointer-events-none" />
+                        </div>
+
+                        <div className="grid grid-cols-5 gap-6">
+                            <div className="grid grid-cols-1 grid-rows-6 gap-6">
+                                <div className="row-span-3 bg-accent border rounded-lg p-8 flex flex-col items-center w-full aspect-square relative overflow-hidden group hover:bg-main transition-all">
+                                    <FileIcon className="w-56 h-56 stroke-0 fill-foreground/10 absolute -rotate-6 -right-6 -bottom-9 group-hover:rotate-0 group-hover:fill-neutral-900/50 transition-all" />
+                                    <p className="text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">Transparenter Mietvertrag</p>
+                                </div>
+                                <div className="row-span-3 bg-accent border rounded-lg p-8 flex flex-col items-center w-full aspect-square relative overflow-hidden group hover:bg-main transition-all">
+                                    <CalendarClockIcon className="w-56 h-56 stroke-0 fill-foreground/10 absolute -rotate-6 -right-6 -bottom-9 group-hover:rotate-0 group-hover:fill-neutral-900/50 transition-all" />
+                                    <p className="text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">Schnelle, dokumentierte Übergabe</p>
+                                </div>
+                            </div>
+                            <div className="bg-[url('https://images.pexels.com/photos/19597726/pexels-photo-19597726.jpeg?w=960')] bg-cover bg-center rounded-lg shadow border"></div>
+                            <div className="grid grid-cols-1 grid-rows-6 gap-6">
+                                <div className="row-span-3 bg-accent border rounded-lg p-8 flex flex-col items-center w-full aspect-square relative overflow-hidden group hover:bg-main transition-all">
+                                    <ThumbsUpIcon className="w-56 h-56 stroke-0 fill-foreground/10 absolute -rotate-6 -right-6 -bottom-9 group-hover:rotate-0 group-hover:fill-neutral-900/50 transition-all" />
+                                    <p className="text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">Einfache Selbstfahrer-Miete</p>
+                                </div>
+                                <div className="row-span-3 bg-accent border rounded-lg p-8 flex flex-col items-center w-full aspect-square relative overflow-hidden group hover:bg-main transition-all">
+                                    <PhoneCallIcon className="w-56 h-56 stroke-0 fill-foreground/10 absolute -rotate-6 -right-6 -bottom-9 group-hover:rotate-0 group-hover:fill-neutral-900/50 transition-all" />
+                                    <p className="text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">Persönlicher 24/7 Support</p>
+                                </div>
+                            </div>
+                            <div className="col-span-2 grid grid-cols-2 grid-rows-6 gap-6">
+                                <div className="row-span-3 bg-accent border rounded-lg p-8 flex flex-col items-center w-full aspect-square relative overflow-hidden group hover:bg-main transition-all">
+                                    <ShieldCheckIcon className="w-56 h-56 stroke-0 fill-foreground/10 absolute -rotate-6 -right-6 -bottom-9 group-hover:rotate-0 group-hover:fill-neutral-900/50 transition-all" />
+                                    <p className="text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">Vollkasko-Schutz</p>
+                                </div>
+                                <div className="row-span-3 bg-accent border rounded-lg p-8 flex flex-col items-center w-full aspect-square relative overflow-hidden group hover:bg-main transition-all">
+                                    <CarIcon className="w-56 h-56 stroke-0 fill-foreground/10 absolute -rotate-6 -right-6 -bottom-9 group-hover:rotate-0 group-hover:fill-neutral-900/50 transition-all" />
+                                    <p className="text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">Top Zustand & vollgetankt</p>
+                                </div>
+                                <div className="col-span-2 row-span-3 bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg shadow border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="vorteile" className="relative mt-6">
                 <div className="grid lg:grid-cols-3 gap-6 container mx-auto px-6">
                     <div className="lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 container mx-auto h-full lg:gap-3 relative lg:pb-[264px]">
                         <div className="hidden lg:block w-full aspect-video mb-6 lg:mb-0 lg:aspect-auto lg:absolute lg:right-0 lg:w-[calc(50%-16px)] lg:h-full bg-[url('https://i.ibb.co/v4Q4Bk04/features.jpg')] bg-cover bg-center rounded-lg border shadow"></div>
@@ -604,7 +658,7 @@ const TestFeatures = () => {
                         </div>
 
                         <div className="grid grid-cols-2 gap-6">
-                            <div className="flex flex-col gap-6">
+                            <div className="grid grid-rows-2 gap-6">
                                 <div className="bg-accent rounded-lg border shadow p-8">
                                     <div className="flex gap-x-4 items-center mb-4">
                                         <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
@@ -632,9 +686,9 @@ const TestFeatures = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-6 mt-6">
+                            <div className="grid grid-rows-2 gap-6">
                                 <div className="bg-accent rounded-lg border shadow p-8">
-                                    <div className="flex gap-x-4 items-center mb-4">
+                                    <div className="flex gap-x-4 items-start mb-4">
                                         <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
                                             <FileTextIcon className="size-5" />
                                         </div>
@@ -647,7 +701,7 @@ const TestFeatures = () => {
                                     </div>
                                 </div>
                                 <div className="bg-accent rounded-lg border shadow p-8">
-                                    <div className="flex gap-x-4 items-center mb-4">
+                                    <div className="flex gap-x-4 items-start mb-4">
                                         <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
                                             <ShieldCheckIcon className="size-5" />
                                         </div>
@@ -667,6 +721,8 @@ const TestFeatures = () => {
                     </div>
                 </div>
             </div>
+
+            
         </>
     );
 }
