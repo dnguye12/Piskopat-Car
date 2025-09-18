@@ -664,7 +664,7 @@ const TestFeatures = () => {
                         </div>
 
                         <div className="grid grid-cols-2 gap-6">
-                            <div className="grid grid-rows-2 gap-6">
+                            <div className="flex flex-col gap-6">
                                 <div className="bg-accent rounded-lg border shadow p-8">
                                     <div className="flex gap-x-4 items-center mb-4">
                                         <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
@@ -692,7 +692,7 @@ const TestFeatures = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="grid grid-rows-2 gap-6">
+                            <div className="flex flex-col gap-6 mt-6">
                                 <div className="bg-accent rounded-lg border shadow p-8">
                                     <div className="flex gap-x-4 items-start mb-4">
                                         <div className="min-w-10 size-10 border border-foreground rounded inline-flex justify-center items-center">
