@@ -201,8 +201,8 @@ const Test = () => {
                 </section>
                 <TestProcess />
                 <TestCars />
-                <TestFeatures />
                 <TestMoments />
+                <TestFeatures />
                 <TestReviews />
                 <TestMap />
             </main>

@@ -7,7 +7,7 @@ import { Link } from "react-router";
 
 const TestMoments = () => {
     const [active, setActive] = useState<number | null>(null)
-    const baseCard = "card group p-8 flex flex-col h-96 transition-[flex-basis] will-change-[flex-basis] border rounded-lg relative overflow-hidden duration-500 transform-gpu"
+    const baseCard = "card bg-accent/66 backdrop-blur-sm group p-8 flex flex-col h-96 transition-[flex-basis] will-change-[flex-basis] border rounded-lg relative overflow-hidden duration-500 transform-gpu shadow-lg"
 
     const classFor = (i: number) => {
         if (active === null) {
@@ -25,7 +25,7 @@ const TestMoments = () => {
     return (
         <>
 
-            <section className="py-6">
+            <section className="hidden py-6">
                 <div className="container mx-auto px-6">
                     <div className="rounded-lg p-6 py-20 relative overflow-hidden flex justify-center items-center shadow-md border" data-aos="fade-up">
                         <div className="z-20">
@@ -232,9 +232,146 @@ const TestMoments = () => {
                     </div>
                 </div>
             </section>
+
+
+
+            <section className="p-6">
+                <div className="container mx-auto px-6">
+                    <div className="relative border rounded-lg overflow-hidden p-8">
+                        <div className="flex flex-col py-6">
+                            <h3 className="text-main text-3xl sm:text-4xl md:text-5xl z-20 font-medium mb-2 text-center">Wähle deinen Moment</h3>
+                            <h5 className="text-3xl sm:text-4xl z-20 text-center">Dein Moment. Unser Sportwagen.</h5>
+                        </div>
+                        <div className="hidden lg:flex gap-6 relative z-20" onMouseLeave={() => setActive(null)}>
+                            <div onMouseEnter={() => setActive(0)} className={`${baseCard} ${classFor(0)}`}>
+                                <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0">
+                                    <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
+                                        <ZapIcon className="w-7 h-7 text-main" />
+                                    </div>
+                                    <h3 className={headingClass(0)}>Tagesmiete</h3>
+                                </div>
+                                <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all !duration-500">
+                                    <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
+                                        <ZapIcon className="w-7 h-7 text-main" />
+                                    </div>
+                                    <div className={`relative z-20 flex flex-col items-start gap-y-5 opacity-0 !duration-500 ${active !== null && active === 0 && "opacity-100"}`}>
+                                        <h2 className="text-main text-2xl lg:text-3xl">Tagesmiete</h2>
+                                        <p className="text-neutral-100 lg:text-lg">Erlebe Performance pur – ideal für spontane Auszeiten oder den großen Auftritt.</p>
+                                        <Button size={"lg"} variant={"main"} className="!px-8 h-12 " asChild>
+                                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
+                                                <span className=" text-base">Jetzt buchen</span>
+                                            </a>
+                                        </Button>
+                                    </div>
+                                </div>
+                                <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 ${active !== null && active === 0 && "bg-neutral-900/66 backdrop-blur-sm"}`}></div>
+                                <img
+                                    src="https://i.ibb.co/4nBKjNNt/pexels-photo-13781.jpg"
+                                    fetchPriority="high"
+                                    className={`w-full h-full z-0 absolute top-0 left-0 object-cover object-center opacity-0 transition-all duration-500! ${active !== null && active === 0 && "opacity-100"}`}
+                                />
+                            </div>
+                            <div onMouseEnter={() => setActive(1)} className={`${baseCard} ${classFor(1)}`}>
+                                <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0">
+                                    <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
+                                        <Clock7Icon className="w-7 h-7 text-main" />
+                                    </div>
+                                    <h3 className={headingClass(1)}>Wochenendmiete</h3>
+                                </div>
+                                <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all !duration-500">
+                                    <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
+                                        <Clock7Icon className="w-7 h-7 text-main" />
+                                    </div>
+                                    <div className={`relative z-20 flex flex-col items-start gap-y-5 opacity-0 !duration-500 ${active !== null && active === 1 && "opacity-100"}`}>
+                                        <h2 className="text-main text-2xl lg:text-3xl">Wochenendmiete</h2>
+                                        <p className="text-neutral-100 lg:text-lg">Ein ganzes Wochenende im Sportwagen: Stil, Power und Leidenschaft. Ob Kurztrip oder ein besonderes Date – hier wird jeder Moment einzigartig.</p>
+                                        <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
+                                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
+                                                <span className=" text-lg">Jetzt buchen</span>
+                                            </a>
+                                        </Button>
+                                    </div>
+                                </div>
+                                <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 ${active !== null && active === 1 && "bg-neutral-900/66 backdrop-blur-sm"}`}></div>
+                                <img
+                                    src="https://i.ibb.co/BVxh3r38/moments1.jpg"
+                                    fetchPriority="high"
+                                    className={`w-full h-full z-0 absolute top-0 left-0 object-cover object-center opacity-0 transition-all duration-500! ${active !== null && active === 1 && "opacity-100"}`}
+                                />
+                            </div>
+                            <div onMouseEnter={() => setActive(2)} className={`${baseCard} ${classFor(2)}`}>
+                                <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0">
+                                    <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
+                                        <HeartIcon className="w-7 h-7 text-main" />
+                                    </div>
+                                    <h3 className={headingClass(2)}>Hochzeitsmiete</h3>
+                                </div>
+                                <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all !duration-500">
+                                    <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
+                                        <HeartIcon className="w-7 h-7 text-main" />
+                                    </div>
+                                    <div className={`relative z-20 flex flex-col items-start gap-y-5 opacity-0 !duration-500 ${active !== null && active === 2 && "opacity-100"}`}>
+                                        <h2 className="text-main text-2xl lg:text-3xl">Hochzeitsmiete</h2>
+                                        <p className="text-neutral-100 lg:text-lg">Mit Stil ankommen, mit Emotion weiterfahren – unsere Fahrzeuge schenken dir den perfekten Auftritt und verwandeln deine Hochzeit in eine unvergessliche Fahrt ins Glück.</p>
+                                        <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
+                                            <Link to="/hochzeitsmiete" className="gap-x-1">
+
+                                                <span className=" text-lg">Hochzeitsmiete</span>
+                                            </Link>
+                                        </Button>
+                                    </div>
+                                </div>
+                                <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 ${active !== null && active === 2 && "bg-neutral-900/66 backdrop-blur-sm"}`}></div>
+                                <img
+                                    src="https://i.ibb.co/5XcysVT8/moments2.jpg"
+                                    fetchPriority="high"
+                                    className={`w-full h-full z-0 absolute top-0 left-0 object-cover object-center opacity-0 transition-all duration-500! ${active !== null && active === 2 && "opacity-100"}`}
+                                />
+                            </div>
+                            <div onMouseEnter={() => setActive(3)} className={`${baseCard} ${classFor(3)}`}>
+                                <div className="absolute top-1/2 left-1/2 -translate-1/2 z-20 flex flex-col gap-y-4 items-center transition-all group-hover:opacity-0">
+                                    <div className=" w-14 h-14 rounded-md flex justify-center items-center border border-main">
+                                        <CalendarCheckIcon className="w-7 h-7 text-main" />
+                                    </div>
+                                    <h3 className={headingClass(3)}>Langzeitmiete</h3>
+                                </div>
+                                <div className="flex flex-col justify-between h-full opacity-0 group-hover:opacity-100 transition-all !duration-500">
+                                    <div className="relative z-20 w-14 h-14 rounded-md flex justify-center items-center border border-main mb-5 lg:mb-0">
+                                        <CalendarCheckIcon className="w-7 h-7 text-main" />
+                                    </div>
+                                    <div className={`relative z-20 flex flex-col items-start gap-y-5 opacity-0 !duration-500 ${active !== null && active === 3 && "opacity-100"}`}>
+                                        <h2 className="text-main text-2xl lg:text-3xl">Langzeitmiete</h2>
+                                        <p className="text-neutral-100 lg:text-lg">Ob Projekt, Aufenthalt oder einfach Lifestyle: Mit unseren Sportwagen bleibst du flexibel – und fährst immer mit Stil.</p>
+                                        <Button size={"lg"} variant={"main"} className="py-2 !px-8 h-14 " asChild>
+                                            <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="gap-x-1">
+                                                <span className=" text-lg">Jetzt buchen</span>
+                                            </a>
+                                        </Button>
+                                    </div>
+                                </div>
+                                <div className={`w-full h-full z-10 absolute top-0 left-0 transition-all !duration-500 ${active !== null && active === 3 && "bg-neutral-900/66 backdrop-blur-sm"}`}></div>
+                                <img
+                                    src="https://i.ibb.co/Z6QsYt3x/pexels-photo-620335.jpg"
+                                    fetchPriority="high"
+                                    className={`w-full h-full z-0 absolute top-0 left-0 object-cover object-center opacity-0 transition-all duration-500! ${active !== null && active === 3 && "opacity-100"}`}
+                                />
+                            </div>
+
+                        </div>
+
+                        <div
+                            className="absolute inset-0 z-10 isolate overflow-hidden bg-accent/66 pointer-events-none"
+                            style={{ clipPath: "polygon(0 0, 80% 0, 40% 100%, 0% 100%)" }}
+                        />
+                        <div className="absolute z-0 w-full h-full top-0 left-0 bg-[url(https://images.pexels.com/photos/33880892/pexels-photo-33880892.jpeg?w=960)] bg-cover bg-center"></div>
+                    </div>
+                </div>
+            </section>
+
+
             <section className="pb-6">
                 <div className="container mx-auto px-6">
-                    <div className="grid grid-cols-3 gap-6">
+                    <div className="hidden grid grid-cols-3 gap-6">
                         <div className="col-span-3 lg:col-span-2 bg-main rounded-lg border p-6 shadow-md relative">
                             <div className="z-20 col-span-2">
                                 <div className="flex gap-x-4 items-center mb-4">
@@ -257,8 +394,76 @@ const TestMoments = () => {
                         </div>
                         <div className="hidden lg:block rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/29873585/pexels-photo-29873585.jpeg?w=960')] bg-center bg-cover w-full h-full"></div>
                     </div>
+                    <div className="grid grid-cols-2 gap-6 relative py-6 pr-6">
+                        <div className="flex flex-col pt-12">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl text-main font-medium">Unsere Rabatte</h1>
+                            <p className="sm:text-lg text-muted-foreground my-6">Sichere dir exklusive Preisvorteile und fahr deinen Traumwagen zu Konditionen, die begeistern.</p>
+                            <div className="flex items-center gap-4 w-full">
+                                <Button asChild size={"lg"} variant={"main"} className="w-full lg:w-auto ">
+                                    <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                </Button>
+                                <Button size="lg" variant={"secondary"} className="h-12 w-full lg:w-auto" asChild>
+                                    <Link to="/kontakt">Kontakt</Link>
+                                </Button>
+                            </div>
+                        </div>
+                        <div className="z-10 col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+                            <div className="rounded-lg border overflow-hidden group shadow-lg bg-accent/66 backdrop-blur-3xl hover:bg-main hover:blur-none transition-all flex flex-col">
+                                <div className="aspect-video bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg?w=960')] bg-cover transition-all"></div>
+                                <div className="p-8 flex flex-col items-start justify-between gap-4 h-full">
+                                    <div>
+                                        <div className="flex gap-x-4 items-center">
+                                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
+                                                <UserRoundPlusIcon className=" size-5 transition-all group-hover:text-neutral-900" />
+                                            </div>
+                                            <h3 className="text-xl sm:text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">10% Neukundenrabatt</h3>
+                                        </div>
+                                        <p className="group-hover:text-neutral-900 transition-all mt-4">Neu bei uns? Sichere dir 10% Rabatt auf deine erste Sportwagen-Miete – unser Willkommensgeschenk für dich.</p>
+                                    </div>
+                                    <Button asChild size={"lg"} variant={"main"} className=" w-full group-hover:bg-neutral-900 group-hover:text-neutral-100">
+                                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                    </Button>
+                                </div>
+                            </div>
+                            <div className="rounded-lg border overflow-hidden group shadow-lg bg-accent/66 backdrop-blur-3xl hover:bg-main hover:blur-none transition-all flex flex-col">
+                                <div className="aspect-video bg-[url('https://images.pexels.com/photos/2318049/pexels-photo-2318049.jpeg?w=960')] bg-cover transition-all"></div>
+                                <div className="p-8 flex flex-col items-start justify-between gap-4">
+                                    <div>
+                                        <div className="flex gap-x-4 items-center">
+                                            <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
+                                                <HeartIcon className=" size-5 transition-all group-hover:text-neutral-900" />
+                                            </div>
+                                            <h3 className="text-xl sm:text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">10% Hochzeitsrabatt</h3>
+                                        </div>
+                                        <p className="group-hover:text-neutral-900 transition-all mt-4">Der schönste Tag deines Lebens, noch unvergesslicher: Sichere dir 10% Rabatt auf dein Hochzeitsauto – mit Heiratsnachweis und jeder Menge Stil.</p>
+                                    </div>
+                                    <Button asChild size={"lg"} variant={"main"} className="w-full group-hover:bg-neutral-900 group-hover:text-neutral-100">
+                                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                    </Button>
+                                </div>
+                            </div>
+                            <div className="rounded-lg border overflow-hidden group shadow-lg bg-accent/66 backdrop-blur-3xl hover:bg-main hover:blur-none transition-all  flex flex-col">
+                                <div className="aspect-video bg-[url('https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?w=960')] bg-cover transition-all"></div>
+                                <div className="p-8 transition-all flex flex-col items-start justify-between h-full gap-4">
+                                    <div>
+                                    <div className="flex gap-x-4 items-center">
+                                        <div className="min-w-10 size-10 border border-foreground dark:border-main rounded inline-flex justify-center items-center transition-all group-hover:!border-neutral-900">
+                                            <CakeIcon className=" size-5 transition-all group-hover:text-neutral-900" />
+                                        </div>
+                                        <h3 className="text-xl sm:text-2xl font-medium text-main group-hover:text-neutral-900 transition-all">5% Geburtstagsrabatt</h3>
+                                    </div>
+                                    <p className="group-hover:text-neutral-900 transition-all mt-4">Feier mit uns und sichere dir 5% Rabatt auf deine nächste Miete. Zum ersten Mal dabei? Dann gibt’s sogar ganze 15%!</p>
+                                    </div>
+                                    <Button asChild size={"lg"} variant={"main"} className="w-full group-hover:bg-neutral-900 group-hover:text-neutral-100">
+                                        <a href={import.meta.env.VITE_WHATSAPP} target="_blank" className="h-12">Jetzt buchen</a>
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="absolute z-0 top-0 right-0 w-[calc(50%-32px)] h-full rounded-lg overflow-hidden border bg-[url('https://images.pexels.com/photos/29873585/pexels-photo-29873585.jpeg?w=960')] bg-center bg-cover"></div>
+                    </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+                    <div className="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
                         <div className="rounded-lg border overflow-hidden group shadow bg-accent">
                             <div className="aspect-video bg-[url('https://images.pexels.com/photos/7144177/pexels-photo-7144177.jpeg?w=960')] bg-cover lg:blur-sm transition-all group-hover:blur-none"></div>
                             <div className="p-8 transition-all group-hover:bg-main flex flex-col items-start gap-4">
