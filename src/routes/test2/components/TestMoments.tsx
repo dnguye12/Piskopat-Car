@@ -235,7 +235,7 @@ const TestMoments = () => {
 
 
 
-            <section className="p-6">
+            <section className="pb-6">
                 <div className="container mx-auto px-6">
                     <div className="relative border rounded-lg overflow-hidden p-8">
                         <div className="flex flex-col py-6">

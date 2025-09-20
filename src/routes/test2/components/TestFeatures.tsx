@@ -3,7 +3,7 @@ import { CalendarClockIcon, CarIcon, CheckCheckIcon, FileIcon, PhoneCallIcon, Sh
 const TestFeatures = () => {
 
     return (
-        <div id="vorteile"  className="relative">
+        <div id="vorteile"  className="relative mb-6">
                 <div className="flex flex-col gap-6 container mx-auto px-6">
                     <div className="flex flex-col gap-6">
                         <div className="rounded-lg p-8 relative bg-main border text-neutral-900 overflow-hidden">
